@@ -13,19 +13,15 @@ logger = logging.getLogger(__name__)
 def save_to_json(data, project_url):
     """Save scraped data to a JSON file"""
     try:
-        # Get the directory where the script is located
         script_dir = os.path.dirname(os.path.abspath(__file__))
         
-        # Create a scraped_data directory in the same directory as the script
         data_dir = os.path.join(script_dir, 'scraped_data')
         os.makedirs(data_dir, exist_ok=True)
         
-        # Create a filename based on project URL and timestamp
         project_name = project_url.split('/')[-1]
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         filename = os.path.join(data_dir, f'{project_name}_{timestamp}.json')
         
-        # Save the data
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         logger.info(f"Data saved to {filename}")
@@ -43,13 +39,11 @@ def scrape_project(url):
         logger.info(f"Processing project: {url}")
         
         browser.get(url)
-        # Wait for page to be fully loaded
         WebDriverWait(browser, 20).until(
             lambda x: x.execute_script("return document.readyState") == "complete"
         )
-        random_sleep(3, 5)  # Wait for page load and potential Cloudflare check
+        random_sleep(3, 5)  
         
-        # Initial scroll to simulate human behavior
         browser.execute_script("window.scrollTo(0, document.body.scrollHeight/4);")
         random_sleep(2, 3)
         
@@ -64,7 +58,6 @@ def scrape_project(url):
             }
         }
         
-        # Save final result only once
         logger.info("Saving final result...")
         saved_file = save_to_json(result, url)
         logger.info(f"Saved to: {saved_file}")
@@ -94,14 +87,13 @@ def scrape_technology_projects(start_page=1, max_pages=5):
             browser.get(url)
             random_sleep(3, 5)
             
-            # Find all project links
             project_links = browser.find_elements(By.CSS_SELECTOR, "a.project-title")
             project_urls = [link.get_attribute('href') for link in project_links]
             
             for project_url in project_urls:
                 project_data = scrape_project(project_url)
                 projects.append(project_data)
-                random_sleep(5, 10)  # Pause between projects
+                random_sleep(5, 10)  
                 
     except Exception as e:
         logger.error(f"Error in scrape_technology_projects: {str(e)}")

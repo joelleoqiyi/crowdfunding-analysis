@@ -30,7 +30,6 @@ class LinkScraper:
     def __scrape_page(self):
         print("Waiting for elements to load...")
         try:
-            # Wait for the project cards to be visible
             wait = WebDriverWait(self.__driver, 10)
             wait.until(EC.presence_of_all_elements_located((By.XPATH, "//a[contains(@class, 'project-card__title')]")))
             
@@ -53,7 +52,7 @@ class LinkScraper:
         try:
             with open(filename, 'a', encoding='utf-8') as file:
                 for _, url in links:
-                    if url:  # Only write non-empty URLs
+                    if url:  
                         # Clean the URL by removing query parameters
                         clean_url = url.split('?')[0]
                         file.write(f"{clean_url}\n")
@@ -76,11 +75,9 @@ def setup_driver():
     return driver
 
 def main():
-    # Ensure we're in the correct directory
     script_dir = os.path.dirname(os.path.abspath(__file__))
     os.chdir(script_dir)
     
-    # Clear existing scraped_links.txt if it exists
     if os.path.exists('scraped_links.txt'):
         os.remove('scraped_links.txt')
     

@@ -10,21 +10,18 @@ logger = logging.getLogger(__name__)
 def extract_updates_content(browser):
     """Extract all updates from a project's updates page"""
     updates = []
-    scraped_updates = set()  # Set to keep track of scraped updates
+    scraped_updates = set()  
 
     try:
-        # Wait for page to be fully loaded
         logger.info("Waiting for page to load completely...")
         WebDriverWait(browser, 10).until(
             lambda x: x.execute_script("return document.readyState") == "complete"
         )
         logger.info("Page loaded completely")
         
-        # Get base URL for the project
         base_url = browser.current_url.rstrip('/')
         updates_url = base_url + "/posts"
         
-        # First try to find the updates count to verify updates exist
         try:
             logger.info("Looking for updates count...")
             updates_count = browser.find_element(By.CSS_SELECTOR, "a[href$='/posts'] span").text
@@ -34,13 +31,11 @@ def extract_updates_content(browser):
             logger.error(f"Error finding updates count: {str(e)}")
             return updates
 
-        # Navigate to updates page
         logger.info("Navigating to updates page...")
         browser.get(updates_url)
         random_sleep(3, 5)
 
-        # Process updates until we've found them all or hit a limit
-        max_attempts = updates_count + 2  # Add buffer for safety
+        max_attempts = updates_count + 2 
         attempt = 0
         
         while len(updates) < updates_count and attempt < max_attempts:
@@ -48,35 +43,29 @@ def extract_updates_content(browser):
             logger.info(f"\nAttempt {attempt} to find updates. Found so far: {len(updates)}")
             
             try:
-                # Wait for the updates container to be present
                 WebDriverWait(browser, 10).until(
                     EC.presence_of_element_located((By.CSS_SELECTOR, "div.bg-grey-100.pt6"))
                 )
                 
-                # Find the main updates container
                 updates_container = browser.find_element(By.CSS_SELECTOR, "div.bg-grey-100.pt6")
                 
-                # Find all grid-container divs within the updates container
                 update_containers = updates_container.find_elements(By.CSS_SELECTOR, "div.grid-container")
                 
                 if not update_containers:
                     logger.info("No update containers found")
                     break
                 
-                # Process each container
                 for container in update_containers:
                     try:
-                        # Extract update number and check if already scraped
                         try:
                             update_number = container.find_element(By.CSS_SELECTOR, "span.type-13.soft-black_50.text-uppercase").text.strip()
                         except:
-                            continue  # Skip if we can't find the update number
+                            continue  
                         
                         if update_number in scraped_updates:
                             logger.info(f"Skipping already scraped update: {update_number}")
                             continue
                         
-                        # Extract other metadata before clicking
                         try:
                             title = container.find_element(By.CSS_SELECTOR, "h2.kds-heading.mb3").text.strip()
                         except:
@@ -93,66 +82,62 @@ def extract_updates_content(browser):
                         except:
                             date = None
 
-                        # Find the Read More button within this container
                         try:
                             read_more = container.find_element(By.CSS_SELECTOR, "button.ksr-button.bttn")
                             
-                            # Click the read more button
                             logger.info(f"Clicking Read more button for {update_number}: {title}")
                             browser.execute_script("arguments[0].click();", read_more)
                             random_sleep(2, 3)
                             
-                            # Wait for the detailed page to load
                             WebDriverWait(browser, 10).until(
                                 lambda x: x.execute_script("return document.readyState") == "complete"
                             )
                             
-                            # Get content
                             try:
                                 content_div = browser.find_element(By.CSS_SELECTOR, "div.rte__content")
                                 content = content_div.text.strip()
                                 likes_button = browser.find_element(By.CSS_SELECTOR, "button.type-12.soft-black_50.text-underline")
                                 likes_count = int(likes_button.text.split()[0])
                                 
-                                # First find the comments section
                                 comments_section = browser.find_element(By.ID, "comments")
                                 
-                                # Find all w100p divs which contain grouped comments from same user
                                 comment_groups = comments_section.find_elements(By.CSS_SELECTOR, "div.w100p")
-                                
+                                metadata_groups = comments_section.find_elements(By.CSS_SELECTOR, "div.flex.mb3.justify-between")
                                 comments_data = []
-                                for group in comment_groups:
-                                    # Get all comment texts within this group (both mb0 and mb2)
-                                    comment_texts = group.find_elements(By.CSS_SELECTOR, "p.data-comment-text.type-14")
+                                
+                                for i in range(len(metadata_groups)):
+                                    metadata = metadata_groups[i]
+                                    comment_group = comment_groups[i] if i < len(comment_groups) else None
                                     
-                                    # Get commenter name from avatar alt attribute
                                     try:
-                                        # First find the flex container that contains the avatar
-                                        flex_container = group.find_element(By.CSS_SELECTOR, "div.flex")
-                                        avatar = flex_container.find_element(By.CSS_SELECTOR, "img[alt*='user avatar']")
-                                        commenter_name = avatar.get_attribute("alt").replace("user avatar", "").strip()
+                                        inner = metadata.find_element(By.CSS_SELECTOR, "div.flex")
+                                        inner2 = inner.find_element(By.CSS_SELECTOR, "span.mr2")
+                                        name_span = inner2.find_element(By.CSS_SELECTOR, "span.do-not-visually-track")
+                                        commenter_name = name_span.text.strip()
                                     except Exception as e:
                                         logger.error(f"Error getting commenter name: {str(e)}")
                                         commenter_name = "Unknown"
 
-                                    # Get timestamp
                                     try:
-                                        # Find the comment-link first
-                                        comment_link = group.find_element(By.CSS_SELECTOR, "a.comment-link")
-                                        time_element = comment_link.find_element(By.CSS_SELECTOR, "time[datetime]")
-                                        timestamp = time_element.get_attribute("title")  # Full date
-                                        datetime_value = time_element.get_attribute("datetime")  # Unix timestamp
-                                        relative_time = time_element.text.strip()  # "X days ago"
+                                        time_element = metadata.find_element(By.CSS_SELECTOR, "time[datetime]")
+                                        timestamp = time_element.get_attribute("title") 
+                                        datetime_value = time_element.get_attribute("datetime") 
+                                        relative_time = time_element.text.strip() 
                                     except Exception as e:
                                         logger.error(f"Error getting timestamp: {str(e)}")
                                         timestamp = "Unknown"
                                         datetime_value = "Unknown"
                                         relative_time = "Unknown"
                                     
-                                    # Combine all texts from this group
-                                    full_text = " ".join([text.text.strip() for text in comment_texts if text.text.strip()])
+                                    full_text = ""
+                                    if comment_group:
+                                        try:
+                                            comment_texts = comment_group.find_elements(By.CSS_SELECTOR, "p.data-comment-text.type-14")
+                                            full_text = " ".join([text.text.strip() for text in comment_texts if text.text.strip()])
+                                        except Exception as e:
+                                            logger.error(f"Error getting comment text: {str(e)}")
                                     
-                                    if full_text:  # Only add if there's actual text
+                                    if full_text or commenter_name != "Unknown":  
                                         comment_data = {
                                             'text': full_text,
                                             'commenter': commenter_name,
@@ -162,7 +147,6 @@ def extract_updates_content(browser):
                                         }
                                         comments_data.append(comment_data)
                                 
-                                # Add comments count
                                 comments_count = len(comments_data)
                                 logger.info(f"Found {comments_count} comments")
                                 
@@ -181,11 +165,9 @@ def extract_updates_content(browser):
                                 scraped_updates.add(update_number)
                                 logger.info(f"Successfully extracted update: {title[:50]}...")
                                 
-                                # Navigate back to the updates list
                                 browser.back()
                                 random_sleep(2, 3)
                                 
-                                # Wait for the list page to reload
                                 WebDriverWait(browser, 10).until(
                                     EC.presence_of_element_located((By.CSS_SELECTOR, "div.bg-grey-100.pt6"))
                                 )
@@ -200,7 +182,6 @@ def extract_updates_content(browser):
                         logger.error(f"Error processing update container: {str(e)}")
                         continue
                 
-                # If we haven't found all updates, try scrolling down to load more
                 if len(updates) < updates_count:
                     logger.info("Scrolling to load more updates...")
                     human_like_scroll(browser)
