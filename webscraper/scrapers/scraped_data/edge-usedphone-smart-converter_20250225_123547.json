@@ -1,0 +1,30 @@
+{
+  "url": "https://www.kickstarter.com/projects/1639645730/edge-usedphone-smart-converter",
+  "updates": {
+    "count": 2,
+    "content": [
+      {
+        "update_number": "UPDATE #2",
+        "title": "Curiosity related to EDGE?",
+        "creator": "Francis Yen\nFebruary 5, 2025",
+        "date": "February 5, 2025",
+        "content": "Q:  What is it for?\nA: Computer, Server, & IoT EdgeGateway. Actually, it was developed as by-product while we developed Bluetooth IoT system consisted of a long range Bluetooth devices, a EdgeGateway for data store, computing, multi wireless and cloud platform. \nQ: what is goof for consumers.\nA: Without SmartTV, only big monitor can be changed as Smart_TV( streaming provided smartphone). If a keyboard & a mouse is plugged, Paperwork without expensive notebook.\nQ: Can I use it on all smartphones?\nA: Nope, Basically, Android smartphones that enable HDMI function are supported. It is very good for no OS monitor.\nBut computers and monitors equipped with OS(android & window), the smartphone display is shown through wireless mirroring even though the smartphone has no HDMI function.\nQ: Can I use it on an iPhone?\nA: No, it is not supported on an iPhone. It is not supported even when using a C type USB converter.\nQ: Does it have to support the DEX function?\nA: Nope, it can be used even if DEX is not supported. DEX is for changing the smartphone's to desktop display. There are many desktop launcher available. One of them we tested is Sentio Desktop, which is similar to Dex.\nFurthermore, without launcher, you change the minimum width of development option at setting,(for example: 400 to over 900) the display is fit to high resolution for desktop mode.  \nQ: more application?\nWe completed IoT Edge-Gateway to be ready. Due to Smartphone WiFi, Bluetooth range is short, Bluetooth long range device was made as accessory. \nInstead of using android OS, if use linux OS based on Termux, educational, practical computer & server can be possible.",
+        "url": "https://www.kickstarter.com/projects/1639645730/edge-usedphone-smart-converter/posts/4307386",
+        "likes_count": 2,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "Exciting and practical project you can do",
+        "creator": "Francis Yen\nFebruary 4, 2025",
+        "date": "February 4, 2025",
+        "content": "New technology for perfect Edge-gateway\nBluetooth is used for only the connection between a Gateway and devices.                             Modbus is used for the data process and Mqtt & VPN are able to allow your remote access Node-red templete will be provided for your IoT connection   \nMore exiting application you can try with upcycling technology.",
+        "url": "https://www.kickstarter.com/projects/1639645730/edge-usedphone-smart-converter/posts/4305740",
+        "likes_count": 1,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}
