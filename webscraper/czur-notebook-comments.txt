@@ -1,0 +1,198 @@
+URL: https://www.kickstarter.com/projects/czur-notebook/czur-et-max-the-unprecedented-professional-book-scanner/comments
+
+How big of the scanning size?
+
+Can I use it to scan large size documents, such as newspaper and map?
+
+Hi Tom, thanks for the comment! Yes, we recommend scanning materials as large as A3. If you wish to scan materials bigger than A3, you can scan them half by half and then merge them into one whole page.
+
+How much time if I want to scan one book?
+
+Hi Tom, thank you so much for your comment! For a 300-page book, it takes only a few minutes to scan the whole book, thanks!
+
+Just had to pledge again
+
+Hi Mr Bryan Mark Wilde, thank you so much.
+
+Question about the Delivery
+
+The estimated delivery has it listed as April 2025 but is that actually the case? It would imply production is already underway given the campaign end in April? Can you clarify on the matter
+
+Hi Pedro Gonzalez, because we have sold thousands of scanners already, so our factory and supply chain are all ready to go, thanks!
+
+Just found out it also has this 'Page-mending' feature, love it, I think it will really come in handy coz some of the older books I have are in pretty bad condition. I am really excited about this project!
+
+Hi John LaRavia, thank you so much for your comment. Yes, the 'page-mending' function will help greatly when a page is torn or broken, thanks again for supporting the campaign.
+
+I purchased more than one of your precedent scanners and now, at every new releases of yours, I receive as many emails as the scanners I purchased.
+
+Can you please clean up your databases and avoid such over-communication?
+
+Regards.
+
+Hi Danilo, thank you so much for your comment. Yes we will do that, thanks!
+
+I just funded your product. I normally receive an email and backer number, but didn't.
+
+Hi Linda Gordon, from my end I can see your pledge went through. And after the campaign ends, we will also send out a survey, that's when you can type in your detailed info, thanks!
+
+Love your products! Can I purchase 2 units?
+
+Hi Mike Sollars, thank you so much for your comment! Yes, 2 ways you can do it:
+
+1). On top of you pledge, add $499 more and we will send you 2 units.
+
+2). You can use another again and pledge again, thanks!
+
+Thank you!
+
+Hello, I have a lot of books and automobile magazines from a while ago, I am particularly fond of the idea of sidelight. Does it help a lot when I am scanning my magazines? Thanks!
+
+Hi John LaRavia, thank you so much for your comment. Yes, the sidelight will help remove the reflection when scanning glossy pages, so it will help with scanning your magazines, thanks!
+
+Hello. I am backing your project with the $499 option. Your other support options are confusing. You also request that folks select:
+
+$549
+
+$4990
+
+$9980
+
+But you are not clear what the higher costs might include. If I was purchasing many scanners for a department or business, and a bulk purchase is what I am looking for, WOULD YOU PLEASE more clearly explain what is included in the higher priced offers? I have a VERY HISTORICAL book that needs scanning attention, so I am hoping that your product arrives on time and works according to your promises. Good Luck.
+
+Hi Lorraine, the $499 you saw is the Super Early Bird price, and the $549 is the Early Bird price, they are the same in terms of what it includes. As long as the $499 is still available, choose the $499 one. And the $4990 has 10 scanners, and the $9880 has 20 scanners, and yes if you would like to choose them you can, thanks!
+
+I appreciate both Alex and B (B, who recently canceled) for raising these important questions.
+
+Why are you using connectivity technology from two decades ago?
+
+Not only did you skip USB 3.0, but your scanners are still stuck on USB 2.0 speeds when USB 3.2—or even USB 4—should be the minimum standard in 2025.
+
+The issue isn’t just about whether you include a USB-C port. Many USB-C ports still operate at USB 2.0 speeds,
+
+The real question is like what Alex has mentioned: Why are you not using a modern USB-C 3.0, 3.1, 3.2, or 4.0 chipset inside the CZUR Max?
+
+Is it the cost?
+
+Upgrading to a newer chipset would not only provide significantly better transfer speeds and could enhance features like top-down video mode, potentially pushing it beyond the current 20fps limit to a smooth 30fps or even 60fps over USB. The difference would be especially noticeable in applications like Zoom, where fluid motion is critical.
+
+USB technology has evolved rapidly:
+
+• USB 1.0 (1996) – 12 Mbps
+
+• USB 2.0 (2000) – 480 Mbps
+
+• USB 3.0 (2008) – 5 Gbps
+
+• USB 3.1 (2013) – 10 Gbps
+
+• USB 3.2 (2017) – 20 Gbps
+
+• USB4 (2019) – 40 Gbps
+
+Yours being 25 years old!
+
+Given that USB4 has been around for six years, there’s no reason a modern scanner should still be using USB 2.0 speeds.
+
+This isn’t about including a USB-A to USB-C adapter—it’s about making USB 3.1 Gen 2 or USB 4 the native standard for true high-speed performance.
+
+As Alex has asked. How much more would a modern chipset cost? $1 per unit? I don’t know, but I suspect it would be a minor cost increase for a major leap in usability and performance. If your scanner truly aims to be “cutting-edge,” why hold it back with outdated technology?
+
+I am very keen to hear feedback and believe that you guys could upgrade to a better performance without any major complications as it’s just a chipset adjustment and would also make it future proof.
+
+Thank you so much and thank you Alex and B
+
+I somehow missed the details about the usb-A is USB 2.0, wow that is very old , even if it sufficient as you claim still USB 2.0 is way old for 2025, thanks for Alex and saint Thomas for pointing it out, you should really consider change it to 3.2 or 4 even if you have to increase the price for few $ , I'm willing to pay the extra charge to get up to date USB port not 20+ years old USB port. I'm sure many other backers are willing as well. Thanks
+
+Hi Saint & Fadi, thanks for the comments. We specialize in document and book scanners, and our design was developed with a transfer speed that meets users' needs. However, based on recent feedback, our R&D team is urgently evaluating new solutions to enhance this further. We hope to have an update for everyone soon.
+
+Hi, first time backer with you and from reading through your campaign; very exciting about the ET scanner, I have couple of questions and appreciated if you can answer them:
+
+1. How I can add another scanner to my rewards? I want to have personal scanner and one at work for testing, and if the quality match the campaign details then we may look to purchase couple more for the other departments.
+
+2. I want to buy the CZUR smart notebook , do you still sell it? If yes; can you add it in as add-ons?
+
+3. Does the app require cloud services or I can scan to local storage?
+
+Thank you,
+
+Hello, Fadi, thank you so much for your comment!
+
+1. On top of your order, you can pledge another $499, we will send you 2 scanners
+
+2. We will see if we can add that to add-on, thanks!
+
+3. You can scan to local storage.
+
+Thank you so much!
+
+Will this work to scan larger format books like sketchbooks and drawing pads?
+
+Hi Ted Holmberg, thank you so much for your comment. Yes, thanks!
+
+Hi, thanks for the comment. When you scan glossy pages, please turn off the top light and turn on the side light, it can cancel the reflection and make the scanning results better.
+
+I backed your older CZUR Shine Ultra years ago. And the quality of the "scanned" images was unusable for me. Can you post some photos of documents and photographs that this model has captured? Preferably with the highest quality setting it can do and without any further adjustments in photoshop or elsewhere. I want to see if the quality will be good enough for my needs.
+
+Hi Aaron Newcomer, we will be preparing some more high quality scanned examples and will post them as soon as possible, thanks!
+
+Is the Studio box custom for the ET Max or its the same box used for earlier models?
+
+Hi KBacker, thank you so much for your comment. Yes this model is designed to optimize the scanner result of the new CZUR ET Max, thanks!
+
+1.
+
+--300 DPI is the standard for traditional scanners, while the CZUR ET Max integrates a 38MP camera, offering a resolution of around 410 DPI for enhanced detail.
+
+--The CZUR ET Max features innovative Laser Curve-Flatten Technology, which uses three laser lines to create a 3D model of curved pages, and a smart algorithm to flatten them, improving the quality of scanned pages.
+
+2.
+
+-- It can scan an entire 300-page book in just ten minutes.
+
+-- The scanning speed remains nearly the same for different types of materials.
+
+3.
+
+-- The ET Max scanner works with our CZUR Scanner software, which has been developed over 10 years to ensure stability and user-friendliness. It supports multiple operating systems, including Windows, macOS, and Linux.
+
+-- In most cases, the software is compatible with these three operating systems. If you encounter any issues, please let us know, and we'll work to improve the software to meet your needs.
+
+4.
+
+--The ET Max supports HDMI, and you’ll have more options once you connect your computer via the USB cable.
+
+--The scanner works perfectly with USB 2.0, and you can also connect via USB-C using an adapter.
+
+--Most MacBook Pro users already have the adapter; if you don’t, we can provide one for you.
+
+5.
+
+-- Based on our experience, the scanner has been reliable for over 6 years. We first released our scanner technology 10 years ago, and most of the original units are still in good working condition. CZUR offers a 1-year worldwide warranty.
+
+-- The CZUR Scanner is a versatile, fully-functional device, capable of scanning books, archives, documents, photos, business cards, and even small objects.
+
+6. While there are some large, professional book scanners on the market, these are typically designed for libraries, archives, and museums, and are very expensive and bulky. The CZUR ET Max brings book scanning technology to everyday users, including office, home, and personal use. We believe that everyone should have access to new technology improvements that make scanning easier.
+
+I am a user of ET 16, 24PRO and I do a lot of book scanning.
+
+When I upgraded from ET 16 to 24, I was very satisfied with the speed improvement.
+
+I've also applied to purchase ET MAX this time, and I'm looking forward to the improvement in image quality and software.
+
+My questions are as follows
+
+I read in the product description that the et 24 takes about 1.5 seconds to scan both pages of a book.
+
+For this new product on Kickstarter, the product description page also states that the speed is 1.5 seconds. Is that accurate description? It doesn't seem like there is much improvement in performance in terms of speed.
+
+How long does it take to scan a book once?
+
+Dear MinohKim, thank you so much for your support! CZUR has invested significant resources to improve scanning speed, and it's true that there has been a notable improvement from the ET16 to the ET24Pro. However, when the scanning speed reaches around 1.5 seconds per scan, it's important to note that the overall speed involves not just the scanning time, but also factors like page-turning speed and computer performance. The configuration of your computer and the speed at which pages are turned also play a role in the overall scanning process.
+
+Hi Jake, there is a video showing how it works, here it is: https://youtu.be/Czfb7T-cXVg?si=gr_pZoMtnDQ1O_LJ , thanks!
+
+Will the scanner fit in the bag? The ET24 scanner would not fit in the bag offered at the same time.
+
+Hi jw, for this bag, shouldn't be a problem, thanks
+
