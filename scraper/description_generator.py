@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Initialize OpenAI client
-client = OpenAI(api_key= "sk-svcacct-iUaAf-5l-gYPDY9rpykP9kbYZLIFKTkl5mOXcVSNUQyv6w8EIMQBuFkY8W6p9p9m0T6TwJWT3BlbkFJ_BP2-NtINA4NVqI4cai5T5d47A80HEo63TgqHymWf0La0PYWXLkoHAIdrseD6K9NVMUWLAA")
+client = OpenAI(api_key= "")
 
 # Retry logic for API calls
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=4, max=10))
