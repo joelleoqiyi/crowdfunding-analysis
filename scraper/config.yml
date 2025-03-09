@@ -1,0 +1,25 @@
+output_files:
+  successful_campaigns: "successful_campaigns.csv"
+  ongoing_campaigns: "ongoing_campaigns.csv"
+
+pages_to_scrape:
+  start: 1
+  end: 100
+
+category_id: 16
+
+categories:
+  successful:
+    url: "https://www.kickstarter.com/discover/advanced?state=successful&category_id=16&sort=magic&page="
+    last_scraped_page: 0
+    total_pages: 300  
+    batch_size: 100
+
+  ongoing:
+    url: "https://www.kickstarter.com/discover/advanced?state=live&category_id=16&sort=magic&page="
+    last_scraped_page: 0
+    total_pages: 27  # Adjust as needed
+
+
+output_file_successful: "kickstarter_successful_campaigns.csv"
+output_file_ongoing: "kickstarter_ongoing_campaigns.csv"
