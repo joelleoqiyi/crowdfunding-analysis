@@ -127,50 +127,45 @@ def main():
         scraper = LinkScraper(driver)
         all_links = []
         page = 1
-        target_new_links = 200
+        target_new_links = 120  # Target 120 new unique links
         consecutive_failures = 0
+        max_pages = 30  # Increase max pages to find more unique projects
         
-        while len(all_links) < target_new_links and consecutive_failures < 3:
+        print(f"Already have {len(existing_links)} existing links")
+        print(f"Targeting {target_new_links} new unique links")
+        
+        while len(all_links) < target_new_links and page <= max_pages and consecutive_failures < 3:
             print(f"Scraping page {page}...")
-            try:
-                driver.get(scraper._LinkScraper__url + str(page))
-                page_links = scraper._LinkScraper__scrape_page()
-                
-                if not page_links:
-                    consecutive_failures += 1
-                    print(f"No links found on page {page}. Consecutive failures: {consecutive_failures}")
-                    if consecutive_failures >= 3:
-                        print("Too many consecutive failures. Stopping.")
-                        break
-                else:
-                    consecutive_failures = 0  # Reset on success
-                
-                # Filter out existing links
-                new_links = [(title, url, count) for title, url, count in page_links if url.split('?')[0] not in existing_links]
-                
-                if new_links:
-                    scraper.save_links_to_file(new_links, 'unscraped_links.txt')
-                    all_links.extend(new_links)
-                    print(f"Found {len(new_links)} new links with updates. Total new links: {len(all_links)}")
-                
-                page += 1
-                random_sleep(4, 7)  # Longer random delay between pages
-                
-                if page > 20:  # Safety limit
-                    print("Reached maximum page limit")
-                    break
-                    
-            except Exception as e:
-                print(f"Error processing page {page}: {str(e)}")
+            driver.get(scraper._LinkScraper__url + str(page))
+            page_links = scraper._LinkScraper__scrape_page()
+            
+            # Filter out already scraped links
+            new_links = [(title, href, updates) for title, href, updates in page_links if href not in existing_links]
+            
+            if new_links:
+                consecutive_failures = 0
+                all_links.extend(new_links)
+                # Add to existing links to avoid duplicates in future pages
+                existing_links.update(href for _, href, _ in new_links)
+                print(f"Found {len(new_links)} new links on page {page}")
+                print(f"Total new links so far: {len(all_links)}/{target_new_links}")
+            else:
                 consecutive_failures += 1
-                if consecutive_failures >= 3:
-                    print("Too many consecutive failures. Stopping.")
-                    break
-                random_sleep(5, 8)  # Extra delay on error
-                
-        print(f"Scraping completed! Total new links gathered: {len(all_links)}")
+                print(f"No new links found on page {page}. Consecutive failures: {consecutive_failures}")
+            
+            # Save links after each page
+            scraper.save_links_to_file(all_links, 'unscraped_links.txt')
+            
+            page += 1
+            # Random delay between pages
+            delay = random.uniform(3, 5)
+            print(f"Waiting {delay:.1f} seconds before next page...")
+            time.sleep(delay)
+        
+        print(f"Finished scraping. Found {len(all_links)} new unique links.")
+        
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"Error: {str(e)}")
     finally:
         driver.quit()
 

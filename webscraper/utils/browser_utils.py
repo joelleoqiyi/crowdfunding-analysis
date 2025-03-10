@@ -52,7 +52,7 @@ def get_browser():
     options.add_argument(f'user-agent={ua.random}')
     options.add_argument('--window-size=1920,1080')
     
-    browser = uc.Chrome(options=options)
+    browser = uc.Chrome(options=options, version_main=133)
     
     # Additional stealth measures
     browser.execute_cdp_cmd('Network.setUserAgentOverride', {
