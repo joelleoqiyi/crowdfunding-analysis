@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 
-# Directory where all the Kickstarter datasets are stored
+# insert directory where all the Kickstarter datasets are stored
 dataset_dir = ""
 
 def clean_kickstarter_data(file_path):
