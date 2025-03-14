@@ -1,0 +1,162 @@
+URL: https://www.kickstarter.com/projects/circular-ring/circular-ring-2-worlds-most-advanced-health-tracking-ring/comments
+
+Can you please confirm from where the ring is going to be shipped ? European customer shall expect custom duties to be payed ?thanks
+
+I've been following the campaign and am really interested in the ring. However, I've noticed a lot of negative feedback about the Gen 1 ring, especially regarding production quality, fulfillment issues, and after-sales support. These concerns have come up not just here but also in online forums and communities. Could you share specific improvements that have been made in these areas? Rather than just giving us a template response, it would be great to see concrete steps or evidence of how things have improved, which would help build confidence for us backers and give us the assurance we need before pledging.
+
+It says the health data can be monitored remotely by logging into the app account from anywhere. This means all the data is sent to your servers. Is there a way to keep all my health data locally (only on the ring and on my local phone storage)
+
+Hello!
+
+Congratulations on the wonderful response to this campaign. I backed via the VIP offer as soon as you went live. Can you please answer two questions for me?
+
+What is the shipping going to be? I’ve seen one answer saying $15USD anywhere in the world and another that said it depends on location. My second question is about the additional insurance. How much will it be as an add on for VIP backers?
+
+My thanks!
+
+VIP Upgrade is not available for me, even when i get the mail. Maybe because my Kickstarter Account is connected via apple and not via mail.
+
+Wow! So many negative comments about previous versions and horrible after sales customer service. Leaning me towards canceling my pledge.
+
+What have you done to enhance the quality of production so that you do not have consistent quality issues like your past two generations of rings? Will this one be more dependable?
+
+Also, what have you done to address the customer service needs of your customers? In years past, the customer service from Circular has been awful at best. Nobody could get refunds or a replacement ring and customer service dragged out inquiries for months. This can’t happen again.
+
+The options say shipping is not included can you clarify on this since it’s saying $15 usd is being charged as shipping
+
+It’s going to be 15 usd! :)
+
+Can you clarify please about the shipping costs? I agreed to pay the cost of my pledge plus the 15$ shipping - "anywhere in the world". Is it not the final cost? If this is the case, I'll sadly will cancel my pledge: saw too many kikstarter projects with sky-rocket shipping prices lately. that suddenly revealed only after the project successfully closed and it is impossible to get the money back.
+
+Hello will this smart ring have a vibrating alarm clock as before this would really set it apart from other smart rings please confirm.
+
+Well the last smart ring with Circular had a vibrating alarm and was touted to be the only one on the market that was the only reason why I am highly interested in this product to have the vibrating alarm if not then really no point in the pledge so need the company to clarify this feature will be available. Nothing more annoying then a loud and irritating alarm to wake up the whole household or make me jump out of bed a bad start to the day
+
+It does not have a haptic motor in it, no.
+
+Hi,
+
+Circular Ring 2 will not include the vibrating alarm that the Gen 1 ring had, as we worked on integrating ECG in this version.
+
+Let me know if you have any other questions!
+
+Hi,
+
+i did not receive separate instructions for the prelaunch VIP price.
+
+how can I pledge for the VIP price?
+
+(I have pledged for super early bird now just to lock that in, in case it doesn't work out.)
+
+I locked in for the launch price with insurance. Do advise thanks
+
+I registered for the pre launch with my current backer email. Thanks!
+
+Dear creator,
+
+three main questions:
+
+-could you list the actual sensors available in the ring? You hint at blood oxygen, temperature and heart rate. Is this the set? And is it a real (of course simplified) ECG or only guessed at by pulse sensing? If its a real one, how is the skin contact controlled in salt water contact (while swimming)?
+
+-Can I disable the AI features to just have quiet data collection?
+
+-You mention the airplane mode disables bluetooth. How is it enabled again if the ring has no physical interface? Or just the Bluetooth 5 wakeup feature? And can data collection be done only local without internet processing? (I am a pilot, so I use my devices mostly offline). Or does the data get lost if I accidently try to open the app while offline?
+
+I use right now the Ultrahuman Air, but would prefer something with a real ECG.
+
+Hi, thank you for your questions, here are the answers to your queries:
+
+Sensors
+
+The Circular Ring 2 includes 3 LEDs ppg sensors, temperature, accelerometer and single lead ECG sensor.
+
+The ring is also designed for reliable everyday performance, but prolonged salt water exposure may slightly affect the readings.
+
+ECG is only used for spot measurement of Heart issues. PPG is issued for continuous heart and oxygen measurements.
+
+AI Features
+
+The AI-driven insights are triggered from you manually. Your choice to use it or not.
+
+Airplane Mode and Offline Data Collection
+
+When airplane mode is enabled, Bluetooth connection of the ring is disabled, which stops the ring from syncing. Rest assured, the ring continues to collect data locally, so if you open the app while offline, your data will be stored and then synced once you’re reconnected.
+
+Let us know if you have any other questions—we're happy to help! 😊
+
+Can I encourage you to have a copper/bronze color finish?
+
+Thank you for your suggestion! A copper/bronze finish is not planned at the moment, but I’ll make sure to pass your idea along to the team.
+
+It is time for stretch goals!!!
+
+Hi can you add the thumb size in the tool?
+
+Thank you for your suggestion! I'll pass it along so we can consider it. However, I should let you know that wearing the ring on the thumb is not recommended as it could affect the accuracy of the measurements.
+
+Yeah, I know. I asked how much it can affect the measurements but no answer. I thought about cancel my pledge. And I need to know the size of my thumb, if it is compatible.
+
+Hi, I just pledged $270 for the ring + 1 year of insurance and shipping to the USA. I am now reading comments about paying $3 for VIP pricing which I didn't see anything about prior to my pledge. I'm very excited about your product but would like to understand what the VIP program is & whether I can switch to that if I choose. Thanks!
+
+Hi,
+
+The VIP deal was a special offer available only during the pre-registration phase before the Kickstarter campaign launched. It allowed backers who signed up early to access exclusive pricing.
+
+Unfortunately, since the campaign is now live, the VIP offer is no longer available. However, you can still take advantage of the Kickstarter pricing, which remains significantly lower than the final retail price.
+
+Let us know if you have any other questions—we're happy to help! 😊
+
+Got it, thank you. Eagerly anticipating the release!
+
+Are VAT/shipping costs included?
+
+Thanks!
+
+Hi,
+
+Shipping costs for the Circular Ring 2 are not included in the pledge amount and will be calculated based on your location. Customs duties may also apply, depending on your country's regulations.
+
+Do you have any estimates for shipping purposes? Where are you shipping from?
+
+So, can somebody explain regarding that VIP deal?
+
+Hi,
+
+The VIP deal was a special offer available only during the pre-registration phase before the Kickstarter campaign launched. It allowed backers who signed up early to access exclusive pricing.
+
+Unfortunately, since the campaign is now live, the VIP offer is no longer available. However, you can still take advantage of the Kickstarter pricing, which remains significantly lower than the final retail price.
+
+Let us know if you have any other questions—we're happy to help! 😊
+
+What is the best finger to wear it on?
+
+The best finger to wear the Ring on is usually the index, middle, or ring finger.
+
+That being said, if the ring fits comfortably and securely on your thumb or pinky, you can wear it there as well. Just keep in mind that the data might be slightly less accurate.
+
+I didn’t get any email…when do I report the size of my ring?
+
+Hi! You can do that in the survey that will be sent at the end of the campaign :)
+
+Sizing website does not work on iPhones. If it is not fixed very soon I will cancel my pledge.
+
+Hey! Please try this link: https://aitaca.io/en/circular
+
+Hi, I paid 3$ to get the VIP status. I have completed the secret steps to claim the VIP offer. Would you please confirm me the VIP deal you mentioned in the email campaigns? I have not received any confirmation after the "Pledge without a reward".
+
+Hi! Because it’s the only way to do it, you will get the email with confirmation about your order and color + size selection once the campaign has ended :)
+
+Where is the ring sizing tool?
+
+Both, can you try this link? It should work: https://aitaca.io/en/circular
+
+Pouvez vous ajouter le pouce dans l'outil pour connaitre la taille ?
+
+Working, thank you!
+
+Hi, First - congrats on this incredible journey and reaching your funding goal so quickly (and it just continues to grow!). I originally supported via the $239 rate & then realized my mistake and went to "manage my pledge" and adjusted via "Pledge without a Reward" to the VIP amount. Can you please confirm that my pledge is accurate on your end as well. Thank you!
+
+Hi! If you reserved for the VIP amount and pledged the right amount, it's all good and there's nothing more to do :)
+
+You'll have the recap of your order at the end of the campaign and it should show the right price/item then.
+

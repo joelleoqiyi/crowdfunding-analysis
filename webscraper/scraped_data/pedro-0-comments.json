@@ -1,0 +1,17 @@
+{
+    "url": "https://www.kickstarter.com/projects/731479134/pedro-0/comments",
+    "comments": [
+        {
+            "poster": "Mario Morales",
+            "comment": "Does the pledge for the non assembled pack need soldering ?",
+            "timestamp": "1741347756",
+            "is_creator": false
+        },
+        {
+            "poster": "Almoutazar Saandi",
+            "comment": "Hi Mario! No soldering is required. You can find all the assembly steps on the Pedro GitHub page.",
+            "timestamp": "1741369405",
+            "is_creator": true
+        }
+    ]
+}

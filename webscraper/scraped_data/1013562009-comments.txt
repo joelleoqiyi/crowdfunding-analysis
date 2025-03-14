@@ -1,0 +1,40 @@
+URL: https://www.kickstarter.com/projects/1013562009/fipsy-fpga-v2-the-breakout-board-for-beginners-and-creatives/comments
+
+As someone with no FPGA experience.
+
+Why would I want to learn to work with an FPGA?
+
+What are some things I can do with this particular item.
+
+Is there a cool project I can do with this and say software development (like a todo app or something I can code myself) ?
+
+You went with quite the long backing period for this campaign, any plans to potentially shorten that down at some point or start production early?
+
+Wondering what this means. I want to learn more about fpga and understanding this would help me. Does it mean, 'on chip' or through some sort of gpio? or... something i dont know how to articulate. clarification appreciated.
+
+Stumbled on this and backed it. Looking at your website, you seem to push Lattice Diamond as the software back end. Last time I tried FPGAs it was Xilinx, and the software was - monstrous.
+
+I heard the Lattice chips are now supported by open source software. Is that an option? The software experience could make or break the FPGA learning process.
+
+The Lattice Chip family that is best supported by Open Source IDEs to my knowledge are the iCE40 and ECP5 Chip Families. We are instead using the MachXO2 Family, which helps to keep the cost down for beginners. However, MachXO2 is not yet supported by the open source FPGA tool chains that I'm aware of yet. I bet if we can grow a bigger hobbyist FPGA community, that would change.
+
+There are plans to get MachXO2 into the existing open source tools, but I'm not aware of anything other than Lattice Diamond for creating the final bitstream/.jed file. That said, you can create the Verilog in a wide range of IDEs (coding and compiling to a bit stream can be done in separate environments), and use Lattice Diamond (which is still free) for just the last compilation step.
+
+The open source projects to look at are:
+
+https://icestudio.io/ as an IDE and F4PGA as a bitstream compiler - https://f4pga.org/
+
+If anybody knows of other Open Source products that play well with Lattice MachX02 Families (or HDL/Verilog generally) - please send me a DM and I'll update the documentation.
+
+Thank you for being a backer, and helping to bring FPGAs to the general electronics community.
+
+https://icestudio.io/
+
+Hey, good luck with the project. I was just wondering whether you are going to provide many more code examples? Never really got very far with v1 because I was hoping for more tutorials especially around an hdmi board. I was a little disappointed with the v1 documentation so if this is successful I really hope you can create many more tutorials-after all the reason arduino did so well is they had good documentation backing up the hardware. Hope you get fully funded
+
+That you for supporting us in the past, that's awesome! We are indeed on track to be fully funded, so that's nice too.
+
+We absolutely are working and even more examples to support the maker/hobbyist community. For now, take a look at the VGA-based PONG game code example, which is something that would only fit on the larger Fipsy V2 board - https://www.fipsyfpga.com/learning/learning-projects/vga-pong/
+
+We have other cool demos and surprises brewing, say stay tuned to the campaign updates for those!
+

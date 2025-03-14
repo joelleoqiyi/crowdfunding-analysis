@@ -1,0 +1,180 @@
+URL: https://www.kickstarter.com/projects/1889053217/doze-micro-geiger-measure-your-daily-radiation-dose/comments
+
+As this is designed to be a portable device, I would be interested in a more robust and water resistant case. I understand that this would come at an additional cost.
+
+Dear John Rope,
+
+We appreciate your question, as it demonstrates your engagement and curiosity about Doze.
+
+The current version of our product is already quite robust. However, we may consider the possibility of offering a more durable and/or more water-resistant case in the future (e.g., for work environment applications, thicker plastic, aluminum).
+
+We will continue to evaluate your proposal and may incorporate this feature at a later date.
+
+Greetings
+
+Timo (Wekos Team)
+
+@Creator, has any keychain hole on the device?
+
+Dear RL,
+
+Thanks for asking that question!
+
+The hole for the keyring is located on the lower left side of Doze. The keyhole is shown in the second illustration of the campaign, but it is very small to see.
+
+Greetings
+
+Timo (Wekos Team)
+
+Will it come charged or , no it will need to be fully charged ?
+
+Dear Richard B,
+
+We appreciate your question! The batteries are always partially charged when delivered. We recommend charging the Doze device again as soon as you receive it.
+
+Greetings
+
+Timo (Wekos Team)
+
+I was interested in Back.
+
+But now I don't trust this product.
+
+It uses a Geiger tube for detection and only has a pocket sized battery, yet you claim it will work for a year. Is there any other electronic device of this size that works for a year? The only one that comes to mind is the AirTag, which operates intermittently at low power.
+
+No matter how innovative the technology is, this is just not realistic.
+
+.
+
+Also on the campaign page you are trying to measure radiation in food. But to measure the radiation level of food, you would need to measure it in a special container by grinding it up or something.
+
+Inevitably I smell a lie from this campaign page.
+
+.
+
+Can you upload a video of the test version in action? It does not have to be a stylish video.
+
+I assume you have the radioactive material for testing, so please show us a video of it detecting the dose in real time.
+
+Dear BL,
+
+Thank you for your question! We appreciate your curiosity.
+
+Regarding the one-year battery timeframe: Doze enters sleep mode in the Lifeguard configuration (display off, controller in sleep mode). In this state, Doze consumes only a few microamperes (μA) in the double-digit range, which means that a 400 mAh battery can last more than one year. Despite being in sleep mode, Doze continues to measure. Whenever a particle is detected, it wakes up, logs the measurement, and then returns to sleep mode.
+
+Doze can measure the radiation levels of food, though not as accurately as specialized devices. This is because it also accounts for the ambient radiation in your surroundings. To obtain precise radiation levels in food, complex measurements are required to determine whether -and to what extent- a food item is contaminated with radioactivity. First, food samples must be prepared in a specific manner and protected from external influences. Then, measurements are conducted using specialized devices that are far more accurate and sensitive than a Geiger counter. Such devices are typically found only in specialized facilities.
+
+We will be uploading another update for Doze in the next couple of hours, where we will showcase a test run.
+
+If you have any further questions, please let us know at any time.
+
+Greetings
+
+Timo
+
+(Wekos Team)
+
+>Whenever a particle is detected, it wakes up, logs the measurement, and then returns to sleep mode.
+
+This part is odd.
+
+Don't you have to keep applying voltage to the Geiger tube in order to detect particles?
+
+I don't think the battery will last for a year if you are supplying power to the Geiger tube while it is in sleep mode...
+
+Wouldn't it be impossible to sleep because of background radiation?
+
+.
+
+Either way, your thoughtful answers are excellent and I look forward to the success of this project.
+
+The ability to customize the USB connection is great too.
+
+Dear BL,
+
+The Geiger tube draws power from a charged capacitor, which is recharged periodically for a fraction of a second. The required power is negligible in normal radiation environments. Despite the charging process, the charging module is completely switched off. Most of the time, Doze is in sleep mode and only wakes up when a particle is detected.
+
+We thank you for your support and are always here if you have any further questions.
+
+Greetings
+
+Timo (Wekos Team)
+
+Könnt ihr über usb c bitte eine serielle console oder irgendeine andere Schnittstelle implementieren? Ich würde den Dose gern an Home Assistant hängen. Wäre sowas möglich?
+
+Hallo Dominik,
+
+das ist eine sehr gute Idee. Leider wird Doze diese Funktion im Auslieferungszustand nicht bieten. Jedoch gibt es eine Möglichkeit, eine serielle Schnittstelle über USB herzustellen. Das könnte ein Projekt für die Backer Community werden, sobald wir Doze ausgeliefert haben:
+
+Wir haben uns dazu entschieden, den Bootloader Micronucleus für Doze zu nutzen. Dieser ermöglicht den Upload von Programmen via USB. Eine serielle Schnittstelle via USB (genauer gesagt V-USB) über das Programm ist somit nicht mehr möglich. Allerdings können Nutzer auch Programme über eine ISP-Schnittstelle hochladen bzw. ohne den Micronucleus Bootloader. Dafür bietet die Platine entsprechende Kontakte, die mit einem ISP-Programmer (z.B. USBtinyISP) verbunden werden können. Mit dieser Methode sollte es möglich sein, eine serielle Schnittstelle über USB im Programm bereitzustellen.
+
+Ich hoffe, meine Antwort hilft und wir sind offen für weitere Ideen aus der Community.
+
+English Q/A:
+
+Q: Can you implement a serial console or any other interface? I would like to connect Doze to Home Assistant. Would it be possible?
+
+A: Dear Dominik,
+
+we think this is a very good idea. Unfortunately, Doze does not have this feature. But there is a way to allow Doze to do serial communication. It could be a good project for our Backer community with Doze in their hands:
+
+We decided to use the bootloader Micronucleus for Doze which allows users to upload programs simply via USB. With this feature, a serial interface via USB (more precise V-USB) cannot be implemented in the program anymore. However, users will have the chance to upload own programs directly over the ISP interface, that means without the Micronucleus bootloader. The PCB design of Doze offers free connection pads that can be directly connected to an ISP programmer (e.g. USBTinyISP). With this method, it should be possible to implement serial communication via USB in the program.
+
+I hope my answer helps you. We are glad to know if the community has other ideas.
+
+Greetings Kevin (Wekos Team)
+
+do you have any factory videos? website with other products sold by your business? any other products to share? influencer videos? social media?
+
+Dear Shop,
+
+Thank you very much for your question! You can find part of our factory and office, as well as some projects we have been engaged in (e.g. a 3-D scanner), under "Who We Are." A portion of our production is covered by contract manufacturing. As this is our first Kickstarter project, we unfortunately do not have other products to showcase that have reached market maturity. To give you a better understanding of the ongoing process of Doze, we will post updates regularly.
+
+If you have any other questions, please feel free to reach out at any time.
+
+Greetings
+
+Timo (Wekos Team)
+
+super mal ein deutsches Projekt :) Habt ihr vllt Step Daten?
+
+Hallo Martin, vielen Dank für dein Interesse. Wir werden das 3D Modell von der Hülle allen Backern zur Verfügung stellen. Step Format ist möglich.
+
+English Q/A:
+
+Q: Great a German project :) Do you have step data files available?
+
+A: Hello Martin, thank you very much for your interest. The 3D model from the case will be available to all backers. Step format is possible.
+
+Greetings
+
+Timo (Wekos Team)
+
+You mentioned the flashing light can be switched off, but will it be possible to mute the clicks also if we choose to ? Many thanks.
+
+Dear D,
+
+correct, you can independently switch off the flashing light as well as the click. After switching off, Doze will still go on with its measurements.
+
+Greetings
+
+Kevin (Wekos Team)
+
+Fantastic, many thanks for clarifying
+
+More types of rewards will increase your pledges.
+
+I want two doze's. 💤💤🤣
+
+That's not possible right now.
+
+Dear Edon,
+
+thank you for your suggestion. We just added a new reward that allows you to pledge for 2 pieces.
+
+Greetings
+
+Kevin (Wekos Team)
+
+Thanks! Pledged for two!
+

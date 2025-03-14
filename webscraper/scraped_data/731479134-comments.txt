@@ -1,0 +1,6 @@
+URL: https://www.kickstarter.com/projects/731479134/pedro-0/comments
+
+Does the pledge for the non assembled pack need soldering ?
+
+Hi Mario! No soldering is required. You can find all the assembly steps on the Pedro GitHub page.
+

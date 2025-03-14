@@ -1,0 +1,41 @@
+{
+    "url": "https://www.kickstarter.com/projects/148188623/picodrive-worlds-smallest-edc-usb4-tb4-40gbps-portable-ssd/comments",
+    "comments": [
+        {
+            "poster": "Firetruck",
+            "comment": "It appears that you have fully developed pre-production units. Have you been sending these out to reviewers to get feedback? I’ve seen one example and that did show much promise, but that’s a long departure from extensive consultation and testing. Please take this as intended, and that is I would really like to see you be successful and to do that you need to get your message out. People that I have mentioned this Kickstarter to have consistently said it looks really promising but there are not enough reviews. Personally I love the promise of this drive, I cancelled my pledge with another running Kickstarter campaign because I believe yours to be better for my intended uses, and that includes using my iPhone to capture ProRes video. A common drawback is the iPhone/external drive handshake is slow, which I hope you’ve improved on. I would really like to see some stats on performance such as video recording performance and drive slowdown. Some others suffer with this as time and heat converge, and that typically results in a hit to performance, at least on an iPhone 16 Pro Max.",
+            "timestamp": "1741738796",
+            "is_creator": false
+        },
+        {
+            "poster": "PicoLabs",
+            "comment": "In our testing the PicoDrive appears as available for ProRes recording (on the native camera app) the moment you plug it in, at most there's a slight delay of 1-2s? Unlike other M.2 SSD enclosures which can peak up to 10W under load causing instability, the maximum power draw for the PicoDrive is only 3.5W, well under the 4.5W limit supported by the iPhone 15/16 (https://support.apple.com/en-us/105099), no external power necessary.",
+            "timestamp": "1741930984",
+            "is_creator": true
+        },
+        {
+            "poster": "PicoLabs",
+            "comment": "While you can use magsafe if you would like to charge as you film, there's also a 100W Power Data Splitter available as an add-on which would enable direct USBC pass through charging. I would advise against charging with magsafe though as in my experience it results in greater heat output...",
+            "timestamp": "1741930984",
+            "is_creator": true
+        },
+        {
+            "poster": "PicoLabs",
+            "comment": "I've personally used the the PicoDrive for 4k ProRes recordings of ~1h, its rated for 40Gbps - over 4x higher than the 10Gbps theoretical maximum bandwidth of an iPhone.",
+            "timestamp": "1741930984",
+            "is_creator": true
+        },
+        {
+            "poster": "Firetruck",
+            "comment": "Thank you for the information.",
+            "timestamp": "1741931490",
+            "is_creator": false
+        },
+        {
+            "poster": "Firetruck",
+            "comment": "I did include power data splitter, though it’s not always convenient and MagSafe is okay for a short period. Totally agree, heat can be a challenge.",
+            "timestamp": "1741931738",
+            "is_creator": false
+        }
+    ]
+}

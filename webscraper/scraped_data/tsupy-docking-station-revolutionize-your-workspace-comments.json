@@ -1,0 +1,59 @@
+{
+    "url": "https://www.kickstarter.com/projects/651997588/tsupy-docking-station-revolutionize-your-workspace/comments",
+    "comments": [
+        {
+            "poster": "TSUPY",
+            "comment": "Of course, no problem! Tsupy can open up to a maximum angle of 180 degrees, fully supporting different angles of adjustment.",
+            "timestamp": "1741312850",
+            "is_creator": true
+        },
+        {
+            "poster": "TSUPY",
+            "comment": "Hello, we have close cooperation with backerspaces and backermany. As you can see from the collaborators, they are on the list. In fact, their website does not display all the projects, but in fact, the projects they recommend far exceed what is displayed on the homepage. Have a nice day!",
+            "timestamp": "1741051617",
+            "is_creator": true
+        },
+        {
+            "poster": "TSUPY",
+            "comment": "Currently, Tsupy only supports purchasing an additional phone stand and does not offer an option to purchase an additional laptop stand.",
+            "timestamp": "1740988909",
+            "is_creator": true
+        },
+        {
+            "poster": "maik",
+            "comment": "I want to connect both a Windows laptop via its USB-C docking station and a MacBook Air M1 using one mouse and one keyboard and one (really old) Apple CinemaDisplay that has a mini DisplayPort connector and a USB-A connector for its built-in USB hub. Mouse and keyboard can be connected to the monitor. Is this setup possible, preferably without a DP to HDMI adapter?",
+            "timestamp": "1740666304",
+            "is_creator": false
+        },
+        {
+            "poster": "TSUPY",
+            "comment": "Its macbook can connect our product by usb—A. then connect a desk monitor to our product by hdmi. Then you can control the macbook and the laptop by one mouse.",
+            "timestamp": "1740789966",
+            "is_creator": true
+        },
+        {
+            "poster": "Victor",
+            "comment": "I would like to use on a MacBook Pro M4 Pro and a Windows laptop, both connected to a single 2k monitor (expanded screen on both when I press switch button), a keyboard and a mouse. Is this possible? How would it be done?",
+            "timestamp": "1740442465",
+            "is_creator": false
+        },
+        {
+            "poster": "TSUPY",
+            "comment": "yeah, it works.just connect the macbook by type-c to type-c as host1 and connect the windows laptop to the product by USBA TO USBA then connect the 2K monitor to HDMI PORT as HOST 2",
+            "timestamp": "1740449015",
+            "is_creator": true
+        },
+        {
+            "poster": "TSUPY",
+            "comment": "Yes, you can plug your keyboard, mouse, and laptop charger into the Tsupy, and connect a 4K@60Hz display via HDMI. Tsupy supports dual-host control, single 4K display output, and PD charging. However, for multi-screen setups, an additional solution is required. HDMI supports up to 4K@60Hz.",
+            "timestamp": "1740225958",
+            "is_creator": true
+        },
+        {
+            "poster": "TSUPY",
+            "comment": "Yes, you can connect a USB-C hub to the Tsupy for a multi-screen setup, provided the hub supports full-featured Type-C input. As for 4K@120Hz, Tsupy itself supports 4K@120Hz output, but the actual performance will depend on the capabilities of the hub you're using. Make sure the hub is compatible with 4K@120Hz to ensure smooth performance.",
+            "timestamp": "1740379059",
+            "is_creator": true
+        }
+    ]
+}

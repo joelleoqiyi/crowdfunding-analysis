@@ -1,0 +1,24 @@
+URL: https://www.kickstarter.com/projects/aircharm/air-charm-your-keychain-air-quality-companion/comments
+
+The hole for attaching the key chain shouldn't be in this shape. The root of the keychain will break off easily.
+
+Hi BL,
+
+I understand you want to ensure it is durable for daily use and that is important to us as well. The strength of the keychain hole connection point is a QC point for us. We will ensure that it can put up with weight, being thrown around and used everyday without care. We hear your concern and want to mitigate this - we will take a look at strengthening that keyhole connection point.
+
+Thank you for your feedback BL!
+
+Can you implement a warning mode with LED lights?
+
+I would like to have a function that warns the user with an LED light when a preset value is reached, so that the user can determine what data has reached the preset value by changing the color of the VOC, CO₂, Temperature, and Humidity.
+
+.
+
+I would like to utilize this product while driving my car. I want to ventilate the car when the CO₂ concentration in the car reaches 1700. I want to open the windows when the LED comes on instead of checking the app while driving.
+
+It would also be useful to place it inside a hamster cage. You will be able to notice any unusual changes in temperature or humidity.
+
+Hi BL,
+
+Thank you for your input. We have had a few people message us with a similar sentiment. We are going to add that as a feature in the app so users can set their own limits easily and be notified!
+

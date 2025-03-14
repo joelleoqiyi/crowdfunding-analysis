@@ -1,0 +1,44 @@
+URL: https://www.kickstarter.com/projects/1191148678/feniska-the-smart-litter-box-tracker/comments
+
+Can you specify what the benefits or differences are between this and the Purina Petivity device, which is the same price?
+
+Hi Charles,
+
+Great question! Petivity is a cordless device, which means it works similarly to a human scale. The cat first has to step on the scale, leading to a delay in measurements. Our always-on technology, however, allows us to monitor the cat’s behavior the moment they interact with the litter box. This not only improves accuracy in terms of recommendations and provides deeper insights, but it also reduces the number of incorrectly attributed events. Additionally, our AI features transform our app into a tele-vet in your pocket.
+
+Can i buy it as a gift and share the app? Or as the one who bought it its connected to my phone number?
+
+Hi Sean, great question! Of course, you can buy the Base as a gift, but the person who registers it during onboarding in the app will be the main user. We’re working on a solution to allow multiple users to connect to one app so all cat parents at home can monitor their cat’s health. However, the Base and app are not tied to the buyer or their phone number during purchase.
+
+Hello,
+
+can you share the size of the stainless steel litter box and add it to the addon description?
+
+I have a furniture with hidden compartment for the litter box and want to know if it will fit inside. Thank you!
+
+Hi Alex,
+
+thanks for your question. The stainless steel litter box will be 50cm/19.68in in length, 35cm/13.78in in width and 20cm/7.87in in height.
+
+I hope this fits ☺️
+
+Is it possible to get the data out of the app in my own spreadsheet or connect via an API to a home automation system?
+
+Hi Tom, thanks for your question! We’re currently developing an open API to give you access to your cat’s data and enable seamless integrations with other systems. Our approach includes:
+
+• MQTT (which we currently use) for real-time event streaming, ideal for integration with home automation platforms like Home Assistant.
+
+• RESTful API access with secure authentication, allowing you to retrieve data like weight trends, litterbox visits, and health insights.
+
+• Webhooks for instant notifications when specific events occur.
+
+• Matter (planned) for future compatibility with major smart home ecosystems like Apple HomeKit, Google Home, and Alexa.
+
+We’d love to hear more about your specific use case! Are you looking to connect it to a particular platform or automate specific actions? Your feedback will help us refine our API roadmap.
+
+Hi, oh, that is excellent news, MQTT is nice.
+
+To be honest this kind of project it could fail on the app. Poor quality app, not doing what I want. I've seen it to many times. So I make it a habit to only buy stuff where I know the data is mine and i can work around the supplied app if needed.
+
+Your list is very good. I'll be happy to help to test these and give feedback on all four points if you would like that. I'm a programmer, so I've experience with them and could help you improve them in a early stage maybe.
+

@@ -1,0 +1,98 @@
+URL: https://www.kickstarter.com/projects/cyansky/cyansky-vanguard/comments
+
+Can you make a custom stl 3D print file for this flashlight. I was thinking as a pistol grip or a staff insert. Or something else perhaps.
+
+Hi Joseph, we have a stl file can share with you, the content should be what you want here, just please mail to hello@cyanskyworld.com. Then we can provide the file as attachment.
+
+Can you make a version of this that doesn't have the laser? Would love to get one for the figet aspect, but it's 5x the legal limit for import to Australia, or at least for NSW.
+
+Hi Joshua, make a version of white light only means a lot to do, we can't make any commitment for it. Besides, we have confirmed with our logostic partner that laser ≤5mW can be shipped to Australia.
+
+Hi Ken, we have to clarify that the external backup battery is indeed included in the super early bird, but it is 16280 850mAh. 16280 Lithium Battery It is a common lithium-ion battery model, 16280: indicates the size of the battery, where 16 means that the battery diameter is 16mm and 280 means that the battery length is 28.0mm.
+
+We don't think there is other special name for it. You can find the right battery in the US in the following ways:
+
+1. You can directly search for “16280 lithium battery” or “16280 battery” on US e-commerce platforms such as Amazon, eBay, etc.
+
+2. If you can't find the exact same model, you can look for an alternative model with similar dimensions, same voltage in 3.7V, and similar capacity. For example, 18650 lithium batteries are another common model, and are slightly larger than 16280 batteries. And you can get one to try on this light.
+
+Hopefully this information will help you find the right battery.
+
+shipping include customs fees ?
+
+Dear Dennis, custom fees is decided by the local policy, we can't neviagte this part.
+
+😂 I’ve never seen cats less interested in a laser, does it actually work? It’s an interesting design on the flashlight but I would like to be assured that it actually functions!
+
+😂 What if it‘s related to the personality of each cat? You should notice the most active one . LOL. Of course we're the laser function is fully workable on this light. YOU WILL GET WHAT YOU SEE HERE! THANK YOU FOR YOUR SUPPORT!
+
+If the light is not waterproof, I think it would be better if the main battery could be replaced. Do you have any plans to modify the design to allow battery replacement?
+
+Since a light with a cocking function is truly one of a kind, I want to keep using it for a long time. From a sustainability perspective, I would appreciate it if you could consider making the battery replaceable.
+
+Also, do you have any plans to create a dedicated silicone cover or similar accessory to provide basic waterproofing?
+
+Regarding the durability of the cocking mechanism, is there any risk of it breaking if used repeatedly like a fidget toy?
+
+Thank you for your response.
+
+I understand that the waterproof performance has been sacrificed due to the fidget function, so I have no issue with the device itself lacking waterproofing.
+
+However, because the fidget function and flashlight are integrated, I find myself wanting to carry it with me at all times, which creates a dilemma.
+
+For this reason, I wanted to ask if you have any plans to produce a silicone cover or similar accessory to provide basic waterproofing in the future.
+
+Additionally, I would appreciate it if you could answer the following questions that I am still concerned about.
+
+1. Durability of the Fidget Mechanism
+
+Is there any risk of failure if it is operated repeatedly?
+
+If it does break, would it be easy for an individual to repair?
+
+2. Presence of a Strap Hole
+
+Since it functions as both a flashlight and a fidget tool, I believe having a strap hole would help prevent accidental drops. Is this included in the design?
+
+3. Battery Replacement
+
+It is mentioned that the battery is not replaceable due to its structure, but do you offer any replacement services if the battery deteriorates?
+
+In the worst case, would it be possible to replace the battery by disassembling the device myself?
+
+I appreciate your time and assistance in addressing these questions.
+
+hello Superbacker MayoikondaInu,
+
+Here is the answer of your above questions.
+
+1. The service life of the slide fidget functions is around 20000 times, it will not be damaged in the daily playing, except for violent human disassembly.
+
+2. Considering the playfulness and simulation as well as the overall weight of the product, we did not design the strap hole for carry, and the size of the light is fit in the bag or your porcket.
+
+3. 3. The small battery on the top can be replaced with the backup battery, the built-in 5000mAh battery can not be swapped, the service life of it is over 500 times charging and discharging cycles.
+
+Hope these help! :D
+
+Why not make a stl 3D print file that can act as a water proof protection while in use while out in the rain... Just an idea.
+
+We are a Chinese manufacturer, please rest assured that this does not affect our transportation because we use other transportation channels. China has a large amount of freight shipped to the United States every day, which cannot be overturned by a policy.
+
+Hello
+
+Main battery does not support replacement due to structural design
+
+Best Wishes
+
+Hello.
+
+Thank you for your support.
+
+We are considering your color suggestion.
+
+Certain conditions and quantities are required.
+
+We will get back to you later
+
+Best wishes
+

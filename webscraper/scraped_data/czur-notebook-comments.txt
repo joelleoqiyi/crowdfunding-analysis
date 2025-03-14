@@ -1,0 +1,178 @@
+URL: https://www.kickstarter.com/projects/czur-notebook/czur-et-max-the-unprecedented-professional-book-scanner/comments
+
+Hi Creator,
+
+My book is broken in the edge or corner, or has some holes. What will happen if I scan them using your scanner?
+
+Thanks.
+
+Hi IAN WALTMAN, thank you so much for your comment. Yes there is this 'Page-mending' feature where it can restore the broken pages, thanks!
+
+Will it be able to scan 2 or more pages and then stitch them together? Thanks!
+
+Hi, thanks for the comment! Yes, it is capable of doing that, thanks!
+
+Just realized it’s still using 30 year old USB A I’ve literally just got rid of them old cables as all my devices now use USB C as per the new standards laid out by the EU commission. This is really disappointing hopefully this will be updated on the finished product otherwise I may wait until this is updated on future models.
+
+Hi Simon O'Rourke, thanks for the comment. We specialize in document and book scanners, and our design was developed with a transfer speed that meets users' needs. However, based on recent feedback, our R&D team is urgently evaluating new solutions to enhance this further. We hope to have an update for everyone soon.
+
+Hi. I've been looking for a reasonably priced product that I could use to help my mother (losing her vision due to wet MD) read magazines and other materials. I think best to connect it to a large monitor for images so my sense is that with HDMI that would work fine. But wondering if the scan product could be used for her CPU to read the text ? thoughts anyone?
+
+Hi, thank you so much for your comment. Yes connect it via HDMI is one way, and also thanks to OCR you can turn images into editable files, so with the help of some apps you can turn materials into audio files too, hope it helps, thanks!
+
+Hi, I would love to ask what the assistive cover is, thanks!
+
+Hi John LaRavia, thank you so much for the comment. We have a video to show what it is and how you can use it: https://youtu.be/Czfb7T-cXVg?si=jnlqwlPiB32PPqYo
+
+Please check it out, thanks!
+
+Hi creator,
+
+could you tell what is the function of assistive cover and studio box?
+
+Hi IAN WALTMAN, thank you so much for your comment! We actually have a video showcasing how to use the assistive cover: https://youtu.be/Czfb7T-cXVg?si=jnlqwlPiB32PPqYo
+
+And the studio box is designed to make the scanning results of CZUR ET Max even better, thanks!
+
+Just because you add a faster connection doesn't mean that it will make any noticeable difference. If a 38 Megapixel image is taken and compressed as a jpg down to say 15 MB or less it would take just over .03 seconds to transfer at 480 Mbps. At 5 Gbps it would take .003 seconds. Do you really think that delay is noticeable when scanning? Can people flip pages in a book that fast?
+
+4K camera technology is 20 years old but you won’t find webcams using anything higher, should they get with the times and stay competitive by using higher-res sensors? There are 24 MP security cameras why are webcams stuck at 8 MP? Because in that use case there wouldn’t be enough of a difference to justify the cost. It’s the same situation here. They could add Bluetooth that doesn’t do anything just so the specs look more impressive. That’s all a faster connection would do. If you’re concerned about consumer confidence money would be better spent on marketing.
+
+For better streaming performance you need a faster processor, not a faster USB connection. Youtube’s maximum bitrate recommendation for 4Kp60 is 40 Mbps, FAR below the 480 Mbps of USB 2.0. Using a faster USB connection will not make a difference. Every streaming service actually recommends codecs that require MORE compression not less. H.264 is a minimum with H.265 or AV1 becoming more common. More compression requires more processing power not a faster port. The MJPG format that this uses has a higher QUALITY of IMAGES than others because it is not as compressed and doesn’t have artifacts. It also has a lower latency.
+
+Power delivery is a good argument for moving to a newer standard. Allowing the scanner to be more portable would be a big advantage. It uses 13.5W, which could be supplied by any USB-PD port. If the processor was upgraded it would likely require more power, but all but the lowest power USB-PD would be more than ample. People without a USB-PD port would still need to use a power adapter, but it would be great to have the option.
+
+Until USB-C is the only port on every device someone will be using a dongle so it’s not a very good argument. As I noted, devices are moving in that direction and USB-C would be a good move, though data transfer speeds above what 2.0 provides wouldn’t make a difference.
+
+A faster processor could make additional features possible, but a faster USB standard doesn’t affect that.
+
+I think the creators have done a good job of trying to keep the cost down while providing the best experience for the most users. A book scanner needs a high-res sensor but little processing power. A streaming device doesn’t need a very high-res sensor but more processing power. If they try to be the best at both they’d lose out in the book scanning and streaming markets since competitors could focus of dedicated products with better specs for each purpose. They’d only do well in the much more limited market of people who want to do both. Since their focus has been on book scanning they have been increasing their resolution with each new model.
+
+They have recognized that some users want to use it to stream and would pay more to do so with a higher quality. Their inclusion of an HDMI port allows you to do just that. You can buy a capture device to supply the processing power needed for higher quality streaming. If you don’t want to use it for streaming and just scan books, you can do that too without having to pay more for something you don’t want. If 4Kp30 isn’t enough maybe they’ll use a newer HDMI standard next time.
+
+I wouldn’t be surprised if they switch to USB-C in the next generation or two, though I’d like to see it mostly for the Power Delivery.
+
+@Alex thank you so much for the detailed explanation.
+
+I think CZUR only appreciate Alex comments for more detailed explanation even though saint comment no less detailed ...I know CZUR would prefer to stick on USB 2.0 and would**appreciate** any comments in its fav, but still as technology and creative company should also look the advantages for using latest technology even though it may not benefit them right away as creator due cost and redesign factor and instead go around appreciating comments to their benefits. Both Alex and saint are customers which at the end both are looking to use your technology and try to provide best advise for you, so don't be biased. Thanks
+
+I don't think there's any problem having USB 2.0 regardless of how old it is. As far as its use as a book scanner the 480 Mbps is more than enough to handle full size images faster than a person can switch pages. As far as its use for streaming, 480 Mbps is far faster than the recommended upload bitrate for any platform. USB 2.0 is not the problem. Changing to an port with a faster speed would not affect performance at all and would only serve to make some users feel better while increasing the cost. The change could also require changing chips on the board to ones that could handle the increased speed, which could also require redesigning the board to meet increased power needs.
+
+USB-C may be helpful as it is becoming the standard. Most Windows laptops still have USB-A ports but Apple has been eliminating them in their latest models. If USB-C were implemented in this model I think the USB 2.0 version would be more than adequate. If it were changed I imagine other users would complain since USB-A is still in wide use and may be the only unused USB ports on their device. Desktops still tend to have more USB-A ports than USB-C. Whichever connector is used there will be people requiring an adapter.
+
+For those that want to use it for streaming presentations I think the main limiting factor is whatever processor is used. The video format is MJPG, which is very high quality but isn't very suitable for streaming due to its large file size. It isn't compressed much so it requires little processing power to encode. Since the primary purpose is scanning books, I'm guessing they selected a processor well suited to that task. They do include an HDMI 1.4 port. For users who want a better streaming experience a good option would be using an HDMI capture device. That would let you get up to 4Kp30. The processing would be offloaded to the capture device or your computer without imposing a higher cost on all the users who just want to use it as a book scanner. If they find one that works well maybe it could be offered as an addon and they could get a bulk discount. Maybe it could be a stretch goal.
+
+(Not the same Alex that commented on USB ports earlier)
+
+Hi Alex, thank you so much for your detailed comment! Appreciate it.
+
+I thinks it's name is 'ET 26 pro'.
+
+is it right?
+
+CZUR ET Max, thanks
+
+What's real improvement from 'ET 24 pro'?
+
+Hi MinohKim, thank you so much for your comment! We have a chart in our campaign page stating the improvement including better resolutions, higher DPI, better software, cheaper price and so on
+
+I think the comparison chart to the ET24 Pro is a bit disingenuous since both versions have side lights, linux support, and an HDMI port. The main difference appears to just be the resolution, which is tied to the DPI. The price is lower for now, but the ET24 Pro was even lower when it was at this stage of development. How is the software better? One thing I would be interested in seeing is how the studio box is different from the one sold with the ET24 Pro, if it is different at all.
+
+Hi, thanks for the comment. The main differences: Higher pixel clarity, especially improved color scanning quality, higher DPI, better software, and 4K display support—all at a more affordable price compared to the ET24 Pro's retail price. Plus, it comes with even stronger after-sales support.
+
+Hello
+
+What can I do if face bad reflection when scanning my magazines?
+
+It makes me very distressed in my job before.
+
+Dear Tom, thank you so much for your comment! For scanning glossy papers, the ET Max features patented side-light technology that effectively eliminates reflections, ensuring high-quality, glare-free scans. Simply turn on the side light and switch off the top light, and it will seamlessly optimize the scanning process.
+
+Hi creator, besides books and magazines, would this scanner be able to take care of materials like documents, stamps and maybe cards or things like that? Thanks in advance!
+
+Hi John LaRavia, thank you so much for your comment! Yes, you can use the CZUR ET Max scanner to scan not only books and magazines, but also a wide range of materials from documents, name cards, stamps, sketches, photos, stamps and so on, thank you so much!
+
+Hello.
+
+I have contributed to this project despite my initial doubts.
+
+I have an ET 24 Pro and I would like to make a real qualitative leap.
+
+From what I appreciate, the scanning resolution is certainly improved (not the speed), but I cannot understand why USB 2.0 has been chosen today instead of other faster USBs with lower energy consumption when the cost difference is minimal. Like many others, I would be willing to pay a premium to have a more efficient USB.
+
+It is these small details that make a real improvement perceived over previous versions. For many potential buyers, it is enough to have a resolution of 24Mpx or lower since they do not need to have a higher resolution, but we are faced with the imposition by the European authorities of adopting the USB type C standard in the new devices that must be manufactured and I do not believe that a simple adapter is a satisfactory solution for anyone.
+
+Please rectify. They still have time to do it.
+
+Hi Sebastià Vinyals Subirana, thanks for the comments. We specialize in document and book scanners, and our design was developed with a transfer speed that meets users' needs. However, based on recent feedback, our R&D team is urgently evaluating new solutions to enhance this further. We hope to have an update for everyone soon.
+
+Hi! I just backed this thinking I can scan my original artwork to make prints. Would this be a good fit for my needs? Second question - how well does this scan and properly interpret metallic? Thank you!
+
+Hi Diana Craig, thank you so much for your comment! It is definitely a great fit for your artwork! Actually there are a lot of reviews and instructions videos in the campaign page if you are interested you can check them out. And then it can scan and properly interpret metallic pretty well too, thanks!
+
+How big of the scanning size?
+
+Can I use it to scan large size documents, such as newspaper and map?
+
+Hi Tom, thanks for the comment! Yes, we recommend scanning materials as large as A3. If you wish to scan materials bigger than A3, you can scan them half by half and then merge them into one whole page.
+
+How much time if I want to scan one book?
+
+Hi Tom, thank you so much for your comment! For a 300-page book, it takes only a few minutes to scan the whole book, thanks!
+
+Just had to pledge again
+
+Hi Mr Bryan Mark Wilde, thank you so much.
+
+Question about the Delivery
+
+The estimated delivery has it listed as April 2025 but is that actually the case? It would imply production is already underway given the campaign end in April? Can you clarify on the matter
+
+Hi Pedro Gonzalez, because we have sold thousands of scanners already, so our factory and supply chain are all ready to go, thanks!
+
+Just found out it also has this 'Page-mending' feature, love it, I think it will really come in handy coz some of the older books I have are in pretty bad condition. I am really excited about this project!
+
+Hi John LaRavia, thank you so much for your comment. Yes, the 'page-mending' function will help greatly when a page is torn or broken, thanks again for supporting the campaign.
+
+I purchased more than one of your precedent scanners and now, at every new releases of yours, I receive as many emails as the scanners I purchased.
+
+Can you please clean up your databases and avoid such over-communication?
+
+Regards.
+
+Hi Danilo, thank you so much for your comment. Yes we will do that, thanks!
+
+Hi Linda Gordon, from my end I can see your pledge went through. And after the campaign ends, we will also send out a survey, that's when you can type in your detailed info, thanks!
+
+Love your products! Can I purchase 2 units?
+
+Hi Mike Sollars, thank you so much for your comment! Yes, 2 ways you can do it:
+
+1). On top of you pledge, add $499 more and we will send you 2 units.
+
+2). You can use another again and pledge again, thanks!
+
+Thank you!
+
+You are welcome!
+
+Hello, I have a lot of books and automobile magazines from a while ago, I am particularly fond of the idea of sidelight. Does it help a lot when I am scanning my magazines? Thanks!
+
+Hi John LaRavia, thank you so much for your comment. Yes, the sidelight will help remove the reflection when scanning glossy pages, so it will help with scanning your magazines, thanks!
+
+Hello. I am backing your project with the $499 option. Your other support options are confusing. You also request that folks select:
+
+$549
+
+$4990
+
+$9980
+
+But you are not clear what the higher costs might include. If I was purchasing many scanners for a department or business, and a bulk purchase is what I am looking for, WOULD YOU PLEASE more clearly explain what is included in the higher priced offers? I have a VERY HISTORICAL book that needs scanning attention, so I am hoping that your product arrives on time and works according to your promises. Good Luck.
+
+Hi Lorraine, the $499 you saw is the Super Early Bird price, and the $549 is the Early Bird price, they are the same in terms of what it includes. As long as the $499 is still available, choose the $499 one. And the $4990 has 10 scanners, and the $9880 has 20 scanners, and yes if you would like to choose them you can, thanks!
+
+I somehow missed the details about the usb-A is USB 2.0, wow that is very old , even if it sufficient as you claim still USB 2.0 is way old for 2025, thanks for Alex and saint Thomas for pointing it out, you should really consider change it to 3.2 or 4 even if you have to increase the price for few $ , I'm willing to pay the extra charge to get up to date USB port not 20+ years old USB port. I'm sure many other backers are willing as well. Thanks
+
+Hi Saint & Fadi, thanks for the comments. We specialize in document and book scanners, and our design was developed with a transfer speed that meets users' needs. However, based on recent feedback, our R&D team is urgently evaluating new solutions to enhance this further. We hope to have an update for everyone soon.
+

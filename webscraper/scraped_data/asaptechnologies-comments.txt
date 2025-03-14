@@ -1,0 +1,278 @@
+URL: https://www.kickstarter.com/projects/asaptechnologies/flash-pro-ultra/comments
+
+@ASAP.
+
+any plans to support the 50 W charging for Oneplus Phones ;)
+
+would be nice If these devices would be supported as well .
+
+Hi Christof, we're always looking for ways to support more devices, including OnePlus! The challenge with 50W charging is that it currently uses proprietary technology, which means only official OnePlus chargers can achieve it at the moment.
+
+That said, we're always exploring new solutions, and if there's a way around it in the future, we'd love to make it happen! Appreciate your suggestion. 😊
+
+Just a bit of information for American-based backers…
+
+As the product (just like the previous batteries made by ChargeASAP) will only have Celsius temperature readings, those who are not familiar with Celsius temperature readings will need to realize that it is very straightforward to convert them to Fahrenheit, which I have provided a reference below as follows…
+
+0°C=32 °F
+
+5°C=41 °F
+
+10°C=50 °F
+
+15°C=59 °F
+
+20°C=68 °F
+
+25°C=77 °F
+
+30°C=86 °F
+
+35°C=95 °F
+
+40°C=104 °F
+
+45°C=113 °F
+
+50°C=122 °F
+
+Anything above 122°F (50°C) is a leak/fire/explosion risk. I hope this helps backers who are confused with internal temp readings in Celsius.
+
+Also note that I am no stranger to Celsius temp readings having been to both Hong Kong and Macau many times, especially watching road signs, distances, & weather reports.
+
+⚠️⚠️⚠️ Please be warned that ChargeASAP products are not designed to be immersed in liquid of any kind. Those that want to sanitize ChargeASAP products without the electric shock risk, I strongly advise all users to purchase PhoneSoap products (specially the HomeSoap).
+
+Hi Kyle, Thanks for your support and for sharing this info! We appreciate the breakdown for Fahrenheit users. We're also big fans of UV sanitizers too—great suggestion! 😊
+
+We actually used to sell some on our website before… maybe it’s time to bring them back? 🤔
+
+Hey there, asap!
+
+Just wanted to let you know I love the product and am looking forward to its launch! I found your campaign on 9to5mac, so they def deserve a referral reward! :)
+
+Hi Vinn, thanks so much for your support!
+
+So this is listed as Qi2 wireless charging capable but only 15w max output. Isn’t the whole point of Qi2 that it maxes out at 20w? If this is truly Qi2 then it should be 20w max. Please confirm/verify that this is truly Qi2 wireless capable as this can/will make or break my decision to continue backing.
+
+Hi Brian, thanks for your support. While Qi2 technology can support up to 25W, all Qi2 wireless chargers currently available are capped at 15W max—including those from Apple and Samsung, as their devices only support Qi2 at 15W max. Since it’s unclear when they’ll allow higher-power Qi2 charging, we optimized Flash Pro Ultra to deliver the best experience for today’s devices. That being said, our Qi2 still brings major benefits like improved efficiency, and optimized fast charging. Plus, with 275W total output and dual OLED screens, Flash Pro Ultra is packed with cutting-edge tech to future-proof your charging setup.
+
+Hi Sara, the power bank supports up to 140W power input, which allows it to fully charge in just 70 minutes. We recommend using a 140W charger for max speed, but you can also use any other charger you have, like a 100W one—it'll just take a bit longer. We'll also be offering a range of chargers at a discounted rate at the end of the campaign when you complete your fulfillment survey on BackerKit
+
+Hi Asap
+
+Samsung galaxy pro 5 watches have straps that prevent them laying flat
+
+Will this be catered for in the design?
+
+Ideally the watch pad should pop up too.
+
+Hi Paul, we aim to accommodate as many watch designs as possible, and appreciate your suggestion! We'll be looking into this further. Thanks for your feedback
+
+Ok but does this mean that it isn't going to work? Do you have one you can try?
+
+I am trying to decide if I should cancel
+
+Is the watch charger magnetic?
+
+Hi Paul, Yes, the watch charger is magnetic and designed the same way as the official Samsung charger. If there's an issue with the Samsung charger working with your watch, then it's likely the same issue will apply to ours or any other similar chargers.
+
+Just want to point out to all the backers in the USA (and you may want to add this as a caveat in your video) that TSA requires any batteries this big to be in CARRY ON luggage, NOT CHECKED luggage. If you put this in your checked luggage it will be removed and discarded by TSA if they see it in their checked luggage xrays.
+
+Hi Andrew, Yep, this applies to any flight globally—powerbanks of any size must be in carry-on luggage, not checked baggage. Appreciate you sharing the info with everyone!
+
+How about an add on for storage case that can hold the 24w cable and the 280w charger as well? Or better yet a stretch goal and just include it with all of them!
+
+HI Brian, Thanks for the suggestion! That’s a great idea—we’ll definitely consider it as an add-on or even a stretch goal! 😊
+
+I tried to support it anyway... but still this is too ugly, don't you think?
+
+The plastic case, the oddly curved edges... I don't feel like paying this much for a device with such excellent hardware specs. Above all, it's too thick.
+
+Why is the content displayed on the OLED screen also degraded from Zeus?
+
+If it doesn't display voltage, current, and wattage at the same time, it's useless.
+
+I don't think they can change the specs now, though, so I've given up...
+
+Hi BL, we actually think Flash Pro Ultra is our sleekest design yet—the thickness makes it shorter and more portable, so it’s easier to carry than a longer, bulkier power bank.
+
+As for the OLED screen, Zeus and Flash Pro Ultra serve different purposes. Zeus is a wall charger, so it doesn’t need as much real-time data. Flash Pro Ultra, however, has dual screens:
+
+✅ First screen – Battery stats
+
+✅ Second screen – Voltage, current, and wattage simultaneously, just like Zeus
+
+Check out the campaign page (Features section) and the campaign video for the dual screen in action!
+
+Appreciate your support.
+
+Repeat backer here. There were defects with the Flash Pros I got, where the watch charging would constantly stop and start. We worked together to help provide data to figure out what was failing and disconnecting with the voltage drops. It was frustrating and made my Flash Pros partially unsuitable, but I trust that’s all fixed now in the new ones?
+
+Also: I want to use this as my constant power supply for my laptop, so I need the charging port to not be the only 140 watt port. In fact, I’d really appreciate a charging only port on the bottom of it so I can lay it on my desktop and have it charging and powering my devices at the same time at full amperage without losing a port.
+
+Hi Andrew, thanks for your ongoing support! 🙌 We’ve made major upgrades over the years, and the watch charging issue is resolved in this version.
+
+For your setup, Flash Pro Ultra has a second USB-C port supporting 100W, so you can power your laptop while keeping another port free so you can have it charging and powering your devices at the same time. It’s designed for high power distribution, making it our most versatile model yet.
+
+Excited for you to try it!
+
+Awesome, thank you! Please, please, please consider an “input only” port on the bottom, that way I can run it to a wall plug from behind and run cords out of it on my desktop.
+
+Not sure I would trust these guys. I’m still waiting for a replacement charger from their 270 watt Zeus charger before they changed their name to charge ASAP. I received 2 chargers in June 2023 and one was defective. I immediately filed a claim with video & waited more than 5 weeks for a response. When I received the response they said I would receive a replacement after the campaign was over. I contacted them again in Nov. 2023 & June 2024 . I received a response from Nov. 2923 saying it was still coming but nothing since. Here is another campaign from a company who doesn’t stand behind their work & honor their warranty.
+
+Hi Timothy, as the Co-founder of the company, I want to personally apologize for the frustration you've experienced. We take all customer feedback seriously, and I’m truly sorry we didn’t meet your expectations.
+
+It looks like you were among the customers affected by issues with our previous Zeus factory, which created significant challenges for us. Since then, we’ve transitioned to a new Zeus factory that has produced units with a very low default rate, and we’re seeing much better results.
+
+I also checked our records, and the last message we received from you was in November 2023, after which no new ticket was created. Your case has now been escalated to our Customer Manager, who has already reached out to resolve this with you. Please check your inbox for their message.
+
+We appreciate your patience as we work through this and remain committed to delivering the best experience for our backers.
+
+you keep posting this to anyone that’s raised similar issues but is your Customer Manager napping? never got any message from your organization.
+
+Does the battery discharge when the wireless pad is on and nothing on it like what occurs on the flash pro plus. Having the wireless pad turn off when nothing charging on it.
+
+Hi Edward, for the magnetic wireless charging pad, it activates automatically when a device is placed on it. If there’s no device, there will be no output.
+
+For the watch wireless charging pad, you'll need to double-press the power button to turn it on or off. If no device is connected, it will automatically turn off after 2 hours.
+
+Let us know if you have any other questions! 😊
+
+Hi Efendi, we sincerely apologize for the frustration this has caused. As we explained via email, we are still waiting for confirmation from the courier. The previous delay was due to Chinese New Year, which, while not an excuse, has caused a backlog.
+
+Once the package leaves our warehouse, it’s unfortunately out of our hands, but we are actively following up to get updated information. Rest assured, we won’t close this case until it’s resolved. If the courier confirms the order was lost in transit, we’ll immediately arrange a reshipment.
+
+We truly appreciate your patience and understanding, and we ask for your continued trust as we work to get this resolved. We’ll keep you updated via email.
+
+When a device is added or removed, will it cut power to all devices and renegotiate? OR will it adjust power delivery on the fly?
+
+Hi Ken, when a device is removed, that port automatically shuts off. When a device is added or reconnected, it renegotiates power distribution. Whether power adjusts on the fly depends on how many devices are connected. For details, check the "Power Distribution" section on the page. If you require further assistance, please reach out to us and a member of our team will be able to assist you further:
+
+https://www.chargeasap.com/support
+
+What is the material of the casing. Also, why did you not use Tesla batteries found in Flash 2?
+
+It's not just about cost... you listed all the pros of the plastic and the cons of the aluminium, and still you went with cost as the priority ? xD
+
+Personally, I would NEVER want a metal casing for a power bank. it's common sense.
+
+These things are often subjective, and only the project creator can truly explain their rationale for making these choices. I have the Flash 2 and Bold 2 power banks, each priced at over $200, and both have aluminum casings as they fall into the category of premium power banks. So, does your comment suggest that these companies lack 'common sense'?
+
+Hi Jerry and HiP, you’re absolutely right about the benefits of PC-ABS fireproof plastic—it’s fire-resistant, impact-resistant, lightweight, and doesn’t heat up during use.
+
+The main reason we switched from aluminum, though, is because of the pop-up structure mechanism we introduced for the wireless charger. Aluminum isn’t suitable for this type of design.
+
+Hope that clarifies!
+
+Hi ASAP,
+
+Congrats on another launch.
+
+Backed early on an email that I would get the Connect Pro Cable 2.0m but don’t see it. Can you DM me back if it’s in your system?
+
+Best,
+
+Dan
+
+Hi Dan, thanks so much, and great to have your support again! 😊 We've sent you a DM.
+
+Is there a cooling system within the unit?
+
+I see it has a temperature component to resist overheating, but has there been stress testing done to ensure the unit does not get hot to the touch when used at its full capacity?
+
+Hi Marissa, thanks for your early support! Yes, we’ve conducted thorough stress tests to ensure safe and reliable performance.
+
+Flash Pro Ultra uses an efficient passive cooling system with high thermal conductivity silicone grease and aluminum sheets to dissipate heat. It also features smart temperature regulation, automatically adjusting power output if needed to maintain safe operation.
+
+Hi! I backed the Flash 2.0, and the Omega 200W back in the day. Still using both today.
+
+I was wondering why you didn't go to the limit of the battery capacity that was allowed by airlines ? 27000 or something ?
+
+Did you improve the efficiency of the different conversions happening when charging both in and out of the battery ? or are we still at 70% overall ?
+
+Hi HiP, love to hear that you're still using Flash 2.0 and Omega 200W—thank you for your ongoing support! 🙌
+
+For battery capacity, our design team carefully balanced size, weight, and efficiency to ensure the best user experience. We use 5 x battery cells for a compact, travel-friendly design. Reaching 27,000mAh would require a 6th battery, making it bulkier and heavier, which we found impractical for everyday use.
+
+As for efficiency, we’re above industry standards:
+
+* Each output port has >95% conversion efficiency
+
+* Overall battery capacity output is around 70% (which is standard for high-performance power banks)
+
+* Higher output voltage = better efficiency – For example, charging a MacBook Pro 16” at 28V reaches ~80% efficiency
+
+Hope that helps! Let us know if you have any other questions. 😊
+
+I really wish it was all USB-C ports, but if the watch pad this time isn’t stuck charging at 1W, I’ll be ok.
+
+Thanks for your early support Ken!
+
+I’ve been a fan of Chargerasap for a while now and have bought every product they’ve released. Their previous Flash Pro was a game-changer for me, and the new upgrades sound really cool, especially the pop-up wireless charging feature! Their innovation is awesome, and their customer service is always quick, polite, and super helpful with any issues I’ve had. Really love supporting this company!
+
+Hi Stewart, that means so much to us—we’re lucky to have loyal backers like you!
+
+Asking for any amount of money for replacing a defective product isn’t good customer service. You offer a 1 year guarantee against manufacturers defects and the consumer has to chip in for shipping. If you are concerned about costs raise the price by $0.50 to cover shipping replacements for items under warranty. If you did your research on the factories there should be minimal products that are defective. If the item became defective due to other reasons other than manufacturers defects then the repair / replacement should be either denied or charged for.
+
+Hi Edward, thanks for your feedback.
+
+We’re a small startup that puts a lot of care into delivering high-quality products, but like with any tech device, occasional defects can still happen. Additionally, during transit, mishandling by carriers can sometimes cause damage, which is unfortunately beyond our control.
+
+As noted in our FAQ, we cover replacements for manufacturer defects, but as a small team, the shipping fee helps us sustain long-term support while keeping our product pricing competitive. That said, we’re always open to feedback and looking at ways to improve.
+
+We truly appreciate your support and understanding.
+
+I do agree that if it’s a manufacturing defect shipping should be covered especially if they’re few and far between. If it’s received and NOT a defect then charge a deeply discounted amount for a replacement and recoup the shipping charges on the new one
+
+Hi Antonio,
+
+I’m really sorry to hear about your experience, and I completely understand your frustration. We take all feedback seriously, and I truly apologize for the way your issue was handled.
+
+As we’ve sold over 50,000 units, we’ve encountered growing pains, and unfortunately, some customer service requests slipped through the cracks especially when related to Zeus produced from a factory we no longer work with. That’s no excuse, and I’m personally looking into what happened with your support ticket to ensure this situation is properly addressed.
+
+I can understand why you’re disappointed, and I want to assure you that we’re committed to making things right. Your feedback is incredibly important to us, and we’ll work hard to ensure this doesn’t happen again.
+
+Thank you for sharing your experience, and we sincerely apologize for the inconvenience.
+
+Hello everyone,
+
+Like Franck, I’m pledging $1 just to warn other potential backers. I previously purchased a Zeus device and accessories during their last campaign, and they arrived broken (the plug made noise and didn’t work, and the accessories didn’t function either).
+
+I contacted Zeus support for six months, and all they kept saying was that they had no spare units because they only produced exactly enough for the backers. Yet, just two weeks later, I saw an advertisement on their website offering new units for sale. When I followed up, they told me they would send a replacement, but after that, I heard nothing more. Now, whenever I try to contact them, they simply say it’s too late.
+
+I’m posting this to advise new backers that this company does not appear to care about its customers, and you may receive a product with no proper warranty or support. As you can see, I’m not the only one affected by this. Unfortunately, Kickstarter has not taken any action to resolve these issues so far.
+
+To the company: There’s still time to make things right by offering either a refund or a replacement for the defective devices. It’s never too late to show good faith and restore trust with your backers.
+
+Hi Chincolla, as the Co-founder of the company, I want to personally apologize for the frustration you've gone through. We take all customer feedback seriously, and I regret that your previous experience did not meet expectations.
+
+Our last communication with you was back in 2023, and our Customer Happiness Manager will be reaching out to you directly today to follow up. Please check your inbox for an update soon.
+
+It’s important to note that we’ve made significant improvements since then, including partnering with a new Zeus factory that has delivered higher production quality and lower defect rates. While we can’t change the past, we remain committed to continuously improving and ensuring better experiences for our backers moving forward.
+
+We appreciate your past support and hope to earn your trust with this campaign.
+
+Chincolla, did you receive any correspondence from anyone after you posted this? (besides the canned reply in this thread)
+
+No i have send 3 mail and no respond ! Can you check that please
+
+Hi Meghry, thanks for your ongoing support! Our Super Early Bird at $169 was our lowest price to reward the earliest backers. Since it sold out, the Early Bird at $179 includes a free car charger as a bonus for backers at this stage.
+
+Both tiers offer great value—one with the best price, the other with an extra perk. We truly appreciate all our backers and hope this helps clarify!
+
+And yes we can ship to Lebanon, Beirut.
+
+I've been using my Flash Pro on all my trips for years and absolutely love it. Can't wait to check out the upgraded features!
+
+Thank you for your ongoing support Alexander!
+
+I spent a dollar to warn y’all to stay away. I purchased the Zeus also and it broke. They said they would send a replacement because the Zeus USB-A port just crumbled. The face plate broke off as well. Then silence. Now they want $15 to replace it. They never said that originally just that they would replace it. I will never back this company again except for this dollar warning everyone I can. STAY AWAY.
+
+Can you do the same thing for my case?
+
+Frank, total agreement here. just curious, did you receive any updates after you posted this? they said they’d be reaching out, but nada on my end.
+
+Yes i have respond twice with payment + screenshoot ! And i have no news (i have respond with ma ay****k@c*******a.com
+
+I have send 15$ for the return
+

@@ -1,0 +1,959 @@
+{
+    "url": "https://www.kickstarter.com/projects/1889053217/doze-micro-geiger-measure-your-daily-radiation-dose/comments",
+    "comments": [
+        {
+            "poster": "P S Raju",
+            "comment": "Dear Team,",
+            "timestamp": "1741798402",
+            "is_creator": false
+        },
+        {
+            "poster": "P S Raju",
+            "comment": "What is the measurement range of the device",
+            "timestamp": "1741798402",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear P S Raju,",
+            "timestamp": "1741839150",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "We believe that Doze will be able to measure within the two-digit range of mSv/h. According to the supplier, the GM tube can be used in environments of up to 300 mSv/h. However, the overall performance of Doze will depend on its final PCB design and programming. Some minor optimizations are still ongoing.",
+            "timestamp": "1741839150",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "In the near future, I plan to replace the GM tube with a signal generator to check the limitations of the PCB and program.",
+            "timestamp": "1741839150",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741839150",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Kevin (Wekos Team)",
+            "timestamp": "1741839150",
+            "is_creator": true
+        },
+        {
+            "poster": "P S Raju",
+            "comment": "Cool,",
+            "timestamp": "1741875090",
+            "is_creator": false
+        },
+        {
+            "poster": "P S Raju",
+            "comment": "So is it TSA compliant for travel in an aircraft",
+            "timestamp": "1741875090",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear P S Raju,",
+            "timestamp": "1741878228",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "A Geiger counter, which is used to detect and measure ionizing radiation, is generally not prohibited by the Transportation Security Administration (TSA) for carry-on or checked baggage. The Doze with a 400mAh battery should generally be safe to bring through TSA security. However, it's always a good idea to check the latest TSA guidelines and your airline's policies before traveling.",
+            "timestamp": "1741878228",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "If you have any other questions, kindly let us know any time.",
+            "timestamp": "1741878228",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741878228",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo (Wekos Team)",
+            "timestamp": "1741878228",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Backers,",
+            "timestamp": "1741699169",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "We're hard at work behind the scenes and can’t wait to share our next updates with you. The next one is coming this weekend - stay tuned!",
+            "timestamp": "1741699169",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "If you have any further questions, reach out to us.",
+            "timestamp": "1741699169",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741699169",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "The Wekos Team",
+            "timestamp": "1741699169",
+            "is_creator": true
+        },
+        {
+            "poster": "Pasi",
+            "comment": "Is there an \"accumulated dose\" feature in firmware? IMHO it is the most usable feature for this kind of EDC gadget.",
+            "timestamp": "1741594781",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Pasi,",
+            "timestamp": "1741602135",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Doze measures the accumulated dose from the moment you switch it on (or when you reset the timer via a button press). If the dose or dose rate exceeds the defined limit, an alarm occurs. Additionally, Doze measures the peak rate and records the time it was measured, enabling the user to recall where it happened. Another feature is that Doze measures the average dose rate. We find this particularly helpful when measuring small differences in radiation between various objects or environments.",
+            "timestamp": "1741602135",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741602135",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Kevin (Wekos Team)",
+            "timestamp": "1741602135",
+            "is_creator": true
+        },
+        {
+            "poster": "Pasi",
+            "comment": "Regarding custom fees, from what country device will be sent to us?",
+            "timestamp": "1741594389",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Pasi,",
+            "timestamp": "1741595615",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "We wanted to let you know that we're handling shipments for our European Backers from Germany. We may take a different approach for other continents, depending on what makes sense in terms of time and cost.",
+            "timestamp": "1741595615",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741595615",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo (Wekos Team)",
+            "timestamp": "1741595615",
+            "is_creator": true
+        },
+        {
+            "poster": "Pasi",
+            "comment": "As you do not provide device schematic, is there a chance that I can physically damage circuit board when modifying firmware, e.g. by accidentally increasing high voltage generator output level? Is high voltage generator managed by Attiny or is it an independent circuit?",
+            "timestamp": "1741594260",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Pasi,",
+            "timestamp": "1741600268",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "We do not see a way to damage the PCB board by changing the firmware. The high voltage unit is a separate circuit and can only be switched on and off by the controller. We will add detailed comments to the firmware to guide programmers through the code.",
+            "timestamp": "1741600268",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741600268",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Kevin (Wekos Team)",
+            "timestamp": "1741600268",
+            "is_creator": true
+        },
+        {
+            "poster": "Pasi",
+            "comment": "What development environment do you use to program Attiny?",
+            "timestamp": "1741584782",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Pasi,",
+            "timestamp": "1741592962",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "We are using the Arduino IDE and the Micronucleus bootloader. If you have any other questions or need assistance, feel free to reach out!",
+            "timestamp": "1741592962",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741592962",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo (Wekos Team)",
+            "timestamp": "1741592962",
+            "is_creator": true
+        },
+        {
+            "poster": "Pasi",
+            "comment": "Will you provide device schematic?",
+            "timestamp": "1741584470",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Pasi,",
+            "timestamp": "1741592661",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "We wanted to let you know that we do provide the print files for the case and the programming code for Doze. Unfortunately, we can't share the schematic design files for the complete device.",
+            "timestamp": "1741592661",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741592661",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo (Wekos Team)",
+            "timestamp": "1741592661",
+            "is_creator": true
+        },
+        {
+            "poster": "Pasi",
+            "comment": "What Geiger counter tube do you use?",
+            "timestamp": "1741584283",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Pasi,",
+            "timestamp": "1741591886",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Thank you for your interest. We are using a J707 Tube with a diameter of Ø5±1mm and a total length of 18±3mm.",
+            "timestamp": "1741591886",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741591886",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo (Wekos Team)",
+            "timestamp": "1741591886",
+            "is_creator": true
+        },
+        {
+            "poster": "Pasi",
+            "comment": "So it is a low-sensitivity gamma detector, most usable in doomsday scenarios.",
+            "timestamp": "1741593956",
+            "is_creator": false
+        },
+        {
+            "poster": "Pasi",
+            "comment": "For those interested in exact numbers, see a good Chinese Geiger tube comparison table in \"reply #29\" here:",
+            "timestamp": "1741593956",
+            "is_creator": false
+        },
+        {
+            "poster": "Pasi",
+            "comment": "https://www.gqelectronicsllc.com/forum/topic.asp?TOPIC_ID=9934",
+            "timestamp": "1741593956",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Pasi,",
+            "timestamp": "1741599809",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "If you like please take a moment to watch our test run video to see how Doze reacts to an opened sensor of an ionization chamber smoke detector containing americium-241.",
+            "timestamp": "1741599809",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "https://www.youtube.com/shorts/Z8lrV6Ty9q8",
+            "timestamp": "1741599809",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741599809",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Kevin (Wekos Team)",
+            "timestamp": "1741599809",
+            "is_creator": true
+        },
+        {
+            "poster": "Jack Straw",
+            "comment": "Why did you choose a GM tube over a scintillation crystal?",
+            "timestamp": "1741561276",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Jack,",
+            "timestamp": "1741571421",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Thank you for supporting our project. The use of a GM tube has been central to our vision for Doze from the very beginning, which is why we didn't decide for alternative solutions. This choice stems from personal reasons: we all learned about the GM tube's measuring principle in school, we're fans of novels and games like Metro, and we loved the idea of featuring the GM tube as a visible design element in Doze.",
+            "timestamp": "1741571421",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings,",
+            "timestamp": "1741571421",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Kevin (Wekos Team)",
+            "timestamp": "1741571421",
+            "is_creator": true
+        },
+        {
+            "poster": "Pasi",
+            "comment": "Scintillation crystal costs times more than Doze device itself.",
+            "timestamp": "1741584960",
+            "is_creator": false
+        },
+        {
+            "poster": "Jack Straw",
+            "comment": "@Pasi I am well aware of the cost of scintillation crystals ;) that was not my question. But thanks for your unsolicited answer.",
+            "timestamp": "1741608026",
+            "is_creator": false
+        },
+        {
+            "poster": "Jack Straw",
+            "comment": "@Wekos thank you for your clear explanation on why you chose the GM tube!",
+            "timestamp": "1741608026",
+            "is_creator": false
+        },
+        {
+            "poster": "Dennis Weible",
+            "comment": "Is Shipping Include Customs fees ?",
+            "timestamp": "1741538768",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Dennis Weible,",
+            "timestamp": "1741571363",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Thank you very much for your kind support!",
+            "timestamp": "1741571363",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "While we aim to make our rewards accessible and easy for everyone, we do offer worldwide shipping for a low additional fee. However, any duties, taxes, VAT, or other customs clearance fees that may be incurred will be the responsibility of the backer. Since Doze is relatively inexpensive, there will be little to no additional fees, depending on the country.",
+            "timestamp": "1741571363",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741571363",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo (Wekos Team)",
+            "timestamp": "1741571363",
+            "is_creator": true
+        },
+        {
+            "poster": "John R.",
+            "comment": "As this is designed to be a portable device, I would be interested in a more robust and water resistant case. I understand that this would come at an additional cost.",
+            "timestamp": "1741270443",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear John Rope,",
+            "timestamp": "1741274118",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "We appreciate your question, as it demonstrates your engagement and curiosity about Doze.",
+            "timestamp": "1741274118",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "The current version of our product is already quite robust. However, we may consider the possibility of offering a more durable and/or more water-resistant case in the future (e.g., for work environment applications, thicker plastic, aluminum).",
+            "timestamp": "1741274118",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "We will continue to evaluate your proposal and may incorporate this feature at a later date.",
+            "timestamp": "1741274118",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741274118",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo (Wekos Team)",
+            "timestamp": "1741274118",
+            "is_creator": true
+        },
+        {
+            "poster": "RL",
+            "comment": "@Creator, has any keychain hole on the device?",
+            "timestamp": "1741255335",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear RL,",
+            "timestamp": "1741256098",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Thanks for asking that question!",
+            "timestamp": "1741256098",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "The hole for the keyring is located on the lower left side of Doze. The keyhole is shown in the second illustration of the campaign, but it is very small to see.",
+            "timestamp": "1741256098",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741256098",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo (Wekos Team)",
+            "timestamp": "1741256098",
+            "is_creator": true
+        },
+        {
+            "poster": "Richard B",
+            "comment": "Will it come charged or , no it will need to be fully charged ?",
+            "timestamp": "1741148921",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Richard B,",
+            "timestamp": "1741149424",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "We appreciate your question! The batteries are always partially charged when delivered. We recommend charging the Doze device again as soon as you receive it.",
+            "timestamp": "1741149424",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741149424",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo (Wekos Team)",
+            "timestamp": "1741149424",
+            "is_creator": true
+        },
+        {
+            "poster": "BL",
+            "comment": "I was interested in Back.",
+            "timestamp": "1741077517",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "But now I don't trust this product.",
+            "timestamp": "1741077517",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "It uses a Geiger tube for detection and only has a pocket sized battery, yet you claim it will work for a year. Is there any other electronic device of this size that works for a year? The only one that comes to mind is the AirTag, which operates intermittently at low power.",
+            "timestamp": "1741077517",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "No matter how innovative the technology is, this is just not realistic.",
+            "timestamp": "1741077517",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": ".",
+            "timestamp": "1741077517",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "Also on the campaign page you are trying to measure radiation in food. But to measure the radiation level of food, you would need to measure it in a special container by grinding it up or something.",
+            "timestamp": "1741077517",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "Inevitably I smell a lie from this campaign page.",
+            "timestamp": "1741077517",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": ".",
+            "timestamp": "1741077517",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "Can you upload a video of the test version in action? It does not have to be a stylish video.",
+            "timestamp": "1741077517",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "I assume you have the radioactive material for testing, so please show us a video of it detecting the dose in real time.",
+            "timestamp": "1741077517",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear BL,",
+            "timestamp": "1741080581",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Thank you for your question! We appreciate your curiosity.",
+            "timestamp": "1741080581",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Regarding the one-year battery timeframe: Doze enters sleep mode in the Lifeguard configuration (display off, controller in sleep mode). In this state, Doze consumes only a few microamperes (μA) in the double-digit range, which means that a 400 mAh battery can last more than one year. Despite being in sleep mode, Doze continues to measure. Whenever a particle is detected, it wakes up, logs the measurement, and then returns to sleep mode.",
+            "timestamp": "1741080581",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Doze can measure the radiation levels of food, though not as accurately as specialized devices. This is because it also accounts for the ambient radiation in your surroundings. To obtain precise radiation levels in food, complex measurements are required to determine whether -and to what extent- a food item is contaminated with radioactivity. First, food samples must be prepared in a specific manner and protected from external influences. Then, measurements are conducted using specialized devices that are far more accurate and sensitive than a Geiger counter. Such devices are typically found only in specialized facilities.",
+            "timestamp": "1741080581",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "We will be uploading another update for Doze in the next couple of hours, where we will showcase a test run.",
+            "timestamp": "1741080581",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "If you have any further questions, please let us know at any time.",
+            "timestamp": "1741080581",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741080581",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo",
+            "timestamp": "1741080581",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "(Wekos Team)",
+            "timestamp": "1741080581",
+            "is_creator": true
+        },
+        {
+            "poster": "BL",
+            "comment": ">Whenever a particle is detected, it wakes up, logs the measurement, and then returns to sleep mode.",
+            "timestamp": "1741083209",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "This part is odd.",
+            "timestamp": "1741083209",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "Don't you have to keep applying voltage to the Geiger tube in order to detect particles?",
+            "timestamp": "1741083209",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "I don't think the battery will last for a year if you are supplying power to the Geiger tube while it is in sleep mode...",
+            "timestamp": "1741083209",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "Wouldn't it be impossible to sleep because of background radiation?",
+            "timestamp": "1741083209",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": ".",
+            "timestamp": "1741083209",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "Either way, your thoughtful answers are excellent and I look forward to the success of this project.",
+            "timestamp": "1741083209",
+            "is_creator": false
+        },
+        {
+            "poster": "BL",
+            "comment": "The ability to customize the USB connection is great too.",
+            "timestamp": "1741083209",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear BL,",
+            "timestamp": "1741087626",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "The Geiger tube draws power from a charged capacitor, which is recharged periodically for a fraction of a second. The required power is negligible in normal radiation environments. Despite the charging process, the charging module is completely switched off. Most of the time, Doze is in sleep mode and only wakes up when a particle is detected.",
+            "timestamp": "1741087626",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "We thank you for your support and are always here if you have any further questions.",
+            "timestamp": "1741087626",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1741087626",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo (Wekos Team)",
+            "timestamp": "1741087626",
+            "is_creator": true
+        },
+        {
+            "poster": "Dominik",
+            "comment": "Könnt ihr über usb c bitte eine serielle console oder irgendeine andere Schnittstelle implementieren? Ich würde den Dose gern an Home Assistant hängen. Wäre sowas möglich?",
+            "timestamp": "1740950549",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Hallo Dominik,",
+            "timestamp": "1740977840",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "das ist eine sehr gute Idee. Leider wird Doze diese Funktion im Auslieferungszustand nicht bieten. Jedoch gibt es eine Möglichkeit, eine serielle Schnittstelle über USB herzustellen. Das könnte ein Projekt für die Backer Community werden, sobald wir Doze ausgeliefert haben:",
+            "timestamp": "1740977840",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Wir haben uns dazu entschieden, den Bootloader Micronucleus für Doze zu nutzen. Dieser ermöglicht den Upload von Programmen via USB. Eine serielle Schnittstelle via USB (genauer gesagt V-USB) über das Programm ist somit nicht mehr möglich. Allerdings können Nutzer auch Programme über eine ISP-Schnittstelle hochladen bzw. ohne den Micronucleus Bootloader. Dafür bietet die Platine entsprechende Kontakte, die mit einem ISP-Programmer (z.B. USBtinyISP) verbunden werden können. Mit dieser Methode sollte es möglich sein, eine serielle Schnittstelle über USB im Programm bereitzustellen.",
+            "timestamp": "1740977840",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Ich hoffe, meine Antwort hilft und wir sind offen für weitere Ideen aus der Community.",
+            "timestamp": "1740977840",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "English Q/A:",
+            "timestamp": "1740977840",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Q: Can you implement a serial console or any other interface? I would like to connect Doze to Home Assistant. Would it be possible?",
+            "timestamp": "1740977840",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "A: Dear Dominik,",
+            "timestamp": "1740977840",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "we think this is a very good idea. Unfortunately, Doze does not have this feature. But there is a way to allow Doze to do serial communication. It could be a good project for our Backer community with Doze in their hands:",
+            "timestamp": "1740977840",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "We decided to use the bootloader Micronucleus for Doze which allows users to upload programs simply via USB. With this feature, a serial interface via USB (more precise V-USB) cannot be implemented in the program anymore. However, users will have the chance to upload own programs directly over the ISP interface, that means without the Micronucleus bootloader. The PCB design of Doze offers free connection pads that can be directly connected to an ISP programmer (e.g. USBTinyISP). With this method, it should be possible to implement serial communication via USB in the program.",
+            "timestamp": "1740977840",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "I hope my answer helps you. We are glad to know if the community has other ideas.",
+            "timestamp": "1740977840",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings Kevin (Wekos Team)",
+            "timestamp": "1740977840",
+            "is_creator": true
+        },
+        {
+            "poster": "Shop",
+            "comment": "do you have any factory videos? website with other products sold by your business? any other products to share? influencer videos? social media?",
+            "timestamp": "1740903168",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Shop,",
+            "timestamp": "1740908381",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Thank you very much for your question! You can find part of our factory and office, as well as some projects we have been engaged in (e.g. a 3-D scanner), under \"Who We Are.\" A portion of our production is covered by contract manufacturing. As this is our first Kickstarter project, we unfortunately do not have other products to showcase that have reached market maturity. To give you a better understanding of the ongoing process of Doze, we will post updates regularly.",
+            "timestamp": "1740908381",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "If you have any other questions, please feel free to reach out at any time.",
+            "timestamp": "1740908381",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1740908381",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo (Wekos Team)",
+            "timestamp": "1740908381",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Hallo Martin, vielen Dank für dein Interesse. Wir werden das 3D Modell von der Hülle allen Backern zur Verfügung stellen. Step Format ist möglich.",
+            "timestamp": "1740756720",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "English Q/A:",
+            "timestamp": "1740756720",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Q: Great a German project :) Do you have step data files available?",
+            "timestamp": "1740756720",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "A: Hello Martin, thank you very much for your interest. The 3D model from the case will be available to all backers. Step format is possible.",
+            "timestamp": "1740756720",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1740756720",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Timo (Wekos Team)",
+            "timestamp": "1740756720",
+            "is_creator": true
+        },
+        {
+            "poster": "D",
+            "comment": "You mentioned the flashing light can be switched off, but will it be possible to mute the clicks also if we choose to ? Many thanks.",
+            "timestamp": "1740693713",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear D,",
+            "timestamp": "1740698000",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "correct, you can independently switch off the flashing light as well as the click. After switching off, Doze will still go on with its measurements.",
+            "timestamp": "1740698000",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1740698000",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Kevin (Wekos Team)",
+            "timestamp": "1740698000",
+            "is_creator": true
+        },
+        {
+            "poster": "D",
+            "comment": "Fantastic, many thanks for clarifying",
+            "timestamp": "1740698192",
+            "is_creator": false
+        },
+        {
+            "poster": "Edon van Hees",
+            "comment": "More types of rewards will increase your pledges.",
+            "timestamp": "1740667542",
+            "is_creator": false
+        },
+        {
+            "poster": "Edon van Hees",
+            "comment": "I want two doze's. 💤💤🤣",
+            "timestamp": "1740667542",
+            "is_creator": false
+        },
+        {
+            "poster": "Edon van Hees",
+            "comment": "That's not possible right now.",
+            "timestamp": "1740667542",
+            "is_creator": false
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Dear Edon,",
+            "timestamp": "1740668367",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "thank you for your suggestion. We just added a new reward that allows you to pledge for 2 pieces.",
+            "timestamp": "1740668367",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Greetings",
+            "timestamp": "1740668367",
+            "is_creator": true
+        },
+        {
+            "poster": "Wekos",
+            "comment": "Kevin (Wekos Team)",
+            "timestamp": "1740668367",
+            "is_creator": true
+        },
+        {
+            "poster": "Edon van Hees",
+            "comment": "Thanks! Pledged for two!",
+            "timestamp": "1740668659",
+            "is_creator": false
+        }
+    ]
+}
