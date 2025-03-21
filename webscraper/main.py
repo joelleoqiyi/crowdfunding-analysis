@@ -14,8 +14,8 @@ comments_updates_scraper =  CommentsUpdatesScraper(scraper)
 
 data = {}
 
-startindex = 2
-endindex = 50
+startindex = 205
+endindex = 225
 
 for i in range(startindex, endindex):
     print(i)

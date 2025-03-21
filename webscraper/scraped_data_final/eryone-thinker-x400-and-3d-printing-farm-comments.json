@@ -1,0 +1,803 @@
+{
+    "url": "https://www.kickstarter.com/projects/eryone/eryone-thinker-x400-and-3d-printing-farm/comments",
+    "comments": [
+        {
+            "poster": "Mediocre Studios",
+            "comment": "Hello, I backed the Super Early Bird KS and wanted to see about adding the heater, but when I click on manage my pledge/change my pledge it doesn't allow me to pick the same pledge in order to add extras. Instead I'm forced to select the higher price option.",
+            "timestamp": "1742293182",
+            "is_creator": false
+        },
+        {
+            "poster": "Mediocre Studios",
+            "comment": "Help?",
+            "timestamp": "1742293182",
+            "is_creator": false
+        },
+        {
+            "poster": "Mediocre Studios",
+            "comment": "If I could post photos I would show you what I mean. Basically, to add additional Add Ons, I currently have to select the higher price x400",
+            "timestamp": "1742302095",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Hey there. You can switch to the Secret Reward and add the add-ons you need. The secret reward is the same price as the one you chose.",
+            "timestamp": "1742304107",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "If this still doesn't work, another way is to get these add-ons at the end of the campaign, when we send a survey link to collect your shipping information. You can then get these two add-ons on the survey through Pledgebox.",
+            "timestamp": "1742304107",
+            "is_creator": true
+        },
+        {
+            "poster": "Mediocre Studios",
+            "comment": "I'll wait until the end of the campaign to be safe.",
+            "timestamp": "1742311535",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "Does the x400 support \"Active Flow Control\" (like BambuLab`s A1) ?",
+            "timestamp": "1742115432",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Hey Andy. The Thinker X400 does not support Active Flow Control, but there's no need to worry. The printing performance of the Thinker X400 is on par with that of the Bambulab X1C.",
+            "timestamp": "1742225269",
+            "is_creator": true
+        },
+        {
+            "poster": "Gary Cairns",
+            "comment": "Big thank you to whomever cancelled their super early bird launch special price. That will cover my shipping fee!",
+            "timestamp": "1741963810",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Congratulations Gary! Get ready to have an amazing experience with the Thinker X400!",
+            "timestamp": "1742225310",
+            "is_creator": true
+        },
+        {
+            "poster": "Andy",
+            "comment": "Hi,",
+            "timestamp": "1741897889",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "Is a Filament Cutter included in the printhead?",
+            "timestamp": "1741897889",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "Or is there a option to add one to the printhead?",
+            "timestamp": "1741897889",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Currently, we do not offer this option, but we may provide it in the future, as we are also developing a multi-color system. Thank you for your interest!",
+            "timestamp": "1741951478",
+            "is_creator": true
+        },
+        {
+            "poster": "Andy",
+            "comment": "okay, thank you!",
+            "timestamp": "1742070846",
+            "is_creator": false
+        },
+        {
+            "poster": "Kevmoso",
+            "comment": "A secondary camera or lidar sensor for automating flow rate and pressure advance would be a nice addition.",
+            "timestamp": "1741865410",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "That's a great idea! We will develop this feature and provide an update once it is ready. Thank you for your suggestion!",
+            "timestamp": "1741951440",
+            "is_creator": true
+        },
+        {
+            "poster": "Kevmoso",
+            "comment": "Amazing! This along with the possible future multi-color option would put this machine at the very top of a quickly growing list of amazing 3d printer options available today.",
+            "timestamp": "1741971107",
+            "is_creator": false
+        },
+        {
+            "poster": "Noah Katz",
+            "comment": "That would be great, as would anything else that makes this more plug-and-play and requiring less fussing with.",
+            "timestamp": "1741974605",
+            "is_creator": false
+        },
+        {
+            "poster": "Noah Katz",
+            "comment": "This would be my first printer and I'm halfway expecting that I'll need to cancel my pledge at some point due to the X400 not being enough like a Bambu for a beginner.",
+            "timestamp": "1741974605",
+            "is_creator": false
+        },
+        {
+            "poster": "COHEN NAHON",
+            "comment": "Does the camera allow error detection and pause the printing?",
+            "timestamp": "1741779728",
+            "is_creator": false
+        },
+        {
+            "poster": "COHEN NAHON",
+            "comment": "And can we cancel prints that failed with the app or just on the screen?",
+            "timestamp": "1741779728",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Currently, the AI camera can recognize foreign objects, while we continue developing additional features. You can remotely cancel the print through the Eryone 3D Printing Farm system using your smartphone or computer.",
+            "timestamp": "1741951326",
+            "is_creator": true
+        },
+        {
+            "poster": "Robert Stokke",
+            "comment": "Can you confirm what type of Z belts this printer is using?",
+            "timestamp": "1741774530",
+            "is_creator": false
+        },
+        {
+            "poster": "Robert Stokke",
+            "comment": "For this style of printer, the Z belts are important, and those look like white steel belted GT2 belts, not the fibre reinforced Gates ones everyone builds Voron's with. Those steel belted belts seem like a great idea. Then you tension them, and let them sit. The steel gets a deformation in it, and you end up with a bump in the belts. That bump causes inconsistent Z motion when it goes over the drive gear or idlers on the Z axis.",
+            "timestamp": "1741774530",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Hi Robert, You’re absolutely correct—the Z-axis belt is crucial for performance. All the belts in the Thinker X400 are made from fiber-reinforced Gates materials, ensuring durability and reliability. Thank you for your insight!",
+            "timestamp": "1741836126",
+            "is_creator": true
+        },
+        {
+            "poster": "Robert Stokke",
+            "comment": "Thank you for confirming, I am no longer concerned :)",
+            "timestamp": "1741857496",
+            "is_creator": false
+        },
+        {
+            "poster": "Robert Stokke",
+            "comment": "I am also wondering if the kickstarter price covers shipping, customs and tax?",
+            "timestamp": "1741857496",
+            "is_creator": false
+        },
+        {
+            "poster": "Robert Stokke",
+            "comment": "I need to know the total price to import it to Norway.",
+            "timestamp": "1741857496",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Shipping to Norway costs $300 USD with customs and taxes included. Shipping fees will be collected at the end of the campaign with the survey that collects your shipping information.",
+            "timestamp": "1741951398",
+            "is_creator": true
+        },
+        {
+            "poster": "Kees van Slooten",
+            "comment": "Hello!",
+            "timestamp": "1741764664",
+            "is_creator": false
+        },
+        {
+            "poster": "Kees van Slooten",
+            "comment": "A quick question, is it possible to place the spool holder on the right side of the printer?",
+            "timestamp": "1741764664",
+            "is_creator": false
+        },
+        {
+            "poster": "Kees van Slooten",
+            "comment": "Greetings",
+            "timestamp": "1741764664",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Hi Kees van Slooten, Thank you for your insightful question! It's best to position the spool holder on the left side of the printer, as the mainboard box is located on the right side. The bulge of the mainboard box can interfere with the filament spool, so placing it on the left will ensure smoother operation.",
+            "timestamp": "1741836064",
+            "is_creator": true
+        },
+        {
+            "poster": "De Man",
+            "comment": "What's the difference between \"Active Heater Upgrade: Enhanced Temperat",
+            "timestamp": "1741702222",
+            "is_creator": false
+        },
+        {
+            "poster": "De Man",
+            "comment": "HK$ 117",
+            "timestamp": "1741702222",
+            "is_creator": false
+        },
+        {
+            "poster": "De Man",
+            "comment": "+HK$ 0 shipping",
+            "timestamp": "1741702222",
+            "is_creator": false
+        },
+        {
+            "poster": "De Man",
+            "comment": "\"",
+            "timestamp": "1741702222",
+            "is_creator": false
+        },
+        {
+            "poster": "De Man",
+            "comment": "and",
+            "timestamp": "1741702222",
+            "is_creator": false
+        },
+        {
+            "poster": "De Man",
+            "comment": "\"Active Heater Upgrade: Enhanced",
+            "timestamp": "1741702222",
+            "is_creator": false
+        },
+        {
+            "poster": "De Man",
+            "comment": "HK$ 179",
+            "timestamp": "1741702222",
+            "is_creator": false
+        },
+        {
+            "poster": "De Man",
+            "comment": "+HK$ 0 shipping",
+            "timestamp": "1741702222",
+            "is_creator": false
+        },
+        {
+            "poster": "De Man",
+            "comment": "\"",
+            "timestamp": "1741702222",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Hello! Both of these add-ons are Active Heaters. We increased the price after a certain number of units were sold out.",
+            "timestamp": "1741765886",
+            "is_creator": true
+        },
+        {
+            "poster": "Noah Katz",
+            "comment": "I just watched The 3D Printing Zone video https://www.youtube.com/watch?v=mZjzKYhkvsA",
+            "timestamp": "1741623379",
+            "is_creator": false
+        },
+        {
+            "poster": "Noah Katz",
+            "comment": "He mentions that there's a 15-minute bed leveling procedure for every single print, and requests the option to allow skipping that.",
+            "timestamp": "1741623379",
+            "is_creator": false
+        },
+        {
+            "poster": "Noah Katz",
+            "comment": "Do you have plans to do this, and/or even better, restrict leveling to the footprint of the part being printed.",
+            "timestamp": "1741623379",
+            "is_creator": false
+        },
+        {
+            "poster": "Noah Katz",
+            "comment": "> The load cell sensor is more user-friendly, as it eliminates the need for manual Z-offset adjustments.",
+            "timestamp": "1741836742",
+            "is_creator": false
+        },
+        {
+            "poster": "Noah Katz",
+            "comment": "I wasn't aware of that, thanks",
+            "timestamp": "1741836742",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "Hi @Eryone,",
+            "timestamp": "1741897859",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "I am currently planning to combine PZ-Probe sensor and the BTT Eddy Sensor on a Voron2.",
+            "timestamp": "1741897859",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "The plan is, that the PZ-Probe is taking care of the nozzle-bed distance.",
+            "timestamp": "1741897859",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "The Eddy sensor should take care of the bed level scanning.",
+            "timestamp": "1741897859",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "I have no idea, if my programming skills are good enough to realize it in way it is sufficient.",
+            "timestamp": "1741897859",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "But maybe this is an idea for you @Eryone to implement it.",
+            "timestamp": "1741897859",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": ":-)",
+            "timestamp": "1741897859",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "I just found this solution, which looks perfect for me:",
+            "timestamp": "1741946327",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "https://www.youtube.com/watch?v=S0a7IUw_YIU",
+            "timestamp": "1741946327",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "It uses the Beacon RevH :",
+            "timestamp": "1741946327",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "https://beacon3d.com/product/beacon-h/",
+            "timestamp": "1741946327",
+            "is_creator": false
+        },
+        {
+            "poster": "De Man",
+            "comment": "Can't the internal carbon filter be placed on the outside. This has a possible advantage that the max height could possibly be a few more centimetres higher that what is now indicated as 400x400x400 and could possibly become 400x400x500 after the modification!",
+            "timestamp": "1741601179",
+            "is_creator": false
+        },
+        {
+            "poster": "Adam",
+            "comment": "One of the youtube reviewers did bypass something and print taller.",
+            "timestamp": "1741749075",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Thank you very much for your question. The upper space is designed for the extruder, Teflon tube, and tank drag chain. To ensure safe printing, please keep the product height under 400mm. The space is not restricted by the carbon filter, so there’s no need to place it outside.",
+            "timestamp": "1741765757",
+            "is_creator": true
+        },
+        {
+            "poster": "De Man",
+            "comment": "Are we going to have the possibility to buy a plate on one site a Holographic structure and the other carbon or other pattern?",
+            "timestamp": "1741506260",
+            "is_creator": false
+        },
+        {
+            "poster": "Adam",
+            "comment": "Does any other build plates fit this? Other types of build plates like the Cryogrip would be awesome.",
+            "timestamp": "1741569612",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Thank you very much for your suggestion! We are developing those kinds of build plates. When they are available, we will post an update to inform everyone.",
+            "timestamp": "1741598734",
+            "is_creator": true
+        },
+        {
+            "poster": "Andy",
+            "comment": "One more question:",
+            "timestamp": "1741266497",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "Is the chamber heater controlled via Klipper?",
+            "timestamp": "1741266497",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "Thanks!",
+            "timestamp": "1741266497",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "That is right, we will pre set the Klipper firmware, screen and slicer. However you need to connect the heater to Thinker X400 correctly by yourself based on the instructions we will provide.",
+            "timestamp": "1741317952",
+            "is_creator": true
+        },
+        {
+            "poster": "Andy",
+            "comment": "Perfect!",
+            "timestamp": "1741341070",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "Hi,",
+            "timestamp": "1741266388",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "I just backed X400.",
+            "timestamp": "1741266388",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "Will there be an add to handle different Materials automatically? Like BambuLab?",
+            "timestamp": "1741266388",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "Hope so!",
+            "timestamp": "1741266388",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "Best, Andreas",
+            "timestamp": "1741266388",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Hey Andy. Thank you for your great question! Currently, we are still exploring the possibilities. We will inform you as soon as we reach a conclusion.",
+            "timestamp": "1741335419",
+            "is_creator": true
+        },
+        {
+            "poster": "Andy",
+            "comment": "Thank you.",
+            "timestamp": "1741341114",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "Is a Filament Cutter included in the printhead?",
+            "timestamp": "1741341114",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "Or is there a option to add one to the printhead?",
+            "timestamp": "1741341114",
+            "is_creator": false
+        },
+        {
+            "poster": "Andy",
+            "comment": "@Eryone",
+            "timestamp": "1741771014",
+            "is_creator": false
+        },
+        {
+            "poster": "Jeff Papiez",
+            "comment": "Can you consider changing the default nozzle size or add a second, larger nozzle, to be included? Given the size of this printer, a 0.4mm nozzle seems a bit small as it will take days to print a large model.",
+            "timestamp": "1741197895",
+            "is_creator": false
+        },
+        {
+            "poster": "Jeff Papiez",
+            "comment": "Will there be hardened and high flow nozzles available as well?",
+            "timestamp": "1741197895",
+            "is_creator": false
+        },
+        {
+            "poster": "Jeff Papiez",
+            "comment": "Lastly, for the different size nozzles and quality available will there be tuned slicer profiles available for Eryone filament?",
+            "timestamp": "1741197895",
+            "is_creator": false
+        },
+        {
+            "poster": "Adam",
+            "comment": "They have an add on with different nozzle sizes when you are checking out now.",
+            "timestamp": "1741211119",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Hey Jeff. We have provided an add-on kit that includes nozzles of 0.2, 0.4, 0.6, 0.8, and 1.0 mm sizes for your selection.",
+            "timestamp": "1741333895",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "The default nozzle is a 0.4 mm hardened high-flow nozzle.",
+            "timestamp": "1741333895",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Currently, all Eryone filament slicer profiles are set for the 0.4 mm nozzle, and we will experiment with the other sizes soon.",
+            "timestamp": "1741333895",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Please feel free to let us know if you have any other questions!",
+            "timestamp": "1741333895",
+            "is_creator": true
+        },
+        {
+            "poster": "De Man",
+            "comment": "Will you make a nozzle that can reach 350°C or higher? Could we also purchase those as Add-ons?",
+            "timestamp": "1741179152",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Our team will discuss this and let you know as soon as possible! Thank you for your suggestion. 😊",
+            "timestamp": "1741192441",
+            "is_creator": true
+        },
+        {
+            "poster": "De Man",
+            "comment": "I would appreciate if we could have an ‘active heated chamber’. This is to have good adhesion between the layers. Competitors can already go up to 65 °C. This of course for fillament, which can be printed at higher temperatures, also needs a higher ‘heated chamber’ temperature! This is to avoid a temperature shift, but to create better adhesion through the heated chamber. Perhaps you should check with a university or professors to find out which fillament requires which ‘heated chamber temperature’. And also indicate this info on the sticker of the fillament, so that we can set the printer properly before we start printing.",
+            "timestamp": "1741099997",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "We just posted an announcement - Active Heater is now available as an add-on! At a room temperature of 20°C, the chamber temperature reaches 50-60°C without the heater. With the Active Heater, it can rise to 60-70°C. We are also actively discussing stretch goal ideas. We’ll be announcing them officially in a few days!",
+            "timestamp": "1741191083",
+            "is_creator": true
+        },
+        {
+            "poster": "Noah Katz",
+            "comment": "> the chamber temperature reaches 50-60°C without the heater",
+            "timestamp": "1741195872",
+            "is_creator": false
+        },
+        {
+            "poster": "Noah Katz",
+            "comment": "That's surprising given the volume of air that needs to be heated; how long does that take?",
+            "timestamp": "1741195872",
+            "is_creator": false
+        },
+        {
+            "poster": "Noah Katz",
+            "comment": "And how long will it take to get to 60-70°C with the chamber heater?",
+            "timestamp": "1741195872",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Normally it will take half an hour to one hour to get to 60-70°C with the chamber heater.",
+            "timestamp": "1741355551",
+            "is_creator": true
+        },
+        {
+            "poster": "De Man",
+            "comment": "Will you also make an ‘AMS - Automatic Material System’ for the ‘Eryone Thinker X400’? Then we can combine multiple colours in one print, like the competitors. This would be fantastic!",
+            "timestamp": "1741096104",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Thank you for your suggestion! Multiple backers have also mentioned this idea. We will discuss this with BIGTREETECH and provide an update soon. Your input is greatly appreciated!",
+            "timestamp": "1741166818",
+            "is_creator": true
+        },
+        {
+            "poster": "BRIAN PAUL",
+            "comment": "Maybe an option for the multicolor printing. Possible stretch goal is to integrate BIGTREETECH BVV enter the printer multicolor print. If ERYONE does not plan offer a AMS style add-on to this printer.",
+            "timestamp": "1741091720",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Hi Brian. Thank you for your suggestion! BIGTREETECH BVV appears to be a promising and efficient solution for our current backers. We will discuss this with BIGTREETECH and provide an update soon. Your input is greatly appreciated!",
+            "timestamp": "1741166751",
+            "is_creator": true
+        },
+        {
+            "poster": "BRIAN PAUL",
+            "comment": "Maybe a stretch goal could be 250g rolls of all the types of filament, Eryone Brand, the printer can print? Or maybe a 3-5 rolls of a type of filament, user choice?",
+            "timestamp": "1741091467",
+            "is_creator": false
+        },
+        {
+            "poster": "Robman is Batin",
+            "comment": "Is there a possibility to deliver the printer partly disassembled or to disass",
+            "timestamp": "1741076101",
+            "is_creator": false
+        },
+        {
+            "poster": "Robman is Batin",
+            "comment": "amble easily for better transportation? Only have a small stair to my basement and know that these Printers are usually delivered in huge boxes on a euro palette.",
+            "timestamp": "1741076209",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Hi Robman is Batin. The Thinker X400 3D printer is designed as a fully assembled unit, not a kit. It will be delivered as an enclosed 3D printer and cannot be partially disassembled for easier assembly.",
+            "timestamp": "1741166562",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Regarding your stairs, the printer's width is 635mm. If you're carrying it upstairs, please remember to ask a friend for assistance. Thank you for your understanding!",
+            "timestamp": "1741166562",
+            "is_creator": true
+        },
+        {
+            "poster": "James armstrong",
+            "comment": "What is the shipping cost to us I need to know before I pay for my super early bird because that will decide if I keep my spot",
+            "timestamp": "1741009026",
+            "is_creator": false
+        },
+        {
+            "poster": "Dale Larsen",
+            "comment": "It’s posted on the Campaign page at the bottom.",
+            "timestamp": "1741045002",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Hi James, The shipping costs are listed below:",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- United States: $200 USD (excluding Minor Outlying Islands)",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- Canada: $300 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- United Kingdom: $100 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- European Union: $100 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- Russia: $100 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- Japan: $300 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- South Korea: $100 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- Singapore: $100 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- Malaysia: $100 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- Thailand: $100 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- Hong Kong, China: $100 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- Taiwan, China: $200 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- Macau, China: $100 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- United Arab Emirates: $100 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "- Australia: $100 USD",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Eryone",
+            "comment": "For more detailed information, kindly refer to the ''Shipping Cost'' section on the campaign page.",
+            "timestamp": "1741083328",
+            "is_creator": true
+        },
+        {
+            "poster": "Adam",
+            "comment": "Standard outlet. You're all set. They wrote it used 680 watts oeak.",
+            "timestamp": "1740920153",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Hi Will Ashcraft,Thank you for your excellent question! You can power your 3D printer using a standard outlet if you're using a single unit, as the peak power is approximately 700W, with a typical working power of around 200-300W. However, if you are operating a farm or factory with multiple 3D printers running simultaneously, we recommend considering your electricity planning to ensure adequate power supply.",
+            "timestamp": "1740991947",
+            "is_creator": true
+        },
+        {
+            "poster": "WeiHan",
+            "comment": "I'm dilemma between this and creality k2... Each has their own cons & pros. But overall which 1 is more worthy?",
+            "timestamp": "1740893081",
+            "is_creator": false
+        },
+        {
+            "poster": "Dale Larsen",
+            "comment": "Stay away from the K2 Plus! It’s a great printer for about a month or so and then the cheap parts start breaking down and compound on each other! I have a 90lb brick sitting on my desk with 9 other working printers. Once things start going wrong with that printer they just keep getting worse. Quite a number of us have similar issues and have more down time than print time! Hopefully, since Eryone seems to have designed this for Production and not prosumers, it will be different.",
+            "timestamp": "1740972557",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Thank you for your question. As you've mentioned, each printer has its pros and cons. Whether the Thinker X400 is worth buying depends on your specific needs. If you're looking to use a 3D printer for manufacturing end-use products or parts, we recommend the Thinker X400. It's a production-grade printer known for its stability and ease of use, especially beneficial if you require multiple printers for manufacturing.",
+            "timestamp": "1740991859",
+            "is_creator": true
+        },
+        {
+            "poster": "Dale Larsen",
+            "comment": "Thanks to whoever cancelled their Limited Reward this morning! Allowed me to change my reward and save an extra $100!",
+            "timestamp": "1740787902",
+            "is_creator": false
+        },
+        {
+            "poster": "Drew Baker",
+            "comment": "Nice! Congrats!",
+            "timestamp": "1740986391",
+            "is_creator": false
+        },
+        {
+            "poster": "Eryone",
+            "comment": "Congrats, Dale! You're the luckiest one!",
+            "timestamp": "1740991802",
+            "is_creator": true
+        }
+    ]
+}

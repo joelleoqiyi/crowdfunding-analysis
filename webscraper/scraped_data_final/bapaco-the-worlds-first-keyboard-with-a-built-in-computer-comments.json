@@ -1,0 +1,383 @@
+{
+    "url": "https://www.kickstarter.com/projects/944362954/bapaco-the-worlds-first-keyboard-with-a-built-in-computer/comments",
+    "comments": [
+        {
+            "poster": "Beng",
+            "comment": "If I select a quantity of 2 for the 32GB RAM + 2TB SSD option, does it mean the configuration will be a total 64GB RAM + 4TB SSD upon shipping?",
+            "timestamp": "1741067946",
+            "is_creator": false
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Hi Beng，",
+            "timestamp": "1741279360",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Bapaco's maximum supported configuration is 48GB of RAM and 4TB of SSD storage. Therefore, even if you select a quantity of 2, we will only be able to provide you with the maximum supported configuration.",
+            "timestamp": "1741279360",
+            "is_creator": true
+        },
+        {
+            "poster": "Beng",
+            "comment": "Thanks for getting back to me. I'm ok with this, I'll go ahead and change my quantity to 2, and please kindly help to provide maximum supported configuration upon shipping. Thanks.",
+            "timestamp": "1741321695",
+            "is_creator": false
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Hi She，",
+            "timestamp": "1740998481",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "We apologize for the lack of clarity in our campaign page regarding that specific pledge level.",
+            "timestamp": "1740998481",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "To clarify:",
+            "timestamp": "1740998481",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "The USD$249 pledge level does not include the Bapaco keyboard PC. That's the price for a RAM and SSD upgrade kit only.",
+            "timestamp": "1740998481",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "The Bapaco keyboard PC with the screen is included in the \"Bapaco Keyboard PC - Super Early Bird\" pledge level (US$625) and other similar pledge levels that explicitly mention the keyboard PC.",
+            "timestamp": "1740998481",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Important: The US$625 pledge level for the Bapaco keyboard PC itself does not include RAM or an SSD. You'll need to add those separately through the add-on options (US$79 or US$249).",
+            "timestamp": "1740998481",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Thanks so much for pointing this out to us! We appreciate your patience and understanding.",
+            "timestamp": "1740998481",
+            "is_creator": true
+        },
+        {
+            "poster": "Steve Butcher",
+            "comment": "I see the device has HDMI built-in, but can you connect to additional external monitors via USB-C. I have a dual monitor setup, and use a USB-C dock to enable the dual setup, so can this also be accomplished with this device?",
+            "timestamp": "1740564063",
+            "is_creator": false
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Hi Steve，",
+            "timestamp": "1740640182",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Bapaco does indeed have an HDMI port built-in, and you can absolutely connect to additional external monitors via USB-C as well.",
+            "timestamp": "1740640182",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Bapaco supports DisplayPort 1.4 Alt Mode over USB-C, which means you can use a USB-C to DisplayPort cable or a USB-C hub with DisplayPort output to connect to another monitor. This allows you to extend your workspace across multiple screens, just like you're used to with your current USB-C dock setup.",
+            "timestamp": "1740640182",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "So, with Bapaco, you can have a multi-monitor setup with:",
+            "timestamp": "1740640182",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "One monitor connected via HDMI.",
+            "timestamp": "1740640182",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "One or more monitors connected via USB-C (using appropriate adapters or hubs).",
+            "timestamp": "1740640182",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "This makes Bapaco a versatile productivity tool for those who rely on multiple displays for their workflow.",
+            "timestamp": "1740640182",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Hi Stephen!",
+            "timestamp": "1740068584",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Thanks so much for backing Bapaco and for your kind words! We're really excited to get Bapaco into your hands.",
+            "timestamp": "1740068584",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "To answer your questions:",
+            "timestamp": "1740068584",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Linux OS (or installing your own OS): You absolutely can install your own operating system, including Linux! Bapaco is designed with customization in mind, and you'll have full access to the BIOS and boot settings to install your preferred OS.",
+            "timestamp": "1740068584",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "To make this even easier (and more cost-effective!), we recommend considering our package without pre-installed RAM and ROM. This allows you to source your own components and install your preferred Linux distribution from scratch.",
+            "timestamp": "1740068584",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Thunderbolt (for eGPU): Unfortunately, Bapaco does not currently support Thunderbolt. We understand the need for high-bandwidth connectivity for tasks like AI/ML with eGPUs. We'll keep Thunderbolt support in mind for future versions of Bapaco, as we continue to explore ways to enhance performance and connectivity.",
+            "timestamp": "1740068584",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "We appreciate your support and valuable feedback! If you have any more questions, please don't hesitate to ask.",
+            "timestamp": "1740068584",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Best regards,",
+            "timestamp": "1740068584",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "The Bapaco Team",
+            "timestamp": "1740068584",
+            "is_creator": true
+        },
+        {
+            "poster": "Anthony Davidson",
+            "comment": "Are there any plans to provide a custom carrying case/bag to prevent damage to the keys while being carried around?",
+            "timestamp": "1740003134",
+            "is_creator": false
+        },
+        {
+            "poster": "Anthony Davidson",
+            "comment": "Maybe also carry the power cord and a wireless mouse?",
+            "timestamp": "1740003134",
+            "is_creator": false
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Hi Anthony!",
+            "timestamp": "1740068759",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "That's a great question! We understand the importance of protecting Bapaco during transport.",
+            "timestamp": "1740068759",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "While we don't have plans for a custom carrying case at this time, we recommend using a standard laptop bag or sleeve, as Bapaco's dimensions are similar to a 13-inch laptop. This should provide adequate protection for the keys and allow you to carry accessories like the power cord and a wireless mouse.",
+            "timestamp": "1740068759",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "We appreciate your feedback and will keep it in mind as we explore future accessories for Bapaco. If there's enough demand for a carrying case, we may consider developing one as a future offering.",
+            "timestamp": "1740068759",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Hi Peter,",
+            "timestamp": "1739891860",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Thanks for your question about the keycaps!",
+            "timestamp": "1739891860",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "The complimentary keycap set in the add-on section includes eight keys: ASDW and the four arrow keys. These are meant to offer some customization, but they are not a full set.",
+            "timestamp": "1739891860",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Unfortunately, we don't currently offer enough keycaps to modify the keyboard to a full Swedish/Nordic layout. You would need to source those keycaps separately from another vendor.",
+            "timestamp": "1739891860",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "We apologize for any inconvenience this may cause.",
+            "timestamp": "1739891860",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "we encourage you to check out online retailers or mechanical keyboard communities where you might be able to find the specific keycaps you need to create your Swedish/Nordic layout.",
+            "timestamp": "1739891860",
+            "is_creator": true
+        },
+        {
+            "poster": "Julia To",
+            "comment": "Dear Team,",
+            "timestamp": "1739789281",
+            "is_creator": false
+        },
+        {
+            "poster": "Julia To",
+            "comment": "I want to start by saying that this is a fantastic project, and it's exactly what I've been looking for. I truly hope the campaign is a great success!",
+            "timestamp": "1739789281",
+            "is_creator": false
+        },
+        {
+            "poster": "Julia To",
+            "comment": "I have pledged for two 16GB + 512GB plans, as 1TB will be sufficient for my needs. Would it be possible to implement this option? If not, please let me know, and I will make the necessary adjustments.",
+            "timestamp": "1739789281",
+            "is_creator": false
+        },
+        {
+            "poster": "Julia To",
+            "comment": "Thank you!",
+            "timestamp": "1739789281",
+            "is_creator": false
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Hi Julia,",
+            "timestamp": "1739793161",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "We're thrilled you're excited about Bapaco and appreciate your support for our campaign!",
+            "timestamp": "1739793161",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "We understand your desire for a 1TB SSD configuration. We've looked into it, and due to the way Bapaco's memory and storage are designed, we can indeed offer you a special upgrade!",
+            "timestamp": "1739793161",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Since you've pledged for two 16GB + 512GB units, we can combine the storage from both to give you one Bapaco with a 1TB SSD (two 512GB SSDs). However, because the cost of 32GB RAM is significantly higher than 16GB*2, we can't simply combine the RAM in the same way.",
+            "timestamp": "1739793161",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Instead, we're happy to offer you the following:",
+            "timestamp": "1739793161",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "One Bapaco with 24GB RAM and 1TB SSD: This will provide a good balance of memory and storage.",
+            "timestamp": "1739793161",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "This approach allows us to make the most of the components from your two pledges while still offering you a meaningful upgrade.",
+            "timestamp": "1739793161",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Please let us know if you would like to proceed with this special 24GB + 1TB configuration. We're excited to get Bapaco into your hands!",
+            "timestamp": "1739793161",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Hi Daniel,",
+            "timestamp": "1739591655",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "That's a great question! The functionality available depends on how you're connecting the external device and which operating system is active.",
+            "timestamp": "1739591655",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "When using Bapaco's built-in Windows OS:",
+            "timestamp": "1739591655",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "USB 2.0, USB 3.0, and USB-C ports: These ports function as normal, allowing you to connect peripherals like mice, keyboards, external drives, etc.",
+            "timestamp": "1739591655",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "HDMI port: You can use this to connect an external monitor and extend or mirror Bapaco's display.",
+            "timestamp": "1739591655",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "SSD: This is Bapaco's internal storage, used by the Windows OS.",
+            "timestamp": "1739591655",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "When connecting an external device (Mac, Windows, or Android) to Bapaco:",
+            "timestamp": "1739591655",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Display: Bapaco's screen acts as a display for the external device, mirroring its operating system and interface.",
+            "timestamp": "1739591655",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Input: Bapaco's keyboard and touchpad can be used to control the external device.",
+            "timestamp": "1739591655",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "USB ports: The functionality of these ports depends on the external device and its operating system. Generally, they should work as normal for connecting peripherals.",
+            "timestamp": "1739591655",
+            "is_creator": true
+        },
+        {
+            "poster": "Bapaco Tech",
+            "comment": "Internal components: Bapaco's internal components, such as the HDMI port, SSD, are typically not shared with the external device.",
+            "timestamp": "1739591655",
+            "is_creator": true
+        }
+    ]
+}

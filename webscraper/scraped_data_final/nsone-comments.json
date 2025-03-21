@@ -1,0 +1,143 @@
+{
+    "url": "https://www.kickstarter.com/projects/lawrencebrd/nsone/comments",
+    "comments": [
+        {
+            "poster": "asher",
+            "comment": "Cool project! I'm doing a similar project with a sega ms2, looking forward to seeing your progress!",
+            "timestamp": "1742171551",
+            "is_creator": false
+        },
+        {
+            "poster": "Peter McQuillan",
+            "comment": "Good luck with your project!",
+            "timestamp": "1742198750",
+            "is_creator": false
+        },
+        {
+            "poster": "Lorentio Brodesco",
+            "comment": "Wow, I'm glad! Your job must be interesting too. Would you like to share the link here so I can check it out?",
+            "timestamp": "1742252077",
+            "is_creator": true
+        },
+        {
+            "poster": "asher",
+            "comment": "I haven't currently published any of the ms2 work but my other works are available at wiki.projectrelabel.com !",
+            "timestamp": "1742252494",
+            "is_creator": false
+        },
+        {
+            "poster": "Luis Garcia",
+            "comment": "As a follow up, not sure how feasible it might be to increase the base RAM from the 4MB to the 8MB that were used on the Net Yaroze. It would be great to see if there was a way to increase the RAM further, similar to how the FPGA MiSTer does it through an expansion port.",
+            "timestamp": "1741796646",
+            "is_creator": false
+        },
+        {
+            "poster": "Peter McQuillan",
+            "comment": "That’s certainly an interesting idea! Would definitely be interested if possible.",
+            "timestamp": "1741800211",
+            "is_creator": false
+        },
+        {
+            "poster": "Lorentio Brodesco",
+            "comment": "This is a very interesting topic and will surely be useful for those who develop homebrew on this platform. For now, I am working on having a basic working version, but I am planning to further explore the topic and provide users with the ability to extend the RAM by leaving already connected pins where they can solder potential RAM extensions. This topic will be addressed in the following months, and I will also provide interesting updates regarding it. Thank you for being part of the project :)",
+            "timestamp": "1741822699",
+            "is_creator": true
+        },
+        {
+            "poster": "Luis Garcia",
+            "comment": "Lorentio Brodesco,",
+            "timestamp": "1741022295",
+            "is_creator": false
+        },
+        {
+            "poster": "Luis Garcia",
+            "comment": "I don't if this is possible or not, but it woudl be great to include or allow the PS BIOS to send Game ID data when using MemCard Pro or SD2PSX memory cards. This project does have the patches for the BIOS: https://github.com/jdfr228/PS1-Disc-Based-Game-ID. But an easily swappable BIOS chip would also do the trick.",
+            "timestamp": "1741022295",
+            "is_creator": false
+        },
+        {
+            "poster": "Lorentio Brodesco",
+            "comment": "Hello again, regarding this, I assure you that I am considering the very interesting option of having a microcontroller that can be used as a flasher with a possible EEPROM directly on the board via USB-C.",
+            "timestamp": "1741822865",
+            "is_creator": true
+        },
+        {
+            "poster": "Peter McQuillan",
+            "comment": "No idea how practical this would be to do - currently if you’re adding an xstation to your ps1 you’ve got to lift pins on chips before you do the soldering etc. - not a trivial task. As one of the ultimate end goals (not of this kickstarter project I know) is to support a portable ps1, would it be possible to provide a simpler connection method so that ODE support (reading from SD card) could be more easily provided?",
+            "timestamp": "1738706670",
+            "is_creator": false
+        },
+        {
+            "poster": "Lorentio Brodesco",
+            "comment": "Hello! The XStation issue is quite delicate, but I will definitely have to address it in the future for the portable console project. Whenever I have some time, I also do some brainstorming for the portable console, and I have been thinking about XStation as well. It seems to be an ESP-32 microcontroller with an SD card reader that emulates the disc drive. For now, I don’t know if the firmware is public or not, but if it’s not, I would still consider writing it myself for a similar microcontroller.",
+            "timestamp": "1738718932",
+            "is_creator": true
+        },
+        {
+            "poster": "Peter McQuillan",
+            "comment": "You may have already seen this, but this was an attempt at an ODE with a Pico 2040 - https://github.com/paulocode/picostation",
+            "timestamp": "1739486107",
+            "is_creator": false
+        },
+        {
+            "poster": "Carlos Azofeifa",
+            "comment": "The original Picostation repository has been archived. Someone was working on a fork that looked promising: https://github.com/johnbaumann/picostation.",
+            "timestamp": "1740346490",
+            "is_creator": false
+        },
+        {
+            "poster": "Denis",
+            "comment": "Hello, please consider a version with HDMI output! I think it will bring a lot more attention and pledges to achieve your wider goals.",
+            "timestamp": "1738674527",
+            "is_creator": false
+        },
+        {
+            "poster": "Lorentio Brodesco",
+            "comment": "Hi, I’m already working on a version with native digital output directly from the GPU, forwarded to an HDMI encoder, bypassing the NTSC/PAL encoder.",
+            "timestamp": "1738674872",
+            "is_creator": true
+        },
+        {
+            "poster": "Denis",
+            "comment": "Great to hear that!",
+            "timestamp": "1738675319",
+            "is_creator": false
+        },
+        {
+            "poster": "Patrick",
+            "comment": "Will this have a HDMI port? On the boards already soldered.",
+            "timestamp": "1738146350",
+            "is_creator": false
+        },
+        {
+            "poster": "Patrick",
+            "comment": "I ask because you say modernized & plan to ultimately make a portable version at some point.",
+            "timestamp": "1738146350",
+            "is_creator": false
+        },
+        {
+            "poster": "Lorentio Brodesco",
+            "comment": "Hi, thanks for your question! This board won’t have any extras like HDMI. At first glance, it might seem pointless, but in order to work on a modern version in the future, I first need to successfully create a simple, functional version like the original.",
+            "timestamp": "1738169723",
+            "is_creator": true
+        },
+        {
+            "poster": "Lorentio Brodesco",
+            "comment": "As for the HDMI addition, I’m already working on it. There are many 24-bit RGB to HDMI encoders available on the market. By using one of these, I could bypass the RGB to PAL/NTSC encoder and take the signals directly from the GPU.",
+            "timestamp": "1738169723",
+            "is_creator": true
+        },
+        {
+            "poster": "Mike Arkin",
+            "comment": "it would be nice if there was a higher tier that incluses one each of the stripped down and the pre-soldered board. I wanted to order both to save shipping but KS wont let me.",
+            "timestamp": "1738093988",
+            "is_creator": false
+        },
+        {
+            "poster": "Lorentio Brodesco",
+            "comment": "Hi, thank you for the advice. I just updated the reward tier. I added one with all inclusive with a 15€ discount.",
+            "timestamp": "1738096197",
+            "is_creator": true
+        }
+    ]
+}

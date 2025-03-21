@@ -1,0 +1,677 @@
+{
+    "url": "https://www.kickstarter.com/projects/lincplus/redefining-nas-style-power-and-usability-with-lincplus/comments",
+    "comments": [
+        {
+            "poster": "Aleksejs Hamjonoks",
+            "comment": "Did you fix temps for N2 model comparing with N1?",
+            "timestamp": "1742445070",
+            "is_creator": false
+        },
+        {
+            "poster": "Aleksejs Hamjonoks",
+            "comment": "Do we have fan curve in bios like you implementet in last bios update?",
+            "timestamp": "1742445070",
+            "is_creator": false
+        },
+        {
+            "poster": "Aleksejs Hamjonoks",
+            "comment": "And lastly, please consider to use same type of drives in N3 and try to go for mobile CPU's (laptop cpu's), they have way more lines and low power consumption. Look on minisforum mobos:)",
+            "timestamp": "1742445070",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Thanks for your comment!",
+            "timestamp": "1742451271",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Yes, the N2 retains the intelligent fan mode from the N1, allowing the fan speed to adjust dynamically based on the environment. In addition to adding more ventilation holes, we’ve also optimized internal cooling with several improvements. For example, we incorporated nano-carbon materials and upgraded the heat sink with copper plates to improve heat dissipation efficiency and help the CPU stay cool more effectively.",
+            "timestamp": "1742451271",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "As for using laptop-grade CPUs, we’ve seen some NAS devices moving in that direction. However, the N-series is designed for everyday NAS users, where low power consumption, silent operation, and cost-effectiveness are key priorities. After careful consideration, we chose this CPU lineup to balance performance and efficiency.",
+            "timestamp": "1742451271",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "That said, we always listen to market feedback and continuously improve our products. Future models will evolve based on real user needs. 😊",
+            "timestamp": "1742451271",
+            "is_creator": true
+        },
+        {
+            "poster": "Saif Ali",
+            "comment": "First time backer and backed LinkPlus!",
+            "timestamp": "1742166966",
+            "is_creator": false
+        },
+        {
+            "poster": "Saif Ali",
+            "comment": "Great product because of small form factor and slim size.",
+            "timestamp": "1742166966",
+            "is_creator": false
+        },
+        {
+            "poster": "Saif Ali",
+            "comment": "Do shipments start before or after the 13th of April?",
+            "timestamp": "1742166966",
+            "is_creator": false
+        },
+        {
+            "poster": "Saif Ali",
+            "comment": "Thanks!",
+            "timestamp": "1742166966",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Thank you for your support! We're thrilled that you like our products！",
+            "timestamp": "1742175711",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "We’re committed to shipping in April, but the exact date is still uncertain at this time. We apologize for any inconvenience this may cause. Rest assured, we’ll provide updates on the shipping progress as soon as we have them, so please stay tuned.",
+            "timestamp": "1742175711",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Also, just a small note—we are LincPlus with a \"C\" 😉. Thanks again!",
+            "timestamp": "1742175711",
+            "is_creator": true
+        },
+        {
+            "poster": "Saif Ali",
+            "comment": "Thanks and apologies for misspelling LincPlus 🤗",
+            "timestamp": "1742183852",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Hello, the P Series is part of LincPlus's future roadmap. We are working hard to bring it to life, but there’s no specific information to share at the moment. Stay tuned!",
+            "timestamp": "1742175476",
+            "is_creator": true
+        },
+        {
+            "poster": "Zaghloul Saad",
+            "comment": "N2 can run VMs?",
+            "timestamp": "1741959320",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Yes, the N2 supports running VMs! It comes with Unraid, which has built-in virtualization support, allowing you to create and manage virtual machines with ease. Let us know if you have any specific use cases in mind!",
+            "timestamp": "1742175372",
+            "is_creator": true
+        },
+        {
+            "poster": "James Kim",
+            "comment": "Is the N2 still on track to be shipped in April? I will be out of the country at the end of May for 2 months, so hoping it will arrive before I leave. Thanks!",
+            "timestamp": "1741911020",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Yes, the N2 is still on track to be shipped in April! You should receive it well before the end of May. Let us know if you have any concerns, and we truly appreciate your support!",
+            "timestamp": "1741916397",
+            "is_creator": true
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "Thinking about it, I would rather have an Oculink port than a 3.5mm audio jack.",
+            "timestamp": "1741859976",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "That way we could expand the NAS with additional PCIe devices like eGPUs or more NVMe drives...",
+            "timestamp": "1741859976",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "Alternatively a USB4/Thunderbolt port would do the trick, too.",
+            "timestamp": "1741859976",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "That would be really neat. Imagine a N2 with an eGPU. Suddenly you could run AI in a Docker Container on a system with an asthmatic CPU and only 16GB of RAM. 😁",
+            "timestamp": "1741859976",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Thank you for your suggestion! We totally understand the appeal of an Oculink or USB4/Thunderbolt port for expanding PCIe devices. However, our current product is designed with a low-power CPU, which has limited PCIe resources.",
+            "timestamp": "1741920638",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "That said, we designed this NAS with general users in mind, focusing on delivering the best balance of performance, efficiency, and affordability. But we appreciate feedback like yours, and in the future, we aim to offer more advanced options to meet the needs of power users. Stay tuned!",
+            "timestamp": "1741920638",
+            "is_creator": true
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "The Intel N-Series of budget CPUs simply isn't suited for such a device with more than 4 drives and a 10GbE NIC. 9 PCIe lanes simply aren't enough. Even the top of the line N355 only has 9 lanes.",
+            "timestamp": "1742303980",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "I think the N2 is good as it is, but with up to 6 SSDs and a 10GbE NIC in a form factor that is suitable for 10\" rack mount, this device had the potential to be truly great.",
+            "timestamp": "1742303980",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "In my eyes this is a missed opportunity.",
+            "timestamp": "1742303980",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "With a CPU with more PCIe lanes and dual channel RAM and an Oculink or Thunderbolt 4 or 5 port in the same case, this would have been a killer device!",
+            "timestamp": "1742303980",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "The perfect companion to my large 6 bay (3.5\" HDD) NAS.",
+            "timestamp": "1742303980",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "As it is, I'm torn whether I actually want/need the N2 or use the money for something else.",
+            "timestamp": "1742303980",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "Please don't get me wrong. I fully understand why you designed the N2 the way you did and it is good as it is for many potential customers.",
+            "timestamp": "1742303980",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "But I'm simply not sure anymore whether or not it is good (enough) for my use case.",
+            "timestamp": "1742303980",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "No worries at all—we truly appreciate discussions like this and value having a platform where we can engage directly with users.",
+            "timestamp": "1742352159",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "The device you envision sounds fantastic, but implementing it within the N1/N2 hardware structure would be quite challenging. As you’ve noticed, the N2 is designed to be extremely compact and operates with minimal noise. However, a more powerful CPU would require significantly enhanced cooling, which in turn could introduce noise—something we’ve always tried to balance in our development process.",
+            "timestamp": "1742352159",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "This is one of the key challenges we constantly face when designing NAS devices, and it highlights just how much potential there still is to explore in this field. We’re excited about the future and hope to get closer to the kind of product you envision.",
+            "timestamp": "1742352159",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Thanks again for sharing your thoughts—we truly appreciate the feedback!",
+            "timestamp": "1742352159",
+            "is_creator": true
+        },
+        {
+            "poster": "Marcin",
+            "comment": "Hi, first I want to shout out how awesome products you are developing!",
+            "timestamp": "1741776501",
+            "is_creator": false
+        },
+        {
+            "poster": "Marcin",
+            "comment": "Now it's time for my questions:",
+            "timestamp": "1741776501",
+            "is_creator": false
+        },
+        {
+            "poster": "Marcin",
+            "comment": "1. I would like to run Proxmox on a Lincstation N2. From what I found I can achieve that by just installing the OS on a one of drives (assumption based on research about N1) . Is it that simple and will a new OS have full access to hardware?",
+            "timestamp": "1741776501",
+            "is_creator": false
+        },
+        {
+            "poster": "Marcin",
+            "comment": "2. Where can I find some kind of BIOS documentation for Lincstation N2? I would like to check if it will support features like - return previous state after power loss.",
+            "timestamp": "1741776501",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "Don't you think 16GB of RAM are bit too little to do anything useful with any hypervisor?",
+            "timestamp": "1741787318",
+            "is_creator": false
+        },
+        {
+            "poster": "Marcin",
+            "comment": "Like always - it depends.",
+            "timestamp": "1741793995",
+            "is_creator": false
+        },
+        {
+            "poster": "Marcin",
+            "comment": "I wouldn't complain if it had more RAM. But, in my case, it's enough. I'm already running Proxmox on an HP EliteDesk 800 G3 mini 65W with 16GB of RAM. And I'm able to host there all that I need (HomeAssistant, Frigate, NextCloud, Immich, PiHole, VPN, media server, and a few light LXCs = ~12GB).",
+            "timestamp": "1741793995",
+            "is_creator": false
+        },
+        {
+            "poster": "Marcin",
+            "comment": "Available storage slots are what I miss in my setup (I tried to use M.2 to multiple SATA adapter, but it is not stable solution). So I started to look for NAS. And here comes Lincstation N2 - NAS that can replace my home server. I'm still impressed that (from what I found) it will have similar performance to my HP with much less power consumption for only 309$",
+            "timestamp": "1741793995",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Marcin and Stefan, thank you both for this insightful discussion!",
+            "timestamp": "1741830394",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "We truly appreciate these conversations because you each represent different types of NAS users. When designing our products, we constantly navigate trade-offs between ROM, RAM, CPU, network ports, power consumption, cooling, noise levels, and overall value. In making these choices, we always strive to strike a balance based on the majority of user needs.",
+            "timestamp": "1741830394",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "For example, the N2 is a great fit for Marcin, offering practical performance, energy efficiency, and affordability. However, for power users like Stefan, who require higher performance, the N100 CPU’s official memory limit of 16GB may not be sufficient. It's challenging to create a single product that meets everyone’s needs perfectly, but we are committed to continuously exploring deeper user demands, balancing these factors, and offering more choices in the future.",
+            "timestamp": "1741830394",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Thank you both for your support and engagement.",
+            "timestamp": "1741830394",
+            "is_creator": true
+        },
+        {
+            "poster": "Jacob Moos",
+            "comment": "Curious why the s1 didn’t get the 10gb port or the n100 like the n2?",
+            "timestamp": "1741659566",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Thank you for your question.",
+            "timestamp": "1741663501",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Firstly, we chose to equip the S1 with dual 2.5G ports because this configuration offers greater flexibility. While a 10GbE port provides high-speed data transfer, 2.5G is sufficient for many regular users and offers a better cost-performance balance.",
+            "timestamp": "1741663501",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Secondly, regarding the CPU, we selected the N97 for the S1 because it delivers superior performance compared to the N100 used in the N2.",
+            "timestamp": "1741663501",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "These choices were made based on market feedback, and we will continue to offer more options in the future based on customer needs.",
+            "timestamp": "1741663501",
+            "is_creator": true
+        },
+        {
+            "poster": "Liew Chuen Wei",
+            "comment": "N2 deliver to Singapore?",
+            "timestamp": "1741522541",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Yes, please contact us at support@lincplus.com.cn for more details.",
+            "timestamp": "1741572417",
+            "is_creator": true
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "The measurements of the case of the N2 basically scream 10\" rack mount.",
+            "timestamp": "1741381606",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "Do you plan on making brackets for mounting inside a 10\" homelab rack available?",
+            "timestamp": "1741381606",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "Thanks for the reply. I would strongly suggest you reconsider. I'm pretty sure I'm not the only one wanting to mount the N2 inside a 10\" rack.",
+            "timestamp": "1741597105",
+            "is_creator": false
+        },
+        {
+            "poster": "rohit",
+            "comment": "+1",
+            "timestamp": "1741616976",
+            "is_creator": false
+        },
+        {
+            "poster": "Jen",
+            "comment": "Agreed, I am hoping to mount mine in a 10” rack as well. I’d be happy to back a bit extra for dedicated rack ears!",
+            "timestamp": "1741730373",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Hi Tom, thanks for your question! The N2 has been upgraded in multiple aspects to enhance both silent operation and heat dissipation.",
+            "timestamp": "1741340299",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "First, the fan now operates in an optimized smart mode, meaning it only increases speed under heavy workloads while remaining silent during idle periods. Additionally, we’ve added ventilation holes at the bottom to improve airflow and overall cooling efficiency.",
+            "timestamp": "1741340299",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Furthermore, we’ve refined the thermal management system with advanced materials like nano-carbon and high-quality thermal silicone to enhance heat dissipation from every detail.",
+            "timestamp": "1741340299",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Hope this helps!",
+            "timestamp": "1741340299",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Silent doesn’t mean the fan will completely stop spinning. It just means the fan speed will be low, around 3000 RPM or less, making the noise almost inaudible.",
+            "timestamp": "1741572745",
+            "is_creator": true
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "\"better N97\" chip? In what way? Compared to what?",
+            "timestamp": "1741357652",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "AFAIK the N97 has better peak performance, but the N100 is less energy hungry / more energy efficient (PBP 6W vs 12W of the N97).",
+            "timestamp": "1741357652",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "So if you don't need the additional compute power, the N100 may be the better choice.",
+            "timestamp": "1741357652",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Thank you all for your questions and discussion.",
+            "timestamp": "1741577807",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Firstly, to clarify, the CPU in the S1 is N97, while the N2 uses the N100.",
+            "timestamp": "1741577807",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Secondly, in most cases, the system supports Active State Power Management (ASPM). With ERP enabled, the standby power consumption is around 0.5W, and the power consumption in shutdown or sleep mode is around 2W. Regarding NAS power consumption, it's important to note that hard drives significantly impact overall power usage. For a more detailed power consumption analysis, you may refer to third-party reviews.",
+            "timestamp": "1741577807",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "https://nascompares.com/review/lincstation-n2-nas-review-better-than-the-n1/",
+            "timestamp": "1741577807",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "https://nascompares.com/review/lincstation-s1-nas-review/",
+            "timestamp": "1741577807",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Lastly, thank you for your suggestion. We are indeed continuously working to optimize our products to better meet everyone's needs.",
+            "timestamp": "1741577807",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "For the first question, in theory, it can be used, but we don’t highly recommend it. Additionally, we haven’t tested a 16TB 2.5-inch SATA SSD, so we cannot guarantee its performance or compatibility.",
+            "timestamp": "1741315391",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "For the second question, while we have sufficient RAM and ROM, we officially partner only with Unraid.",
+            "timestamp": "1741315391",
+            "is_creator": true
+        },
+        {
+            "poster": "Robert Teller",
+            "comment": "Will SN850X 8TB nvme drives fit?",
+            "timestamp": "1741213072",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Yes, the SN850X 8TB NVMe drives are supported.",
+            "timestamp": "1741253849",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "The N2 supports:",
+            "timestamp": "1741253849",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "2.5-inch SATA HDDs/SSDs (max height: 9.5mm)",
+            "timestamp": "1741253849",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "2280 NVMe SSDs (up to 8TB each)",
+            "timestamp": "1741253849",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "The S1 supports:",
+            "timestamp": "1741253849",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "3.5-inch SATA HDDs (up to 24TB each)",
+            "timestamp": "1741253849",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "2.5-inch SATA HDDs/SSDs (fits in 3.5\" bays with adapters)",
+            "timestamp": "1741253849",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "2280 NVMe SSDs (up to 8TB each)",
+            "timestamp": "1741253849",
+            "is_creator": true
+        },
+        {
+            "poster": "Robert Teller",
+            "comment": "Will N2 include wifi like the N1 Had",
+            "timestamp": "1741213027",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Thanks for your question! Although the N1 features WiFi and Bluetooth, many users have told us that these features are not useful since they cannot be used under the Unraid system. Therefore, the N2 does not come with WiFi or Bluetooth.",
+            "timestamp": "1741251503",
+            "is_creator": true
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "@LincPlus: Good choice 👍",
+            "timestamp": "1741357154",
+            "is_creator": false
+        },
+        {
+            "poster": "Aleksejs Hamjonoks",
+            "comment": "Can you please clarify why shipping price to the UK is so expensive? Almost 25% of unit value",
+            "timestamp": "1741189021",
+            "is_creator": false
+        },
+        {
+            "poster": "Ritesh Singh",
+            "comment": "In FAQ it says, \"LincPlus covers all shipping costs, customs duties, and taxes for orders in the US, UK, and EU.\"",
+            "timestamp": "1741190874",
+            "is_creator": false
+        },
+        {
+            "poster": "Armin Rauch",
+            "comment": "Constistent Information would be nice but is rare anywhere. When you select a produnt they say",
+            "timestamp": "1741248553",
+            "is_creator": false
+        },
+        {
+            "poster": "Armin Rauch",
+            "comment": "\"Shipping Fees are calculated separately (VAT included).\"",
+            "timestamp": "1741248553",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "We apologize for any misunderstanding.",
+            "timestamp": "1741251747",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Kickstarter allows only one set price, so we use the US price as our baseline. For EU and UK orders, the “shipping fee” adjusts for regional price differences, converting it into the corresponding Euro and GBP prices—it’s not an actual shipping charge since shipping is free and taxes are covered by us.",
+            "timestamp": "1741251747",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "For actual pricing details, please visit our story page and click on “Stretch Goals & Early Bird Offers” on the left to view the corresponding regional price table.",
+            "timestamp": "1741251747",
+            "is_creator": true
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "Oh, and which unRAID license is included and which followup licensing fees do we have to pay calculate into TCO?",
+            "timestamp": "1741186541",
+            "is_creator": false
+        },
+        {
+            "poster": "Armin Rauch",
+            "comment": "As you can only use 6 drives anyway a Starter License should be enough. The Unraid FAQ states:",
+            "timestamp": "1741248416",
+            "is_creator": false
+        },
+        {
+            "poster": "Armin Rauch",
+            "comment": "\"Starter and Unleashed licenses include one free year of software updates with purchase. After one year, customers can pay an optional extension fee (just $36 for the year), making them eligible for another year of updates.",
+            "timestamp": "1741248416",
+            "is_creator": false
+        },
+        {
+            "poster": "Armin Rauch",
+            "comment": "If you choose not to extend your license, no problem. You still own the license and have full access to the OS—you simply will not be eligible for future updates unless or until you pay the extension fee. There will be no penalty for extending your license at a later date, other than it being subject to the current published extension price.\"",
+            "timestamp": "1741248416",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Thank you for your question. Here is a more detailed explanation of the steps for using the Unraid license.",
+            "timestamp": "1741252758",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Start with a free 1-month trial (register on Unraid’s website).",
+            "timestamp": "1741252758",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Activate the license for 12 months of free access.",
+            "timestamp": "1741252758",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Post-12 months: Continue using your current version indefinitely.",
+            "timestamp": "1741252758",
+            "is_creator": true
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Upgrading to newer Unraid versions requires a separate purchase.",
+            "timestamp": "1741252758",
+            "is_creator": true
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "The N2 is interesting, but if you did an overall upgrade, why didn't you go with the N150 instead of the N100?",
+            "timestamp": "1741186469",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "Availability? Price point?",
+            "timestamp": "1741186469",
+            "is_creator": false
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "I'm just curious.",
+            "timestamp": "1741186469",
+            "is_creator": false
+        },
+        {
+            "poster": "LincPlus",
+            "comment": "Hello, and thank you for your question. While the N2 is an upgraded version, it went through a long period of research and development. In fact, the N150 was released only after the completion of our development phase. However, it may be reflected in future LincPlus products.",
+            "timestamp": "1741253129",
+            "is_creator": true
+        },
+        {
+            "poster": "Stefan Homberg",
+            "comment": "That's what I thought. Thanks for the reply.",
+            "timestamp": "1741257898",
+            "is_creator": false
+        },
+        {
+            "poster": "Jacob Moos",
+            "comment": "Curious why the s1 didn’t get the n100 chip or the 10gb port?",
+            "timestamp": "1741659525",
+            "is_creator": false
+        }
+    ]
+}

@@ -1,0 +1,623 @@
+{
+    "url": "https://www.kickstarter.com/projects/makeblock/xtool-apparel-printer-a-new-era-of-apparel-printing/comments",
+    "comments": [
+        {
+            "poster": "Scott Wester",
+            "comment": "Why can’t we see the stretch goals no more?",
+            "timestamp": "1742420230",
+            "is_creator": false
+        },
+        {
+            "poster": "krams",
+            "comment": "Hello, could you please update the FAQ list that includes new questions and answers received in the comments (ink and cleaning product consumption at rest, warranty periods for Europe and the various components, etc.)? This would make things easier. Thank you.",
+            "timestamp": "1742379066",
+            "is_creator": false
+        },
+        {
+            "poster": "lanfa",
+            "comment": "For the self cleaning on the printer heads. Will it use up a lot of white ink with cleaning solution like a dtg machine? Or will it only use the cleaning solution?",
+            "timestamp": "1742336857",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for your question, Ianfa!",
+            "timestamp": "1742353095",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "By your test,for the self-cleaning process, the printer uses both ink and cleaning solution. Here’s the breakdown:",
+            "timestamp": "1742353095",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Moisturizing liquid (Total 30ml)",
+            "timestamp": "1742353095",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "For moisture maintenance, every three days: 20ml per month",
+            "timestamp": "1742353095",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "For cleaning, every six days: 10ml per month",
+            "timestamp": "1742353095",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Ink (Total 30ml)",
+            "timestamp": "1742353095",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "One cleaning session uses 8ml (3ml color ink, 3ml white ink, 2ml moisturizing solution)",
+            "timestamp": "1742353095",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Every six days: 30ml per month (15ml color ink and 15ml white ink)",
+            "timestamp": "1742353095",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "This ensures the printer heads stay clean while minimizing ink waste.",
+            "timestamp": "1742353095",
+            "is_creator": true
+        },
+        {
+            "poster": "audiodidakt",
+            "comment": "How do we submit our documents for the tax exemption?",
+            "timestamp": "1742324469",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for support, audiodidakt!",
+            "timestamp": "1742353389",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "To submit your documents for tax exemption, please send your relevant materials to xTool's official email: support@info.xtool.com. They will process your registration. Once your identity is verified, we will not charge you any tax on PledgeBox moving forward.",
+            "timestamp": "1742353389",
+            "is_creator": true
+        },
+        {
+            "poster": "Michael Forster",
+            "comment": "How do we submit our documents for the tax exemption?",
+            "timestamp": "1742312030",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Dear Forster,",
+            "timestamp": "1742353475",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for support!",
+            "timestamp": "1742353475",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "you'll need to submit your documents for tax exemption, please send your relevant materials to xTool's official email: support@info.xtool.com. They will process your registration. Once your identity is verified, we will not charge you any tax on PledgeBox moving forward.",
+            "timestamp": "1742353475",
+            "is_creator": true
+        },
+        {
+            "poster": "Etienne Geyser",
+            "comment": "Would you be able to ship to the UK or UAE?",
+            "timestamp": "1742291765",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Hi Geyser,",
+            "timestamp": "1742353668",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Currently, we are running a crowdfunding campaign on Kickstarter, and we are only shipping to the United States, the European Union, and Canada. However, we will be expanding to other countries in the future.",
+            "timestamp": "1742353668",
+            "is_creator": true
+        },
+        {
+            "poster": "Sebastian Wunsch",
+            "comment": "Do you plan to make 3rd party material easily accessible? Are you \"open Source\" so customers can also try other material, colors, transfer films and so on? Meaning, does the printer block other material, like the closed setups as Apple that pretty much block off any 3rd aprty material to increase sales of consumables?",
+            "timestamp": "1742291302",
+            "is_creator": false
+        },
+        {
+            "poster": "Sebastian Wunsch",
+            "comment": "In that case i' d see issues in other countries when material may be harder to come by in the future or in case of obsolescence (at that price people will want to have it running for years to come).",
+            "timestamp": "1742291302",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for your question, Wunsch!",
+            "timestamp": "1742360748",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "At this moment, we do not recommend using third-party inks, as doing so could lead to printhead clogging, which will not be covered under warranty. Even with the potential introduction of xTool Care in the future, it will still be necessary to use xTool ink to ensure warranty coverage.",
+            "timestamp": "1742360748",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "We understand the importance of offering affordable and reliable consumables, and that’s why we’ve made efforts to reduce the cost of xTool materials to ensure they are more accessible for our customers.",
+            "timestamp": "1742360748",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "We are also working on the development of new consumables, so please stay tuned for updates, and thank you for your patience.",
+            "timestamp": "1742360748",
+            "is_creator": true
+        },
+        {
+            "poster": "krams",
+            "comment": "Also can you confirm to me that the machine warranty is 2 years for Europe as indicated in the presentation live?",
+            "timestamp": "1742285941",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for question,krams.",
+            "timestamp": "1742377849",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "The machine comes with a two-year warranty. Consumables (ink, film, blades) are not covered under warranty. The printhead has a separate warranty policy.",
+            "timestamp": "1742377849",
+            "is_creator": true
+        },
+        {
+            "poster": "krams",
+            "comment": "Hi, Your warranty policy of only 1 month for 999 dollar print heads (x2) is quite scary for most of us I imagine. If you are sure of your automatic maintenance and cleaning system, why put such a short warranty? Could you guarantee 6 months for example?",
+            "timestamp": "1742285833",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for support, krams",
+            "timestamp": "1742377477",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "One month may seem like a short warranty for a printhead, but for such a delicate component, especially Epson i series printheads, many established brands offer even less, sometimes no warranty at all.",
+            "timestamp": "1742377477",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "At xTool, we prioritize user experience and are confident in our printhead maintenance. That's why we offer a one-month warranty. We'll also consider extending this warranty based on our after-sales feedback.",
+            "timestamp": "1742377477",
+            "is_creator": true
+        },
+        {
+            "poster": "Joanne Riggle",
+            "comment": "How long after the kickstarter campaign ends will the consumables be made available for purchase on the XTool site?",
+            "timestamp": "1742224316",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for support, Riggle.",
+            "timestamp": "1742285593",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Consumables will be available for purchase on the xTool official website starting from April 11th. Please stay tuned!",
+            "timestamp": "1742285593",
+            "is_creator": true
+        },
+        {
+            "poster": "Sebastian Wunsch",
+            "comment": "Is it possible for the prints to adhere to leather? is it comparable to \"normal\" fabrics?",
+            "timestamp": "1742215066",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for support, Wunsch.",
+            "timestamp": "1742285828",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "It should be possible to apply the prints on leather. However, because fabric generally has fewer pores compared to leather, the adhesion might not be as strong as it is on fabric. We still highly recommend performing transfers on fabric for the best results.",
+            "timestamp": "1742285828",
+            "is_creator": true
+        },
+        {
+            "poster": "Edwin Alvarez Mora",
+            "comment": "Can the result printed dtf be use to on mugs? Do you have a list of materials this will stick after applying the heat",
+            "timestamp": "1742191447",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for your question, Mora!",
+            "timestamp": "1742291751",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Regarding transferring prints onto mugs, we have tested it, and it is possible to transfer the design. However, the print is more likely to peel off easily. Therefore, we highly recommend using the prints primarily on apparel for the best durability and results.",
+            "timestamp": "1742291751",
+            "is_creator": true
+        },
+        {
+            "poster": "Dale Larsen",
+            "comment": "Has any controlled testing been performed on the durability of the prints after applying to a material? How many cleaning cycles before the transfer starts showing signs of wear and degradation for example?",
+            "timestamp": "1741916968",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for question , Larsen.",
+            "timestamp": "1741934770",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Based on our tests, prints applied to cotton and polyester fabrics can withstand approximately 50 to 100 cycles of washing in 40°C (104°F) warm water, followed by drying, before showing noticeable signs of wear and degradation. Actual durability may vary depending on washing conditions and fabric type.",
+            "timestamp": "1741934770",
+            "is_creator": true
+        },
+        {
+            "poster": "Edwin Alvarez Mora",
+            "comment": "How can we add extended warranty similar to other products you sell. Example p2s",
+            "timestamp": "1741753592",
+            "is_creator": false
+        },
+        {
+            "poster": "Scott Wester",
+            "comment": "I believe after your payment is submitted when the Kickstarter ends. You just contact support to purchase that. Same as the air purifier, you can get a discount on that as well.",
+            "timestamp": "1741804537",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for support, Mora.",
+            "timestamp": "1741938080",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Currently, we are in the process of developing xTool Care, an extended warranty program specifically for the Apparel Printer. Please stay tuned for more details and we appreciate your support.",
+            "timestamp": "1741938080",
+            "is_creator": true
+        },
+        {
+            "poster": "Edwin Alvarez Mora",
+            "comment": "I regards to the Shaker Oven Power Consumption, what that be off and only turn that on when we print? How long does it takes to heat the oven?",
+            "timestamp": "1741752107",
+            "is_creator": false
+        },
+        {
+            "poster": "Edwin Alvarez Mora",
+            "comment": "what is the power consumption when the printer does the self maintenance over night",
+            "timestamp": "1741752107",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for support, Mora.",
+            "timestamp": "1741835885",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Regarding the Shaker Oven, it can be turned off when not in use. It takes approximately 2-3 minutes to heat up to the desired temperature after turning it on.",
+            "timestamp": "1741835885",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "When the printer is in sleeping mode (with auto cleaning enabled), its power consumption will be 0.5kWh per day.",
+            "timestamp": "1741835885",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Great question, thank you for asking!",
+            "timestamp": "1741835885",
+            "is_creator": true
+        },
+        {
+            "poster": "Jack Johnson",
+            "comment": "What is the estimated cost to print a full color 14\" x 17\" transfer. How many of this size can be printed per hour? Is the cost based on what film and ink will cost on an ongoing basis? Can I set up multiple different image files in a que, so they print one after another, so I don't have to sit there and monitor the printer?",
+            "timestamp": "1741746422",
+            "is_creator": false
+        },
+        {
+            "poster": "Edwin Alvarez Mora",
+            "comment": "I saw this in their FAQ.\"\"The cost of printing an A3-sized film, including the roll material, ink, and hot melt powder, is about $0.8. Purchasing a plain bulk T-shirt typically costs $3–5. In total, the cost is around $4–6 per shirt. In the U.S., the average selling price of a T-shirt ranges from $20–$40, leaving you with a profit margin of $14–$36 per shirt",
+            "timestamp": "1741751565",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "1.Based on a speed of 50 sq ft/hour（720x1200, 8PASS, 0%feather）, you can print approximately 28.57 films of size 14\" x 18\" per hour. Each film would take roughly 2 minutes (0.0333 hours) to print",
+            "timestamp": "1741757384",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "cost based on xTool offical supplies, ink, film, powder...etc.",
+            "timestamp": "1741757384",
+            "is_creator": true
+        },
+        {
+            "poster": "Jack Johnson",
+            "comment": "Can I get an answer to the question I posted a day ago please.",
+            "timestamp": "1741745381",
+            "is_creator": false
+        },
+        {
+            "poster": "Dale Larsen",
+            "comment": "Not seeing this answered anywhere yet, apologies if I missed it! Once the designs are printed and baked how long can the transfers be stored before being applied? What would be the requirements for storage for unapplied transfers?",
+            "timestamp": "1741745377",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for your support, Larsen.",
+            "timestamp": "1741803649",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Our print head is the EPSON I1600, with a total of two heads. To make it easier for users to install and remove, we’ve made adjustments to the structure. The disassembly and wiring are designed to be very simple. Additionally, we have a 24/7 auto-cleaning function to ensure the print heads stay in top condition, so you can feel confident using and maintaining them.",
+            "timestamp": "1741803649",
+            "is_creator": true
+        },
+        {
+            "poster": "Dale Larsen",
+            "comment": "I think you pasted the wrong response! 😉 I did ask about the print head…",
+            "timestamp": "1741824680",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Sorry for wrong response.",
+            "timestamp": "1741852232",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Regarding the already baked films, we recommend storing them for 10 to 20 days. If stored properly, they can last for over a month. However, it is crucial to store them in a dry and low-humidity environment for the best results.",
+            "timestamp": "1741852232",
+            "is_creator": true
+        },
+        {
+            "poster": "Donnie Muraoka",
+            "comment": "Is the shaker completely sealed? Just wondering if there will be problems with powder leaking out.",
+            "timestamp": "1741721366",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for your support, Muraoka.",
+            "timestamp": "1741743491",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "The OS1 Shaker Oven Machine is sealed, but due to the nature of the baking process, it is not fully airtight. Therefore, it is essential to use the AP2 (or any brand of directly connected air purifier) or Inline fan to assist with air extraction. Without this, there may be PM2.5 particles in the air, and prolonged exposure can be harmful to the lungs.",
+            "timestamp": "1741743491",
+            "is_creator": true
+        },
+        {
+            "poster": "Edwin Alvarez Mora",
+            "comment": "Will the Ap2 be enough to remove 100% particles?",
+            "timestamp": "1741751316",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Hi Mora,",
+            "timestamp": "1741834473",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for your question.",
+            "timestamp": "1741834473",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "The AP2 has a removal rate of 99.99% for PM2.5, and 99.97% for PM0.3.",
+            "timestamp": "1741834473",
+            "is_creator": true
+        },
+        {
+            "poster": "Mino Boba",
+            "comment": "For the discounted AP2, will the $699 alway be there for pledgers? Because $6k+ pledge is a lot without payment plan. I might need some time to save more money to get the AP2.",
+            "timestamp": "1741684327",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for your support, Boba!",
+            "timestamp": "1741743159",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "We understand your situation, and we definitely recommend pairing the Oven with the AP2. The $699 price will be guaranteed throughout 2025. You can reach out to xTool's support at any point this year with a screenshot of your Kickstarter order to receive the corresponding discount for the AP2.",
+            "timestamp": "1741743159",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Feel free to contact us if you need any assistance!",
+            "timestamp": "1741743159",
+            "is_creator": true
+        },
+        {
+            "poster": "Jack Johnson",
+            "comment": "I meant to ask, at what dpi are you using to calculate print speeds? Based on my previous questions, how fast can will the printer print a 14\" x 17\" full color transfer at a high resolution?",
+            "timestamp": "1741643859",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Hi Jackson, thank you for question.",
+            "timestamp": "1741742699",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "it would take approximately 2 minutes to print a full 14\" x 18\" image, by 100% color ink and 50% white ink and 0% feather.",
+            "timestamp": "1741742699",
+            "is_creator": true
+        },
+        {
+            "poster": "Jack Johnson",
+            "comment": "at what dpi",
+            "timestamp": "1741746343",
+            "is_creator": false
+        },
+        {
+            "poster": "hansel vallejo",
+            "comment": "I see that the printer uses i1600 Print heads, Would it be able to be upgraded to i3200 printheads in the future?",
+            "timestamp": "1741625856",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for support, vallejo.",
+            "timestamp": "1741938479",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "We are currently working on developing the possibility of upgrading to i3200 printheads in the future. Please stay tuned for more updates, and we appreciate your patience and support.",
+            "timestamp": "1741938479",
+            "is_creator": true
+        },
+        {
+            "poster": "Khalid Adil",
+            "comment": "If we’re printing to the printer from a third party program such as photoshop, what settings should we use on our art (color space, DPI, etc.) for the best print result?",
+            "timestamp": "1741266852",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for support, Adil.",
+            "timestamp": "1741326010",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "After exporting your image, convert it to formats like JPEG or PNG... etc, and then import it into XCS. The DPI can be set according to your preference. There are four options available: 720*600 (4 PASS), 720*900 (6 PASS), 720*1200 (8 PASS), and 720*1800 (12 PASS).",
+            "timestamp": "1741326010",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "As for color adjustments, no additional adjustments are necessary. Our film and ink work together with an ICC color profile. However, it is important to use the official film and ink for the best results.",
+            "timestamp": "1741326010",
+            "is_creator": true
+        },
+        {
+            "poster": "Brandon Miura",
+            "comment": "Will the printer be compatible with other RIP software such as Digital Factory? Also how many passes is the 50 square feet/hour based on. The example of 440 pieces/hour of 3\" x 3\" (4 passes) and 30 pieces/hour of 12\" x 8\" (6 passes) don't equal 50 square feet/hour.",
+            "timestamp": "1741247913",
+            "is_creator": false
+        },
+        {
+            "poster": "Brandon Miura",
+            "comment": "And what resolution are you basing the 50 square feet/hour on?",
+            "timestamp": "1741248093",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for support, Miura.",
+            "timestamp": "1741326244",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "The example we provided includes space between the images, which is why the speed calculation doesn't exactly add up to 50 sq ft/hr. The 50 sq ft/hr rate is based on printing a fully filled 14\"x18\" image with a feather setting of 0%.",
+            "timestamp": "1741326244",
+            "is_creator": true
+        },
+        {
+            "poster": "Edwin Alvarez Mora",
+            "comment": "Why are the max print dimensions limited to 18''? when using roll paper we should be able to make even bigger prints",
+            "timestamp": "1741131066",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Hi Mora,",
+            "timestamp": "1741231769",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for your question!",
+            "timestamp": "1741231769",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "We are currently considering whether to offer a longer print length, and it is under testing. However, the reason we’ve chosen 18 inches for the max print size is:",
+            "timestamp": "1741231769",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "1.The 14\" x 18\" size is already sufficient to cover the graphic size needed for US 4XL shirts.",
+            "timestamp": "1741231769",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "2.We believe that users' real needs involve printing individual designs, so we set the length at this size for optimal use.",
+            "timestamp": "1741231769",
+            "is_creator": true
+        },
+        {
+            "poster": "xTool",
+            "comment": "We may increase the print length in the future based on ongoing testing and user feedback.",
+            "timestamp": "1741231769",
+            "is_creator": true
+        },
+        {
+            "poster": "Peter",
+            "comment": "We typically get long gang sheets from our DTF printer supplier of the same logo in one big roll. Please allow for long prints.",
+            "timestamp": "1741287290",
+            "is_creator": false
+        },
+        {
+            "poster": "xTool",
+            "comment": "Thank you for your suggestion, Peter. I have already forwarded this issue to our product manager. Please stay tuned for further updates.",
+            "timestamp": "1741326748",
+            "is_creator": true
+        }
+    ]
+}

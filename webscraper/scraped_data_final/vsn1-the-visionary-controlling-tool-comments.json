@@ -1,0 +1,53 @@
+{
+    "url": "https://www.kickstarter.com/projects/intechstudio/vsn1-the-visionary-controlling-tool/comments",
+    "comments": [
+        {
+            "poster": "Shalmon",
+            "comment": "Which side is the display on?",
+            "timestamp": "1741688600",
+            "is_creator": false
+        },
+        {
+            "poster": "Shalmon",
+            "comment": "Most of your images show the display on the left and knob on the right, but there are pictures with the display on the right (even one with a left-display and a right-display next to each other).",
+            "timestamp": "1741688600",
+            "is_creator": false
+        },
+        {
+            "poster": "Shalmon",
+            "comment": "I suspect that the position of display and knob will be fixed on the unit, so you may want to make it clear how the VSN1 looks. (Or advertise if the swap of the knob and display position is easily done, because that would be great as well)",
+            "timestamp": "1741688600",
+            "is_creator": false
+        },
+        {
+            "poster": "Shalmon",
+            "comment": "I also spotted that dual display unit in the development progress pictures)",
+            "timestamp": "1741688600",
+            "is_creator": false
+        },
+        {
+            "poster": "Intech Studio",
+            "comment": "Hey there! The display position on the VSN1 can be on either side. The unit is designed to allow for flexibility, so you may see images with the display on the left or the right. While the position is fixed on a given unit, the design accommodates both orientations! All backers will be able to choose their desired orientation at a later stage.",
+            "timestamp": "1741689707",
+            "is_creator": true
+        },
+        {
+            "poster": "Intech Studio",
+            "comment": "The dual-display unit was something we experimented with during development, but at this time, we haven’t found a suitable use case that would make it practical for production. For now, we’re focusing on the single-display design, which can be positioned on either the left or right side, depending on the unit.",
+            "timestamp": "1741689707",
+            "is_creator": true
+        },
+        {
+            "poster": "Joshua Needham",
+            "comment": "Congrats on smashing your goal in less than 24 hours!",
+            "timestamp": "1741248509",
+            "is_creator": false
+        },
+        {
+            "poster": "Intech Studio",
+            "comment": "Thank you Joshua for your support and kind words! It's awesome to see our project getting this kind of attention.",
+            "timestamp": "1741463774",
+            "is_creator": true
+        }
+    ]
+}

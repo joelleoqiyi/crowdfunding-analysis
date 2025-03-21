@@ -1,0 +1,47 @@
+{
+    "url": "https://www.kickstarter.com/projects/dutchworkx3d/emergency-house-number/comments",
+    "comments": [
+        {
+            "poster": "Mark Rensema",
+            "comment": "Can you also make it activated thru Homey and the fire brigade schedule (for NL)?",
+            "timestamp": "1738065035",
+            "is_creator": false
+        },
+        {
+            "poster": "DutchWorkX3D",
+            "comment": "Kunnen ook in het Nederlands verder hoor :-)",
+            "timestamp": "1738065838",
+            "is_creator": true
+        },
+        {
+            "poster": "DutchWorkX3D",
+            "comment": "Ja ik wil proberen het in ieder geval te koppelbaar te maken met Home Assistant, Homey en mogelijk andere thuis systemen.",
+            "timestamp": "1738065838",
+            "is_creator": true
+        },
+        {
+            "poster": "DutchWorkX3D",
+            "comment": "Wat bedoel je met de \"Fire Brigade Schedule\"?",
+            "timestamp": "1738065838",
+            "is_creator": true
+        },
+        {
+            "poster": "Mark Rensema",
+            "comment": "i know ;)",
+            "timestamp": "1738066947",
+            "is_creator": false
+        },
+        {
+            "poster": "Mark Rensema",
+            "comment": "dat zou fijn zijn want dan kunnen meerdere apps heb aansturen ...voor wat je ook ermee wil doen... ;)",
+            "timestamp": "1738066947",
+            "is_creator": false
+        },
+        {
+            "poster": "DutchWorkX3D",
+            "comment": "Ja idd",
+            "timestamp": "1738067665",
+            "is_creator": true
+        }
+    ]
+}

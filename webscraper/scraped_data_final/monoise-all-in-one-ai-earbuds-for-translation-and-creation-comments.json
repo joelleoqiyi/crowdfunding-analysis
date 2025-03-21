@@ -1,0 +1,785 @@
+{
+    "url": "https://www.kickstarter.com/projects/monoise/monoise-all-in-one-ai-earbuds-for-translation-and-creation/comments",
+    "comments": [
+        {
+            "poster": "Kyle Suarez",
+            "comment": "Quick question. Do you guys have a timeline for delivery or did I potentially miss that",
+            "timestamp": "1742405453",
+            "is_creator": false
+        },
+        {
+            "poster": "Anthony",
+            "comment": "Will the case have wireless charging similar to air pods or the like?",
+            "timestamp": "1742183361",
+            "is_creator": false
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Anthony,",
+            "timestamp": "1742352783",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "P-G2’s case currently supports fast USB-C charging, but it does not have wireless charging at this time. That being said, we appreciate the feedback and will consider it for future versions!",
+            "timestamp": "1742352783",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Let us know if you have any other questions. 😊",
+            "timestamp": "1742352783",
+            "is_creator": true
+        },
+        {
+            "poster": "Eric Belmon",
+            "comment": "Hello,",
+            "timestamp": "1742144794",
+            "is_creator": false
+        },
+        {
+            "poster": "Eric Belmon",
+            "comment": "1 - Do the earbuds allow real-time translation without an Internet connection?",
+            "timestamp": "1742144794",
+            "is_creator": false
+        },
+        {
+            "poster": "Eric Belmon",
+            "comment": "If so, how does the quality and speed of offline translation compare to online translation?",
+            "timestamp": "1742144794",
+            "is_creator": false
+        },
+        {
+            "poster": "Eric Belmon",
+            "comment": "2 - Is there a data protection policy specifying where and how user information is processed?",
+            "timestamp": "1742144794",
+            "is_creator": false
+        },
+        {
+            "poster": "Eric Belmon",
+            "comment": "3 - Can you confirm that there will never be a subscription required for access to the AI translation features?",
+            "timestamp": "1742144794",
+            "is_creator": false
+        },
+        {
+            "poster": "Eric Belmon",
+            "comment": "Thank you.",
+            "timestamp": "1742144794",
+            "is_creator": false
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Eric,",
+            "timestamp": "1742176291",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Great questions! Here’s what you need to know:",
+            "timestamp": "1742176291",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "1️⃣ Offline Translation – P-G2 currently requires an internet connection for real-time translation to ensure accuracy and access to the latest AI models. We’re exploring offline options, but online translation delivers the best speed and quality.",
+            "timestamp": "1742176291",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "2️⃣ Data Security & Privacy – We take security seriously. P-G2 uses end-to-end AES + TLS encryption to protect your data. Users have full control over whether data is uploaded, and both local and cloud storage are fully encrypted. Our cloud security is powered by Microsoft Azure, ensuring enterprise-level protection.",
+            "timestamp": "1742176291",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "3️⃣ Lifetime AI Membership – All Kickstarter backers receive lifetime access to AI features, including real-time translation, AI conversations, productivity tools, and DeepSeek R1 & GPT-4o enhancements. Please check the “Lifetime Free AI” section on our campaign page for full details.",
+            "timestamp": "1742176291",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Let us know if you have any other questions! 😊",
+            "timestamp": "1742176291",
+            "is_creator": true
+        },
+        {
+            "poster": "Eric Belmon",
+            "comment": "Thank you for your responses!",
+            "timestamp": "1742206585",
+            "is_creator": false
+        },
+        {
+            "poster": "Eric Belmon",
+            "comment": "Indeed, having translation available locally would be a real advantage, especially when an internet connection is unavailable. Great project!",
+            "timestamp": "1742206585",
+            "is_creator": false
+        },
+        {
+            "poster": "Taher Fakhri",
+            "comment": "Hello, does it work in all modes with Arabic translation. Arabic to English and English to Arabic.",
+            "timestamp": "1742120811",
+            "is_creator": false
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Taher,",
+            "timestamp": "1742176545",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Yes! P-G2 fully supports Arabic translation in all modes. 😊",
+            "timestamp": "1742176545",
+            "is_creator": true
+        },
+        {
+            "poster": "Taher Fakhri",
+            "comment": "Thanks, that's great!",
+            "timestamp": "1742185120",
+            "is_creator": false
+        },
+        {
+            "poster": "Paweł",
+            "comment": "Hello! Is it working in ear-to-ear mode with polish and italian language?",
+            "timestamp": "1741904621",
+            "is_creator": false
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Paweł,",
+            "timestamp": "1741919974",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Yes! Ear-to-ear mode supports Polish and Italian for seamless two-way translation. Let us know if you have any other questions! 😊",
+            "timestamp": "1741919974",
+            "is_creator": true
+        },
+        {
+            "poster": "Martin Schrott",
+            "comment": "great product thanks - I am looking forward to this experience!",
+            "timestamp": "1741815599",
+            "is_creator": false
+        },
+        {
+            "poster": "Martin Schrott",
+            "comment": "It would be awesome to get this two features included:",
+            "timestamp": "1741815599",
+            "is_creator": false
+        },
+        {
+            "poster": "Martin Schrott",
+            "comment": "* life listening to the same language in loud areas with choosable microphone (either the p-r2 or the phone) to get clear voice without translation ;-) (would be really helpful often)",
+            "timestamp": "1741815599",
+            "is_creator": false
+        },
+        {
+            "poster": "Martin Schrott",
+            "comment": "* equalizer (multi-band) to adjust the sound - most earplugs only allow to choose from presets",
+            "timestamp": "1741815599",
+            "is_creator": false
+        },
+        {
+            "poster": "Martin Schrott",
+            "comment": "Maybe you can include this software enhanzements to make the p-r2 even more unique",
+            "timestamp": "1741815599",
+            "is_creator": false
+        },
+        {
+            "poster": "Martin Schrott",
+            "comment": "all the best",
+            "timestamp": "1741815599",
+            "is_creator": false
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Martin,",
+            "timestamp": "1741920700",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Thanks for your great feedback! We’re thrilled you’re excited about P-G2.",
+            "timestamp": "1741920700",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "🔹 Live Listening Mode – Currently, P-G2 focuses on AI-powered noise cancellation and translation, but we see the value in a pure voice enhancement mode. We’ll share this with our R&D team for future updates!",
+            "timestamp": "1741920700",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "🔹 Multi-Band EQ – P-G2 already delivers Hi-Res certified sound, and expanding EQ customization is definitely something we’re exploring for future software updates.",
+            "timestamp": "1741920700",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "We truly appreciate your suggestions and will keep pushing to make P-G2 even better! 🚀",
+            "timestamp": "1741920700",
+            "is_creator": true
+        },
+        {
+            "poster": "Shintaro Iwakuma",
+            "comment": "Expectations for this product are very high, and the \"Lifetime AI Membership for All Backers\" campaign is also fantastic.",
+            "timestamp": "1741703398",
+            "is_creator": false
+        },
+        {
+            "poster": "Shintaro Iwakuma",
+            "comment": "The only concern is the use of DeepSeek-R1. Is it possible to disable DeepSeek and configure it to use only GPT-4o?",
+            "timestamp": "1741703398",
+            "is_creator": false
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Shintaro,",
+            "timestamp": "1741746461",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Thanks for your support!",
+            "timestamp": "1741746461",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Right now, DeepSeek R1 is mainly used for advanced reasoning tasks like meeting transcription and structured analysis. For everyday AI chat, we’re optimizing the system to:",
+            "timestamp": "1741746461",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "✅ Use faster models (like DeepSeek V3) for casual conversations",
+            "timestamp": "1741746461",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "✅ Make DeepSeek R1 optional for those who need deeper analysis",
+            "timestamp": "1741746461",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "✅ Leverage GPT-4o for more natural and high-level conversational AI",
+            "timestamp": "1741746461",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Users will be able to manually choose between these models based on their needs, ensuring both speed and depth where required.",
+            "timestamp": "1741746461",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Let us know if you have any other questions! 😊",
+            "timestamp": "1741746461",
+            "is_creator": true
+        },
+        {
+            "poster": "Dennis Weible",
+            "comment": "Is Shipping Include Customs fees ?",
+            "timestamp": "1741538694",
+            "is_creator": false
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Dennis,",
+            "timestamp": "1741586388",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Shipping fees (excluding customs duties and taxes) will be collected after the campaign through an email survey, where you’ll also choose your color and confirm your shipping details. Customs fees or taxes aren’t included, as they vary by country.",
+            "timestamp": "1741586388",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Let us know if you have any other questions!😊",
+            "timestamp": "1741586388",
+            "is_creator": true
+        },
+        {
+            "poster": "Oleksandr Antonyuk",
+            "comment": "Unfortunately, I couldn't find a list of supported languages, so I have a specific question: can this device translate into Swedish, Russian, or Ukrainian?",
+            "timestamp": "1741526554",
+            "is_creator": false
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Oleksandr,",
+            "timestamp": "1741586541",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Thanks for reaching out! Yes, Monoise P-G2 supports Swedish, Russian, and Ukrainian.",
+            "timestamp": "1741586541",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "We’ll update a full language list on our campaign page soon. Feel free to ask if you have more questions!😊",
+            "timestamp": "1741586541",
+            "is_creator": true
+        },
+        {
+            "poster": "Joel Nunez",
+            "comment": "Will your app work on Android and iOS?",
+            "timestamp": "1741403420",
+            "is_creator": false
+        },
+        {
+            "poster": "Joel Nunez",
+            "comment": "Thank you. One additional question: Does your app require internet access for translation to work, or is there an offline mode?",
+            "timestamp": "1741657772",
+            "is_creator": false
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Joel,",
+            "timestamp": "1741676616",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Great question!",
+            "timestamp": "1741676616",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "🔹 Internet Required:",
+            "timestamp": "1741676616",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• AI real-time translation (Cloud-based for accuracy & updates)",
+            "timestamp": "1741676616",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• Meeting notes (DeepSeek R1 reasoning & GPT-4o analysis)",
+            "timestamp": "1741676616",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• Voice to Text (Stored locally, syncs when online)",
+            "timestamp": "1741676616",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "🔹 Works Offline:",
+            "timestamp": "1741676616",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• AI noise cancellation & voice enhancement (No cloud needed)",
+            "timestamp": "1741676616",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Let us know if you have any other questions! 😊",
+            "timestamp": "1741676616",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Joel,",
+            "timestamp": "1741676894",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Sorry for our neglect in above reply.",
+            "timestamp": "1741676894",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Here’s the correct breakdown:",
+            "timestamp": "1741676894",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "🔹 Internet Required:",
+            "timestamp": "1741676894",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• AI real-time translation (Cloud-based for accuracy & updates)",
+            "timestamp": "1741676894",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• Meeting notes (DeepSeek R1 reasoning & GPT-4o analysis)",
+            "timestamp": "1741676894",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• Voice transcription (Processed in the cloud for high-accuracy speech-to-text conversion)",
+            "timestamp": "1741676894",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "🔹 Works Offline:",
+            "timestamp": "1741676894",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• AI noise cancellation & voice enhancement (No cloud needed)",
+            "timestamp": "1741676894",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Thanks for your patience, and let me know if you have any other questions! 😊",
+            "timestamp": "1741676894",
+            "is_creator": true
+        },
+        {
+            "poster": "Ruth Duckworth",
+            "comment": "How do these differ from other translation earbuds that cost half the price?",
+            "timestamp": "1740821289",
+            "is_creator": false
+        },
+        {
+            "poster": "Ruth Duckworth",
+            "comment": "Will they work in areas of high background noise?",
+            "timestamp": "1740821289",
+            "is_creator": false
+        },
+        {
+            "poster": "Ruth Duckworth",
+            "comment": "The subscription price is very high if these are only to be used once or twice a year. How about an on-demand tariff or limited free features?",
+            "timestamp": "1740821289",
+            "is_creator": false
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Ruth,",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Thanks for reaching out!",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Here’s what makes P-G2 stand out and how it works:",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "1️⃣ How is P-G2 different from cheaper translation earbuds?",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "P-G2 is more than just a translator—it’s an AI-powered communication assistant. Unlike budget models with basic word-for-word translation, P-G2 runs on DeepSeek R1 & GPT-4o, delivering smarter, context-aware translations that feel natural and accurate.",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Beyond translation, DeepSeek R1 thinks deeper—analyzing conversations, structuring ideas, and generating mind maps for smarter communication and effortless productivity.",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "2️⃣ Will it work in noisy environments?",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Yes! P-G2 features AI-powered Noise Cancellation for clear voice pickup, even in crowded cafés, airports, or offices. Unlike ANC (Active Noise Cancellation), which blocks noise for music, ENC enhances voice clarity while filtering out background noise, ensuring accurate translations and crystal-clear calls.",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "3️⃣ Is there an on-demand option for occasional use?",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "All backers get one year free, including:",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "✔ Unlimited real-time & face-to-face translation",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "✔ 300 minutes of voice/video call translation",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "✔ 50 AI chats/day (including DeepSeek R1 advanced reasoning)",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "✔ 20 AI-generated images/day",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "After the first year, translation and AI features require a subscription, but recording transcription time can be purchased separately as you need. We’re also exploring more flexible pricing options based on user needs.",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hope this helps! Let us know if you have any other questions. 😊",
+            "timestamp": "1740970444",
+            "is_creator": true
+        },
+        {
+            "poster": "Ruth Duckworth",
+            "comment": "Thank you for the update.",
+            "timestamp": "1741343064",
+            "is_creator": false
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi T S,",
+            "timestamp": "1740665783",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Thanks for your interest in P-G2! Happy to clarify.",
+            "timestamp": "1740665783",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "P-G2 isn’t just regular earbuds—it’s an AI-powered translation and communication tool. While the app plays a role, the earbuds have built-in AI processing for real-time translation, noise cancellation, and smart voice interactions. Regular earbuds wouldn’t offer the same seamless, hands-free experience.",
+            "timestamp": "1740665783",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Offline translation isn’t included in the base subscription, as cloud-based AI ensures the most accurate and up-to-date results. We’re working on expanding offline capabilities and will share updates soon.",
+            "timestamp": "1740665783",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "For real-time translation, an internet connection (WiFi or data) is needed to access AI models. Your phone acts as the processing hub, so it should be nearby. Other features like AI note-taking, voice assistance, and noise cancellation work just fine without a connection.",
+            "timestamp": "1740665783",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hope this helps! Let us know if you have more questions. 😊",
+            "timestamp": "1740665783",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi T S,",
+            "timestamp": "1740666096",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Great question!",
+            "timestamp": "1740666096",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "While both P-G2 and Wooask TransBuds offer AI-powered translation, P-G2 stands out with its advanced AI capabilities, deeper integration, and more versatile functionality. Here’s how they compare:",
+            "timestamp": "1740666096",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "🔹 AI Power & Models – P-G2 is powered by DeepSeek R1 and GPT-4o, delivering smarter reasoning, contextual translation, and enhanced AI interactions beyond simple text-based translation.",
+            "timestamp": "1740666096",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "🔹 More Than Just Translation – P-G2 doesn’t stop at language translation; it includes AI note-taking, real-time meeting transcription, AI-generated summaries, and even image generation, making it a true AI productivity tool rather than just a translator.",
+            "timestamp": "1740666096",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "🔹 4 Flexible Translation Modes – P-G2 offers Simultaneous Mode, Dual-Ear Mode, Speaker Mode, and Call Translation, ensuring smooth communication across different scenarios like business meetings, travel, and international calls.",
+            "timestamp": "1740666096",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "🔹 Superior Audio & Comfort – With Hi-Res certified sound, AI-powered noise cancellation, and an independent anti-leakage system, P-G2 delivers premium sound quality while keeping conversations private and secure.",
+            "timestamp": "1740666096",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "🔹 Extended Battery Life – P-G2 offers up to 48 hours of total battery life, ensuring long-lasting performance for extended travel and work sessions.",
+            "timestamp": "1740666096",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "In short, while Wooask TransBuds focus on translation, P-G2 is a next-level AI companion designed for seamless communication, productivity, and creativity—redefining what AI earbuds can do. 🚀",
+            "timestamp": "1740666096",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hope this helps! Let us know if you have any other questions. 😊",
+            "timestamp": "1740666096",
+            "is_creator": true
+        },
+        {
+            "poster": "Shawn Wentzel",
+            "comment": "Can you give more details on languages translated live?",
+            "timestamp": "1740516618",
+            "is_creator": false
+        },
+        {
+            "poster": "Shawn Wentzel",
+            "comment": "How much AI time is included and how is it distributed between services? What is the price of additional AI time?",
+            "timestamp": "1740516618",
+            "is_creator": false
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Shawn,",
+            "timestamp": "1740549269",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Thanks for reaching out.",
+            "timestamp": "1740549269",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "P-G2 supports real-time translation in 100+ languages, making global communication effortless.",
+            "timestamp": "1740549269",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• AI Usage Breakdown (Included in Membership – $29.9/year):",
+            "timestamp": "1740549269",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• AI Chat: 50 conversations per day",
+            "timestamp": "1740549269",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• AI Image Generation: 20 creations per day",
+            "timestamp": "1740549269",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• Live Recording & Translation: 480 minutes total",
+            "timestamp": "1740549269",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• Additional AI Time Pricing:",
+            "timestamp": "1740549269",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• 300 minutes – $14.9 ($0.049/min)",
+            "timestamp": "1740549269",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• 720 minutes – $29.9 ($0.041/min)",
+            "timestamp": "1740549269",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "• Purchased minutes never expire",
+            "timestamp": "1740549269",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "We’ll be updating our subscription details on the project page soon. Let us know if you have any questions!",
+            "timestamp": "1740549269",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Hi Shawn,",
+            "timestamp": "1740556075",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "To give our Kickstarter backers the best support, we’re including a free 1-year membership with every P-G2. This gives you full access to AI Chat, AI Image Generation, and 480 minutes of Live Recording & Translation—at no extra cost for the first year.",
+            "timestamp": "1740556075",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Additional AI time is only needed if you use up the included minutes, and you can purchase more as needed.",
+            "timestamp": "1740556075",
+            "is_creator": true
+        },
+        {
+            "poster": "MONOISE TECH",
+            "comment": "Let us know if you have any other questions—we’re happy to help! 😄",
+            "timestamp": "1740556075",
+            "is_creator": true
+        }
+    ]
+}

@@ -1,0 +1,305 @@
+{
+    "url": "https://www.kickstarter.com/projects/hiive/hiive-link/comments",
+    "comments": [
+        {
+            "poster": "Ruben",
+            "comment": "Another question / idea: if someone steals the Hiive Link / sensors / ...; is there a way of tracing the devices? are they blocked for further use without reset on the original app/mobile phone/account? can they be traced down to get the materials back?",
+            "timestamp": "1742222634",
+            "is_creator": false
+        },
+        {
+            "poster": "Ruben",
+            "comment": "i'm from Belgium. can you explain me how much additional costs will be added for for example a pledge of 100 euro? i know there is the shipping cost that will be added, but is there also VAT to pay? VAT on those 100 euro pledge? or just on the shipping part? I don't understand it and can't find a good explanation. Thank you",
+            "timestamp": "1741937140",
+            "is_creator": false
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "*Ruben",
+            "timestamp": "1741961031",
+            "is_creator": true
+        },
+        {
+            "poster": "Ruben",
+            "comment": "So for each 100 euro pledged, it's roughly 20 euro VAT to pay then?",
+            "timestamp": "1741965034",
+            "is_creator": false
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "We have 19% VAT in Germany.",
+            "timestamp": "1741965234",
+            "is_creator": true
+        },
+        {
+            "poster": "Ruben",
+            "comment": "Hi,",
+            "timestamp": "1741687059",
+            "is_creator": false
+        },
+        {
+            "poster": "Ruben",
+            "comment": "I saw somewhere that the SIM card electric board is an option in this Hiive Link? is that true or did I misread? is the Hiive Link default equipped with a SIM card slot so it can work without WiFi?",
+            "timestamp": "1741687059",
+            "is_creator": false
+        },
+        {
+            "poster": "Ruben",
+            "comment": "Thank you :-)",
+            "timestamp": "1741687059",
+            "is_creator": false
+        },
+        {
+            "poster": "Ruben",
+            "comment": "Hi, I don't see it available as an add-on reward?",
+            "timestamp": "1742211560",
+            "is_creator": false
+        },
+        {
+            "poster": "Ruben",
+            "comment": "ok found it, was not clear when I wanted to change my pledge, on one page it was not written, had to click several times.",
+            "timestamp": "1742211857",
+            "is_creator": false
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Hi Ruben,",
+            "timestamp": "1742212062",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "We just added it as an Add-On to all rewards. The Add-On is called \"Cellular Module\"- Maybe check in again in a couple of minutes, could be it needs some time to refresh.",
+            "timestamp": "1742212062",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "If you still can't see it, you might need to cancel your reward and re-book it.",
+            "timestamp": "1742212062",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Regards",
+            "timestamp": "1742212062",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Jochen",
+            "timestamp": "1742212062",
+            "is_creator": true
+        },
+        {
+            "poster": "Blanc ludwig",
+            "comment": "I would have sponsored several installations on different hives!",
+            "timestamp": "1741641320",
+            "is_creator": false
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "That sounds amazing! What’s holding you back? We'd love to hear your thoughts. :-)",
+            "timestamp": "1741870161",
+            "is_creator": true
+        },
+        {
+            "poster": "Petr Hladký",
+            "comment": "Which manufacturer do you use for weighing sensors? Weighing sensors must be stable.",
+            "timestamp": "1741600311",
+            "is_creator": false
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Great question! We're currently testing multiple load cell manufacturers to ensure the best stability and accuracy for long-term hive monitoring. We haven't finalized our choice yet, but reliability is our top priority. We'll share more details once we've made the final selection!",
+            "timestamp": "1741870304",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Do you have any recommendations based on your experience? We'd love to hear your insights!",
+            "timestamp": "1741870304",
+            "is_creator": true
+        },
+        {
+            "poster": "Isbrand",
+            "comment": "How many hives/sensors can be managed by a single Link?",
+            "timestamp": "1741456569",
+            "is_creator": false
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Dear Isbrand,",
+            "timestamp": "1741557034",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "In our latest setup, we have 10 sensors running stable with a single Link. This number could potentially be increased in the future, but it will require further testing and development.",
+            "timestamp": "1741557034",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Regards",
+            "timestamp": "1741557034",
+            "is_creator": true
+        },
+        {
+            "poster": "Jesper Berthing",
+            "comment": "Will there be a monthly or yearly fee to access our data from the sensors?",
+            "timestamp": "1741433952",
+            "is_creator": false
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "There will be no fee to access your own data.",
+            "timestamp": "1741557068",
+            "is_creator": true
+        },
+        {
+            "poster": "Thomas Argante",
+            "comment": "Hi, I have a few questions.",
+            "timestamp": "1741334101",
+            "is_creator": false
+        },
+        {
+            "poster": "Thomas Argante",
+            "comment": "1.Are both the sensors necessary for monitoring one hive? Or can we also choose for just the internal sensor?",
+            "timestamp": "1741334101",
+            "is_creator": false
+        },
+        {
+            "poster": "Thomas Argante",
+            "comment": "The reason I ask is because I have a system with paws for my hives that prevent ants from coming in.",
+            "timestamp": "1741334101",
+            "is_creator": false
+        },
+        {
+            "poster": "Thomas Argante",
+            "comment": "2.Do you continue to add software functions to the system in the future?",
+            "timestamp": "1741334101",
+            "is_creator": false
+        },
+        {
+            "poster": "Thomas Argante",
+            "comment": "3.Is the software opensource?",
+            "timestamp": "1741334101",
+            "is_creator": false
+        },
+        {
+            "poster": "Thomas Argante",
+            "comment": "4.Is there a possibility to compare your hives with other hives from other users to see trends?",
+            "timestamp": "1741334101",
+            "is_creator": false
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Hi Thomas,",
+            "timestamp": "1741348471",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Thank you for your questions!",
+            "timestamp": "1741348471",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "1.) No, you do not need to use the weight sensor if you don't want to. You can also just go for the HIIVE Link Basestation and then add the internal sensors (Sens Sensor) as needed.",
+            "timestamp": "1741348471",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "2.) Yes, we will continue to add new features for sure. We already have a backlog of features that we find interesting, but we will, of course, also listen to your needs and ideas to develop the system further.",
+            "timestamp": "1741348471",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "3.) No, the software is not open source.",
+            "timestamp": "1741348471",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "4.) That's a great idea and something we already have in mind. Our goal is to build a community, and this would be a great feature for sure! However, it is not implemented at the moment.",
+            "timestamp": "1741348471",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Best",
+            "timestamp": "1741348471",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Team HIIVE",
+            "timestamp": "1741348471",
+            "is_creator": true
+        },
+        {
+            "poster": "Bambi Page",
+            "comment": "Solar panels often do not last long here in Australia. Could replacements be available for purchase?",
+            "timestamp": "1741312001",
+            "is_creator": false
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Hello Bambi, absolutely. Everything is modular, and replacement parts will be provided through us.",
+            "timestamp": "1741347267",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Regards,",
+            "timestamp": "1741347267",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Team HIIVE",
+            "timestamp": "1741347267",
+            "is_creator": true
+        },
+        {
+            "poster": "Bambi Page",
+            "comment": "Thank you for your reply. If the solar panel replacements could be offered as an additional purchase this time I would buy one - just a suggestion... Thank you",
+            "timestamp": "1741394461",
+            "is_creator": false
+        },
+        {
+            "poster": "Bambi Page",
+            "comment": "Can the length of the wires for the weight sensors be >1m each to be able to be used with top-bar (Kenyan) hives? Thank you",
+            "timestamp": "1741293840",
+            "is_creator": false
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Yes, it will be suitable for a TBH.",
+            "timestamp": "1741347218",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Regards",
+            "timestamp": "1741347218",
+            "is_creator": true
+        },
+        {
+            "poster": "HIIVE",
+            "comment": "Team HIIVE",
+            "timestamp": "1741347218",
+            "is_creator": true
+        },
+        {
+            "poster": "Sander Noormägi",
+            "comment": "I woul like to extend campaign timeline. Add referring function kickbooster.me.",
+            "timestamp": "1741273953",
+            "is_creator": false
+        }
+    ]
+}

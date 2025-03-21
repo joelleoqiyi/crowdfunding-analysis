@@ -1,0 +1,29 @@
+{
+    "url": "https://www.kickstarter.com/projects/homeautomationhat/esp32-powered-multi-display-hat-for-raspberry-pi/comments",
+    "comments": [
+        {
+            "poster": "Stefan Kull",
+            "comment": "Will you provide an interface/software for controlling eye movement remotely over the USB-",
+            "timestamp": "1740430647",
+            "is_creator": false
+        },
+        {
+            "poster": "vandana singh",
+            "comment": "Dear Stefan,",
+            "timestamp": "1740737507",
+            "is_creator": true
+        },
+        {
+            "poster": "vandana singh",
+            "comment": "We will provide usage instruction guide with open source example codes how to display things which you can use to modify as per your projects need.",
+            "timestamp": "1740737507",
+            "is_creator": true
+        },
+        {
+            "poster": "vandana singh",
+            "comment": "Thanks",
+            "timestamp": "1740737507",
+            "is_creator": true
+        }
+    ]
+}

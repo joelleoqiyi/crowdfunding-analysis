@@ -1,0 +1,47 @@
+{
+    "url": "https://www.kickstarter.com/projects/denesb/drbartha-toys-software-enabled-coding-bricks/comments",
+    "comments": [
+        {
+            "poster": "James Spurway",
+            "comment": "The word revolutionary is overused - as is the word disruptive - and yet - in this case - both words 100% apply! I hope this campaign is OVERSUBSCRIBED and closes early. It deserves that kind of attention and traction.",
+            "timestamp": "1741693700",
+            "is_creator": false
+        },
+        {
+            "poster": "Dénes Bartha, PhD",
+            "comment": "That means a lot coming from you! Really appreciate the support and good vibes! Fingers crossed for an amazing outcome! ♥️",
+            "timestamp": "1741701452",
+            "is_creator": true
+        },
+        {
+            "poster": "Zoltan",
+            "comment": "What's the difference between Dr. Bartha Toys and Scratch?",
+            "timestamp": "1741320783",
+            "is_creator": false
+        },
+        {
+            "poster": "Dénes Bartha, PhD",
+            "comment": "Great question! DrBartha Toys brings block programming into the physical world, while Scratch is a screen-based programming language. Both are Turing-complete and designed for educational purposes, but instead of dragging blocks on a screen, our system lets kids stack coding bricks to create real, tangible programs. Plus, our interpreter is written in Python, and programs built with DrBartha Toys can also be translated to Scratch, bridging physical and digital programming environments.",
+            "timestamp": "1741321665",
+            "is_creator": true
+        },
+        {
+            "poster": "Zoltan",
+            "comment": "This sounds interesting!",
+            "timestamp": "1741321877",
+            "is_creator": false
+        },
+        {
+            "poster": "Emerald",
+            "comment": "Can't wait to see where this goes :)",
+            "timestamp": "1740666774",
+            "is_creator": false
+        },
+        {
+            "poster": "Dénes Bartha, PhD",
+            "comment": "Thanks! Excited to share the journey with you! 😊",
+            "timestamp": "1740667145",
+            "is_creator": true
+        }
+    ]
+}
