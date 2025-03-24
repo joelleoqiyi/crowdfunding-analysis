@@ -1,0 +1,73 @@
+{
+  "url": "https://www.kickstarter.com/projects/adrianrosebrock/acing-machine-learning-interviews",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nFeb 14 2025 - Feb 24 2025 (9 days)",
+    "funding_start_date": "2025-02-14T07:59:47-05:00",
+    "funding_end_date": "2025-02-24T03:00:00-05:00",
+    "funding_duration_days": 9,
+    "pledged_amount": "$22,017",
+    "funding_goal": "$3,000",
+    "backers_count": "65"
+  },
+  "updates": {
+    "count": 3,
+    "content": [
+      {
+        "update_number": "UPDATE #3",
+        "title": "Update! Doing a Final Review of the Ebook.",
+        "creator": "Adrian Rosebrock\nMarch 8, 2025",
+        "date": "March 8, 2025",
+        "content": "Quick update for all of our backers, we are in the process of doing our final review of the Ace Your ML Job Interview eBooks. All of the GPTs have been created and are ready for you.\nNext up is packaging them up for all of you and send out the email to collect you information. So keep a look out for that email.\nThe PyimageSearch Team",
+        "url": "https://www.kickstarter.com/projects/adrianrosebrock/acing-machine-learning-interviews/posts/4331800",
+        "likes_count": 3,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #2",
+        "title": "A Successful Campaign Completed! Thank You & Next Steps",
+        "creator": "Adrian Rosebrock\nFebruary 27, 2025",
+        "date": "February 27, 2025",
+        "content": "Hey PyimageSearch Fans,\nWe did it! Thanks to your incredible support, Acing Machine Learning Interviews Kickstarter campaign has successfully been completed. We are beyond grateful for each and every one of you who believed in this project — your backing has made this possible!\nOver the past few days, we’ve seen how excited you are about mastering Machine Learning interviews.  We can’t wait to help you level-up your machine learning skills and confidently tackle your next interview.\nWhat Happens Now?\nFinalizing Products\nOur team is currently putting the finishing touches on all components of Acing Machine Learning Interviews — from refining the text of each eBook volume to perfecting the over 100 CustomGPTs. We’re reviewing feedback, conducting final proofs, and polishing every resource to ensure that what you receive will accelerate your Machine Learning Career.\nSurveys & Information Gathering\nKeep your eyes open for an email from us. We’ll send out a Backer Survey to gather essential details and any additional information needed to fulfill your rewards.\nReward Fulfillment\neBook Delivery and 100+ CustomGPTs: Once surveys are returned and the product is finalized, We will start working on fulfillment of your products. You’ll receive an email with steps to access your Acing Machine Learning Interviews eBooks (including all volumes and GPTs, if your tier includes them) .\nAll Other Rewards:  For rewards that are ready to go, after surveys are returned, we will start fulfilling those rewards\nWe’ll keep you posted on progress, share any important information, and let you know exactly when your rewards go live. \nThank you again for your incredible support and patience. We’re excited to help you master ML interviews and land your dream job in 2025!\nIf you have any questions, feel free to reach out to us directly here on Kickstarter.\nYour PyImageSearch Team 🚀🔥",
+        "url": "https://www.kickstarter.com/projects/adrianrosebrock/acing-machine-learning-interviews/posts/4323898",
+        "likes_count": 1,
+        "comments_count": 2,
+        "comments": [
+          {
+            "text": "I am still learning at the previous project = Diffusion - super useful! - I started to work on image generation with your GAN project in 2018. Who would believe that we will be able to recreate the paint drop from the water :-) Keep learning and creating content for us!",
+            "commenter": "Dorin Ionescu",
+            "timestamp": "February 27, 2025 4:08 PM AWST",
+            "datetime": "1740643697",
+            "relative_time": "14 days ago"
+          },
+          {
+            "text": "It is great to hear about your long time support and the value and learning you are getting from our products. AI can really do some amazing things, so we are happy we can help you and other to learn how to achieve amazing things with it! Thanks for your long time support!",
+            "commenter": "Adrian Rosebrock",
+            "timestamp": "March 8, 2025 1:49 AM AWST",
+            "datetime": "1741369774",
+            "relative_time": "6 days ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "WE DID IT! THANK YOU!",
+        "creator": "Adrian Rosebrock\nFebruary 14, 2025",
+        "date": "February 14, 2025",
+        "content": "Wow—the PyImageSearch community is unstoppable! Thanks to YOU, we smashed our Kickstarter goal in just 30 minutes!\nYour support proves how incredible this community is—driven, ambitious, and always pushing the boundaries of AI and ML. We couldn’t have done this without you.\nFrom the bottom of our hearts—THANK YOU! We can't wait to hear how we've helped transform your lives by helping you ace your Machine Learning job interview!\nThe PyImageSearch Team 🚀🔥",
+        "url": "https://www.kickstarter.com/projects/adrianrosebrock/acing-machine-learning-interviews/posts/4314362",
+        "likes_count": 7,
+        "comments_count": 1,
+        "comments": [
+          {
+            "text": "We also need 100 more life years to learn everything we bought from you! Keep learning and creating content for us!",
+            "commenter": "Dorin Ionescu",
+            "timestamp": "February 27, 2025 4:04 PM AWST",
+            "datetime": "1740643461",
+            "relative_time": "14 days ago"
+          }
+        ]
+      }
+    ]
+  }
+}

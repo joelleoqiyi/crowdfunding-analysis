@@ -1,0 +1,43 @@
+{
+  "url": "https://www.kickstarter.com/projects/flido/calgpt-ai-powered-calorie-tracking-to-lose-15kg-in-3-months",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nFeb 11 2025 - Mar 12 2025 (29 days)",
+    "funding_start_date": "2025-02-11T10:37:26-05:00",
+    "funding_end_date": "2025-03-12T10:37:26-04:00",
+    "funding_duration_days": 29,
+    "pledged_amount": "$586",
+    "funding_goal": "$100",
+    "backers_count": "66"
+  },
+  "updates": {
+    "count": 1,
+    "content": [
+      {
+        "update_number": "UPDATE #1",
+        "title": "Calgpt Release Notice: App Launch Update",
+        "creator": "Gavin\nFebruary 19, 2025",
+        "date": "February 19, 2025",
+        "content": "Our iOS app (v1.0.0) is set to launch in early March, and the complete app will be released by March 12 at the latest. Initially, it’ll be in English only, with plans for a multi-language update (v1.0.1) shortly after. If you haven’t joined us yet, now’s the perfect time—secure our annual membership for just $1 (normally $39.99), with only 41 spots remaining. Plus, the first 100 angel users can suggest custom features to be added in future versions. Thank you for your incredible support!",
+        "url": "https://www.kickstarter.com/projects/flido/calgpt-ai-powered-calorie-tracking-to-lose-15kg-in-3-months/posts/4317718",
+        "likes_count": 3,
+        "comments_count": 2,
+        "comments": [
+          {
+            "text": "Just making sure. That app isn’t available yet right? And also, as an angel user/member, what is the process of making the lifetime account?",
+            "commenter": "Edgar",
+            "timestamp": "March 12, 2025 3:00 AM AWST",
+            "datetime": "1741719602",
+            "relative_time": "1 day ago"
+          },
+          {
+            "text": "Is it ready to be downloaded somewhere?",
+            "commenter": "Joey",
+            "timestamp": "March 7, 2025 5:08 AM AWST",
+            "datetime": "1741295333",
+            "relative_time": "6 days ago"
+          }
+        ]
+      }
+    ]
+  }
+}

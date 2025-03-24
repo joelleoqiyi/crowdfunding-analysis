@@ -1,0 +1,39 @@
+{
+  "url": "https://www.kickstarter.com/projects/158432866/nomo-android-game-console-without-microtransaction",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nJul 22 2015 - Sep 20 2015 (60 days)",
+    "funding_start_date": "2015-07-21T14:28:14-04:00",
+    "funding_end_date": "2015-09-19T14:28:14-04:00",
+    "funding_duration_days": 60,
+    "pledged_amount": "S$ 606",
+    "funding_goal": "S$ 2,634,092",
+    "backers_count": "3"
+  },
+  "updates": {
+    "count": 2,
+    "content": [
+      {
+        "update_number": "UPDATE #2",
+        "title": "Kid Safe",
+        "creator": "Daniel Andersson\nJuly 24, 2015",
+        "date": "July 24, 2015",
+        "content": "Saying no to microtransactions will keep children safer, but we have also discussed other measures for parent control. Such as setting a monthly budget. The kid will be able to shop for the monthly budget and nothing more. \nWe are also discussing a budget function in the NoMo store for anyone who want to set a predefined budget that they want to spend on gaming each month - and be warned if they spend more.",
+        "url": "https://www.kickstarter.com/projects/158432866/nomo-android-game-console-without-microtransaction/posts/1302942",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "We have been thinking a little about the hand controllers",
+        "creator": "Daniel Andersson\nJuly 23, 2015",
+        "date": "July 23, 2015",
+        "content": "We have given some thought to the Hand Controllers for the Nomo Gaming Console. We want it to be a good controller while incorporating a touch screen. An idea we have been toying with is making it so you can attach you android phone instead of a touch screen. This would make it possible to use the phone togheter with the hand controller as input devices to the NoMo Gaming Console. Maps, inventory could be shown on the touch screen while playing the game on the TV. The added benefit would be that you could take the hand controller with you when travelling. Playing your Nomo Games on your Nomo game controller at home and talking them with you with full hand controller support while on the go. It is something we are considering, possible adding iOS support as well to cover the two dominant smart phone OS.\nhand Controller POC",
+        "url": "https://www.kickstarter.com/projects/158432866/nomo-android-game-console-without-microtransaction/posts/1302566",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

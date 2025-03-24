@@ -1,0 +1,36 @@
+{
+  "url": "https://www.kickstarter.com/projects/1454911120/help-cali-dronez-get-off-the-ground",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nDec 30 2015 - Jan 29 2016 (30 days)",
+    "funding_start_date": "2015-12-29T12:28:04-05:00",
+    "funding_end_date": "2016-01-28T12:28:04-05:00",
+    "funding_duration_days": 30,
+    "pledged_amount": "S$ 0",
+    "funding_goal": "S$ 22,675",
+    "backers_count": "0"
+  },
+  "updates": {
+    "count": 1,
+    "content": [
+      {
+        "update_number": "UPDATE #1",
+        "title": "SunnySky 360KV, 17\" Carbon's",
+        "creator": "Josh Davis\nJanuary 4, 2016",
+        "date": "January 4, 2016",
+        "content": "",
+        "url": "https://www.kickstarter.com/projects/1454911120/help-cali-dronez-get-off-the-ground/posts/1457706",
+        "likes_count": 0,
+        "comments_count": 1,
+        "comments": [
+          {
+            "text": "For the Spy-6 V.2!!!",
+            "commenter": "Josh Davis",
+            "timestamp": "January 4, 2016 3:41 AM AWST",
+            "datetime": "1451850076",
+            "relative_time": "about 9 years ago"
+          }
+        ]
+      }
+    ]
+  }
+}

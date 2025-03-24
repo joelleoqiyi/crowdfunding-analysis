@@ -1,0 +1,169 @@
+{
+  "url": "https://www.kickstarter.com/projects/187470458/esp32-agent-dev-kit",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nJan 9 2025 - Feb 23 2025 (45 days)",
+    "funding_start_date": "2025-01-08T19:36:17-05:00",
+    "funding_end_date": "2025-02-22T19:36:17-05:00",
+    "funding_duration_days": 45,
+    "pledged_amount": "HK$ 90,031",
+    "funding_goal": "HK$ 13,000",
+    "backers_count": "170"
+  },
+  "updates": {
+    "count": 4,
+    "content": [
+      {
+        "update_number": "UPDATE #4",
+        "title": "📢 Shipping Update: ESP32 Agent Dev Kit Shipped, \"Base\" Version Coming Soon! 🚀",
+        "creator": "Wireless-Tag\nMarch 6, 2025",
+        "date": "March 6, 2025",
+        "content": "We have already packed and shipped the orders for the ESP32 Agent Dev Kit for backers who have completed the shipping address survey.\nHowever, orders for the ESP32 Agent Dev Kit with Base will need to wait until the Base is ready. Shipping is expected by the end of March, so please be patient. The Base design has been finalized and is currently being 3D printed.\nIf you haven’t completed the PledgeBox survey, please provide your full shipping information and contact details as soon as possible to avoid any delays in shipping.\nThank you for your cooperation! 🚀",
+        "url": "https://www.kickstarter.com/projects/187470458/esp32-agent-dev-kit/posts/4330359",
+        "likes_count": 5,
+        "comments_count": 2,
+        "comments": [
+          {
+            "text": "Wow, I can't wait any longer. Although I am a beginner, I believe in my vision that ESP32 can definitely provide me with more help in learning about microcontrollers.",
+            "commenter": "Cold",
+            "timestamp": "March 6, 2025 11:45 AM AWST",
+            "datetime": "1741232728",
+            "relative_time": "7 days ago"
+          },
+          {
+            "text": "Thank you.",
+            "commenter": "Wireless-Tag",
+            "timestamp": "March 6, 2025 1:59 PM AWST",
+            "datetime": "1741240793",
+            "relative_time": "7 days ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #3",
+        "title": "EU country please provide the IOSS/VAT number！！",
+        "creator": "Wireless-Tag\nMarch 3, 2025",
+        "date": "March 3, 2025",
+        "content": "If the recipient country is an EU country, please provide the IOSS/VAT number as soon as possible. Shipping logistics is a required item. Please ignore it if you are not an EU country. Please send to us: wirelesstag2024@gmail.comThank you",
+        "url": "https://www.kickstarter.com/projects/187470458/esp32-agent-dev-kit/posts/4327463",
+        "likes_count": 0,
+        "comments_count": 7,
+        "comments": [
+          {
+            "text": "Hello there ! First, thank you for the project, I look forward to receiving the ESP and start building all sorts of cool things ! Secondly, unfortunately as a private person in France, I do not have a VAT number, those are only issued to companies... Best regards",
+            "commenter": "Ewald",
+            "timestamp": "March 5, 2025 2:07 AM AWST",
+            "datetime": "1741111664",
+            "relative_time": "9 days ago"
+          },
+          {
+            "text": "Thank you for your answer. If you can't provide it, we will find a way to solve it. Please rest assured that we will ship it as soon as possible.",
+            "commenter": "Wireless-Tag",
+            "timestamp": "March 5, 2025 10:02 AM AWST",
+            "datetime": "1741140160",
+            "relative_time": "8 days ago"
+          },
+          {
+            "text": "In Germany it seems, a IOSS / VAT number is only given to comercial shops / companies. Not to (end-)customers. How to proceed now?",
+            "commenter": "fresnel",
+            "timestamp": "March 4, 2025 9:46 AM AWST",
+            "datetime": "1741052765",
+            "relative_time": "9 days ago"
+          },
+          {
+            "text": "Thank you for your answer. If you can't provide it, we will find a way to solve it. Please rest assured that we will ship it as soon as possible.",
+            "commenter": "Wireless-Tag",
+            "timestamp": "March 4, 2025 1:50 PM AWST",
+            "datetime": "1741067441",
+            "relative_time": "9 days ago"
+          },
+          {
+            "text": "same for me",
+            "commenter": "Nassim Agrebi",
+            "timestamp": "March 4, 2025 12:29 AM AWST",
+            "datetime": "1741019382",
+            "relative_time": "10 days ago"
+          },
+          {
+            "text": "Hello, in Germany we dont have a VAT number. Only companies have VAT numbers.",
+            "commenter": "Bernhard Roth",
+            "timestamp": "March 3, 2025 5:07 PM AWST",
+            "datetime": "1740992874",
+            "relative_time": "10 days ago"
+          },
+          {
+            "text": "Thank you for your answer. If you can't provide it, we will find a way to solve it. Please rest assured that we will ship it as soon as possible.",
+            "commenter": "Wireless-Tag",
+            "timestamp": "March 4, 2025 1:50 PM AWST",
+            "datetime": "1741067446",
+            "relative_time": "9 days ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #2",
+        "title": "The last surveyof ESP32 Agent Dev kit",
+        "creator": "Wireless-Tag\nMarch 3, 2025",
+        "date": "March 3, 2025",
+        "content": "Please share your contact number and Phone Number, we will ship out this week when we have collected the full address.\n\nIf you have provided the shipping address but missed the recipient and the phone number, please add it again. The phone number is required. If you have provided both the shipping address and the contact number, please check again to make sure they are correct. We will ship based on the last survey. Please forgive us if there are any deficiencies in this first crowdfunding project. We will do better in the future. Thank you for your cooperation.\nPhone Number:\nConact  Name:\nAddres:\nPostal Code:\nCity:\nCountry:",
+        "url": "https://www.kickstarter.com/projects/187470458/esp32-agent-dev-kit/posts/4327355",
+        "likes_count": 3,
+        "comments_count": 6,
+        "comments": [
+          {
+            "text": "Where is the survey ? And where amy email adres to send it ?",
+            "commenter": "Victor Vertu",
+            "timestamp": "March 3, 2025 4:51 PM AWST",
+            "datetime": "1740991870",
+            "relative_time": "10 days ago"
+          },
+          {
+            "text": "This is my first project. I didn't know you had to check for updates and do a bunch of tasks after its funded. It's interesting but don't have time to babysit them after that...take it from here just send me a tracking number please. Looking forward receiving it soon. Thank you!",
+            "commenter": "Mario Polanco",
+            "timestamp": "March 3, 2025 12:04 PM AWST",
+            "datetime": "1740974682",
+            "relative_time": "10 days ago"
+          },
+          {
+            "text": "Thank you all so much for your support and efforts! Please share your right address to us: wirelesstag2024@gmail.com: Phone Number: Conact Name: Addres: Postal Code: City: Country:",
+            "commenter": "Wireless-Tag",
+            "timestamp": "March 3, 2025 1:44 PM AWST",
+            "datetime": "1740980690",
+            "relative_time": "10 days ago"
+          },
+          {
+            "text": "I'm confused, are you sending a second survey? How can we check our surveys?",
+            "commenter": "Devan",
+            "timestamp": "March 3, 2025 11:23 AM AWST",
+            "datetime": "1740972209",
+            "relative_time": "10 days ago"
+          },
+          {
+            "text": "Nevermind I see it! Thank you!",
+            "commenter": "Devan",
+            "timestamp": "March 3, 2025 11:26 AM AWST",
+            "datetime": "1740972413",
+            "relative_time": "10 days ago"
+          },
+          {
+            "text": "Where's it at?",
+            "commenter": "Mario Polanco",
+            "timestamp": "March 3, 2025 11:57 AM AWST",
+            "datetime": "1740974225",
+            "relative_time": "10 days ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "After the crowdfunding campaign ends, we will collect shipping addresses and order details through the Kickstarter Survey or Pledge Manager.",
+        "creator": "Wireless-Tag\nFebruary 18, 2025",
+        "date": "February 18, 2025",
+        "content": "Thank you all so much for your support and efforts! After the crowdfunding campaign ends, we will collect shipping addresses and order details through the Kickstarter Survey or Pledge Manager.",
+        "url": "https://www.kickstarter.com/projects/187470458/esp32-agent-dev-kit/posts/4288942",
+        "likes_count": 5,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

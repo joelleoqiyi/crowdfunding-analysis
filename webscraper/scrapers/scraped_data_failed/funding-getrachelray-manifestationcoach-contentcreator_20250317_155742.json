@@ -1,0 +1,39 @@
+{
+  "url": "https://www.kickstarter.com/projects/dax/funding-getrachelray-manifestationcoach-contentcreator",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nOct 15 2022 - Nov 14 2022 (30 days)",
+    "funding_start_date": "2022-10-14T17:37:51-04:00",
+    "funding_end_date": "2022-11-13T17:37:51-05:00",
+    "funding_duration_days": 30,
+    "pledged_amount": "S$ 1",
+    "funding_goal": "S$ 11,671",
+    "backers_count": "1"
+  },
+  "updates": {
+    "count": 2,
+    "content": [
+      {
+        "update_number": "UPDATE #2",
+        "title": "Book as been Approved for PreSale! From now until Black Friday!",
+        "creator": "@GetRachelRay\nNovember 4, 2022",
+        "date": "November 4, 2022",
+        "content": "Now, its marketing time! Tell your family, friends and colleagues & get your copy now!",
+        "url": "https://www.kickstarter.com/projects/dax/funding-getrachelray-manifestationcoach-contentcreator/posts/3655331",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "Manuscript is Complete! Waiting on final approval",
+        "creator": "@GetRachelRay\nOctober 28, 2022",
+        "date": "October 28, 2022",
+        "content": "Here is our cover\nHere is where you can buy presale: https://bit.ly/eBookGetRachelRay\nCover is complete!",
+        "url": "https://www.kickstarter.com/projects/dax/funding-getrachelray-manifestationcoach-contentcreator/posts/3648609",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

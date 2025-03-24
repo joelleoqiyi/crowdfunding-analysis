@@ -1,0 +1,204 @@
+{
+  "url": "https://www.kickstarter.com/projects/pixelfed/pixelfed-foundation-2024-real-ethical-social-networks",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nJan 22 2025 - Mar 8 2025 (45 days)",
+    "funding_start_date": "2025-01-22T02:00:57-05:00",
+    "funding_end_date": "2025-03-08T02:00:57-05:00",
+    "funding_duration_days": 45,
+    "pledged_amount": "",
+    "funding_goal": "CA$ 50,000",
+    "backers_count": "2,106"
+  },
+  "updates": {
+    "count": 7,
+    "content": [
+      {
+        "update_number": "UPDATE #7",
+        "title": "Final Stretch - A massive thank you and an update on our progress so far",
+        "creator": "ShleeCollaborator\nMarch 6, 2025",
+        "date": "March 6, 2025",
+        "content": "We're in the last few days of the campaign and we're smashed our goals by 255%!\nThank you so much to every single of the 2000+ backers who has supported us and our mission to accelerate the Pixelfed/Loops/Sup development and build our team to be sustainable and healthy. If you're interested in joining the project, please get in touch!\n+ The \"Pixelfed Foundation\" is currently being pursued via the government of Alberta and we're looking forward to hitting that goal in 2025 as a non-profit dedicated to supporting and advancing the Pixelfed ecosystem at https://pixelfed.foundation/\n+ We're partnering with Fastly Fast Forward for our CDN and S3 Storage needs to improve the performance of everybody on Pixelfed.social globally once enabled (while also lowering our monthly costs) so thank you to Fastly for their support.\n+ We're started a new side project with the code-name \"FediThreat\", this is a security/moderation tool to allow fediverse administrators to raise risks such as spammers, phishing campaigns or other risks and stop them from traveling from instance to instance. This is currently in the proof of concept stage, and supports the goal of \"expanding the moderation, security, privacy and safety platforms\".\nPixelfed Updates\nWe're proud to see the team grow with 8 new people joining with various talents including Development, UX/UI and project management, and we're starting to put everything place for the success of Pixelfed (We need more PHP/Laravel programmers).\nThis progress has already resulted in two massive updates fixing major issues and quality of life improvements in the last few days...\n\"You love to see it\"\nPixelfed v1.0.3 (Mar 4, 2025 at 8:10 PM)\nImproved onboarding\nBetter sign-up flow\nFixed post edits\nNotification fixes\nBug fixes and performance improvements\nPixelfed v1.0.4 (Mar 5, 2025 at 9:42 AM)\nFixed profile pagination\nFaster image loading + BlurHashes\nBetter search (split accounts/hashtags)\nImproved onboarding\nBug fixes and performance improvements\nLoops Updates\nDaniel is currently focusing his energy on the Pixelfed project, but the goal is to release the source code for the mobile app and the server \"once it is ready in 2025\". We appreciate the enthusiasm... \nThis project is critical to us, but we need to plan for success because launching a platform focused on video that offers a snappy experience without *exploding in cost and requirements* is going to be a combination of good design, software, hardware, network, storage, security and more.\nI (Shlee) am working with the team on building a dedicated server environment in multiple data-centers around the world to bring down the total cost of ownership, but also allow us to handle the 1000s of TBs of video traffic (plus storage requirements) that will likely be served by Loops once that project is kicked into full gear. (This is non-negotiable because that kind of traffic would bankrupt the fediverse in a week and we need to be good neighbors).\nThe bonus news is... once we're build the Fedi-CDN to host and serve all of this video content, we will be able to offer our excess compute/bandwidth to other fediverse platforms as a collaborative shared service.\nNote: If you have experience or contacts in colocation/VPSs with lots of bandwidth. Get in touch with me/us at @shlee@aus.social on Mastodon\nSup\nSups planning and development will continue with the team starting with a UX/UI driven approach of building the application in Figma (or similar) first and designing the application to allow the developers to build to this spec instead of being a moving target.\nDaniel will be launching the Sup homepages and supporting material in the near future.\nThanks to MikroTik for their shout-out\nBecause all of my networking equipment is MikroTik, I was thrilled to see Pixelfed and Loops mentioned in the promotional material for their new storage solution (this is not sponsored).\nFinally\n\"We're so proud of the community, and we're looking forward to a very bright future for Pixelfed... The response from the fediverse in supporting this crowdfunding campaign will allow us to dream big.\nAs somebody who has great passion for the success of the Fediverse (but no coding skills), I am very happy to see the effect the success of this project has had on the team... and I'm glad that Daniel was convinced by my original pitch for this crowdfunding campaign. The fediverse is full of people who care about people and the effect social media has on the world. Let's build a better online culture for everybody.\nThank you again and always.\" - Shlee on behalf of Daniel Supernaut.",
+        "url": "https://www.kickstarter.com/projects/pixelfed/pixelfed-foundation-2024-real-ethical-social-networks/posts/4328677",
+        "likes_count": 24,
+        "comments_count": 1,
+        "comments": [
+          {
+            "text": "Your succes makes me happy!",
+            "commenter": "Joep Wijsbek",
+            "timestamp": "March 6, 2025 1:52 PM AWST",
+            "datetime": "1741240334",
+            "relative_time": "7 days ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #6",
+        "title": "HELP WANTED: Growing our Developer Community",
+        "creator": "dansup\nFebruary 22, 2025",
+        "date": "February 22, 2025",
+        "content": "Hey everyone!\nI'm Daniel, and I have some exciting updates to share about Pixelfed's future. As our community grows, it's time to expand our team. I'm looking for passionate people to help mentor, guide, and bring this vision to life. From day one, our mission has been simple: giving people an alternative to closed, corporate social platforms.\nBuilding Pixelfed has been an incredible journey, and I'm amazed by how our community has helped it grow into something truly special. As the main developer, I want to be transparent - to take Pixelfed to the next level, I need your support. I'm not aiming to be a \"benevolent dictator for life\" - I'm just the current lead maintainer helping guide the project.\nShlee and myself are working on creating a comprehensive roadmap for both Pixelfed and the Loops project. This will help everyone understand where we are now and the exciting places we're headed.\nThank you for being part of this journey!\nDaniel\nThe Challenges We Face\nBuilding and maintaining an open-source social network comes with its own set of challenges, including:\nDevelopment Bottlenecks: With a small group of developers, feature rollouts, bug fixes, and optimizations take longer than I’d like. We need to Triage and peer review PRs faster, and encourage new developers into the fold.\nCommunity & Support overheads: Managing user feedback, triaging issues/reports, and engaging with the community is crucial to keeping the platform healthy.\nPlanning & Prioritizing: Currently all projects, features, issues and bugs are treated as equal. This allows for us to move quickly, but does lead to miscommunication or delays. We need to triage issues and build a roadmap to cover all parts of our platform.\nTesting & Quality Assurance: With multiple platforms (Laravel backend, Nuxt/Vue web apps, and React Native mobile apps), ensuring stability across all versions is demanding.\nOperations & Documentation: Keeping documentation up to date and organizing workflows for new contributors can be overwhelming.\nUX/UI & Design: Improving user experience and refining the interface requires creative input from skilled designers.\nJoin us in building the future!\nTo overcome these challenges, I’m looking to build a passionate team. Here’s how you can get involved:\nDevelopers:\nPHP (Laravel) - for the backends.\nVue/Nuxt/React/Typescript - for web frontends.\nReact / React Native - for the iOS/Android mobile apps.\nSupporting libraries such as Biomejs, Tamagui, etc\nDB (MySQL/PostgreSQL), and Redis.\nOperations:\nDevops/CICD/Webapp Security - Automate and secure the Pixelfed Ecosystem.\nBare Metal/VMs Management - Plan for moving to Proxmox clusters in (colocated) regional DCs.\nNetworking / FCDN - Build a social network that pushes 100s of TB of video in an affordable/sustainable way.\nProject Management: Focus on higher level goals/milestones, Roadmaps, Supporting everybody involved towards a common goal. \nCommunity Building: Triage issues. Support new users / encourage contributors, and share updates.\nOperations & Documentation: Maintain end to end documentation.\nModerators/Safety: Design/Build tooling around safety, respond to support queries, and foster a positive environment in and around the fediverse.\nTesters & QA: Assist in identifying and fixing bugs to improve reliability.\nUX/UI Designers: Create intuitive and visually appealing designs using mockups and concept art using Figma or similar.\nHow to Get Involved\nIf you’re passionate about open-source, social networking, or just want to contribute to a meaningful project, we’d love to hear from you!\nJoin our Public Pixelfed Discord: https://discord.gg/mbvmCtVzEj and speak with the developer community members.\nVisit our GitHub https://github.com/pixelfed, give our code a little review, and see what issues could be worked on/improved.\nor just contact me via email at daniel@pixelfed.org\nLooking forward to collaborating with you all!",
+        "url": "https://www.kickstarter.com/projects/pixelfed/pixelfed-foundation-2024-real-ethical-social-networks/posts/4319823",
+        "likes_count": 27,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #5",
+        "title": "Pixelfed Moderation Update: Stronger tools, safer spaces",
+        "creator": "ShleeCollaborator\nFebruary 2, 2025",
+        "date": "February 2, 2025",
+        "content": "This February, we're rolling out our largest moderation update ever, reinforcing our commitment to a safer and more inclusive platform. Our goal is to empower users, protect vulnerable communities, and provide better tools for managing content effectively.\nWhat’s New?\n🔹 Allowlist Mode – Only federate with servers you approve. \n🔹 Built-in Blocklist Sharing – Share and enforce blocklists easily. \n🔹 Content Labels & Labeller – Community-driven content notes. \n🔹 Authorized Fetch – Enforce domain blocks more effectively. \n🔹 New Mod APIs – More flexibility and tools for moderators. \n🔹 AutoCheck – Automatically block servers that don’t meet your standards. \n🔹 Comment Controls – Take full control over conversations. \n🔹 Keyword Filters – Block specific hashtags and keywords. \n🔹 New Account Limit Actions – More ways to restrict bad actors. \n🔹 Mod Push Notifications – Get real-time moderation updates. \n🔹 New Report Types – Expanded options for reporting issues. \n🔹 Redesigned Content Warnings – Better visibility and customization. \n🔹 New Moderation Role & Dashboard – A dedicated hub for moderation tools.\nA Step Forward\nWhile this update isn’t perfect, it’s a significant step toward a better, more secure platform. We’re continuously working to improve these features and will be seeking community feedback soon.\nStay tuned for more updates, and thank you for helping us build a safer space for everyone! 🚀",
+        "url": "https://www.kickstarter.com/projects/pixelfed/pixelfed-foundation-2024-real-ethical-social-networks/posts/4304910",
+        "likes_count": 42,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #4",
+        "title": "🚀 $100K Milestone Unlocked: The Fediverse Revolution Is Unstoppable!",
+        "creator": "dansup\nJanuary 28, 2025",
+        "date": "January 28, 2025",
+        "content": "Dear Pixelfed Community,\nWe're absolutely thrilled to announce that we've not only reached our initial goal of $50,000 CAD but have now surpassed $100,000 in funding! This incredible milestone represents more than just numbers – it's a clear message that people believe in our vision for ethical, federated social media.\nWhat This Means for Pixelfed\nWith this additional funding, we can now accelerate our plans and begin working on crucial infrastructure improvements. Here's what we're committed to delivering:\nImmediate Focus\n- Full-time development commitment to Pixelfed's core platform\n- Accelerated development of both iOS and Android mobile apps\n- Enhanced moderation and safety tools\n- Expanded language support for global accessibility\nStretch Goals\nWe're excited to announce our extended stretch goals as we continue to grow:\n✅ $100,000 (UNLOCKED) - Infrastructure Enhancement\n  - Development of a specialized cloud/CDN platform for the Fediverse\n  - Improved scaling capabilities to support our growing user base (currently over 300,000 accounts on pixelfed.social)\n🎯 $200,000 - Pixelfed Foundation\n  - Official registration of the Pixelfed Foundation as a legal entity\n  - Creating a sustainable structure for long-term development and community governance\n🎯 $300,000 - Team Expansion\n  - Hiring additional developers to accelerate development across all platforms\n  - Building a dedicated support team for community management\nExtended Project Timeline\nWe're now able to commit to:\n- Accelerated development schedule for Loops (our TikTok alternative)\n- Earlier commencement of Sup messenger development\n- Enhanced development of Pubkit for the broader Fediverse developer community\nLooking Forward\nThis level of support not only validates our mission but also allows us to think bigger. We're not just building alternatives to major social platforms – we're creating a new standard for ethical social media that respects privacy, promotes safety, and brings people together without surveillance or tracking.\nWe remain committed to our open-source principles and the AGPL license, ensuring that every advancement we make benefits the entire Fediverse community.\nThank You\nTo everyone who has supported us – whether through backing this Kickstarter, spreading the word, or being part of our community – thank you. You're not just supporting Pixelfed; you're helping build a more ethical digital future.\nStay tuned for more updates as we begin implementing these expanded goals. The future is federated, and thanks to you, it's becoming a reality faster than we imagined.\nWith gratitude,\nDaniel & The Pixelfed Team\nTechnical Update\nPixelfed and Loops are global social networks, and we aim to make our platforms as responsive and snappy as possible to ensure a consistent user experience, regardless of where you live. To achieve this, our operational and engineering teams are planning a \"Fediverse Cloud,\" consisting of dedicated compute, storage, network traffic, and a Fediverse Content Delivery Network (FCDN).\nOur goal is to build a global network that maintains a high quality of service for all officially supported flagship instances while extending support to other Fediverse instances. In the medium term, this will help reduce the \"total cost of ownership\" for instance administrators across the Fediverse.\nWe plan to establish at least 2–3 regional colocation centers to ensure a responsive and seamless experience for users worldwide\nWe want to build a Jortage style de-duplicated storage service to lower the cost of storage for regional instances.\nWe want to build a number of shared services such as outbound/transaction email services to allow fediverse administrators to join our mail pool for free/cheaper than mainstream.\n\nFollow our progress:\n- Web: https://pixelfed.org\n- Fediverse: @pixelfed@pixelfed.social\n- Development: https://github.com/pixelfed",
+        "url": "https://www.kickstarter.com/projects/pixelfed/pixelfed-foundation-2024-real-ethical-social-networks/posts/4297871",
+        "likes_count": 42,
+        "comments_count": 4,
+        "comments": [
+          {
+            "text": "So grateful for everything you guys did for the community!Fingers crossed for the next phases. 🤞 Be careful not to overstretch your resources. Better focus on one (or two) cutting edge projects.",
+            "commenter": "Pascal",
+            "timestamp": "February 3, 2025 7:04 PM AWST",
+            "datetime": "1738580657",
+            "relative_time": "about 1 month ago"
+          },
+          {
+            "text": "Congratulations, and thank you for setting and sharing those stretch goals! Very inspiring! I notice loops using Cloudflare for the domain registration, nameservers, login protection etc. Will the FCDN help to move Loops etc away from Cloudlfare?",
+            "commenter": "PJ",
+            "timestamp": "January 29, 2025 10:28 AM AWST",
+            "datetime": "1738117726",
+            "relative_time": "about 1 month ago"
+          },
+          {
+            "text": "(Speakers personally/not on behalf of Pixelfed) Running any social network at the size we want to reach will require us to work with numerous providers/companies, and the goal of the FCDN is to service as much as we can in-house... We expect to use the right tools for the job. As an open source project, we plan on run as much as we can / to the best of our ability, but for now, Cloudflare and their CDN in particular is keeping the wheels on. Stability and speed is the aim of the game right now. Scaling up globally to our own standards is going to be a massive problem to solve.",
+            "commenter": "Shlee",
+            "timestamp": "January 29, 2025 11:29 AM AWST",
+            "datetime": "1738121366",
+            "relative_time": "about 1 month ago"
+          },
+          {
+            "text": "Thank you for the hard work! We’re excited to get started. 🙏🏽",
+            "commenter": "Debbie Manson",
+            "timestamp": "January 29, 2025 7:30 AM AWST",
+            "datetime": "1738107036",
+            "relative_time": "about 1 month ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #3",
+        "title": "Kickstarter Goal Reached in Just 13 Hours - Thank You!",
+        "creator": "dansup\nJanuary 23, 2025",
+        "date": "January 23, 2025",
+        "content": "Our entire team is absolutely overwhelmed by your incredible support. Reaching our $50,000 goal in just 13 hours is more than we could have hoped for, and it speaks volumes about the demand for ethical, open-source social media alternatives.\nThis milestone isn't just about the funding - it's a clear signal that people are ready for change in the social media landscape. Your support validates our mission to build platforms that bring people together without surveillance or tracking.\nYour backing will allow us to:\n- Enable full-time development focus on our ecosystem\n- Scale our infrastructure to support our rapidly growing user base (400k+ accounts and counting!)\n- Continue improving the Pixelfed mobile apps that are already outperforming major platforms in the App Store\n- Accelerate development across Loops, Sup, and Pubkit\nWe're especially motivated by how this campaign has resonated with the community, particularly after recent events have highlighted the need for open, interoperable social platforms.\nWhile reaching our initial goal is incredible, every additional contribution will help us expand our team and build even more robust infrastructure to support our growing user base. We'll be sharing more detailed plans about our next steps in the coming days.\nFrom everyone at the Pixelfed team, thank you for believing in our vision for ethical social media.\nWith gratitude,\nDaniel & The Pixelfed Team\nP.S. If you haven't already, you can download our mobile apps at pixelfed.org/mobile-apps",
+        "url": "https://www.kickstarter.com/projects/pixelfed/pixelfed-foundation-2024-real-ethical-social-networks/posts/4297866",
+        "likes_count": 40,
+        "comments_count": 5,
+        "comments": [
+          {
+            "text": "Congratulations! I thought you'd do well, and you certainly didn't disappoint! So, this would seem to be a good time to outline the stretch goals you mentioned. Personally, I'd be especially curious to hear what level would be realistic for the Fediverse CDN goal.",
+            "commenter": "PJ",
+            "timestamp": "January 25, 2025 11:01 PM AWST",
+            "datetime": "1737817265",
+            "relative_time": "about 2 months ago"
+          },
+          {
+            "text": "I see a lot great information on the technical and ethical considerations going into expanding these apps. However, I don't see anything about marketing or community building, especially for Loops. How do you plan to grow this beyond just building new features?",
+            "commenter": "Bridget",
+            "timestamp": "January 24, 2025 10:02 AM AWST",
+            "datetime": "1737684129",
+            "relative_time": "about 2 months ago"
+          },
+          {
+            "text": "Hope to see this information should be included as a stretch goal (e.g. if we hit $X above our goal) or in future campaigns.",
+            "commenter": "Bridget",
+            "timestamp": "January 24, 2025 10:09 AM AWST",
+            "datetime": "1737684541",
+            "relative_time": "about 2 months ago"
+          },
+          {
+            "text": "Well deserved, keep up the good work",
+            "commenter": "nadnomad",
+            "timestamp": "January 23, 2025 6:54 PM AWST",
+            "datetime": "1737629656",
+            "relative_time": "about 2 months ago"
+          },
+          {
+            "text": "Congratulations! That went really fast! Could you indicate where the stretch goals lie for expanding the team? For instance hiring moderators and other support staff? How about the Pixelfed Foundation?",
+            "commenter": "flev",
+            "timestamp": "January 23, 2025 3:29 PM AWST",
+            "datetime": "1737617356",
+            "relative_time": "about 2 months ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #2",
+        "title": "40% Milestone in under 5 hours!",
+        "creator": "ShleeCollaborator\nJanuary 22, 2025",
+        "date": "January 22, 2025",
+        "content": "We’ve just hit an incredible milestone — 40% funded in under 5 hours!\nI can’t wait to see how the fundraiser grows as North America wakes up in a few hours. Let’s keep the momentum going!\nThank you so much for your amazing support.  Goodnight from Australia - Shlee",
+        "url": "https://www.kickstarter.com/projects/pixelfed/pixelfed-foundation-2024-real-ethical-social-networks/posts/4297484",
+        "likes_count": 22,
+        "comments_count": 1,
+        "comments": [
+          {
+            "text": "North America checking in here! Just donated, but I was sleepy and haven't used Kickstarter in a while it still had my old name when I did. It's fixed now but could you check if the current name appears in your list of donors? Thanks and best of luck",
+            "commenter": "Michel Lind",
+            "timestamp": "January 22, 2025 11:10 PM AWST",
+            "datetime": "1737558640",
+            "relative_time": "about 2 months ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "Smashed 20% of our goal in the first 90 minutes, and #ProjectWeLove support by Kickstarter staff!",
+        "creator": "ShleeCollaborator\nJanuary 22, 2025",
+        "date": "January 22, 2025",
+        "content": "In just 90 minutes, we’ve already reached 20% of our funding goal! This is absolutely amazing, and it’s all thanks to YOU — our incredible supporters. Your generosity and belief in our mission are truly inspiring.\nWe’re also thrilled to share that Kickstarter has officially recognized our campaign as one of their “Projects We Love”! This is such an honor to the team.\nThis early momentum is critical to the success of our campaign, and we couldn’t have asked for a better start!\nThank you to everybody joining us on this crowdfunding campaign! - Dansup (and Shlee)",
+        "url": "https://www.kickstarter.com/projects/pixelfed/pixelfed-foundation-2024-real-ethical-social-networks/posts/4297408",
+        "likes_count": 16,
+        "comments_count": 4,
+        "comments": [
+          {
+            "text": "I hope this both funds your work in the near future and litterally kickstarts it into higher gear, but also sends a global message that people are both tired of how social media works today, and are willing to fund an alternative! I really hope we see large and solid non profit organizations emerge and start offering us all better \"digital homes\"!",
+            "commenter": "Clement Quinson",
+            "timestamp": "January 22, 2025 6:24 PM AWST",
+            "datetime": "1737541498",
+            "relative_time": "about 2 months ago"
+          },
+          {
+            "text": "Way to go Dan!",
+            "commenter": "PJ",
+            "timestamp": "January 22, 2025 4:37 PM AWST",
+            "datetime": "1737535077",
+            "relative_time": "about 2 months ago"
+          },
+          {
+            "text": "And Shlee!",
+            "commenter": "PJ",
+            "timestamp": "January 22, 2025 4:38 PM AWST",
+            "datetime": "1737535120",
+            "relative_time": "about 2 months ago"
+          },
+          {
+            "text": "+1",
+            "commenter": "Danny Bloomfield",
+            "timestamp": "January 22, 2025 5:09 PM AWST",
+            "datetime": "1737536985",
+            "relative_time": "about 2 months ago"
+          }
+        ]
+      }
+    ]
+  }
+}

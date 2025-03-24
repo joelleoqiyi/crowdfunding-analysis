@@ -1,0 +1,158 @@
+{
+  "url": "https://www.kickstarter.com/projects/motherultimate/make-100-cipherling-a-numbers-station-robot",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nJan 29 2025 - Feb 28 2025 (30 days)",
+    "funding_start_date": "2025-01-28T12:00:08-05:00",
+    "funding_end_date": "2025-02-27T12:00:08-05:00",
+    "funding_duration_days": 30,
+    "pledged_amount": "£13,299",
+    "funding_goal": "£5,000",
+    "backers_count": "123"
+  },
+  "updates": {
+    "count": 6,
+    "content": [
+      {
+        "update_number": "UPDATE #7",
+        "title": "Success! / Late Pledges / F01 2074kHz",
+        "creator": "Tim Burrell-Saward\nMarch 2, 2025",
+        "date": "March 2, 2025",
+        "content": "Hi all, Tim here with a quick post-campaign update.\nFirstly, a huge thankyou for getting this thing across the line. Charlie and I are looking forward to getting stuck into the production phase of the project and will be back next week with a timeline so you'll know what to expect over the following months.\nFrom your messages I can see that those of you who backed at the £1 tier have been unable to upgrade to the late pledge tier. This is down to me not grasping that late pledges are only for new backers, rather than existing ones, so apologies for the confusion. \nIf you already backed and still want to upgrade, please DM me through Kickstarter and I'll figure out a way to sort it.\nOnce again, thanks to each and every one of you for supporting us with this project. We're excited to make these things real and will share each step of the process with you as we do.\nF01 is a digital mode of the Russian 6 operator using a custom FSK system. It was first spotted in March 2016 and its location has been tied to sites in mainland Russia and Havana Cuba.\nF01 messages consist of 5-digit groups, ending with a 2-digit serial number and 3-digit group count. Test data is broadcast before each transmission, consisting of \"RYRYRY\".\nSome F01 messages are transmitted with the same identifiers as those used with two-way communications to Russian diplomatic missions, implying that these missions are the F01 message's intended targets.",
+        "url": "https://www.kickstarter.com/projects/motherultimate/make-100-cipherling-a-numbers-station-robot/posts/4325606",
+        "likes_count": 3,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #6",
+        "title": "Colourway results / V13 20025kHz",
+        "creator": "Tim Burrell-Saward\nFebruary 25, 2025",
+        "date": "February 25, 2025",
+        "content": "The results are in and, by a clear margin, Option 1 (\"Lincolnshire Poacher\") is the preferred choice. Hooray for democracy!\nThanks to the 47 folks who voted, and we hope that all 100+ of you will be happy with the decision. \nAs we enter the final few days of the campaign we'll be back with one final update talking about next steps post-campaign. In the meantime, thanks as always for your support!\nV13 (aka New Star Broadcasting Station / Star Star Broadcasting Station / Xing Xing), broadcasts from the Guanyin transmitter station in Taiwan and is believed to be run by the country's Military Intelligence Bureau. The station's age is unknown, as is its purpose, but it's speculated to be used to communicate with agents operating within mainland China.\nUnusual by today's standards, V13 broadcasts as music and human voice. Each transmission has the following format:\nMusical intro\n\"This is the New Star Broadcasting Station\", followed by the program number\nPreambles of all messages to be sent, all repeated twice\nPreamble: 4-digit unit ID, the group count, and the ID repeated\n4-digit paired groups\nPostamble: the 4-digit ID and the group count\nBroadcast outro \"This concludes the contracted broadcasting session. Thank you for your listening and we wish you health and happiness. See you.\"\nMusical outro",
+        "url": "https://www.kickstarter.com/projects/motherultimate/make-100-cipherling-a-numbers-station-robot/posts/4321650",
+        "likes_count": 5,
+        "comments_count": 1,
+        "comments": [
+          {
+            "text": "Yesssssss!",
+            "commenter": "Tom Muller",
+            "timestamp": "February 25, 2025 8:02 PM AWST",
+            "datetime": "1740484959",
+            "relative_time": "16 days ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #4",
+        "title": "100 Backers / Latecomers / F03j 12089kHz",
+        "creator": "Tim Burrell-Saward\nFebruary 10, 2025",
+        "date": "February 10, 2025",
+        "content": "Happy Monday all. I hope this finds you all well, rested and ready for the week ahead. I spent most of mine up a chimney installing a kitchen extractor and am pretty sure I've contracted black lung as a result.\nOver the weekend we sold the last of the 100 units, hooray! Thanks to all of you who've joined this project - it's immensely validating to see you all warm to this silly little thing.\nWe're now getting messages asking for more units to be released, which is lovely but not really in the spirit of the Make 100 campaign. That said, we've decided to open a Late Pledge option once the campaign has finished, offering additional units at £149GBP/$185USD ex shipping. If you're interested in this option please back the campaign now for £1 to ensure you're notified once the Late Pledge option opens.\nPlease note - quite often backers pull out, meaning it's likely some of the original 100 (at the lower price) will become available before the campaign ends. So check back every now and then and you might be lucky.\nIn other news, in a very random turn of events we've recieved an email asking if we'd like to take the project onto the next series of Dragon's Den. I can only assume this was actually a thinly veiled attempt at getting something on the show that would be certain to be ripped to shreds, which isn't the type of fame we're all that excited about chasing. Nice to be asked though, I guess?\nWe'll be back later in the week with some information about aesthetics and colourways. Until then, transmission ends.\nF03j is a digital mode of the Polish 11 operator and was first spotted in 2010. Digital transmissions are repeated twice weekly and consist of two identical messages broadcast five minutes apart. Most digital transmissions by this operator are associated with E11 and S11a broadcasts taking place on the same days of the week, although the exact nature of the relationship is unknown.",
+        "url": "https://www.kickstarter.com/projects/motherultimate/make-100-cipherling-a-numbers-station-robot/posts/4308425",
+        "likes_count": 3,
+        "comments_count": 4,
+        "comments": [
+          {
+            "text": "Will there be a physical product/reward for backers ? Any options for us to run our own SDR for hunting the number stations ?",
+            "commenter": "Khim Tat Puah",
+            "timestamp": "February 16, 2025 4:48 PM AWST",
+            "datetime": "1739695719",
+            "relative_time": "25 days ago"
+          },
+          {
+            "text": "Hello! The physical reward is the Cipherling unit. If you're interested in hosting your own SDR then that might be something we could discuss, but it also might be more trouble than its worth. Let's talk over DM.",
+            "commenter": "Tim Burrell-Saward",
+            "timestamp": "February 17, 2025 7:34 PM AWST",
+            "datetime": "1739792080",
+            "relative_time": "24 days ago"
+          },
+          {
+            "text": "Hello, how many additional units will be made and how long will those orders be up for? One of the cool things that interested me about this project was the number of units available.",
+            "commenter": "Deino150",
+            "timestamp": "February 11, 2025 3:12 AM AWST",
+            "datetime": "1739214775",
+            "relative_time": "about 1 month ago"
+          },
+          {
+            "text": "Hey. It'll be 10 units, available for 2 days only and at the higher price.",
+            "commenter": "Tim Burrell-Saward",
+            "timestamp": "February 11, 2025 4:02 AM AWST",
+            "datetime": "1739217764",
+            "relative_time": "about 1 month ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #3",
+        "title": "Software infrastructure / M12 5774kHz",
+        "creator": "Charlie BruceCollaborator\nFebruary 7, 2025",
+        "date": "February 7, 2025",
+        "content": "Hello everyone, Charlie here. First of all, welcome to all the new backers. It's been lovely seeing that little notification pop up each time someone joins this mad little project, especially when we're greeted to a little flurry of new folks each night when different timezones wake up. \nWe thought this would be a good time to start to give you a more technical look at how we aim to set up the Cipherling's server and infrastructure. In this update (which is pretty long, sorry), I’ll be discussing everything that’s needed to support the devices. We're very open to input from you on everything you're about to read, so please do feel free to use the comments section if you have something to add or question.\nAs always, we'll end this update with another broadcast captured at the time of writing.\nUpdate commencing...\nOverview\nKey to keeping the devices cost-effective, simple, small, and reliable is to use off-the-shelf modules. As such, we’ll be using an ESP32-based module, which connects to the internet via your home WiFi. We did consider embedding a real shortwave radio as it felt like the most authentic implementation but ultimately ruled it out on the grounds of range/coverage limitations, and simplicity.\nBecause the devices don’t have a SW radio of their own, we will instead operate one and stream over the internet.\nBreaking it down, the key things we need to do are:\nScheduling - based on public schedules / previous broadcasts / public observations, used to predict when the next broadcast is likely to be. Also to store metadata (likely operator/location).\nCapture - confirm whether a broadcast is happening, capture it, and detect when it finishes\nNotification - tell your device to start blinking\nStreaming - sending the audio to any device that tunes in\nMaintenance - firmware updates to fix any issues we might discover\nScheduling\nWe’ll need to maintain a calendar for known scheduled stations. Various groups of hobbyists including Priyom, Enigma 2000, Numbers & Oddities already have maintained lists (and sometimes offer APIs), so we’re aiming to use their schedules and will be asking permission as a courtesy. If this doesn’t pan out we’ll make our own schedules, which is totally doable (if a little time-consuming).\nWe’re aware that stations sometimes change their schedules and frequencies, or sometimes go offline entirely. We’re aiming to implement some form of automatic monitoring (eg if we expect to see a signal at a certain time/frequency but don’t see anything happen, we’d detect this and throw an error message for manual review).\nSome broadcasts aren’t sent on fixed schedules, and as a result it’s going to be difficult to reliably capture them automatically. We don’t think there’s a solution to easily detect these that wouldn’t also trigger on broadcasts that aren’t numbers stations (eg marine, aviation and military comms), however there are some active communities that post live broadcasts as and when they find them, so we might be able to monitor these automatically. We’re going to keep looking into this and welcome any suggestions from you, should you have any.\nThere are also some potentially interesting non-Numbers Station broadcasts - eg “The Buzzer” (UVB-76), which, whilst not strictly being numbers, is still eerie and cryptic. Whilst it usually broadcasts buzzes, occasionally it’ll send voice messages (not on a clear schedule). Ideally we wouldn’t want to trigger on routine buzzing but would on voice messages - but the only way to do this would involve near-continuous monitoring, so may not be possible depending on how we implement the capture portion.\nCapture\nOnce we know that a broadcast is likely about to take place, we need to act on it - we’ll need a way of collecting the broadcast as it happens, and some logic to detect the start and finish times. The best implementation we can see for this is to use a Software-Defined Radio (SDR).\nThere are various off-the-shelf radios which are capable or receiving SW broadcasts, including but not limited to:\nRTL-SDR (+”Ham it Up”)\nKiwiSDR\nNuand BladeRF (+ transverter)\nOne of the key things we will need to determine is if we use our own hosted SDR, and/or connect to remote SDRs:\nUsing public SDRs\nThere are a number of hobbyist organisations that kindly operate their own SDRs and make them publicly accessible. These are located all around the globe and therefore provide great coverage for a variety of broadcasting hotspots. We propose to automatically connect to one of these public SDRs shortly before a scheduled broadcast is due to start, and disconnect shortly afterward (for clarity we would make one connection which would then be streamed to all of your devices, rather than have each device connect directly to the SDR).\nOne of the key things we want to do is ensure that we’re responsible and polite users of any public SDRs. At a minimum, we will:\nNot interact with SDRs which state that they may not be used for commercial purposes\nNot connect to any servers which disallow automatic access\nConnect to SDRs with good bandwidth and have low user counts, and disconnect when the server is full, to prevent us taking a slot that would be used by a human operator\nSet safety timeouts (ensure we will be connected for no longer than, eg, 10 minutes)\nSpread the usage out over multiple SDRs so that no one operator has too high a bandwidth impact\nNot interface with any SDR backends that disallow it\nBuilding our own SDR(s)\nIf we run into issues using public sources, we’ve allocated a section of the budget to operate one or more SDRs and keep them internet-connected.\nThere are a few key considerations:\nLocation - generally, it’s better if you are closer to the transmitter of interest, and further from sources of interference like dense urban areas or civilian transmitters\nAntenna - generally, a larger antenna, kept further away from noise sources, is able to more effectively tune into weaker signals. We have space and cost limitations - a wire or loop antenna, or potentially a small roof-mounted antenna would be practical; whilst it’d give better reception, we can’t realistically construct a remote site on a hilltop with a tower.\nAtmospheric conditions, solar activity and time of day can all impact how far SW radio travels\nThere are practical limits to what we will be able to achieve using self-hosted equipment, as a result - whilst we can afford to get a decent loop antenna mounted, this will only go so far. We’re hoping that we’ll be able to capture Europe-based signals pretty well, but need to perform some experiments to confirm.\nWe also have the option of colocating SDRs in key locations around the globe, but this is a huge can of worms that we’d rather not open.\nNotification and maintenance\nWhilst not decided, we’ll likely use MQTT to send both the notifications, as well as maintenance messages (firmware updates). \nAs with anything internet-connected, we need to consider the certainty that people will try to abuse the system, and that people may want to continue using the device after we can no longer support it. We will need to:\nUse a secure MQTT implementation with authentication\nKeep servers up-to-date\nHave separate mechanisms for ensuring that firmware updates and audio streams are signed - so that even if the MQTT server is compromised, the devices can’t be abused\nDefensive by design - verify messages from the server, and generally keep the firmware as simple as possible to minimise places where things can go wrong\nHave a recovery mode that will ensure that if/when we discontinue the servers, people can continue using their devices\nStreaming\nThis is likely the most straightforward part of the project - there are various standardised ways to broadcast audio. Whilst I haven’t confirmed this yet, I’m leaning towards using HTTP Live Streaming (HLS) via a relay server operated on AWS. This should be straightforward to set up, have minimal requirements, and also offer an easy way to archive broadcasts.\nSomething we will likely need to implement as part of this is de-noising / cleaning up the audio signal. We’ll use traditional Digital Signal Processing (DSP) for this.\nGiving back to the community\nIf we do implement something that relies on public sources (calendar or SDRs), we’d want to give back to the community. Some possible approaches:\nDonating to various providers of public SDRs, be it financially or technologically\nCreate a public archive of broadcasts for hobbyists to refer to\nCreate a bot (Bluesky? Discord?) or server / app / dashboard to notify of any changes we detect, and feed back to the various communities\nThis is a key area we’d love to get your feedback on - we want to ensure we’re contributing to, rather than leeching off of a community of generous hobbyists.\nThat's more than enough for one update, so we'll leave it there. As previously mentioned, all questions, comments and feedback is more than welcome.\nM12 is the Morse code mode of the Russian 7 operator, and is attributed to broadcast from Moscow and Khabarovsk (you can read a fascinating Priyom post about how the latter was determined here).\nM12 broadcasts typically consist of the following (with examples in brackets):\n3 digit ID (369 369 369)\nMessage count (1)\n3 or 4 digit group (7633)\nGroup count (32)\n3 or 4 digit group (7633)\nGroup count (32)\nMessage body (2646578884....)\nOutro (000 000)",
+        "url": "https://www.kickstarter.com/projects/motherultimate/make-100-cipherling-a-numbers-station-robot/posts/4308183",
+        "likes_count": 5,
+        "comments_count": 2,
+        "comments": [
+          {
+            "text": "What a great idea! Although I work in the digital domain, I think there is something fascinating about analogue RF and RadioHam projects. I did think about getting into SW radio a few years ago and even spaced out a receiver and fold away aerial. Although we have an internet connected world, analog RF is a very tangible thing. The fact that government agencies and clandestine groups still use number stations for broadcasting to operatives is fascinating.",
+            "commenter": "Matthew Allen",
+            "timestamp": "February 7, 2025 5:16 PM AWST",
+            "datetime": "1738919807",
+            "relative_time": "about 1 month ago"
+          },
+          {
+            "text": "Thanks Matthew, it's been incredibly interesting to disappear down this particular rabbit hole",
+            "commenter": "Tim Burrell-Saward",
+            "timestamp": "February 7, 2025 10:32 PM AWST",
+            "datetime": "1738938749",
+            "relative_time": "about 1 month ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #2",
+        "title": "Funded / E11 5082kHz",
+        "creator": "Tim Burrell-Saward\nFebruary 1, 2025",
+        "date": "February 1, 2025",
+        "content": "We're funded! Hooray!\nHi all, and welcome to our new backers. It's truly heartwarming to know that (at the time of writing) there at least 65 other massive nerds out there who like these kinds of things, and who hail from all corners of the globe. We're very happy to have you along for the ride.\nNext week you can look forward to a couple of updates containing various interesting tidbits. However, as I said in the first update, we don't want to flood you with incessant emails so we'll keep them infrequent and brief. That said, if you'd like us to go into more detail on anything then please do drop a comment and we'll always respond.\nWishing you all lovely weekends, wherever in the world you are.\nTim\nE11 is the English language mode of the Polish 11 operator (believed to be a Polish intelligence agency). It is thought to transmit from Chotomów, just outside Warsaw. \nE11 transmissions are scheduled twice weekly and typically consist of \"null messages\" (a repeating string containing no coded information, which is used to keep the channel active and defeat traffic pattern analysis). Today's broadcast was a null message. Coded information transmissions on this channel are typically sent once a month.",
+        "url": "https://www.kickstarter.com/projects/motherultimate/make-100-cipherling-a-numbers-station-robot/posts/4303775",
+        "likes_count": 3,
+        "comments_count": 1,
+        "comments": [
+          {
+            "text": "Cool. Just watched the video.",
+            "commenter": "Kevin L. Corridon",
+            "timestamp": "February 1, 2025 3:26 PM AWST",
+            "datetime": "1738394811",
+            "relative_time": "about 1 month ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "Solid foundations / P07 6926kHz",
+        "creator": "Tim Burrell-Saward\nJanuary 30, 2025",
+        "date": "January 30, 2025",
+        "content": "Hello, Tim and Charlie here. We'd like to say a huge thankyou for setting this weird little project off on a solid course. Even though the stakes aren't huge in terms of funding amounts it was still a bit of a bum clencher to hit that go button (considering we've done exactly zero PR for this campaign), so now that things look positive we can relax and start to enjoy the process a little more.\nWe don't want to pepper you with endless updates and so figure that a cadence of \"something brief but interesting every few days\" would be sensible. Over the coming month you can expect to hear more about the history of the project (and of numbers stations in general), bits about the physical design process, tech developments, and progress updates as we disappear into the weird corners of the internet to root out as many active stations as we can find.\nThe comments section is there for you to use, should you wish to get involved in any way shape or form, and we'll always reply to questions within a reasonable timeframe (although go easy on us on the weekends - one of us has younglings and the other is essentially nocturnal).\nWe'd like to end each update with a recording of a station captured at the time of its writing. So we're going to sign off now with today's offering...\nP07 is a digital mode of the \"Russian 7\" operator, which is believed to be part of one of the main Russian intelligence agencies. P07 has been recorded as far back as 2008 and transmits twice weekly, with frequencies changed on a monthly basis.\nP07 transmissions proceed as follows:\nA 4.1-second callup sequence of 1800/1200 Hz alternating FSK (frequency-shift key) tones\nAn intro FSK \"Barker sequence\" thought to be for synchronization purposes\nA preamble of three successive PSK (phase-shift key) sections, using each a different carrier frequency\nA main section composed of a number of consecutive 12.8-second blocks, forming the body of the message\nAn outro FSK \"Barker sequence\"\nNote 1: we'll attempt to explain a lot of this jargon as the month goes on, promise.\nNote 2: technical information taken in the most from priyom.org",
+        "url": "https://www.kickstarter.com/projects/motherultimate/make-100-cipherling-a-numbers-station-robot/posts/4302402",
+        "likes_count": 1,
+        "comments_count": 2,
+        "comments": [
+          {
+            "text": "Interesting visualization. What sort of information will be on the display?",
+            "commenter": "Kevin L. Corridon",
+            "timestamp": "February 1, 2025 3:30 PM AWST",
+            "datetime": "1738395037",
+            "relative_time": "about 1 month ago"
+          },
+          {
+            "text": "Hi Kevin, only just saw your post so apologies for not replying sooner. The display is pretty small and we have minimal onboard processing power, so we won't be able to do visualisations like we're showing here. We'd like to show information related to each broadcast when its live, so that'll likely fill the entire screen. What happens between broadcasts is still up for grabs though. Charlie wants to try a little animated face (think Eva from Wall-E), but if you have any thoughts we'd love to hear them.",
+            "commenter": "Tim Burrell-Saward",
+            "timestamp": "February 6, 2025 9:00 PM AWST",
+            "datetime": "1738846812",
+            "relative_time": "about 1 month ago"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "url": "https://www.kickstarter.com/projects/826566455/warhound-game-center",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nJan 15 2015 - Feb 14 2015 (30 days)",
+    "funding_start_date": "2015-01-14T14:19:30-05:00",
+    "funding_end_date": "2015-02-13T14:19:30-05:00",
+    "funding_duration_days": 30,
+    "pledged_amount": "S$ 8",
+    "funding_goal": "S$ 160,062",
+    "backers_count": "2"
+  },
+  "updates": {
+    "count": 2,
+    "content": [
+      {
+        "update_number": "UPDATE #2",
+        "title": "Social Networking!",
+        "creator": "Scott Wisecarver\nJanuary 23, 2015",
+        "date": "January 23, 2015",
+        "content": "Check us out on Facebook!  USGC HQ  This means \"United Scorers Gaming Centers\"!  Feel free to email us at USGCHQ@gmail.com!",
+        "url": "https://www.kickstarter.com/projects/826566455/warhound-game-center/posts/1114197",
+        "likes_count": 1,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "Pod Design",
+        "creator": "Scott Wisecarver\nJanuary 15, 2015",
+        "date": "January 15, 2015",
+        "content": "Currently I am working on two different game pod designs.  One is an 8 man cube pod and the other is an individual game pod that resembles the drop pod from HALO: ODST...",
+        "url": "https://www.kickstarter.com/projects/826566455/warhound-game-center/posts/1107555",
+        "likes_count": 1,
+        "comments_count": 1,
+        "comments": [
+          {
+            "text": "Dude this is going to be awesome! Keep it up! �",
+            "commenter": "SirBlockHead",
+            "timestamp": "January 18, 2015 12:01 PM AWST",
+            "datetime": "1421553695",
+            "relative_time": "about 10 years ago"
+          }
+        ]
+      }
+    ]
+  }
+}

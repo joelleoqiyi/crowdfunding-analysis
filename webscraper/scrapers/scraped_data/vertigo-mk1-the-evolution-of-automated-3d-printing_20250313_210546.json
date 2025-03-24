@@ -1,0 +1,28 @@
+{
+  "url": "https://www.kickstarter.com/projects/automatedlayers/vertigo-mk1-the-evolution-of-automated-3d-printing",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nJan 18 2025 - Feb 17 2025 (30 days)",
+    "funding_start_date": "2025-01-17T15:02:01-05:00",
+    "funding_end_date": "2025-02-16T15:02:01-05:00",
+    "funding_duration_days": 30,
+    "pledged_amount": "",
+    "funding_goal": "$25,000",
+    "backers_count": "34"
+  },
+  "updates": {
+    "count": 1,
+    "content": [
+      {
+        "update_number": "UPDATE #1",
+        "title": "Collaboration Announcement",
+        "creator": "Automated Layers\nFebruary 2, 2025",
+        "date": "February 2, 2025",
+        "content": "We are super excited to announce that we'll be working with West3D to fulfill Kickstarter orders! West3D has high standards and a reputation in the 3D printing world for providing quality components and excellent customer service. The team is experienced, knowledgeable, and has great relationships with sourcing partners and makers all over the world. We encourage you to check out West3D's live streaming series \"Meet the Maker\" on YouTube. \nIn the coming weeks and months, we'll be working closely with West3D to set up a supply chain, design packaging, test components, and build documentation. We're about halfway through the campaign and we want to extend our gratitude wholeheartedly to everyone who has contributed so far to making the Vertigo Mk1 a reality!",
+        "url": "https://www.kickstarter.com/projects/automatedlayers/vertigo-mk1-the-evolution-of-automated-3d-printing/posts/4295395",
+        "likes_count": 3,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}
