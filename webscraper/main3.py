@@ -1,6 +1,8 @@
 import os
 import sys
 import json
+import pandas as pd
+from datetime import datetime
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -29,12 +31,45 @@ def move_link_to_previous(link, update_count, links_file, previous_file):
     with open(previous_file, 'a') as f:
         f.write(f"{link}\t{update_count}\n")
 
+def get_campaign_details_from_csv(url):
+    """Get campaign details from the CSV file"""
+    try:
+        # Read the CSV file
+        df = pd.read_csv('Kickstarter001.csv')
+        
+        # Extract project slug from URL
+        slug = url.split('/')[-1]
+        
+        # Find the project in the CSV
+        project = df[df['slug'] == slug].iloc[0]
+        
+        # Create campaign details dictionary
+        campaign_details = {
+            'pledged_amount': project['pledged'],
+            'funding_goal': project['goal'],
+            'backers_count': project['backers_count'],
+            'state': project['state'],
+            'category': project['category'],
+            'country': project['country'],
+            'created_at': project['created_at'],
+            'deadline': project['deadline'],
+            'launched_at': project['launched_at'],
+            'name': project['name'],
+            'blurb': project['blurb'],
+            'percent_funded': project['percent_funded']
+        }
+        
+        return campaign_details
+    except Exception as e:
+        logger.error(f"Error getting campaign details from CSV: {str(e)}")
+        return {}
+
 def main():
     logger = setup_logging()
     
     script_dir = os.path.dirname(__file__)
-    links_file = os.path.join(script_dir, 'unscraped_links.txt')
-    previous_file = os.path.join(script_dir, 'previously_scraped_links.txt')
+    links_file = os.path.join(script_dir, 'failed_project_links.txt')
+    previous_file = os.path.join(script_dir, 'scraped_failed_project_links.txt')
     
     try:
         links = read_links(links_file)
@@ -48,18 +83,31 @@ def main():
             logger.info(f"URL: {url} (Updates: {update_count})")
             
             try:
+                # Get campaign details from CSV
+                campaign_details = get_campaign_details_from_csv(url)
+                
+                # Scrape project once
                 result = scrape_project(url)
-                logger.info(f"Successfully scraped project")
+                updates_content = result.get('updates', {}).get('content', [])
+                
+                # Combine campaign details and updates
+                final_result = {
+                    'url': url,
+                    'campaign_details': campaign_details,
+                    'updates': {
+                        'count': len(updates_content),
+                        'content': updates_content
+                    }
+                }
                 
                 # Log campaign details
-                if 'campaign_details' in result and result['campaign_details']:
-                    campaign_details = result['campaign_details']
+                if campaign_details:
                     logger.info(f"Campaign details: Pledged: {campaign_details.get('pledged_amount', 'N/A')}, " +
                                f"Goal: {campaign_details.get('funding_goal', 'N/A')}, " +
                                f"Backers: {campaign_details.get('backers_count', 'N/A')}")
                 
                 # Log updates
-                updates_count = result['updates']['count'] if 'updates' in result else 0
+                updates_count = len(updates_content)
                 logger.info(f"Updates count: {updates_count}")
                 
                 # Move successfully scraped link to previously_scraped_links.txt
@@ -67,9 +115,9 @@ def main():
                 logger.info(f"Moved {url} to previously scraped links")
                 
                 # Show example of first update if available
-                if 'updates' in result and result['updates']['content'] and len(result['updates']['content']) > 0:
+                if updates_content:
                     logger.info("First update example:")
-                    first_update = result['updates']['content'][0]
+                    first_update = updates_content[0]
                     logger.info(f"Title: {first_update.get('title', 'N/A')}")
                     logger.info(f"Date: {first_update.get('date', 'N/A')}")
                     logger.info(f"Content preview: {first_update.get('content', 'N/A')[:100]}...")

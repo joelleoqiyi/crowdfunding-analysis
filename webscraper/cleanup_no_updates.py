@@ -12,7 +12,7 @@ def cleanup_no_update_files():
     
     # Get the correct scraped data directory path
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    data_dir = os.path.join(script_dir, 'scrapers', 'scraped_data')
+    data_dir = os.path.join(script_dir, 'scrapers', 'scraped_data_failed')
     
     if not os.path.exists(data_dir):
         logger.error(f"Scraped data directory not found at {data_dir}")

@@ -33,8 +33,8 @@ def main():
     logger = setup_logging()
     
     script_dir = os.path.dirname(__file__)
-    links_file = os.path.join(script_dir, 'unscraped_links.txt')
-    previous_file = os.path.join(script_dir, 'previously_scraped_links.txt')
+    links_file = os.path.join(script_dir, 'unscraped_links_20250313_202259.txt')
+    previous_file = os.path.join(script_dir, '2previously_scraped_links.txt')
     
     try:
         links = read_links(links_file)

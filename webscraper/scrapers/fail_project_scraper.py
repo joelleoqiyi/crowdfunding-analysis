@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.browser_utils import random_sleep, get_browser
-from scrapers.update_scraper import extract_updates_content
+from scrapers.update_scraper import extract_updates_content, extract_campaign_details
 
 logger = logging.getLogger(__name__)
 
@@ -16,7 +16,7 @@ def save_to_json(data, project_url):
     try:
         script_dir = os.path.dirname(os.path.abspath(__file__))
         
-        data_dir = os.path.join(script_dir, 'scraped_data')
+        data_dir = os.path.join(script_dir, 'scraped_data_failed')
         os.makedirs(data_dir, exist_ok=True)
         
         project_name = project_url.split('/')[-1]
@@ -33,7 +33,7 @@ def save_to_json(data, project_url):
         return None
 
 def scrape_project(url):
-    """Scrape a single project"""
+    """Scrape a single project's updates"""
     browser = None
     try:
         browser = get_browser()
@@ -48,9 +48,13 @@ def scrape_project(url):
         browser.execute_script("window.scrollTo(0, document.body.scrollHeight/4);")
         random_sleep(2, 3)
         
+        # First extract campaign details
+        campaign_details = extract_campaign_details(browser)
+        logger.info("Extracted campaign details")
+        
+        # Then extract updates
         scraped_data = extract_updates_content(browser)
         updates_content = scraped_data.get('updates', [])
-        campaign_details = scraped_data.get('campaign_details', {})
         
         logger.info(f"Extracted {len(updates_content)} updates")
         
@@ -86,7 +90,7 @@ def scrape_technology_projects(start_page=1, max_pages=5):
     base_url = "https://www.kickstarter.com/discover/categories/technology"
     projects = []
     results_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 
-                               'scraped_data', 
+                               'scraped_data_failed', 
                                f'technology_projects_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json')
     
     browser = get_browser()
@@ -114,13 +118,7 @@ def scrape_technology_projects(start_page=1, max_pages=5):
                     with open(results_file, 'w', encoding='utf-8') as f:
                         json.dump(projects, f, indent=2, ensure_ascii=False)
                     
-                    # Log some info about the project
-                    if 'campaign_details' in project_data and project_data['campaign_details']:
-                        campaign_details = project_data['campaign_details']
-                        logger.info(f"Campaign details: Pledged: {campaign_details.get('pledged_amount', 'N/A')}, " +
-                                   f"Goal: {campaign_details.get('funding_goal', 'N/A')}, " +
-                                   f"Backers: {campaign_details.get('backers_count', 'N/A')}")
-                    
+                    # Log updates
                     updates_count = project_data['updates']['count'] if 'updates' in project_data else 0
                     logger.info(f"Updates count: {updates_count}")
                     
