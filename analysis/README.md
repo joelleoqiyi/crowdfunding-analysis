@@ -4,9 +4,10 @@ This analysis uses machine learning (Random Forest) to predict Kickstarter proje
 
 ## Overview
 
-The analysis processes Kickstarter project data from two sources:
-- Successful projects: `../webscraper/scrapers/scraped_data/`
-- Failed projects: `../webscraper/scrapers/scraped_data_failed/`
+The analysis processes Kickstarter project data from a single source:
+- Project data: `../webscraper/scrapers/scraped_data/`
+
+The code automatically determines whether a project was successful or failed based on whether the pledged amount meets or exceeds the funding goal.
 
 ## Example of Text Analysis
 
@@ -37,7 +38,7 @@ These patterns, combined with numerical metrics (likes, comments), help predict 
 ### 1. Data Loading and Feature Extraction
 
 #### Data Loading
-- Reads JSON files from both successful and failed project directories
+- Reads JSON files from the project directory
 - Labels projects (1 for success, 0 for failure)
 - Combines all projects into a single dataset
 

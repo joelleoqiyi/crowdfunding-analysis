@@ -11,25 +11,42 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def load_project_data(successful_dir, failed_dir):
-    """Load and combine successful and failed project data."""
+def load_project_data(data_dir):
+    """Load project data from a single directory, determining success from the data itself."""
     projects = []
     
-    # Load successful projects
-    for filename in os.listdir(successful_dir):
+    # Load all projects from the single directory
+    for filename in os.listdir(data_dir):
         if filename.endswith('.json'):
-            with open(os.path.join(successful_dir, filename), 'r') as f:
-                data = json.load(f)
-                data['success'] = 1  # Mark as successful
-                projects.append(data)
-    
-    # Load failed projects
-    for filename in os.listdir(failed_dir):
-        if filename.endswith('.json'):
-            with open(os.path.join(failed_dir, filename), 'r') as f:
-                data = json.load(f)
-                data['success'] = 0  # Mark as failed
-                projects.append(data)
+            with open(os.path.join(data_dir, filename), 'r') as f:
+                try:
+                    data = json.load(f)
+                    
+                    # Determine if project is successful based on campaign_details
+                    # Look for indicators like 'funding_goal' and 'pledged_amount'
+                    is_successful = False
+                    if 'campaign_details' in data and data['campaign_details']:
+                        campaign = data['campaign_details']
+                        funding_goal = campaign.get('funding_goal', '0')
+                        pledged_amount = campaign.get('pledged_amount', '0')
+                        
+                        # Clean strings and convert to float
+                        if isinstance(funding_goal, str):
+                            funding_goal = float(funding_goal.replace('$', '').replace(',', '').strip() or 0)
+                        if isinstance(pledged_amount, str):
+                            pledged_amount = float(pledged_amount.replace('$', '').replace(',', '').strip() or 0)
+                            
+                        # If pledged amount >= funding goal, consider successful
+                        if funding_goal > 0 and pledged_amount >= funding_goal:
+                            is_successful = True
+                    
+                    # Mark success status
+                    data['success'] = 1 if is_successful else 0
+                    projects.append(data)
+                except json.JSONDecodeError:
+                    print(f"Error decoding JSON from {filename}, skipping file")
+                except Exception as e:
+                    print(f"Error processing {filename}: {str(e)}, skipping file")
     
     return projects
 
@@ -220,13 +237,17 @@ def main():
     # Create results directory
     results_dir = create_results_dir()
     
-    # Define paths
-    successful_dir = 'crowdfunding-analysis/webscraper/scrapers/scraped_data'
-    failed_dir = 'crowdfunding-analysis/webscraper/scrapers/scraped_data_failed'
+    # Define paths - using a single directory for all projects
+    data_dir = 'crowdfunding-analysis/webscraper/scrapers/scraped_data'
     
     # Load data
     print("Loading project data...")
-    projects = load_project_data(successful_dir, failed_dir)
+    projects = load_project_data(data_dir)
+    
+    # Output statistics about the loaded data
+    successful_count = sum(1 for p in projects if p['success'] == 1)
+    failed_count = sum(1 for p in projects if p['success'] == 0)
+    print(f"Loaded {len(projects)} projects: {successful_count} successful, {failed_count} failed")
     
     # Create dataset
     print("Extracting features...")

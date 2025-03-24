@@ -7,7 +7,7 @@ def cleanup_links_file():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     os.chdir(script_dir)
     
-    links_file = 'failed_project_links.txt'
+    links_file = 'unscraped_links.txt'
     
     if not os.path.exists(links_file):
         print(f"File {links_file} not found")
