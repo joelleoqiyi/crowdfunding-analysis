@@ -1,0 +1,40 @@
+{
+  "url": "https://www.kickstarter.com/projects/1194111863/tee-time-app",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nFeb 4 2025 - Mar 18 2025 (42 days)",
+    "funding_start_date": "2025-02-03T16:21:07-05:00",
+    "funding_end_date": "2025-03-17T19:00:00-04:00",
+    "funding_duration_days": 42,
+    "pledged_amount": "S$ 470",
+    "funding_goal": "S$ 40,115",
+    "backers_count": "3",
+    "days_left": 3
+  },
+  "updates": {
+    "count": 2,
+    "content": [
+      {
+        "update_number": "UPDATE #2",
+        "title": "DEMO Day",
+        "creator": "Dustin Ward\nFebruary 25, 2025",
+        "date": "February 25, 2025",
+        "content": "Today we got a great Demo with the App and it is days away from launch.  Now is def the time where we need assistance in getting over this hump. \n The developers have been amazing and provided the following demo insights: \nCourse discovery: Nearby courses shown and searchable\nOnboarding process: Verification, account creation, home course selection, handicap entry. \nTee time creation: Date/time selection, duration, hole count, player count \nVirtual Tee Time: Option to create without specific course, notes for location details\nCalendar integration: Adds Tee times to user's device calendar\nClubhouse feature: View/join others' tee times, chat functionality\nProfile management: Edit details, view joined/created tee times, subscription options\nThese are key features of our app and help get players connected and playing either on the course or virtually. \nWe look forward to more updates and letting you know when the official launch date is! Spread the word and help us reach our goal!",
+        "url": "https://www.kickstarter.com/projects/1194111863/tee-time-app/posts/4322618",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "Sneak Peek",
+        "creator": "Dustin Ward\nFebruary 7, 2025",
+        "date": "February 7, 2025",
+        "content": "We are just beginning this journey but finally we have a sneak peek into what this will look like.  Check out our Story page to see a behind the scenes look at what the app will look like in the coming weeks.",
+        "url": "https://www.kickstarter.com/projects/1194111863/tee-time-app/posts/4309141",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

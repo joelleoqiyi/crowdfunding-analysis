@@ -1,0 +1,40 @@
+{
+  "url": "https://www.kickstarter.com/projects/skadistudios/skadis-season-closure",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nFeb 10 2025 - Mar 12 2025 (30 days)",
+    "funding_start_date": "2025-02-10T10:11:18-05:00",
+    "funding_end_date": "2025-03-12T10:11:18-04:00",
+    "funding_duration_days": 30,
+    "pledged_amount": "$651",
+    "funding_goal": "$100",
+    "backers_count": "23",
+    "days_left": 3
+  },
+  "updates": {
+    "count": 2,
+    "content": [
+      {
+        "update_number": "UPDATE #2",
+        "title": "All Pledge Sent!!!",
+        "creator": "Skadi Studios\nMarch 17, 2025",
+        "date": "March 17, 2025",
+        "content": "Thank you to everyone who has supported us so far. Your support enables us to continue our projects. We have already sent an invitation to all backers to download their reward files. We hope you enjoy them, and we truly appreciate your continued support.",
+        "url": "https://www.kickstarter.com/projects/skadistudios/skadis-season-closure/posts/4338930",
+        "likes_count": 1,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "SKADI Starter pack (dnd)",
+        "creator": "Skadi Studios\nFebruary 21, 2025",
+        "date": "February 21, 2025",
+        "content": "A massive thank you to everyone who has joined us on this incredible journey so far! We’ve got some thrilling news: we’re adding four new miniatures and an epic role-playing adventure to all campaign rewards! These unique adventurers, each with their own character sheet, stats, and skills, are characters we absolutely adore!\nGet ready for \"The Island\" – a captivating adventure that our long-time fans will definitely remember! We’re diving deep into the creative process, and while it’s proving to be a bit more complex than we anticipated, we promise it will be worth the wait. One day, we might share some of the wild and hilarious stories from behind the scenes of this adventure's creation.\nRest assured, once we wrap up this epic journey, every backer who has supported this campaign will receive the adventure. Exciting times are ahead!\nThe following elements will be added to all rewards:\nMelany /adventurer /cursed human bard /character mini (.stl)\nUrgot /adventurer/orc monk/ character mini (.stl)\nAnthuan /adventurer /human fighter/ character mini (.stl)\nSuamy / adventurer /elf druid/ character mini (.stl)\nTales of Tanamar \"The Island\" / RPG adcenture/ +50 pages/ 5E compatible (PDF)",
+        "url": "https://www.kickstarter.com/projects/skadistudios/skadis-season-closure/posts/4311840",
+        "likes_count": 1,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+KICKSTARTER PROJECT SUCCESS PREDICTION ANALYSIS
+==================================================
+
+MODEL PERFORMANCE
+--------------------
+              precision    recall  f1-score   support
+
+           0       0.97      0.97      0.97        39
+           1       0.94      0.94      0.94        16
+
+    accuracy                           0.96        55
+   macro avg       0.96      0.96      0.96        55
+weighted avg       0.96      0.96      0.96        55
+
+
+LIVE PROJECTS ANALYSIS
+--------------------
+Number of live projects analyzed: 109
+Predicted to succeed: 41
+Predicted to fail: 57
+
+EXAMPLE LIVE PROJECT PREDICTIONS:
+
+1. timesheetio-work-log-get-your-money
+Current Status: 2.0% funded at 93.4% of time
+Prediction: Likely to fail
+Details: Funding far behind schedule (0.0x expected rate) | Model confidence: 0.0% likely to succeed
+
+2. skadis-season-closure
+Current Status: 651.0% funded at 90.0% of time
+Prediction: Likely to succeed
+Details: Funding far ahead of schedule (7.2x expected rate) | Model confidence: 66.0% likely to succeed
+
+3. nsone
+Current Status: 115.5% funded at 63.3% of time
+Prediction: Likely to succeed
+Details: Funding on track or ahead of schedule (1.8x expected rate) | Model confidence: 52.0% likely to succeed
+
+4. teeboxx-power-your-golf-game-amplify-your-experience
+Current Status: 328.9% funded at 70.0% of time
+Prediction: Likely to succeed
+Details: Funding far ahead of schedule (4.7x expected rate) | Model confidence: 74.0% likely to succeed
+
+5. feniska-the-smart-litter-box-tracker
+Current Status: 279.8% funded at 70.0% of time
+Prediction: Likely to succeed
+Details: Funding far ahead of schedule (4.0x expected rate) | Model confidence: 68.0% likely to succeed
+
+
+TOP FACTORS INFLUENCING PROJECT SUCCESS
+-----------------------------------
+
+NUMERICAL FACTORS:
+
+Campaign Duration (days)
+Impact on Success: 6.91%
+
+Total Likes on Updates
+Impact on Success: 2.61%
+
+Updates Posted per Day
+Impact on Success: 2.42%
+
+Average Length of Updates
+Impact on Success: 1.26%
+
+Project is Currently Live
+Impact on Success: 1.01%
+
+COMMUNICATION PATTERNS IN UPDATES:
+The following words/phrases in project updates are associated with higher success rates:
+
+backers_count
+Impact on Success: 35.22%
+
+backers_per_day
+Impact on Success: 16.90%
+
+avg_pledge_amount
+Impact on Success: 11.01%
+
+and
+Impact on Success: 1.67%
+
+with
+Impact on Success: 1.08%
+
+your
+Impact on Success: 1.07%
+
+re
+Impact on Success: 0.96%
+
+average_likes_per_update
+Impact on Success: 0.91%
+
+we
+Impact on Success: 0.91%
+
+of
+Impact on Success: 0.89%
+
+
+INTERPRETATION GUIDE
+--------------------
+1. The percentages show how much each factor contributes to the model's decision-making.
+2. Higher percentages indicate stronger influence on project success.
+3. For numerical factors (like duration, likes), higher values generally indicate better chances of success.
+4. For live projects, the prediction is based on current funding progress vs. time elapsed.
+5. For communication patterns, the presence of these words often indicates:
+   - Direct engagement with backers
+   - Community-building language
+   - Regular project updates
+   - Personal and inclusive communication style

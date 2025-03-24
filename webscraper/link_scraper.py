@@ -7,23 +7,20 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import random
 import os
-import datetime
 from utils.browser_utils import random_sleep, human_like_scroll, move_mouse_randomly, get_browser
-import traceback
 
 class LinkScraper:
     def __init__(self, driver, url="https://www.kickstarter.com/discover/advanced?state=successful&category_id=16&woe_id=0&sort=end_date&seed=2902974&page="):
         self.__driver = driver
         self.__url = url
     
-    def iterate_pages(self, num_pages=2, start_page=1, output_file=None):
+    def iterate_pages(self, num_pages=2):
         all_links = []
-        for i in range(start_page, start_page + num_pages):
+        for i in range(1, num_pages + 1):
             print(f"Scraping page {i}...")
             self.__driver.get(self.__url + str(i))
             page_links = self.__scrape_page()
-            if output_file:
-                self.save_links_to_file(page_links, output_file)
+            self.save_links_to_file(page_links, 'unscraped_links.txt')
             all_links.extend(page_links)
             # Random delay between pages
             delay = random.uniform(3, 5)
@@ -110,77 +107,40 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     os.chdir(script_dir)
     
-    # Create a new output file with timestamp
-    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    new_links_file = f'unscraped_links_{timestamp}.txt'
-    
-    # Define the starting page (change this to start from a later page)
-    start_page = 10  # Start from page 10 to avoid scraping the same links
-    
     # Read existing links to avoid duplicates
     existing_links = set()
     
     # Read from both current and previous links files
     if os.path.exists('previously_scraped_links.txt'):
-        try:
-            with open('previously_scraped_links.txt', 'r') as f:
-                existing_links.update(line.strip().split('\t')[0] for line in f if line.strip())
-            print(f"Read links from previously_scraped_links.txt")
-        except Exception as e:
-            print(f"Error reading previously_scraped_links.txt: {e}")
+        with open('previously_scraped_links.txt', 'r') as f:
+            existing_links.update(line.strip().split('\t')[0] for line in f)
             
     if os.path.exists('unscraped_links.txt'):
-        try:
-            with open('unscraped_links.txt', 'r') as f:
-                existing_links.update(line.strip().split('\t')[0] for line in f if line.strip())
-            print(f"Read links from unscraped_links.txt")
-        except Exception as e:
-            print(f"Error reading unscraped_links.txt: {e}")
-    
-    # Check for other unscraped_links_*.txt files
-    for filename in os.listdir(script_dir):
-        if filename.startswith('unscraped_links_') and filename.endswith('.txt'):
-            try:
-                with open(filename, 'r') as f:
-                    existing_links.update(line.strip().split('\t')[0] for line in f if line.strip())
-                print(f"Read existing links from {filename}")
-            except Exception as e:
-                print(f"Error reading {filename}: {e}")
-    
-    # Remove any empty strings that might have been added
-    if '' in existing_links:
-        existing_links.remove('')
-    
-    print(f"Creating new links file: {new_links_file}")
-    print(f"Starting from page {start_page}")
-    print(f"Already have {len(existing_links)} existing links to avoid duplicates")
+        with open('unscraped_links.txt', 'r') as f:
+            existing_links.update(line.strip().split('\t')[0] for line in f)
+        # Clear the current links file
+        os.remove('unscraped_links.txt')
     
     driver = setup_driver()
     try:
-        print(f"Starting to scrape Kickstarter projects from page {start_page}...")
+        print("Starting to scrape Kickstarter projects from page 1...")
         scraper = LinkScraper(driver)
         all_links = []
-        page = start_page
-        target_new_links = 100  # Target 100 new unique links
+        page = 1
+        target_new_links = 90  # Target 120 new unique links
         consecutive_failures = 0
-        max_pages = 40  # Maximum number of pages to scrape
+        max_pages = 40  # Increase max pages to find more unique projects
         
+        print(f"Already have {len(existing_links)} existing links")
         print(f"Targeting {target_new_links} new unique links")
         
-        while len(all_links) < target_new_links and page <= (start_page + max_pages) and consecutive_failures < 3:
+        while len(all_links) < target_new_links and page <= max_pages and consecutive_failures < 3:
             print(f"Scraping page {page}...")
             driver.get(scraper._LinkScraper__url + str(page))
             page_links = scraper._LinkScraper__scrape_page()
             
             # Filter out already scraped links
-            new_links = []
-            for title, href, updates in page_links:
-                # Clean the URL by removing query parameters for comparison
-                clean_url = href.split('?')[0]
-                if clean_url not in existing_links:
-                    new_links.append((title, clean_url, updates))
-                else:
-                    print(f"Skipping already scraped link: {clean_url}")
+            new_links = [(title, href, updates) for title, href, updates in page_links if href not in existing_links]
             
             if new_links:
                 consecutive_failures = 0
@@ -189,12 +149,12 @@ def main():
                 existing_links.update(href for _, href, _ in new_links)
                 print(f"Found {len(new_links)} new links on page {page}")
                 print(f"Total new links so far: {len(all_links)}/{target_new_links}")
-                
-                # Save links after each page
-                scraper.save_links_to_file(new_links, new_links_file)
             else:
                 consecutive_failures += 1
                 print(f"No new links found on page {page}. Consecutive failures: {consecutive_failures}")
+            
+            # Save links after each page
+            scraper.save_links_to_file(all_links, 'unscraped_links.txt')
             
             page += 1
             # Random delay between pages
@@ -203,11 +163,9 @@ def main():
             time.sleep(delay)
         
         print(f"Finished scraping. Found {len(all_links)} new unique links.")
-        print(f"Links saved to: {new_links_file}")
         
     except Exception as e:
         print(f"Error: {str(e)}")
-        print(f"Traceback: {traceback.format_exc()}")
     finally:
         driver.quit()
 

@@ -1,0 +1,16 @@
+{
+  "url": "https://www.kickstarter.com/projects/thingy/thingy",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nFeb 26 2025 - Mar 21 2025 (23 days)",
+    "funding_start_date": "2025-02-26T09:10:28-05:00",
+    "funding_end_date": "2025-03-21T11:59:00-04:00",
+    "funding_duration_days": 23,
+    "pledged_amount": "$34,329",
+    "funding_goal": "$100",
+    "backers_count": "234"
+  },
+  "updates": {
+    "count": 0,
+    "content": []
+  }
+}

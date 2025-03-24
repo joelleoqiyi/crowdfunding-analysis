@@ -1,0 +1,78 @@
+{
+  "url": "https://www.kickstarter.com/projects/731479134/pedro-0",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nMar 02 2025 - Mar 31 2025 (29 days)",
+    "funding_start_date": "2025-03-02T00:00:00.000000Z",
+    "funding_end_date": "2025-03-31T20:05:23.499001Z",
+    "funding_duration_days": 29,
+    "pledged_amount": "S$ 3,421",
+    "funding_goal": "S$ 1,446",
+    "backers_count": "23",
+    "days_left": 7,
+    "project_launch_text": "Project launches MARCH 2, 2025"
+  },
+  "updates": {
+    "count": 4,
+    "content": [
+      {
+        "update_number": "UPDATE #4",
+        "title": "🚀 Three Ways to Get Your Own Pedro Robot!✨",
+        "creator": "Almoutazar Saandi\nMarch 19, 2025",
+        "date": "March 19, 2025",
+        "content": "Greetings to all Pedro supporters! 🤖\nThanks for being part of the Pedro adventure! 🚀\nAs you know, you can get Pedro in different Kickstarter rewards. Choose the one that suits you best!\nWhether you backed a Pre-Assembled Pedro, a Full DIY Kit, or a Pedro Board, it comes preloaded with the pedroDirectMode.ino firmware, allowing you to control Pedro in Direct Mode like this:\n⚡ 1. Pre-Assembled Pedro Reward - Plug & Play\nWant a fully built and tested Pedro? The Pre-Assembled Pedro is ready to use just turn it on and explore your Pedro in action.\n🔧 2. Full DIY Kit Reward - Everything Included\nWith the Pedro Full DIY Kit, you get all the necessary components to build the robot, including electronics and 3D-printed parts. Just follow the Get Started guide on GitHub and start assembling!\n🛠️ 3. Pedro Board Only Reward - Print & Build\nWant to build Pedro from scratch? The Pedro Board Only reward gives you the main PCB, and you can 3D print the rest! To complete your robot, you’ll need:\n2 ball bearings 8x22x7mm\n7.4V DC battery with JST XH2.54 connector 2 pins\n4x MS90 360° servo motors\nMicro USB cable\n(Options) Modules: NRF24L01, HC-05, ESP8266-01, OLED 128x64 0.96\"\nAll assembly instructions are available in the Get Started guide on GitHub \n💬 Join the Pedro Community!\nNeed help? Have questions? Want to share your build? Join our Discord server to connect with other makers, get support, and follow Pedro’s journey in real time!",
+        "url": "https://www.kickstarter.com/projects/731479134/pedro-0/posts/4340672",
+        "likes_count": 1,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #3",
+        "title": "🎉 It’s official – the Pedro Discord is live! 🤖🔥",
+        "creator": "Almoutazar Saandi\nMarch 13, 2025",
+        "date": "March 13, 2025",
+        "content": "The Pedro community now has a home for live discussions, tips, programming, 3D printing, and reward updates! Whether you're building, customizing, or just following the journey, this is the place to be. 🚀\n🔗 Join us now!",
+        "url": "https://www.kickstarter.com/projects/731479134/pedro-0/posts/4336139",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #2",
+        "title": "New GitHub Repo and Discord Community Soon!",
+        "creator": "Almoutazar Saandi\nMarch 12, 2025",
+        "date": "March 12, 2025",
+        "content": "🚀 Pedro Update: New GitHub Repo and Discord Community Soon! 🤖\nHello Pedro enthusiasts! 👋\nI'm excited to announce some big updates:\n1. New GitHub Repo: Pedro - Get Started\nI've just launched a dedicated Github repo for Pedro - Get Started! This repo is designed to guide you through the step-by-step assembly of Pedro, from building the robot to programming and utilizing all of its features.\nYou'll find:\nDetailed assembly instructions\nTips for smoother operation\nProgramming guides\nFull details on the Pedro board and its functionalities\n2. Latest 3D STL Files Available\nThe latest version of the 3D STL files for Pedro is now available on the Pedro GitHub page for anyone who wants to 3D print Pedro! Start building your own robot today! 🎉\n3. Private Discord Community\nA private Discord community to share everything about Pedro will be create soon:\nDiscuss 3D design and 3D printing\nGet help with Pedro board setup and programming\nExchange ideas for improvements\nAnd much more!\nThis Discord is here for YOU to ask questions, share feedback, and collaborate on Pedro’s future development! 🚀\nCan’t wait to see what you create with Pedro! Join the conversation and start building today!",
+        "url": "https://www.kickstarter.com/projects/731479134/pedro-0/posts/4334950",
+        "likes_count": 1,
+        "comments_count": 2,
+        "comments": [
+          {
+            "text": "Link serms dead",
+            "commenter": "Robert L. Kelley",
+            "timestamp": "March 12, 2025 8:41 AM AWST",
+            "datetime": "1741740062",
+            "relative_time": "12 days ago"
+          },
+          {
+            "text": "Indeed, the repo was in private mode. It is now available. Thanks, Robert.",
+            "commenter": "Almoutazar Saandi",
+            "timestamp": "March 12, 2025 8:54 AM AWST",
+            "datetime": "1741740872",
+            "relative_time": "12 days ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "Goal Reached in Less Than 24 Hours – Thank You!",
+        "creator": "Almoutazar Saandi\nMarch 3, 2025",
+        "date": "March 3, 2025",
+        "content": "Wow! Pedro has reached its Kickstarter goal in less than 24 hours, and it's all thanks to you! A huge thank you to all the backers and supporters who made this possible. But this is just the beginning! There are still 28 days left for more robotics and coding enthusiasts to join the adventure and discover Pedro.\nYour support is truly incredible and keeps pushing Pedro further. The journey is just getting started!",
+        "url": "https://www.kickstarter.com/projects/731479134/pedro-0/posts/4326689",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

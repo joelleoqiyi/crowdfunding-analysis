@@ -1,0 +1,29 @@
+{
+  "url": "https://www.kickstarter.com/projects/f1bilbe/f1bible",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nFeb 22 2025 - Mar 24 2025 (30 days)",
+    "funding_start_date": "2025-02-22T07:26:25-05:00",
+    "funding_end_date": "2025-03-24T08:26:25-04:00",
+    "funding_duration_days": 30,
+    "pledged_amount": "S$ 236",
+    "funding_goal": "S$ 60,438",
+    "backers_count": "2",
+    "days_left": 2
+  },
+  "updates": {
+    "count": 1,
+    "content": [
+      {
+        "update_number": "UPDATE #1",
+        "title": "Short video of the App at work..",
+        "creator": "Lee Walton\nFebruary 23, 2025",
+        "date": "February 23, 2025",
+        "content": "",
+        "url": "https://www.kickstarter.com/projects/f1bilbe/f1bible/posts/4321080",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

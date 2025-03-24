@@ -1,0 +1,30 @@
+{
+  "url": "https://www.kickstarter.com/projects/1013562009/fipsy-fpga-v2-the-breakout-board-for-beginners-and-creatives",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nFeb 15 2025 - Apr 16 2025 (60 days)",
+    "funding_start_date": "2025-02-15T00:00:00.000000Z",
+    "funding_end_date": "2025-04-16T19:33:19.549610Z",
+    "funding_duration_days": 60,
+    "pledged_amount": "S$ 10,652",
+    "funding_goal": "S$ 4,680",
+    "backers_count": "164",
+    "days_left": 23,
+    "project_launch_text": "Project launches FEBRUARY 15, 2025"
+  },
+  "updates": {
+    "count": 1,
+    "content": [
+      {
+        "update_number": "UPDATE #1",
+        "title": "Wow, 100% Funded in Four Days!",
+        "creator": "Matthew Zamora\nFebruary 21, 2025",
+        "date": "February 21, 2025",
+        "content": "Our team is so thankful to all of the supporters of DIY tech and FPGA education! We know that FPGAs have such a broad and exciting application in hobbyist and creative electronics. \n\nWe are committed to supporting and being leaders in the FPGA educational space, particularly helping makers and those new to these devices.\nOur team is full steam ahead on creating some new and exciting demos and educational content to support the Fipsy devices. But we wanted to take a moment to thank our supporters. \n\nPlease spread the word about our project to help more beginners discover and take on this otherwise challenging and obscure topic. FPGAs can become any kind of digital logic circuit, and electrical engineers use them all over the place to allow for flexibility in designs, or to develop custom and highly efficient algorithms.\nStay tuned for more announcements from our team, and thank you again to all of the Fipsy V2 backers!",
+        "url": "https://www.kickstarter.com/projects/1013562009/fipsy-fpga-v2-the-breakout-board-for-beginners-and-creatives/posts/4318493",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

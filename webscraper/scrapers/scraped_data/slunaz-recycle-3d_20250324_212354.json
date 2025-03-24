@@ -1,0 +1,45 @@
+{
+  "url": "https://www.kickstarter.com/projects/ff1r/slunaz-recycle-3d",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nMar 08 2025 - May 06 2025 (59 days)",
+    "funding_start_date": "2025-03-08T00:00:00.000000Z",
+    "funding_end_date": "2025-05-06T21:23:24.127181Z",
+    "funding_duration_days": 59,
+    "pledged_amount": "S$ 1,461",
+    "funding_goal": "S$ 43,407",
+    "backers_count": "5",
+    "days_left": 43,
+    "project_launch_text": "Project launches MARCH 8, 2025"
+  },
+  "updates": {
+    "count": 1,
+    "content": [
+      {
+        "update_number": "UPDATE #1",
+        "title": "Thanks to the first bakers! I will work hard to achieve our goal!",
+        "creator": "SLUNAZ - Stefano Lunazzi\nMarch 15, 2025",
+        "date": "March 15, 2025",
+        "content": "Hello guys!\nThanks to the first bakers! \nWe still have a long way to go to reach my dream: saving the planet by eliminating single-use plastic in 3D printing! \nLet's spread the word! \nLet's turn all plastic bottles into new reels for your 3D printing\nPleace to meet you, I'm Stefano!",
+        "url": "https://www.kickstarter.com/projects/ff1r/slunaz-recycle-3d/posts/4337715",
+        "likes_count": 1,
+        "comments_count": 2,
+        "comments": [
+          {
+            "text": "Thanks my friend!",
+            "commenter": "SLUNAZ - Stefano Lunazzi",
+            "timestamp": "March 15, 2025 5:00 PM AWST",
+            "datetime": "1742029224",
+            "relative_time": "9 days ago"
+          },
+          {
+            "text": "Good luck! After Sunlaz FF1R, I sincerely hope that this new crowdfunding campaign works so that we can finally have something to really recycle! Well done for your work!",
+            "commenter": "Thibaut SIGNORELLI",
+            "timestamp": "March 15, 2025 4:59 PM AWST",
+            "datetime": "1742029187",
+            "relative_time": "9 days ago"
+          }
+        ]
+      }
+    ]
+  }
+}
