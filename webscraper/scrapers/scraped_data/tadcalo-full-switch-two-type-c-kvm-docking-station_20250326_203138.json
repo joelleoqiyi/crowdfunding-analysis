@@ -1,0 +1,52 @@
+{
+  "url": "https://www.kickstarter.com/projects/tadcalo/tadcalo-full-switch-two-type-c-kvm-docking-station",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nMar 10 2025 - Apr 18 2025 (39 days)",
+    "funding_start_date": "2025-03-10T00:00:00.000000Z",
+    "funding_end_date": "2025-04-18T20:31:08.086579Z",
+    "funding_duration_days": 39,
+    "pledged_amount": "S$ 39,453",
+    "funding_goal": "S$ 1,376",
+    "backers_count": "402",
+    "days_left": 23,
+    "project_launch_text": "Project launches MARCH 10, 2025"
+  },
+  "updates": {
+    "count": 1,
+    "content": [
+      {
+        "update_number": "UPDATE #1",
+        "title": "🚀 TadCALO's Latest Kickstarter Campaign is LIVE! 🎉",
+        "creator": "Tadcalo\nMarch 10, 2025",
+        "date": "March 10, 2025",
+        "content": "Hey Guys!\nWe're beyond excited to hear your thoughts! Whether you have feedback, suggestions, or concerns, we want to know. Your input is invaluable, and we’re committed to addressing all your questions and ensuring a great experience.\nAs a passionate team dedicated to Dock innovation, we’re here to bring your ideas to life. If there’s a feature or design you’d love to see, drop us a message or reach out directly!\nLet’s create something amazing together—your imagination, our expertise!\nThank you for your support!\nTadCALO Team",
+        "url": "https://www.kickstarter.com/projects/tadcalo/tadcalo-full-switch-two-type-c-kvm-docking-station/posts/4333276",
+        "likes_count": 3,
+        "comments_count": 3,
+        "comments": [
+          {
+            "text": "Hi, support for DisplayPort would be awesome!",
+            "commenter": "maik",
+            "timestamp": "March 24, 2025 3:27 PM AWST",
+            "datetime": "1742801257",
+            "relative_time": "2 days ago"
+          },
+          {
+            "text": "I own HP AiO 27-cb0004nc with Dell laptop, will it work in my case?",
+            "commenter": "Koky",
+            "timestamp": "March 13, 2025 12:20 AM AWST",
+            "datetime": "1741796404",
+            "relative_time": "14 days ago"
+          },
+          {
+            "text": "Hi I will get back to you soon!",
+            "commenter": "Tadcalo",
+            "timestamp": "March 18, 2025 2:15 PM AWST",
+            "datetime": "1742278540",
+            "relative_time": "8 days ago"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -8,8 +8,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import classification_report, confusion_matrix
 import re
 from datetime import datetime, timezone, timedelta
-import matplotlib.pyplot as plt
-import seaborn as sns
 from sklearn.utils import class_weight
 
 def load_project_data(data_dir):
@@ -133,12 +131,7 @@ def load_project_data(data_dir):
     return projects
 
 def extract_features(project, for_training=True):
-    """Extract relevant features from project updates.
-    
-    Args:
-        project: The project data
-        for_training: If True, prepare features for model training. If False, prepare for prediction.
-    """
+    """Extract relevant features from project updates."""
     features = {}
     
     # Basic update statistics
@@ -233,11 +226,7 @@ def extract_features(project, for_training=True):
             if 'projected_final_percent' in project:
                 features['projected_final_percent'] = project.get('projected_final_percent', 0)
         else:
-            # For completed projects in training, we still want to include success-related 
-            # metrics, but more carefully to avoid direct data leakage
-            
-            # Instead of direct funding percentage (which is too close to the target),
-            # we'll use backer engagement metrics and other indirect indicators
+            # For completed projects in training
             clean_funding_goal = project.get('clean_funding_goal', 0)
             clean_pledged_amount = project.get('clean_pledged_amount', 0)
             
@@ -260,22 +249,18 @@ def extract_features(project, for_training=True):
     else:
         # For prediction on new projects, use all available metrics
         if is_live:
-            # For live projects
             features['percent_funded'] = project.get('percent_funded', 0)
             features['percent_time'] = project.get('percent_time', 0)
             features['funding_ratio'] = features['percent_funded'] / max(features['percent_time'], 1)
             
-            # Calculate projected final
             if 'percent_time' in project and project['percent_time'] > 0:
                 projected_final = project['percent_funded'] / project['percent_time'] * 100
                 features['projected_final_percent'] = projected_final
             else:
                 features['projected_final_percent'] = 0
                 
-            # Calculate backers metrics
             features['backers_per_day'] = features['backers_count'] / max(funding_duration * (features['percent_time']/100), 1)
         else:
-            # For completed projects
             features['backers_per_day'] = features['backers_count'] / max(funding_duration, 1)
             features['avg_pledge_amount'] = project.get('clean_pledged_amount', 0) / max(features['backers_count'], 1)
             
@@ -290,12 +275,7 @@ def extract_features(project, for_training=True):
     return features
 
 def create_dataset(projects, for_training=True):
-    """Create a dataset from the project features.
-    
-    Args:
-        projects: List of project data
-        for_training: If True, prepare for model training; if False, for prediction
-    """
+    """Create a dataset from the project features."""
     features_list = []
     labels = []
     live_projects = []
@@ -360,8 +340,8 @@ def create_readable_feature_importance(importance_df, tfidf_vectorizer=None):
     
     return importance_df[['feature', 'description', 'importance_formatted', 'importance_percentage']]
 
-def save_readable_results(results_dir, importance_df, classification_rep, tfidf_vectorizer, live_projects_analysis):
-    """Save results in a more readable format."""
+def save_analysis_summary(results_dir, importance_df, classification_rep, tfidf_vectorizer, live_projects_analysis):
+    """Save results as analysis_summary.txt without visualizations."""
     # Create readable feature importance
     readable_importance = create_readable_feature_importance(importance_df.copy(), tfidf_vectorizer)
     
@@ -430,114 +410,6 @@ def save_readable_results(results_dir, importance_df, classification_rep, tfidf_
         f.write("   - Community-building language\n")
         f.write("   - Regular project updates\n")
         f.write("   - Personal and inclusive communication style\n")
-    
-    # Save detailed feature importance
-    readable_importance.to_csv(os.path.join(results_dir, 'feature_importance_readable.csv'), index=False)
-    
-    # Save live projects analysis as CSV
-    live_df = pd.DataFrame(live_projects_analysis)
-    if not live_df.empty:
-        live_df.to_csv(os.path.join(results_dir, 'live_projects_predictions.csv'), index=False)
-
-def plot_feature_importance(importance_df, results_dir):
-    """Plot and save feature importance visualization."""
-    # Create more readable labels
-    plot_data = importance_df.head(10).copy()
-    feature_labels = {
-        'funding_duration': 'Campaign Duration',
-        'total_likes': 'Total Likes',
-        'total_comments': 'Total Comments',
-        'total_comment_count': 'Comment Count',
-        'num_updates': 'Number of Updates',
-        'updates_per_day': 'Updates per Day',
-        'avg_update_length': 'Avg Update Length',
-        'is_live': 'Project is Live',
-        'percent_funded': '% Funding Reached',
-        'percent_time': '% Time Elapsed',
-        'projected_final_percent': 'Projected Final %',
-        'final_funding_percent': 'Final Funding %'
-    }
-    
-    plot_data['feature'] = plot_data['feature'].map(lambda x: feature_labels.get(x, x))
-    
-    plt.figure(figsize=(12, 8))
-    sns.barplot(data=plot_data, x='importance', y='feature')
-    plt.title('Top 10 Factors Influencing Project Success', pad=20)
-    plt.xlabel('Importance Score (higher = more influential)')
-    plt.ylabel('Factor')
-    
-    # Add percentage labels
-    for i, v in enumerate(plot_data['importance']):
-        plt.text(v, i, f' {v:.1%}', va='center')
-    
-    plt.tight_layout()
-    plt.savefig(os.path.join(results_dir, 'feature_importance.png'), dpi=300, bbox_inches='tight')
-    plt.close()
-
-def plot_confusion_matrix(y_test, y_pred, results_dir):
-    """Plot and save confusion matrix visualization."""
-    cm = confusion_matrix(y_test, y_pred)
-    plt.figure(figsize=(8, 6))
-    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
-    plt.title('Confusion Matrix')
-    plt.xlabel('Predicted')
-    plt.ylabel('Actual')
-    plt.tight_layout()
-    plt.savefig(os.path.join(results_dir, 'confusion_matrix.png'))
-    plt.close()
-
-def plot_live_projects_status(live_projects_analysis, results_dir):
-    """Plot and save live projects status visualization."""
-    if not live_projects_analysis:
-        return
-    
-    # Create DataFrame
-    df = pd.DataFrame(live_projects_analysis)
-    
-    if 'percent_funded' in df.columns and 'percent_time' in df.columns:
-        plt.figure(figsize=(10, 8))
-        
-        # Scatter plot with color coding by prediction
-        colors = df['prediction_outcome'].map({
-            'Likely to succeed': 'green',
-            'Likely to fail': 'red',
-            'Unknown': 'gray'
-        })
-        
-        plt.scatter(df['percent_time'], df['percent_funded'], c=colors, alpha=0.6)
-        
-        # Add diagonal line representing "on track"
-        max_val = max(df['percent_time'].max(), df['percent_funded'].max(), 100) * 1.1
-        plt.plot([0, max_val], [0, max_val], 'k--', alpha=0.5)
-        
-        plt.xlabel('Percentage of Campaign Time Elapsed')
-        plt.ylabel('Percentage of Funding Goal Reached')
-        plt.title('Live Projects: Funding Progress vs Time Elapsed')
-        
-        # Add legend
-        from matplotlib.lines import Line2D
-        legend_elements = [
-            Line2D([0], [0], marker='o', color='w', markerfacecolor='green', markersize=10, label='Likely to succeed'),
-            Line2D([0], [0], marker='o', color='w', markerfacecolor='red', markersize=10, label='Likely to fail'),
-            Line2D([0], [0], marker='o', color='w', markerfacecolor='gray', markersize=10, label='Unknown'),
-            Line2D([0], [0], linestyle='--', color='k', label='On Track Line')
-        ]
-        plt.legend(handles=legend_elements)
-        
-        plt.grid(True, alpha=0.3)
-        plt.savefig(os.path.join(results_dir, 'live_projects_status.png'), dpi=300, bbox_inches='tight')
-        plt.close()
-        
-        # Create a histogram of projected final percentages
-        if 'projected_final_percent' in df.columns:
-            plt.figure(figsize=(10, 6))
-            sns.histplot(df['projected_final_percent'].clip(0, 200), bins=20)
-            plt.axvline(x=100, color='r', linestyle='--')
-            plt.xlabel('Projected Final Funding Percentage')
-            plt.ylabel('Number of Projects')
-            plt.title('Distribution of Projected Final Funding Percentages for Live Projects')
-            plt.savefig(os.path.join(results_dir, 'projected_funding_distribution.png'), dpi=300, bbox_inches='tight')
-            plt.close()
 
 def analyze_live_projects(live_projects, model, feature_names):
     """Analyze live projects separately and make predictions."""
@@ -631,8 +503,8 @@ def main():
     # If that doesn't work, try to build an absolute path based on script location
     if not os.path.exists(data_dir):
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        project_root = os.path.dirname(os.path.dirname(script_dir))  # Go up two levels
-        data_dir = os.path.join(project_root, "webscraper", "scrapers", "scraped_data")
+        parent_dir = os.path.dirname(script_dir)
+        data_dir = os.path.join(parent_dir, "webscraper", "scrapers", "scraped_data")
         
         # One more alternative if that didn't work
         if not os.path.exists(data_dir):
@@ -718,38 +590,15 @@ def main():
         feature_names = baseline_features + [f'tfidf_{i}' for i in range(text_features.shape[1])]
         live_projects_analysis = analyze_live_projects(live_projects, None, feature_names)
         
-        # Create basic visualizations
-        plot_live_projects_status(live_projects_analysis, results_dir)
+        save_analysis_summary(results_dir, pd.DataFrame({
+            'feature': feature_names,
+            'importance': [1] * len(feature_names)
+        }), "No model trained", None, live_projects_analysis)
         
-        # Save simplified results
-        with open(os.path.join(results_dir, 'analysis_summary.txt'), 'w') as f:
-            f.write("KICKSTARTER PROJECT SUCCESS PREDICTION ANALYSIS\n")
-            f.write("=" * 50 + "\n\n")
-            f.write("Not enough diverse data for model training.\n\n")
-            
-            f.write("LIVE PROJECTS ANALYSIS\n")
-            f.write("-" * 20 + "\n")
-            f.write(f"Number of live projects analyzed: {len(live_projects_analysis)}\n")
-            f.write(f"Predicted to succeed: {sum(1 for p in live_projects_analysis if p.get('prediction_outcome') == 'Likely to succeed')}\n")
-            f.write(f"Predicted to fail: {sum(1 for p in live_projects_analysis if p.get('prediction_outcome') == 'Likely to fail')}\n\n")
-            
-            # Add example predictions for some live projects
-            f.write("EXAMPLE LIVE PROJECT PREDICTIONS:\n")
-            for i, project in enumerate(live_projects_analysis[:5]):
-                f.write(f"\n{i+1}. {project.get('title', 'Unnamed Project')}\n")
-                f.write(f"Current Status: {project.get('funding_status', '')}\n")
-                f.write(f"Prediction: {project.get('prediction_outcome', '')}\n")
-                f.write(f"Details: {project.get('prediction_details', '')}\n")
-        
-        # Save live projects analysis as CSV
-        live_df = pd.DataFrame(live_projects_analysis)
-        if not live_df.empty:
-            live_df.to_csv(os.path.join(results_dir, 'live_projects_predictions.csv'), index=False)
-            
         print(f"\nResults have been saved to: {results_dir}")
         return
     
-    # Use cross-validation for more reliable accuracy assessment
+    # For model training, use cross-validation
     from sklearn.model_selection import cross_val_score, StratifiedKFold
     from sklearn.metrics import classification_report, accuracy_score, f1_score, roc_auc_score
     
@@ -810,12 +659,8 @@ def main():
     print("\nAnalyzing live projects...")
     live_projects_analysis = analyze_live_projects(live_projects, rf_model, feature_names)
     
-    # Create visualizations and save results
-    print("\nSaving results and creating visualizations...")
-    plot_feature_importance(importance, results_dir)
-    plot_confusion_matrix(y_test, y_pred, results_dir)
-    plot_live_projects_status(live_projects_analysis, results_dir)
-    save_readable_results(results_dir, importance, classification_rep, tfidf, live_projects_analysis)
+    # Save detailed results
+    save_analysis_summary(results_dir, importance, classification_rep, tfidf, live_projects_analysis)
     
     print(f"\nResults have been saved to: {results_dir}")
     
@@ -876,7 +721,7 @@ def main():
     completed_fail = sum(1 for _, p in completed_projects if p.get('success') == 0)
     print(f"4. Completed projects: {completed_success} successful, {completed_fail} failed")
     
-    print("\nCheck the results directory for detailed analysis and visualizations.")
+    print("\nCheck the results directory for detailed analysis in analysis_summary.txt.")
 
 if __name__ == "__main__":
     main() 

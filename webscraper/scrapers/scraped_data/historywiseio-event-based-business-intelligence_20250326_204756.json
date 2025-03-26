@@ -1,0 +1,41 @@
+{
+  "url": "https://www.kickstarter.com/projects/philippecollin/historywiseio-event-based-business-intelligence",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nMar 10 2025 - Apr 23 2025 (44 days)",
+    "funding_start_date": "2025-03-10T00:00:00.000000Z",
+    "funding_end_date": "2025-04-23T20:47:05.751757Z",
+    "funding_duration_days": 44,
+    "pledged_amount": "S$ 69",
+    "funding_goal": "S$ 33,443",
+    "backers_count": "1",
+    "days_left": 28,
+    "project_launch_text": "Project launches MARCH 10, 2025"
+  },
+  "updates": {
+    "count": 2,
+    "content": [
+      {
+        "update_number": "UPDATE #2",
+        "title": "Huge Strides in the Backend of the Application",
+        "creator": "Philippe R. Collin III\nMarch 21, 2025",
+        "date": "March 21, 2025",
+        "content": "We’re excited to share that nearly all core functionality for our MVP launch is complete! 🙌 We're now making a few performance optimizations to ensure everything runs smoothly.\nSo, what’s left before we roll it out?\n✨ Finalizing a few admin content pages to polish the user experience.\n📊 Adding dashboard widgets for at-a-glance metrics that matter most.\n🎨 Styling the frontend website to align perfectly with our brand and message.\n🎥 Creating help videos and support pages so every new user has a smooth, guided onboarding experience.\nWe’re almost there—and we can’t wait to show you what we’ve been building! 💥",
+        "url": "https://www.kickstarter.com/projects/philippecollin/historywiseio-event-based-business-intelligence/posts/4342545",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "We added the supporter page to the HistoryWise.io Website",
+        "creator": "Philippe R. Collin III\nMarch 13, 2025",
+        "date": "March 13, 2025",
+        "content": "Check out the new page with the groupings for the supporter levels. We look forward to seeing all of your names on there! https://historywise.io/supporters",
+        "url": "https://www.kickstarter.com/projects/philippecollin/historywiseio-event-based-business-intelligence/posts/4335842",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

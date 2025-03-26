@@ -1,0 +1,30 @@
+{
+  "url": "https://www.kickstarter.com/projects/wrdy/wardy-is-everything-ready-if-you-leave-today",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nFeb 01 2025 - Apr 01 2025 (59 days)",
+    "funding_start_date": "2025-02-01T00:00:00.000000Z",
+    "funding_end_date": "2025-04-01T22:57:52.780136Z",
+    "funding_duration_days": 59,
+    "pledged_amount": "S$ 0",
+    "funding_goal": "S$ 7,357",
+    "backers_count": "0",
+    "days_left": 6,
+    "project_launch_text": "Project launches FEBRUARY 1, 2025"
+  },
+  "updates": {
+    "count": 1,
+    "content": [
+      {
+        "update_number": "UPDATE #1",
+        "title": "Wardy Website",
+        "creator": "Jose Miguel S.\nFebruary 1, 2025",
+        "date": "February 1, 2025",
+        "content": "",
+        "url": "https://www.kickstarter.com/projects/wrdy/wardy-is-everything-ready-if-you-leave-today/posts/4304206",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

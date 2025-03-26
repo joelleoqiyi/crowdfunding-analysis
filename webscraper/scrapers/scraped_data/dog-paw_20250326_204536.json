@@ -1,0 +1,30 @@
+{
+  "url": "https://www.kickstarter.com/projects/dogpaw/dog-paw",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nMar 24 2025 - Apr 23 2025 (30 days)",
+    "funding_start_date": "2025-03-24T00:00:00.000000Z",
+    "funding_end_date": "2025-04-23T20:45:08.020756Z",
+    "funding_duration_days": 30,
+    "pledged_amount": "S$ 26,916",
+    "funding_goal": "S$ 20,066",
+    "backers_count": "28",
+    "days_left": 28,
+    "project_launch_text": "Project launches MARCH 24, 2025"
+  },
+  "updates": {
+    "count": 1,
+    "content": [
+      {
+        "update_number": "UPDATE #1",
+        "title": "Funded already! Thank you!!",
+        "creator": "Dog Paw\nMarch 25, 2025",
+        "date": "March 25, 2025",
+        "content": "We're truly blown away by your support! Thank you so much to everyone who's helped us achieve our funding goal in less than a day! Seeing this idea resonate with so many people has been quite the journey for us, and we can't express how excited we are to send out these instruments and see what music you all will make.\nFrom the beginning, our vision has been to make music more expressive, intuitive, and joyful for everyone—whether you're a seasoned performer or just starting your musical journey. This milestone is just the beginning, and we’re beyond grateful to have you with us.\nLet’s keep the momentum going—spread the word, share the project, and help us venture into the future of music-making together!",
+        "url": "https://www.kickstarter.com/projects/dogpaw/dog-paw/posts/4345029",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

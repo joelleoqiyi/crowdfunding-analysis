@@ -1,0 +1,49 @@
+{
+  "url": "https://www.kickstarter.com/projects/hiive/hiive-link",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nMar 06 2025 - Apr 04 2025 (29 days)",
+    "funding_start_date": "2025-03-06T00:00:00.000000Z",
+    "funding_end_date": "2025-04-04T23:05:43.929599Z",
+    "funding_duration_days": 29,
+    "pledged_amount": "S$ 108,930",
+    "funding_goal": "S$ 21,640",
+    "backers_count": "195",
+    "days_left": 9,
+    "project_launch_text": "Project launches MARCH 6, 2025"
+  },
+  "updates": {
+    "count": 2,
+    "content": [
+      {
+        "update_number": "UPDATE #2",
+        "title": "HIIVE is a \"Project We Love\" on Kickstarter!",
+        "creator": "HIIVE\nMarch 24, 2025",
+        "date": "March 24, 2025",
+        "content": "We’re excited to share that Kickstarter has recognized HIIVE as a \"Project We Love\"! 🎉 This means a lot to us, and it’s all thanks to your incredible support and enthusiasm.\nWith just 12 days left in the campaign, this is the final stretch to secure your HIIVE system at the best possible price. Our Launch Special - Full Pack is already sold out, and Early Bird deals are running low—so don’t miss out!\nThank you for believing in HIIVE and supporting the future of smart beekeeping. Let’s keep the momentum going! 🚀🐝",
+        "url": "https://www.kickstarter.com/projects/hiive/hiive-link/posts/4344293",
+        "likes_count": 2,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "10 Days In! What an incredible start :)",
+        "creator": "HIIVE\nMarch 17, 2025",
+        "date": "March 17, 2025",
+        "content": "Wow! We are absolutely blown away by the incredible support we’ve received so far. After just 10 days, our campaign is 377% funded with 154 amazing backers—thank you all for believing in HIIVE Link!\nWe’ve also been listening to your feedback. Many of you asked for an option to connect without Wi-Fi. This was already part of our product and hardware design, but we hadn’t made it available as an add-on—until now! We’ve just introduced the Cellular Module, which plugs directly into the HIIVE Link Gateway and allows you to insert a SIM card for remote data access, no Wi-Fi needed.\nThank you again for your incredible support—let’s keep this momentum going!\n\nYour HIIVE Team!",
+        "url": "https://www.kickstarter.com/projects/hiive/hiive-link/posts/4338828",
+        "likes_count": 4,
+        "comments_count": 1,
+        "comments": [
+          {
+            "text": "Brilliant news",
+            "commenter": "Richard",
+            "timestamp": "March 25, 2025 2:04 AM AWST",
+            "datetime": "1742839461",
+            "relative_time": "2 days ago"
+          }
+        ]
+      }
+    ]
+  }
+}

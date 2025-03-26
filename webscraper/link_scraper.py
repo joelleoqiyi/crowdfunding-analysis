@@ -10,9 +10,16 @@ import os
 from utils.browser_utils import random_sleep, human_like_scroll, move_mouse_randomly, get_browser
 
 class LinkScraper:
-    def __init__(self, driver, url="https://www.kickstarter.com/discover/advanced?state=successful&category_id=16&woe_id=0&sort=end_date&seed=2902974&page="):
+    def __init__(self, driver, url=None):
         self.__driver = driver
-        self.__url = url
+        
+        # URL for live projects - technology category (16)
+        # Changed sort to end_date for better analysis - provides projects at different stages of completion
+        self.__url = "https://www.kickstarter.com/discover/advanced?state=live&category_id=16&woe_id=0&sort=end_date&seed=2902974&page="
+        
+        # If a specific URL is provided, use that instead
+        if url:
+            self.__url = url
     
     def iterate_pages(self, num_pages=2):
         all_links = []
@@ -110,51 +117,61 @@ def main():
     # Read existing links to avoid duplicates
     existing_links = set()
     
-    # Read from both current and previous links files
+    # Read from the previously scraped links file
     if os.path.exists('previously_scraped_links.txt'):
         with open('previously_scraped_links.txt', 'r') as f:
-            existing_links.update(line.strip().split('\t')[0] for line in f)
-            
+            for line in f:
+                parts = line.strip().split('\t')
+                if parts:
+                    existing_links.add(parts[0])
+        print(f"Loaded {len(existing_links)} links from previously_scraped_links.txt to avoid duplicates")
+    
+    # If unscraped_links.txt exists, read it but DON'T clear it
+    # This way we append new links to any existing unscraped links
     if os.path.exists('unscraped_links.txt'):
         with open('unscraped_links.txt', 'r') as f:
-            existing_links.update(line.strip().split('\t')[0] for line in f)
-        # Clear the current links file
-        os.remove('unscraped_links.txt')
+            for line in f:
+                parts = line.strip().split('\t')
+                if parts:
+                    existing_links.add(parts[0])
+        print(f"Also considering {len(existing_links)} links from unscraped_links.txt")
     
     driver = setup_driver()
     try:
-        print("Starting to scrape Kickstarter projects from page 1...")
+        print("Starting to scrape live Kickstarter technology projects (sorted by end date)...")
+        
         scraper = LinkScraper(driver)
-        all_links = []
-        page = 1
-        target_new_links = 90  # Target 120 new unique links
+        live_links = []
+        page = 13
+        target_live_links = 50  # Target 50 new unique live links
         consecutive_failures = 0
-        max_pages = 40  # Increase max pages to find more unique projects
+        max_pages = 30
         
-        print(f"Already have {len(existing_links)} existing links")
-        print(f"Targeting {target_new_links} new unique links")
+        print(f"Avoiding {len(existing_links)} existing links")
+        print(f"Targeting {target_live_links} new unique live technology links")
         
-        while len(all_links) < target_new_links and page <= max_pages and consecutive_failures < 3:
-            print(f"Scraping page {page}...")
+        while len(live_links) < target_live_links and page <= max_pages and consecutive_failures < 3:
+            print(f"Scraping live projects page {page}...")
             driver.get(scraper._LinkScraper__url + str(page))
             page_links = scraper._LinkScraper__scrape_page()
             
             # Filter out already scraped links
-            new_links = [(title, href, updates) for title, href, updates in page_links if href not in existing_links]
+            new_links = [(title, href, updates) for title, href, updates in page_links 
+                         if href.split('?')[0] not in existing_links]
             
             if new_links:
                 consecutive_failures = 0
-                all_links.extend(new_links)
+                live_links.extend(new_links)
                 # Add to existing links to avoid duplicates in future pages
-                existing_links.update(href for _, href, _ in new_links)
-                print(f"Found {len(new_links)} new links on page {page}")
-                print(f"Total new links so far: {len(all_links)}/{target_new_links}")
+                existing_links.update(href.split('?')[0] for _, href, _ in new_links)
+                print(f"Found {len(new_links)} new live links on page {page}")
+                print(f"Total new live links so far: {len(live_links)}/{target_live_links}")
             else:
                 consecutive_failures += 1
-                print(f"No new links found on page {page}. Consecutive failures: {consecutive_failures}")
+                print(f"No new live links found on page {page}. Consecutive failures: {consecutive_failures}")
             
-            # Save links after each page
-            scraper.save_links_to_file(all_links, 'unscraped_links.txt')
+            # Save live links after each page
+            scraper.save_links_to_file(new_links, 'unscraped_links.txt')
             
             page += 1
             # Random delay between pages
@@ -162,7 +179,8 @@ def main():
             print(f"Waiting {delay:.1f} seconds before next page...")
             time.sleep(delay)
         
-        print(f"Finished scraping. Found {len(all_links)} new unique links.")
+        print(f"Finished scraping live technology projects. Found {len(live_links)} new unique links.")
+        print(f"Projects are sorted by end date, providing a mix of campaigns at different stages for better analysis.")
         
     except Exception as e:
         print(f"Error: {str(e)}")

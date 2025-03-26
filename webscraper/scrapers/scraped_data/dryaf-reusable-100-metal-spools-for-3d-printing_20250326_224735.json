@@ -1,0 +1,89 @@
+{
+  "url": "https://www.kickstarter.com/projects/hexaxes/dryaf-reusable-100-metal-spools-for-3d-printing",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nFeb 11 2025 - Mar 12 2025 (28 days)",
+    "funding_start_date": "2025-02-11T08:56:40-05:00",
+    "funding_end_date": "2025-03-11T12:00:00-04:00",
+    "funding_duration_days": 28,
+    "pledged_amount": "S$ 3,543",
+    "funding_goal": "S$ 6,228",
+    "backers_count": "35",
+    "days_left": 35
+  },
+  "updates": {
+    "count": 5,
+    "content": [
+      {
+        "update_number": "UPDATE #5",
+        "title": "Not Today.",
+        "creator": "Gregory\nMarch 12, 2025",
+        "date": "March 12, 2025",
+        "content": "We didn't quite make it. Thanks to everyone for your support.\nI may go ahead and make the DryAF Spools available for purchase anyway. If you would be interested in making a purchase, hit the like button please.",
+        "url": "https://www.kickstarter.com/projects/hexaxes/dryaf-reusable-100-metal-spools-for-3d-printing/posts/4334559",
+        "likes_count": 15,
+        "comments_count": 1,
+        "comments": [
+          {
+            "text": "I’m interested",
+            "commenter": "Doug Acker",
+            "timestamp": "March 12, 2025 1:27 AM AWST",
+            "datetime": "1741714020",
+            "relative_time": "15 days ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #4",
+        "title": "48 Hours.",
+        "creator": "Gregory\nMarch 9, 2025",
+        "date": "March 9, 2025",
+        "content": "Hello & Welcome to the last 48 hours.\nIf you're sitting on the fence watching what everyone else is doing, now is your chance to be a leader and come join those of us already dedicated to the project. You won't be charged unless the project is successful, and the project won't be successful without your support.\nIf you're already onboard, thank you, now is a great time to go and shout about the glories to be had when backing a Kickstarter project. Tell your friends, family, people walking past you in the street. Tell everyone!\nWith the announcement of Sunlu's FilaDryer E2 and it's 110C temperature capability, DryAF is the perfect solution to the obvious problems of plastic spools in High Temperature Environments. No doubt there will be other dryers to come in the future and DryAF will be temperature compatible with them all.\nI need your help to get DryAF into the world.",
+        "url": "https://www.kickstarter.com/projects/hexaxes/dryaf-reusable-100-metal-spools-for-3d-printing/posts/4332882",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #3",
+        "title": "50%",
+        "creator": "Gregory\nFebruary 25, 2025",
+        "date": "February 25, 2025",
+        "content": "Hi,\nThank you to everyone who has supported the project, we're on the slow boat, but still on our way!\nIf you're on the fence, or just waiting to see what happens, don't hold back, join in now. Payment is only taken at the end of the campaign when the project is successful. You are not charged now. Your support will make a huge difference to the projects goals and give confidence to others who are also considering backing the project.\nIn case you missed it, we got a mention on 3D Musketeers weekly podcast, There's Salt EVERYWHERE! - PrintFixFriday 179\nWe dropped the reward prices a few hours before the video went live as I genuinely believe the DryAF Spools are a fantastic replacement to plastic spools, with the added bonus of fixing lots of other issues. For the cost of a single spool of high quality filament you can get a life-long reusable metal spool. It feels like a no-brainer to me!\nThanks again for your support now and in the future.",
+        "url": "https://www.kickstarter.com/projects/hexaxes/dryaf-reusable-100-metal-spools-for-3d-printing/posts/4322465",
+        "likes_count": 0,
+        "comments_count": 1,
+        "comments": [
+          {
+            "text": "Fingers crossed. The new FilaDryer E2 will dry at 110°C, so a spool that won't deform will be important, there!",
+            "commenter": "Ian Prest",
+            "timestamp": "February 26, 2025 3:17 AM AWST",
+            "datetime": "1740511038",
+            "relative_time": "29 days ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #2",
+        "title": "How to print the Material ID Tags with a new refill.",
+        "creator": "Gregory\nFebruary 15, 2025",
+        "date": "February 15, 2025",
+        "content": "No doubt you've all been wondering how you can print the Material ID Tags before you have opened a new refill. Well, its simple really....",
+        "url": "https://www.kickstarter.com/projects/hexaxes/dryaf-reusable-100-metal-spools-for-3d-printing/posts/4315176",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "Good News! Pricing Update.",
+        "creator": "Gregory\nFebruary 14, 2025",
+        "date": "February 14, 2025",
+        "content": "Hi,\nThank you for supporting the project at this early stage. Because I feel this is such a fantastic project, and I really want to see it succeed I am going to alter the pricing structure to attract more backers and make DryAF a reality.\nBecause I am unable to change pricing for rewards which already have backers, and to avoid any complication with people having to swap around, it will be easier if I give those of you who have already backed the difference in cost as credit towards your shipping and taxes. This will all be worked out for you on completion of the campaign so you don't have to do anything.\nTo help boost the project, if you can share DryAF with everyone and anyone you know, that would be of great help to our cause!\nThanks for you time,\nGreg",
+        "url": "https://www.kickstarter.com/projects/hexaxes/dryaf-reusable-100-metal-spools-for-3d-printing/posts/4314444",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "url": "https://www.kickstarter.com/projects/evoinmotion/analog-circuit-ii-signals-systems-and-filters",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nMar 13 2025 - Apr 16 2025 (34 days)",
+    "funding_start_date": "2025-03-13T00:00:00.000000Z",
+    "funding_end_date": "2025-04-16T19:48:22.249766Z",
+    "funding_duration_days": 34,
+    "pledged_amount": "S$ 69,269",
+    "funding_goal": "S$ 7,028",
+    "backers_count": "197",
+    "days_left": 21,
+    "project_launch_text": "Project launches MARCH 13, 2025"
+  },
+  "updates": {
+    "count": 1,
+    "content": [
+      {
+        "update_number": "UPDATE #1",
+        "title": "Amazing! Let's consider a stretch goal!",
+        "creator": "EVO-IN-MOTION\nMarch 21, 2025",
+        "date": "March 21, 2025",
+        "content": "Hello amazing backers!\nWe’re thrilled to share that just 9 days into the campaign, we’ve already soared past our funding goal, thanks to the incredible support of our 154 backers. Your trust and enthusiasm mean the world to us, and we can’t thank you enough!\nTo keep the momentum going, we’re excited to announce a stretch goal: if we reach 300 backers by Day 21 (April 3rd), every reward tier that includes a kit will come with a bonus ECG module—at no extra cost! This compact, all-in-one module is the perfect extension for your projects, especially once you’ve completed the final ECG project in the book and are ready to take your creations to the next level.\nImplemented based on AD8232 chip from Analog Device\nSo, let’s make it happen—share the campaign, spread the word on your social media, and help us reach this exciting milestone! Once again, thank you for being part of this journey with us.\nGrateful beyond words,\nDaniel Cao",
+        "url": "https://www.kickstarter.com/projects/evoinmotion/analog-circuit-ii-signals-systems-and-filters/posts/4338275",
+        "likes_count": 4,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}
