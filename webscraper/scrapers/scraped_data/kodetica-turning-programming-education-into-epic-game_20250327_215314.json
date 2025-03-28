@@ -1,0 +1,40 @@
+{
+  "url": "https://www.kickstarter.com/projects/kodetica/kodetica-turning-programming-education-into-epic-game",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nFeb 7 2025 - Mar 9 2025 (30 days)",
+    "funding_start_date": "2025-02-07T09:26:43-05:00",
+    "funding_end_date": "2025-03-09T09:26:43-04:00",
+    "funding_duration_days": 30,
+    "pledged_amount": "S$ 461",
+    "funding_goal": "S$ 14,431",
+    "backers_count": "7",
+    "days_left": 7
+  },
+  "updates": {
+    "count": 2,
+    "content": [
+      {
+        "update_number": "UPDATE #2",
+        "title": "Surprise Unlock: Bonus Reward for All Backers! 🎉",
+        "creator": "Kodetica\nFebruary 17, 2025",
+        "date": "February 17, 2025",
+        "content": "",
+        "url": "https://www.kickstarter.com/projects/kodetica/kodetica-turning-programming-education-into-epic-game/posts/4316150",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "Why Kodetica PRO is a Game-Changer for Your Coding Journey!",
+        "creator": "Kodetica\nFebruary 10, 2025",
+        "date": "February 10, 2025",
+        "content": "",
+        "url": "https://www.kickstarter.com/projects/kodetica/kodetica-turning-programming-education-into-epic-game/posts/4310325",
+        "likes_count": 0,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}

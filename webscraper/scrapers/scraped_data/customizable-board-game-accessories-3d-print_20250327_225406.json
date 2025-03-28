@@ -1,0 +1,38 @@
+{
+  "url": "https://www.kickstarter.com/projects/printandgame/customizable-board-game-accessories-3d-print",
+  "campaign_details": {
+    "funding_start_date": "2025-02-12T00:00:00.000000Z",
+    "pledged_amount": "S$ 8,912",
+    "funding_goal": "S$ 2,886",
+    "backers_count": "219",
+    "days_left": 26,
+    "project_launch_text": "Project launches FEBRUARY 12, 2025"
+  },
+  "updates": {
+    "count": 2,
+    "content": [
+      {
+        "update_number": "UPDATE #2",
+        "title": "How is the project going?",
+        "creator": "PRINTANDGAME\nMarch 7, 2025",
+        "date": "March 7, 2025",
+        "content": "We’ve already unlocked three stretch goals, and we’re truly excited about the amazing support we’re receiving. It’s incredible to see how the community is responding to our idea, and that motivates us even more to keep working hard.\nAs the campaign progresses, we’re focusing on ensuring everything is perfect for our backers. We’re reviewing all the files to make sure they work seamlessly in both inches and millimeters, fine-tuning the parameters to make them as intuitive as possible. Additionally, we’re verifying that the new designs export smoothly in STL format and dedicating time to testing the slicers to avoid any issues.\nOur goal is to make the experience as simple and seamless as possible for you, and we’re committed to delivering a final product of the highest quality. If you have any questions, feedback, or suggestions, don’t hesitate to reach out to us. Thank you for joining us on this journey!",
+        "url": "https://www.kickstarter.com/projects/printandgame/customizable-board-game-accessories-3d-print/posts/4331106",
+        "likes_count": 6,
+        "comments_count": 0,
+        "comments": []
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "Funded! Thanks to all our backers!",
+        "creator": "PRINTANDGAME\nFebruary 24, 2025",
+        "date": "February 24, 2025",
+        "content": "Thank you so much to all our backers! \nWe are pleased to announce that, thanks to your support and enthusiasm, we have reached and surpassed our funding goal and the first of the strechts goals that we have proposed. We hope to achieve much more together so that the project can be as complete as possible.",
+        "url": "https://www.kickstarter.com/projects/printandgame/customizable-board-game-accessories-3d-print/posts/4321116",
+        "likes_count": 7,
+        "comments_count": 0,
+        "comments": []
+      }
+    ]
+  }
+}
