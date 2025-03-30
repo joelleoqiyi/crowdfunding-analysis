@@ -1,34 +1,30 @@
 import json
 import os
-import pandas as pd
-import numpy as np
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.tree import DecisionTreeClassifier, export_graphviz
-from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import classification_report, confusion_matrix
 import re
 from datetime import datetime, timezone, timedelta
+from io import StringIO
+from pathlib import Path
+
+# Data handling
+import pandas as pd
+import numpy as np
+
+# Machine learning
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier, export_graphviz
+from sklearn.model_selection import train_test_split, cross_val_score, StratifiedKFold
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics import (
+    classification_report, confusion_matrix, accuracy_score, 
+    f1_score, roc_auc_score
+)
 from sklearn.utils import class_weight
+
+# Visualization
 import matplotlib.pyplot as plt
 import seaborn as sns
-from io import StringIO
 
-# Try to import pydotplus but make it optional
-pydotplus_available = False
-try:
-    import pydotplus
-    import matplotlib.colors as mcolors
-    pydotplus_available = True
-except ImportError:
-    print("pydotplus not available. Decision tree visualization will be disabled.")
-    # Create a dummy mcolors if not available
-    class DummyColors:
-        def __getattr__(self, name):
-            return '#000000'  # Default color
-    mcolors = DummyColors()
-
-# Define color scheme for visualizations
+# Constants and configuration
 COLORS = {
     'primary': '#1f77b4',    # Main color for plots
     'success': '#2ca02c',    # Color for successful projects
@@ -38,222 +34,318 @@ COLORS = {
     'background': '#f5f5f5'  # Background color
 }
 
+# Feature labels for readability
+FEATURE_LABELS = {
+    'funding_duration': 'Campaign Duration',
+    'total_likes': 'Total Likes',
+    'total_comments': 'Total Comments',
+    'total_comment_count': 'Comment Count',
+    'num_updates': 'Number of Updates',
+    'updates_per_day': 'Updates per Day',
+    'avg_update_length': 'Average Update Length',
+    'percent_time': 'Percentage of Time Elapsed',
+    'backers_count': 'Number of Backers',
+    'backers_per_day': 'Backers per Day',
+    'avg_pledge_amount': 'Average Pledge Amount',
+    'average_likes_per_update': 'Average Likes per Update',
+    'average_comments_per_update': 'Average Comments per Update',
+    'days_left': 'Days Left in Campaign',
+    'has_first_day_update': 'Has Update on First Day',
+    'has_first_week_update': 'Has Update in First Week'
+}
+
+# Optional pydotplus for visualization
+pydotplus_available = False
+try:
+    import pydotplus
+    import matplotlib.colors as mcolors
+    pydotplus_available = True
+except ImportError:
+    print("pydotplus not available. Decision tree visualization will be disabled.")
+    class DummyColors:
+        def __getattr__(self, name):
+            return '#000000'  # Default color
+    mcolors = DummyColors()
+
 def load_project_data(data_dir):
-    """Load live project data from a single directory."""
+    """Load project data from JSON files.
+    
+    Args:
+        data_dir (str): Directory containing project JSON files
+        
+    Returns:
+        list: Processed project data objects
+    """
     projects = []
     
-    # Check if directory exists
-    if not os.path.exists(data_dir):
+    # Resolve data directory path
+    data_path = Path(data_dir)
+    if not data_path.exists():
         print(f"Error: Data directory '{data_dir}' not found")
         # Try to find the correct path
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        parent_dir = os.path.dirname(current_dir)
-        potential_path = os.path.join(parent_dir, "webscraper", "scrapers", "scraped_data")
-        if os.path.exists(potential_path):
-            print(f"Found data directory at: {potential_path}")
-            data_dir = potential_path
+        script_dir = Path(__file__).parent.absolute()
+        parent_dir = script_dir.parent
+        alternatives = [
+            parent_dir / "webscraper" / "scrapers" / "scraped_data",
+            script_dir / "webscraper" / "scrapers" / "scraped_data"
+        ]
+        
+        for alt_path in alternatives:
+            if alt_path.exists():
+                print(f"Found data directory at: {alt_path}")
+                data_path = alt_path
+                break
         else:
             print("Could not locate scraped_data directory. Please check the path.")
             return []
     
-    print(f"Loading data from: {data_dir}")
-    # Load all live projects from the directory
+    print(f"Loading data from: {data_path}")
+    
+    # Process all JSON files in the directory
     file_count = 0
-    for filename in os.listdir(data_dir):
-        if filename.endswith('.json'):
-            file_count += 1
-            try:
-                with open(os.path.join(data_dir, filename), 'r') as f:
-                    data = json.load(f)
-                    
-                    # Skip if no campaign details
-                    if 'campaign_details' not in data or not data['campaign_details']:
-                        print(f"Skipping {filename} - no campaign details")
-                        continue
-                    
-                    campaign = data['campaign_details']
-                    
-                    # Only process live projects (those with days_left field)
-                    if 'days_left' not in campaign:
-                        continue
-                    
-                    # Add title for better project identification in reports
-                    if 'url' in data:
-                        # Extract project name from URL
-                        project_name = data['url'].split('/')[-1]
-                        data['title'] = project_name
-                    
-                    # Clean monetary values
-                    funding_goal = campaign.get('funding_goal', '0')
-                    pledged_amount = campaign.get('pledged_amount', '0')
-                    
-                    # Clean strings and convert to float
-                    if isinstance(funding_goal, str):
-                        funding_goal = float(re.sub(r'[^\d.]', '', funding_goal.replace(',', '')) or 0)
-                    if isinstance(pledged_amount, str):
-                        pledged_amount = float(re.sub(r'[^\d.]', '', pledged_amount.replace(',', '')) or 0)
-                    
-                    # Store cleaned values
-                    data['clean_funding_goal'] = funding_goal
-                    data['clean_pledged_amount'] = pledged_amount
-                    data['is_live'] = True
-
-                    # Calculate percentage of funding achieved
-                    percent_funded = (pledged_amount / funding_goal * 100) if funding_goal > 0 else 0
-                    data['percent_funded'] = percent_funded
-                    
-                    # Calculate percent of time elapsed
-                    try:
-                        if 'funding_start_date' in campaign and 'funding_end_date' in campaign:
-                            start_date = datetime.fromisoformat(campaign['funding_start_date'].replace('Z', '+00:00'))
-                            end_date = datetime.fromisoformat(campaign['funding_end_date'].replace('Z', '+00:00'))
-                            total_duration = (end_date - start_date).total_seconds()
-                            
-                            # Use current date or calculate from days_left
-                            current_date = datetime.now(timezone.utc)
-                            if 'days_left' in campaign:
-                                days_left = int(campaign['days_left'])
-                                current_date = end_date - timedelta(days=days_left)
-                            
-                            elapsed = (current_date - start_date).total_seconds()
-                            percent_time = (elapsed / total_duration * 100) if total_duration > 0 else 0
-                            data['percent_time'] = percent_time
-                            
-                            # Project final funding
-                            if percent_time > 0:
-                                projected_final = (percent_funded / percent_time) * 100
-                                data['projected_final_percent'] = projected_final
-                                
-                                # Predict success based on projection
-                                if projected_final >= 100:
-                                    data['success'] = 1
-                                    data['success_prediction'] = f"{percent_funded:.1f}% funded at {percent_time:.1f}% of time - On track to succeed"
-                                else:
-                                    data['success'] = 0
-                                    data['success_prediction'] = f"{percent_funded:.1f}% funded at {percent_time:.1f}% of time - Projected to reach {projected_final:.1f}%"
-                            else:
-                                data['success'] = 0 if percent_funded < 10 else 1  # Default for new campaigns
-                        else:
-                            # Can't determine time percentage, use simpler metric
-                            data['success'] = 1 if percent_funded >= 50 else 0
-                            data['success_prediction'] = f"{percent_funded:.1f}% funded - insufficient date data"
-                    except Exception as e:
-                        print(f"Error calculating time metrics for {filename}: {str(e)}")
-                        data['success'] = 1 if percent_funded >= 50 else 0
+    json_files = list(data_path.glob("*.json"))
+    
+    for json_file in json_files:
+        file_count += 1
+        try:
+            # Load and validate the project data
+            with open(json_file, 'r') as f:
+                data = json.load(f)
                 
-                    projects.append(data)
-            except json.JSONDecodeError:
-                print(f"Error decoding JSON from {filename}, skipping file")
-            except Exception as e:
-                print(f"Error processing {filename}: {str(e)}, skipping file")
+                # Skip if no campaign details
+                if 'campaign_details' not in data or not data['campaign_details']:
+                    print(f"Skipping {json_file.name} - no campaign details")
+                    continue
+                
+                campaign = data['campaign_details']
+    
+                # Only process live projects (those with days_left field)
+                if 'days_left' not in campaign:
+                    continue
+                
+                # Extract project name from URL for better identification
+                if 'url' in data:
+                    data['title'] = data['url'].split('/')[-1]
+                
+                # Clean and normalize monetary values
+                data['clean_funding_goal'] = _clean_money_value(campaign.get('funding_goal', '0'))
+                data['clean_pledged_amount'] = _clean_money_value(campaign.get('pledged_amount', '0'))
+                data['is_live'] = True
+                
+                # Calculate funding percentage
+                funding_goal = data['clean_funding_goal']
+                pledged_amount = data['clean_pledged_amount']
+                percent_funded = (pledged_amount / funding_goal * 100) if funding_goal > 0 else 0
+                data['percent_funded'] = percent_funded
+                
+                # Calculate time metrics and success prediction
+                _calculate_time_metrics(data, campaign)
+                
+                projects.append(data)
+                
+        except json.JSONDecodeError:
+            print(f"Error decoding JSON from {json_file.name}, skipping file")
+        except Exception as e:
+            print(f"Error processing {json_file.name}: {str(e)}, skipping file")
     
     print(f"Found {file_count} JSON files, loaded {len(projects)} live projects successfully")
     return projects
 
+def _clean_money_value(value):
+    """Convert a monetary string or value to a float."""
+    if isinstance(value, str):
+        # Remove currency symbols, commas, and convert to float
+        return float(re.sub(r'[^\d.]', '', value.replace(',', '')) or 0)
+    return float(value)
+
+def _calculate_time_metrics(data, campaign):
+    """Calculate time-based metrics and success prediction for a project."""
+    try:
+        percent_funded = data['percent_funded']
+        
+        if 'funding_start_date' in campaign and 'funding_end_date' in campaign:
+            # Parse dates and calculate time progression
+            start_date = datetime.fromisoformat(campaign['funding_start_date'].replace('Z', '+00:00'))
+            end_date = datetime.fromisoformat(campaign['funding_end_date'].replace('Z', '+00:00'))
+            total_duration = (end_date - start_date).total_seconds()
+            
+            # Calculate current position in timeline
+            current_date = datetime.now(timezone.utc)
+            if 'days_left' in campaign:
+                days_left = int(campaign['days_left'])
+                current_date = end_date - timedelta(days=days_left)
+            
+            elapsed = (current_date - start_date).total_seconds()
+            percent_time = (elapsed / total_duration * 100) if total_duration > 0 else 0
+            data['percent_time'] = percent_time
+            
+            # Project final funding percentage
+            if percent_time > 0:
+                projected_final = (percent_funded / percent_time) * 100
+                data['projected_final_percent'] = projected_final
+                
+                # Predict success based on trajectory
+                if projected_final >= 100:
+                    data['success'] = 1
+                    data['success_prediction'] = f"{percent_funded:.1f}% funded at {percent_time:.1f}% of time - On track to succeed"
+                else:
+                    data['success'] = 0
+                    data['success_prediction'] = f"{percent_funded:.1f}% funded at {percent_time:.1f}% of time - Projected to reach {projected_final:.1f}%"
+            else:
+                # For very new projects, use a simple threshold
+                data['success'] = 0 if percent_funded < 10 else 1
+        else:
+            # Fallback when time data is missing
+            data['success'] = 1 if percent_funded >= 50 else 0
+            data['success_prediction'] = f"{percent_funded:.1f}% funded - insufficient date data"
+    except Exception as e:
+        print(f"Error calculating time metrics: {str(e)}")
+        data['success'] = 1 if data['percent_funded'] >= 50 else 0
+
 def extract_features(project, for_training=True):
-    """Extract relevant features from live project updates."""
+    """Extract relevant features from project data.
+    
+    Args:
+        project (dict): Project data dictionary
+        for_training (bool): If True, extract features for model training
+        
+    Returns:
+        dict: Feature dictionary
+    """
     features = {}
+    campaign = project.get('campaign_details', {})
     
-    # Basic update statistics
+    # Extract update metrics
+    features.update(_extract_update_metrics(project))
+    
+    # Extract campaign metrics
+    features.update(_extract_campaign_metrics(project, campaign))
+    
+    # Extract specialized features for training
+    if for_training:
+        features.update(_extract_training_features(project, campaign, features))
+    
+    return features
+
+def _extract_update_metrics(project):
+    """Extract metrics related to project updates."""
+    features = {}
     updates = project.get('updates', {})
-    features['num_updates'] = updates.get('count', 0)
-    
-    # Update content analysis
     update_contents = []
+    
+    # Basic update count
+    features['num_updates'] = num_updates = updates.get('count', 0)
+    
+    # Initialize counters
     total_likes = 0
     total_comments = 0
     total_comment_count = 0
-    update_length_avg = 0
+    update_length_total = 0
     
-    # Extract and process all updates
+    # Process each update
     for update in updates.get('content', []):
         update_content = update.get('content', '')
         update_contents.append(update_content)
         
-        # Count metrics
+        # Accumulate engagement metrics
         total_likes += update.get('likes_count', 0)
         total_comments += len(update.get('comments', []))
         total_comment_count += update.get('comments_count', 0)
         
-        # Update length
+        # Measure content length
         if update_content:
-            update_length_avg += len(update_content)
+            update_length_total += len(update_content)
     
-    # Calculate averages
-    num_updates = features['num_updates']
-    if num_updates > 0:
-        update_length_avg = update_length_avg / num_updates
-    
+    # Store counting metrics
     features['total_likes'] = total_likes
     features['total_comments'] = total_comments
     features['total_comment_count'] = total_comment_count
-    features['avg_update_length'] = update_length_avg
     
-    # Campaign details metrics
-    campaign = project.get('campaign_details', {})
+    # Calculate averages (avoid division by zero)
+    features['avg_update_length'] = update_length_total / max(num_updates, 1)
+    features['average_likes_per_update'] = total_likes / max(num_updates, 1)
+    features['average_comments_per_update'] = total_comments / max(num_updates, 1)
     
-    # Get duration or calculate it
-    if 'funding_duration_days' in campaign:
-        funding_duration = campaign.get('funding_duration_days', 0)
-    elif 'funding_start_date' in campaign and 'funding_end_date' in campaign:
-        try:
-            start_date = datetime.fromisoformat(campaign['funding_start_date'].replace('Z', '+00:00'))
-            end_date = datetime.fromisoformat(campaign['funding_end_date'].replace('Z', '+00:00'))
-            funding_duration = (end_date - start_date).days
-        except:
-            funding_duration = 30  # Default assumption
-    else:
-        funding_duration = 30  # Default assumption
+    # Create early update indicators
+    features['has_first_day_update'] = 0  # Placeholder for future implementation
+    features['has_first_week_update'] = 0  # Placeholder for future implementation
     
+    # Store concatenated update text for later analysis
+    features['all_updates_text'] = ' '.join(update_contents)
+    
+    return features
+
+def _extract_campaign_metrics(project, campaign):
+    """Extract metrics related to campaign configuration."""
+    features = {}
+    
+    # Determine campaign duration
+    funding_duration = _get_campaign_duration(campaign)
     features['funding_duration'] = funding_duration
     
     # Calculate update frequency
-    if funding_duration > 0:
+    if funding_duration > 0 and 'num_updates' in features:
         features['updates_per_day'] = features['num_updates'] / funding_duration
     else:
         features['updates_per_day'] = 0
     
-    # Add backers count feature
+    # Extract backers count
+    features['backers_count'] = _get_backers_count(campaign)
+    
+    return features
+
+def _get_campaign_duration(campaign):
+    """Calculate or extract campaign duration in days."""
+    # Use explicit duration if available
+    if 'funding_duration_days' in campaign:
+        return campaign.get('funding_duration_days', 0)
+    
+    # Calculate from start/end dates
+    if 'funding_start_date' in campaign and 'funding_end_date' in campaign:
+        try:
+            start_date = datetime.fromisoformat(campaign['funding_start_date'].replace('Z', '+00:00'))
+            end_date = datetime.fromisoformat(campaign['funding_end_date'].replace('Z', '+00:00'))
+            return (end_date - start_date).days
+        except:
+            pass
+    
+    # Default assumption
+    return 30
+
+def _get_backers_count(campaign):
+    """Extract and clean backers count."""
     if 'backers_count' in campaign:
         try:
             backers = campaign['backers_count']
             if isinstance(backers, str):
-                backers = float(re.sub(r'[^\d.]', '', backers))
-            features['backers_count'] = backers
+                return float(re.sub(r'[^\d.]', '', backers))
+            return float(backers)
         except:
-            features['backers_count'] = 0
-    else:
-        features['backers_count'] = 0
-        
-    # Create early update features
-    features['has_first_day_update'] = 0
-    features['has_first_week_update'] = 0
-    
-    # Extract engagement metrics
-    features['average_likes_per_update'] = total_likes / max(num_updates, 1)
-    features['average_comments_per_update'] = total_comments / max(num_updates, 1)
-    
-    # Live project metrics - carefully avoiding direct indicators of success
-    clean_funding_goal = project.get('clean_funding_goal', 0)
-    clean_pledged_amount = project.get('clean_pledged_amount', 0)
-    
-    # Features that are indirectly related to success, not direct predictors
-    if for_training:
-        # For training models, we avoid including direct success indicators
-        features['backers_per_day'] = features['backers_count'] / max(funding_duration * (project.get('percent_time', 100)/100), 1)
-        
-        # Average pledge amount doesn't directly indicate success
-        if features['backers_count'] > 0:
-            features['avg_pledge_amount'] = clean_pledged_amount / features['backers_count']
-        else:
-            features['avg_pledge_amount'] = 0
+            pass
+    return 0
 
-        # Include time metrics but not the direct ratio that determines success
-        features['days_left'] = int(campaign.get('days_left', 0))
-        features['percent_time'] = project.get('percent_time', 0)
+def _extract_training_features(project, campaign, base_features):
+    """Extract additional features specifically for model training."""
+    features = {}
     
-    # Combine all update content for text analysis
-    features['all_updates_text'] = ' '.join(update_contents)
+    # Calculate backer acquisition rate (if appropriate features exist)
+    funding_duration = base_features.get('funding_duration', 30)
+    backers_count = base_features.get('backers_count', 0)
+    percent_time = project.get('percent_time', 100)
+    
+    # Avoid division by zero with sensible defaults
+    time_denominator = max(funding_duration * (percent_time/100), 1)
+    features['backers_per_day'] = backers_count / time_denominator
+    
+    # Calculate average pledge amount (quality of backers)
+    if backers_count > 0:
+        features['avg_pledge_amount'] = project.get('clean_pledged_amount', 0) / backers_count
+    else:
+        features['avg_pledge_amount'] = 0
+    
+    # Add time-based metrics
+    features['days_left'] = int(campaign.get('days_left', 0))
+    features['percent_time'] = project.get('percent_time', 0)
     
     return features
 
@@ -276,10 +368,14 @@ def create_dataset(projects, for_training=True):
     return features_list, labels, live_projects
 
 def create_results_dir():
-    """Create a results directory with timestamp."""
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    results_dir = f'crowdfunding-analysis/analysis/results_{timestamp}'
+    """Create a fixed results directory that overwrites previous results."""
+    # Use a fixed directory name instead of timestamp
+    results_dir = 'crowdfunding-analysis/analysis/results'
+    
+    # Ensure directory exists
     os.makedirs(results_dir, exist_ok=True)
+    
+    # Return the fixed directory path
     return results_dir
 
 def create_readable_feature_importance(importance_df, tfidf_vectorizer=None):
@@ -293,33 +389,14 @@ def create_readable_feature_importance(importance_df, tfidf_vectorizer=None):
     
     result = []
     
-    # Create descriptive labels
-    feature_labels = {
-        'funding_duration': 'Campaign Duration',
-        'total_likes': 'Total Likes',
-        'total_comments': 'Total Comments',
-        'total_comment_count': 'Comment Count',
-        'num_updates': 'Number of Updates',
-        'updates_per_day': 'Updates per Day',
-        'avg_update_length': 'Average Update Length',
-        'backers_count': 'Number of Backers',
-        'backers_per_day': 'Backers per Day',
-        'avg_pledge_amount': 'Average Pledge Amount',
-        'average_likes_per_update': 'Average Likes per Update',
-        'average_comments_per_update': 'Average Comments per Update',
-        'days_left': 'Days Left in Campaign',
-        'has_first_day_update': 'Has Update on First Day',
-        'has_first_week_update': 'Has Update in First Week'
-    }
-    
     # Process each feature
     for _, row in importance_df.iterrows():
         feature = row['feature']
         importance = row['importance'] if 'importance' in row else 0
         
         # Get description based on feature type
-        if feature in feature_labels:
-            description = feature_labels[feature]
+        if feature in FEATURE_LABELS:
+            description = FEATURE_LABELS[feature]
         elif feature.startswith('tfidf_') and tfidf_vectorizer is not None:
             # Try to get the word from the vectorizer
             try:
@@ -390,6 +467,16 @@ def save_analysis_summary(results_dir, feature_importance, classification_report
         if pydotplus_available:
             f.write(f"2. Decision Tree Diagram: {results_dir}/decision_tree.png\n")
             f.write(f"   - Visualizes the decision-making process used to classify projects\n")
+            
+            # Add detailed explanation of how to read the decision tree
+            f.write("\nHow to Read the Decision Tree Diagram:\n")
+            f.write("- Start at the top node and follow the tree downward\n")
+            f.write("- At each decision node, if the condition is true, follow the left branch; if false, follow the right branch\n")
+            f.write("- Colored leaf nodes show the classification outcome (green = success, red = failure)\n")
+            f.write("- Darker colors indicate higher confidence in the prediction\n")
+            f.write("- Each node shows what percentage of training samples follow that path\n")
+            f.write("- The most important factors in the model appear near the top of the tree\n\n")
+            
             f.write(f"3. Live Projects Status: {results_dir}/live_projects_status.png\n")
             f.write(f"   - Plots live projects based on their funding status and time remaining\n\n")
         else:
@@ -611,34 +698,39 @@ def analyze_live_projects(live_projects, model, feature_names):
     
     return results
 
-def visualize_feature_importance(importance_df, top_n=10, results_dir=None):
+def visualize_feature_importance(importance_df, top_n=10, results_dir=None, tfidf_vectorizer=None):
     """Create a horizontal bar chart of feature importance."""
     plt.figure(figsize=(12, 8))
     
     # Get top N features
     top_features = importance_df.head(top_n).copy()
     
-    # Create readable labels
-    feature_labels = {
-        'funding_duration': 'Campaign Duration',
-        'total_likes': 'Total Likes',
-        'total_comments': 'Total Comments',
-        'total_comment_count': 'Comment Count',
-        'num_updates': 'Number of Updates',
-        'updates_per_day': 'Updates per Day',
-        'avg_update_length': 'Average Update Length',
-        'percent_time': 'Percentage of Time Elapsed',
-        'backers_count': 'Number of Backers',
-        'backers_per_day': 'Backers per Day',
-        'avg_pledge_amount': 'Average Pledge Amount',
-        'average_likes_per_update': 'Average Likes per Update',
-        'average_comments_per_update': 'Average Comments per Update',
-        'days_left': 'Days Left in Campaign'
-    }
-    
     # Create readable labels for features
+    readable_labels = {}
+    
+    # Base feature labels
+    for feature, label in FEATURE_LABELS.items():
+        readable_labels[feature] = label
+    
+    # Add TF-IDF feature labels (actual words)
+    if tfidf_vectorizer is not None:
+        # Create reverse mapping from index to word
+        idx_to_word = {idx: word for word, idx in tfidf_vectorizer.vocabulary_.items()}
+        
+        # Map TF-IDF features to their actual words
+        for feature in top_features['feature']:
+            if feature.startswith('tfidf_'):
+                try:
+                    idx = int(feature.split('_')[1])
+                    word = idx_to_word.get(idx)
+                    if word:
+                        readable_labels[feature] = f"Word '{word}'"
+                except (ValueError, IndexError):
+                    pass
+    
+    # Apply readable labels to features
     top_features['readable_name'] = top_features['feature'].map(
-        lambda x: feature_labels.get(x, x)
+        lambda x: readable_labels.get(x, x)
     )
     
     # Sort by importance for the plot
@@ -668,64 +760,168 @@ def visualize_feature_importance(importance_df, top_n=10, results_dir=None):
 
 def visualize_live_projects_status(live_projects_analysis, results_dir=None):
     """Create a scatter plot showing the status of live projects."""
-    plt.figure(figsize=(14, 10))
+    # Set figure size - making it taller to accommodate the text at bottom
+    plt.figure(figsize=(16, 16), facecolor='white')  # Increased height to make room for legend at bottom
+    
+    # Create subplot with extra space at bottom for legend and explanation text
+    ax = plt.subplot2grid((8, 1), (0, 0), rowspan=6)  # Changed from 7,1 to 8,1 for more space
     
     # Extract data
     funded_percent = [p.get('percent_funded', 0) for p in live_projects_analysis]
     time_percent = [p.get('percent_time', 0) for p in live_projects_analysis]
-    projected_final = [p.get('projected_final_percent', 0) for p in live_projects_analysis]
     outcomes = [p.get('prediction_outcome', 'Unknown') for p in live_projects_analysis]
     
-    # Create color map
-    colors = [COLORS['success'] if o == 'Likely to succeed' else 
-              COLORS['failure'] if o == 'Likely to fail' else 
-              COLORS['neutral'] for o in outcomes]
+    # Set maximum y-axis limit for better visualization
+    max_y_display = 300  # Fixed cap at 300% for readability
     
-    # Plot data
-    plt.scatter(time_percent, funded_percent, c=colors, alpha=0.7, s=100)
+    # Add jitter to improve visibility of overlapping points
+    jitter_amount = 1.5
+    jittered_time = [t + (np.random.random() - 0.5) * jitter_amount for t in time_percent]
     
-    # Add reference line (y=x)
-    max_val = max(max(funded_percent, default=100), max(time_percent, default=100))
-    plt.plot([0, max_val], [0, max_val], 'k--', alpha=0.5)
+    # Set style for cleaner plot
+    plt.style.use('seaborn-v0_8-whitegrid')
+    plt.grid(True, alpha=0.25, linestyle='-')
     
-    # Add annotations for interesting projects
-    for i, (f, t, p, o) in enumerate(zip(funded_percent, time_percent, projected_final, outcomes)):
-        if ((f > 150 and t < 50) or  # Far ahead projects
-            (f < 10 and t > 50) or   # Far behind projects
-            (f > 90 and f < 110 and t > 40 and t < 60)):  # Close to the line
-            plt.annotate(f"{f:.0f}% funded\n{p:.0f}% projected", 
-                        (t, f), 
-                        textcoords="offset points",
-                        xytext=(5, 5), 
-                        ha='left')
+    # Use distinct colors with higher contrast
+    outcome_colors = {
+        'Likely to succeed': '#17A589',  # Darker green
+        'Likely to fail': '#C0392B',     # Darker red
+        'Prediction uncertain': '#7F8C8D' # Darker gray
+    }
+    
+    # Create scatter plot with larger markers
+    for outcome in ['Likely to succeed', 'Likely to fail', 'Prediction uncertain']:
+        indices = [i for i, o in enumerate(outcomes) if o == outcome]
+        if not indices:
+            continue
+            
+        plt.scatter(
+            [jittered_time[i] for i in indices],
+            [min(funded_percent[i], max_y_display) for i in indices],
+            c=outcome_colors.get(outcome, '#7F8C8D'),
+            label=outcome,
+            alpha=0.85,
+            s=150,  # Larger point size
+            edgecolors='white',
+            linewidths=1.0,
+            zorder=3
+        )
+    
+    # Add reference line (y=x) with DASHED styling (clearly labeled)
+    plt.plot([0, 100], [0, 100], 
+             linestyle='--', 
+             color='#34495E', 
+             alpha=0.7, 
+             linewidth=2.5,
+             label='On-track Reference Line (Diagonal)',
+             zorder=2)
+    
+    # Mark 100% funding threshold with DOTTED horizontal line (clearly labeled)
+    plt.axhline(
+        y=100, 
+        color='#34495E', 
+        linestyle=':', 
+        alpha=0.7,
+        linewidth=2.5,
+        label='100% Funding Goal (Horizontal)',
+        zorder=2
+    )
+    
+    # Add 90% trajectory reference line (where projects become "likely to succeed")
+    plt.plot([0, 100], [0, 90], 
+             linestyle='-.',  # Dot-dash line 
+             color='#2E86C1',
+             alpha=0.5, 
+             linewidth=1.5,
+             label='90% Trajectory Threshold',
+             zorder=2)
+    
+    # Add clear regions
+    plt.axvspan(0, 100, ymin=0, ymax=100/max_y_display, 
+                alpha=0.1, color='#C0392B', zorder=1)  # Below line: risky
+    plt.axvspan(0, 100, ymin=100/max_y_display, ymax=1, 
+                alpha=0.1, color='#17A589', zorder=1)  # Above line: on track
     
     # Styling
-    plt.title('Live Projects: Funding Progress vs. Time Elapsed', fontsize=16)
-    plt.xlabel('Percentage of Campaign Time Elapsed', fontsize=14)
-    plt.ylabel('Percentage of Funding Goal Achieved', fontsize=14)
+    plt.title('Live Projects: Funding Progress vs. Time Elapsed', fontsize=22, fontweight='bold')
+    plt.xlabel('Percentage of Campaign Time Elapsed', fontsize=16, fontweight='bold')
+    plt.ylabel('Percentage of Funding Goal Achieved', fontsize=16, fontweight='bold')
+    
+    # Set axis limits and ticks
     plt.xlim(0, 100)
-    plt.ylim(0, max(200, max(funded_percent, default=200)))
-    plt.grid(alpha=0.3)
+    plt.ylim(0, max_y_display)
+    plt.xticks(np.arange(0, 101, 10), fontsize=12)
+    plt.yticks(np.arange(0, max_y_display+1, 50), fontsize=12)
     
-    # Add legend
-    handles = [plt.Line2D([0], [0], marker='o', color='w', markerfacecolor=COLORS['success'], markersize=10),
-              plt.Line2D([0], [0], marker='o', color='w', markerfacecolor=COLORS['failure'], markersize=10),
-              plt.Line2D([0], [0], marker='o', color='w', markerfacecolor=COLORS['neutral'], markersize=10),
-              plt.Line2D([0], [0], linestyle='--', color='k', alpha=0.5)]
-    labels = ['Likely to Succeed', 'Likely to Fail', 'Unknown', 'On-track Reference Line']
-    plt.legend(handles, labels, loc='upper left', fontsize=12)
+    # Get handles and labels before creating or removing any legend
+    handles, labels = ax.get_legend_handles_labels()
     
-    # Add explanatory text
-    plt.figtext(0.02, 0.02, 
-               "Projects above the dashed line are raising funds faster than needed to succeed.\n"
-               "Projects below the line are raising funds slower than needed to succeed.", 
-               fontsize=12)
+    # Remove the legend from the main plot if it exists
+    legend = ax.get_legend()
+    if legend is not None:
+        legend.remove()
+    
+    # Create a legend subplot below the main chart
+    legend_ax = plt.subplot2grid((8, 1), (6, 0), rowspan=1)
+    legend_ax.axis('off')  # Hide the axes
+    
+    # Move the legend to below the chart with improved visibility
+    legend = legend_ax.legend(
+        handles, 
+        labels,
+        title='Project Status & Reference Lines',
+        loc='center',  # Center in the legend subplot
+        fontsize=14,
+        ncol=3,  # Display in 3 columns for better horizontal layout
+        framealpha=0.95,  # Higher opacity for background
+        edgecolor='#34495E',  # Darker edge color
+        facecolor='#F8F9FA',  # Light gray background color
+        frameon=True,  # Ensure frame is visible
+        borderpad=1,  # More padding inside the legend
+        fancybox=True,
+        shadow=True,
+        labelspacing=1.2  # More space between legend items
+    )
+    legend.get_title().set_fontsize(16)
+    legend.get_title().set_fontweight('bold')
+    legend.get_frame().set_linewidth(2)  # Thicker border
+    
+    # Add clear explanatory text in a separate subplot below the main chart
+    # Create a new subplot for the explanation text
+    explanation_ax = plt.subplot2grid((8, 1), (7, 0), rowspan=1)
+    explanation_ax.axis('off')  # Hide the axes
+    
+    # Add a box with the explanation text
+    explanation_text = (
+        "Reference Lines Explained:\n"
+        "• Diagonal Dashed Line: Projects raising funds at the ideal rate (funding % = time %)\n"
+        "• Horizontal Dotted Line: 100% funding goal achievement\n"
+        "• Projects above diagonal line are on track to succeed\n"
+        "• Projects below diagonal line need to increase their funding rate"
+    )
+    
+    explanation_box = plt.text(
+        0.5, 0.5, 
+        explanation_text,
+        fontsize=14,
+        ha='center',
+        va='center',
+        bbox=dict(
+            facecolor='#F8F9FA', 
+            alpha=0.95,
+            edgecolor='#34495E',
+            boxstyle='round,pad=0.8',
+            linewidth=2
+        ),
+        transform=explanation_ax.transAxes
+    )
     
     plt.tight_layout()
     
     # Save if results directory is provided
     if results_dir:
-        plt.savefig(os.path.join(results_dir, 'live_projects_status.png'), dpi=300, bbox_inches='tight')
+        plt.savefig(os.path.join(results_dir, 'live_projects_status.png'), 
+                   dpi=300, bbox_inches='tight', facecolor='white')
         
     return plt.gcf()
 
@@ -740,7 +936,13 @@ def create_decision_tree_diagram(X, y, feature_names, class_names=['Fail', 'Succ
     # This avoids the issue of feature count mismatch
     try:
         # Create a new decision tree using only the selected features
-        dtree = DecisionTreeClassifier(max_depth=max_depth, class_weight='balanced', random_state=42)
+        # Limit max_depth to 3 for better readability
+        dtree = DecisionTreeClassifier(
+            max_depth=max_depth, 
+            class_weight='balanced', 
+            random_state=42,
+            min_samples_split=5  # Increase to reduce complexity
+        )
         
         # Get indices of the top features if we're using a subset
         if len(feature_names) < X.shape[1]:
@@ -753,86 +955,192 @@ def create_decision_tree_diagram(X, y, feature_names, class_names=['Fail', 'Succ
             # Use all features
             dtree.fit(X, y)
         
-        # Export tree as DOT file
+        # Create more readable feature names for the visualization
+        readable_feature_names = []
+        for feature in feature_names:
+            if feature in FEATURE_LABELS:
+                readable_feature_names.append(FEATURE_LABELS[feature])
+            elif feature.startswith('tfidf_'):
+                readable_feature_names.append(f"Word Feature {feature.split('_')[1]}")
+            else:
+                readable_feature_names.append(feature.replace('_', ' ').title())
+        
+        # Export tree as DOT file with improved styling
         dot_data = StringIO()
         export_graphviz(
             dtree, 
             out_file=dot_data, 
-            feature_names=feature_names,
+            feature_names=readable_feature_names,
             class_names=class_names,
             filled=True, 
             rounded=True,
             special_characters=True,
-            proportion=True
+            proportion=True,
+            impurity=False,  # Hide impurity to reduce clutter
+            precision=1      # Fewer decimal places for cleaner look
         )
         
         # Convert to graph and render as image
         graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
         
-        # Set colors for nodes
+        # Improve graph styling
+        graph.set_rankdir('TB')  # Top to bottom layout (more readable than left to right)
+        graph.set_fontname('Arial')
+        graph.set_fontsize('14')
+        
+        # Enhance node appearance with simpler styling (avoid set_fontweight)
         for i, node in enumerate(graph.get_nodes()):
             if node.get_name() not in ('node', 'edge'):
+                # Set default styling for all nodes
+                node.set_fontname('Arial')
+                node.set_fontsize('12')
+                
+                # Extract node text for specific styling
                 node_text = node.get_attributes().get('label', '')
+                
+                # Style leaf nodes (class predictions) differently
                 if 'class' in node_text:
+                    # Make leaf nodes larger
+                    node.set_fontsize('14')
+                    node.set_penwidth('2.0')
+                    
                     if 'value = [' in node_text:
                         # Extract class distribution values
                         values_str = node_text.split('value = [')[1].split(']')[0]
                         values = [float(x) for x in values_str.split(',')]
-                        # Calculate color based on class dominance
+                        
+                        # Calculate color based on class dominance with stronger contrast
                         if len(values) == 2:
                             fail_ratio, succeed_ratio = values[0] / sum(values), values[1] / sum(values)
-                            if succeed_ratio > 0.5:  # Success dominates
-                                color = COLORS['success']
-                            else:  # Failure dominates
-                                color = COLORS['failure']
+                            
+                            # Set color with stronger contrast based on confidence
+                            if succeed_ratio > 0.75:  # Strong success prediction
+                                color = '#1a9850'  # Darker green for high confidence
+                            elif succeed_ratio > 0.5:  # Moderate success prediction
+                                color = '#91cf60'  # Lighter green for lower confidence
+                            elif succeed_ratio >= 0.25:  # Uncertain, but leaning failure
+                                color = '#fc8d59'  # Lighter red/orange for lower confidence
+                            else:  # Strong failure prediction
+                                color = '#d73027'  # Darker red for high confidence
+                                
                             node.set_fillcolor(color)
+        
+        # Set graph size for better visibility
+        graph.set_size('"12,8"')
+        graph.set_dpi('300')
         
         # Save if results directory is provided
         if results_dir:
-            graph.write_png(os.path.join(results_dir, 'decision_tree.png'))
+            output_path = os.path.join(results_dir, 'decision_tree.png')
+            graph.write_png(output_path)
+            print(f"Enhanced decision tree visualization saved to {output_path}")
         
         return graph
     except Exception as e:
         print(f"Error creating decision tree diagram: {e}")
         return None
 
+def create_decision_tree_visualization(X_train, y_train, importance_df, results_dir):
+    """Create and save a decision tree visualization."""
+    print("\nCreating decision tree diagram...")
+    top_features = importance_df.nlargest(10, 'importance')['feature'].tolist()
+    
+    # Create the technical decision tree only
+    tree_result = create_decision_tree_diagram(
+        X_train, y_train, 
+        feature_names=top_features,
+        results_dir=results_dir
+    )
+    
+    if tree_result is None:
+        print("Note: Decision tree visualization could not be created.")
+
 def main():
+    """Run the complete crowdfunding analysis pipeline."""
     # Create results directory
     results_dir = create_results_dir()
     
+    # Load project data
+    projects = load_and_validate_data()
+    if not projects:
+        return
+    
+    # Calculate basic project statistics
+    project_stats = {
+        'total': len(projects),
+        'live': len(projects),
+        'successful': sum(1 for p in projects if p['success'] == 1),
+        'failed': sum(1 for p in projects if p['success'] == 0)
+    }
+    print_project_statistics(project_stats)
+    
+    # Create dataset and select features
+    features_list, labels, live_projects = create_dataset(projects, for_training=True)
+    baseline_features = select_features(features_list)
+    
+    # Create feature matrix and train model
+    X, y, feature_names, tfidf = prepare_feature_matrix(features_list, baseline_features, labels)
+    
+    # Skip if not enough data
+    if len(set(y)) < 2 or len(y) < 10:
+        print("Not enough diverse data for model training. Skipping model training.")
+        analyze_without_model(feature_names, live_projects, results_dir, project_stats)
+        return
+    
+    # Train and evaluate model
+    model, metrics = train_and_evaluate_model(X, y, feature_names)
+    
+    # Analyze feature importance
+    importance_df = analyze_feature_importance(model, feature_names, results_dir, tfidf)
+    
+    # Visualize decision tree
+    create_decision_tree_visualization(X, y, importance_df, results_dir)
+    
+    # Analyze live projects
+    live_analysis = analyze_live_projects(live_projects, model, feature_names)
+    visualize_live_projects_status(live_analysis, results_dir)
+    
+    # Save results
+    save_complete_analysis(
+        results_dir, importance_df, metrics['classification_report'], 
+        tfidf, live_analysis, metrics, project_stats
+    )
+    
+    # Print key findings
+    print_key_findings(importance_df, metrics, live_analysis, results_dir, tfidf)
+
+def load_and_validate_data():
+    """Load project data from the appropriate directory."""
     # Define paths - using best practices to find data directory
-    # First try the original path
     data_dir = 'crowdfunding-analysis/webscraper/scrapers/scraped_data'
     
     # If that doesn't work, try to build an absolute path based on script location
     if not os.path.exists(data_dir):
         script_dir = os.path.dirname(os.path.abspath(__file__))
         parent_dir = os.path.dirname(script_dir)
-        data_dir = os.path.join(parent_dir, "webscraper", "scrapers", "scraped_data")
+        alternate_paths = [
+            os.path.join(parent_dir, "webscraper", "scrapers", "scraped_data"),
+            os.path.join(os.path.dirname(script_dir), "webscraper", "scrapers", "scraped_data")
+        ]
         
-        # One more alternative if that didn't work
-        if not os.path.exists(data_dir):
-            data_dir = os.path.join(os.path.dirname(script_dir), "webscraper", "scrapers", "scraped_data")
+        for path in alternate_paths:
+            if os.path.exists(path):
+                data_dir = path
+                break
     
     # Load data
     print("Loading project data...")
     projects = load_project_data(data_dir)
     
-    if not projects:
-        print("No projects loaded. Please check the data directory path.")
-        return
-    
-    # Output statistics about the loaded data
-    live_count = len(projects)
-    successful_count = sum(1 for p in projects if p['success'] == 1)
-    failed_count = sum(1 for p in projects if p['success'] == 0)
-    print(f"Loaded {len(projects)} projects: {live_count} live")
-    print(f"Success breakdown: {successful_count} successful/predicted to succeed, {failed_count} failed/predicted to fail")
-    
-    # Create dataset
-    print("Extracting features...")
-    features_list, labels, live_projects = create_dataset(projects, for_training=True)
-    
+    return projects
+
+def print_project_statistics(stats):
+    """Print statistics about the loaded projects."""
+    print(f"Loaded {stats['total']} projects: {stats['live']} live")
+    print(f"Success breakdown: {stats['successful']} successful/predicted to succeed, {stats['failed']} failed/predicted to fail")
+
+def select_features(features_list):
+    """Select appropriate features for model training."""
     # Define baseline features that all projects have
     # REMOVED highly predictive features: backers_count, backers_per_day
     baseline_features = [
@@ -845,19 +1153,27 @@ def main():
     ]
     
     # Add project-specific features
+    excluded_features = {
+        'all_updates_text', 'percent_funded', 'projected_final_percent', 
+        'backers_count', 'backers_per_day'
+    }
+    
     for project in features_list:
         # Add features present in the dataset not already in baseline_features
         for key in project.keys():
-            if key not in baseline_features and key != 'all_updates_text' and key not in [
-                'percent_funded', 'projected_final_percent', 'backers_count', 'backers_per_day'  # Exclude backers_per_day too
-            ]:
+            if (key not in baseline_features and 
+                key not in excluded_features):
                 baseline_features.append(key)
     
     print(f"Using {len(baseline_features)} features after careful feature selection")
     print(f"Excluded direct predictors: backers_count, backers_per_day")
     print(f"Included more nuanced indicator: avg_pledge_amount")
     
-    # Convert features to DataFrame with only our allowed features
+    return baseline_features
+
+def prepare_feature_matrix(features_list, baseline_features, labels):
+    """Prepare feature matrix for model training."""
+    # Convert features to DataFrame
     df = pd.DataFrame(features_list)
     
     # Ensure all necessary columns exist
@@ -879,53 +1195,30 @@ def main():
     
     # Combine numerical and text features
     numerical_features = df[baseline_features].fillna(0).values
-    
     X = np.hstack([numerical_features, text_features.toarray()])
     y = np.array(labels)
     
+    # Get feature names
+    feature_names = baseline_features + [f'tfidf_{i}' for i in range(text_features.shape[1])]
+    
+    return X, y, feature_names, tfidf
+
+def train_and_evaluate_model(X, y, feature_names):
+    """Train and evaluate the Random Forest model."""
     # Handle class imbalance
     class_weights = class_weight.compute_class_weight(
         'balanced', classes=np.unique(y), y=y
     )
     class_weight_dict = {i: class_weights[i] for i in range(len(class_weights))}
-    
     print(f"Class weights to address imbalance: {class_weight_dict}")
     
-    # Skip model training if not enough data
-    if len(set(y)) < 2 or len(y) < 10:
-        print("Not enough diverse data for model training. Skipping model training.")
-        # Just analyze live projects based on time/funding ratio
-        feature_names = baseline_features + [f'tfidf_{i}' for i in range(text_features.shape[1])]
-        live_projects_analysis = analyze_live_projects(live_projects, None, feature_names)
-        
-        save_analysis_summary(results_dir, pd.DataFrame({
-            'feature': feature_names,
-            'importance': [1] * len(feature_names)
-        }), "No model trained", None, live_projects_analysis,
-        projects_summary={
-            'total': len(projects),
-            'live': live_count,
-            'completed': 0,
-            'successful': successful_count,
-            'failed': failed_count
-        })
-        
-        # Create visualization of live projects status
-        visualize_live_projects_status(live_projects_analysis, results_dir)
-            
-        print(f"\nResults have been saved to: {results_dir}")
-        return
+    # Split data for training and testing
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.2, random_state=42, stratify=y
+    )
     
-    # For model training, use cross-validation
-    from sklearn.model_selection import cross_val_score, StratifiedKFold
-    from sklearn.metrics import classification_report, accuracy_score, f1_score, roc_auc_score
-    
-    # Split for final evaluation
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
-    
-    # Train Random Forest with class weights
+    # Create and train the model
     print("Training Random Forest model with cross-validation...")
-    # Use a fully-capable Random Forest with optimal parameters
     rf_model = RandomForestClassifier(
         n_estimators=100,  # Standard number of trees
         max_features='sqrt',  # Standard scikit-learn default
@@ -951,97 +1244,97 @@ def main():
     y_pred = rf_model.predict(X_test)
     y_pred_proba = rf_model.predict_proba(X_test)[:, 1]
     
-    # Calculate various metrics
-    accuracy = accuracy_score(y_test, y_pred)
-    f1 = f1_score(y_test, y_pred, average='weighted')
+    # Calculate evaluation metrics
+    metrics = {
+        'accuracy': accuracy_score(y_test, y_pred),
+        'f1_score': f1_score(y_test, y_pred, average='weighted'),
+        'classification_report': classification_report(y_test, y_pred),
+        'cv_scores': cv_scores
+    }
     
+    # Add ROC AUC if possible
     if len(set(y_test)) > 1:  # Only calculate ROC AUC if there are both classes
-        roc_auc = roc_auc_score(y_test, y_pred_proba)
-        print(f"ROC AUC: {roc_auc:.4f}")
+        metrics['roc_auc'] = roc_auc_score(y_test, y_pred_proba)
+        print(f"ROC AUC: {metrics['roc_auc']:.4f}")
     
+    # Print evaluation metrics
     print("\nModel Evaluation:")
-    print(f"Test accuracy: {accuracy:.4f}")
-    print(f"F1 score: {f1:.4f}")
-    
-    classification_rep = classification_report(y_test, y_pred)
+    print(f"Test accuracy: {metrics['accuracy']:.4f}")
+    print(f"F1 score: {metrics['f1_score']:.4f}")
     print("\nClassification Report:")
-    print(classification_rep)
+    print(metrics['classification_report'])
     
-    # Get feature importance
-    feature_names = baseline_features + [f'tfidf_{i}' for i in range(text_features.shape[1])]
+    return rf_model, metrics
     
+def analyze_feature_importance(model, feature_names, results_dir, tfidf_vectorizer=None):
+    """Analyze and visualize feature importance."""
+    # Get feature importance from model
     importance = pd.DataFrame({
         'feature': feature_names,
-        'importance': rf_model.feature_importances_
-    })
-    importance = importance.sort_values('importance', ascending=False)
+        'importance': model.feature_importances_
+    }).sort_values('importance', ascending=False)
     
+    # Display top features
     print("\nTop 10 Most Important Features:")
     print(importance.head(10))
     
-    # Create and save feature importance visualization
-    visualize_feature_importance(importance, results_dir=results_dir)
+    # Create and save visualization
+    visualize_feature_importance(importance, results_dir=results_dir, tfidf_vectorizer=tfidf_vectorizer)
     
-    # Create and save decision tree visualization
-    print("\nCreating decision tree diagram...")
-    top_features = importance.nlargest(10, 'importance')['feature'].tolist()
-    tree_result = create_decision_tree_diagram(
-        X_train, y_train, 
-        feature_names=top_features,
-        results_dir=results_dir
+    return importance
+
+def analyze_without_model(feature_names, live_projects, results_dir, project_stats):
+    """Analyze projects when there's not enough data for model training."""
+    # Just analyze live projects based on time/funding ratio
+    live_projects_analysis = analyze_live_projects(live_projects, None, feature_names)
+    
+    save_analysis_summary(
+        results_dir, 
+        pd.DataFrame({
+            'feature': feature_names,
+            'importance': [1] * len(feature_names)
+        }), 
+        "No model trained", 
+        None, 
+        live_projects_analysis,
+        projects_summary=project_stats
     )
     
-    if tree_result is None:
-        print("Note: Decision tree visualization was not created.")
-    
-    # Analyze live projects
-    print("\nAnalyzing live projects...")
-    live_projects_analysis = analyze_live_projects(live_projects, rf_model, feature_names)
-    
-    # Visualize live projects status
-    visualize_live_projects_status(live_projects_analysis, results_dir=results_dir)
-    
-    # Save detailed results
-    save_analysis_summary(results_dir, importance, classification_rep, tfidf, live_projects_analysis,
-                         cv_scores=cv_scores, test_accuracy=accuracy, f1_score=f1, roc_auc=roc_auc,
-                         class_weights=class_weight_dict,
-                         projects_summary={
-                             'total': len(projects),
-                             'live': live_count,
-                             'completed': 0,
-                             'successful': successful_count,
-                             'failed': failed_count
-                         })
+    # Create visualization of live projects status
+    visualize_live_projects_status(live_projects_analysis, results_dir)
     
     print(f"\nResults have been saved to: {results_dir}")
     
-    # Print key findings
+def save_complete_analysis(results_dir, importance_df, classification_report, 
+                           tfidf, live_analysis, metrics, project_stats):
+    """Save complete analysis results."""
+    save_analysis_summary(
+        results_dir, 
+        importance_df, 
+        classification_report, 
+        tfidf, 
+        live_analysis,
+        cv_scores=metrics.get('cv_scores'), 
+        test_accuracy=metrics.get('accuracy'), 
+        f1_score=metrics.get('f1_score'), 
+        roc_auc=metrics.get('roc_auc'),
+        class_weights=metrics.get('class_weight_dict'),
+        projects_summary=project_stats
+    )
+    
+    print(f"\nResults have been saved to: {results_dir}")
+
+def print_key_findings(importance_df, metrics, live_projects_analysis, results_dir, tfidf):
+    """Print a summary of key findings."""
     print("\nKey findings:")
-    top_features = importance.head(3)['feature'].tolist()
     
-    # Create readable labels for top features
-    feature_labels = {
-        'funding_duration': 'Campaign Duration',
-        'total_likes': 'Total Likes',
-        'total_comments': 'Total Comments',
-        'total_comment_count': 'Comment Count',
-        'num_updates': 'Number of Updates',
-        'updates_per_day': 'Updates per Day',
-        'avg_update_length': 'Average Update Length',
-        'percent_time': 'Percentage of Time Elapsed',
-        'backers_count': 'Number of Backers',
-        'backers_per_day': 'Backers per Day',
-        'avg_pledge_amount': 'Average Pledge Amount',
-        'average_likes_per_update': 'Average Likes per Update',
-        'average_comments_per_update': 'Average Comments per Update',
-        'days_left': 'Days Left in Campaign'
-    }
-    
-    # Create readable labels for top features
+    # Top features
+    top_features = importance_df.head(3)['feature'].tolist()
     readable_features = []
+    
     for feature in top_features:
-        if feature in feature_labels:
-            readable_features.append(feature_labels[feature])
+        if feature in FEATURE_LABELS:
+            readable_features.append(FEATURE_LABELS[feature])
         elif feature.startswith('tfidf_'):
             # For TF-IDF features, try to get the actual word from the vectorizer
             try:
@@ -1059,13 +1352,14 @@ def main():
     top_features_formatted = ', '.join(readable_features)
     
     print(f"1. Top factors influencing project success: {top_features_formatted}")
-    print(f"2. Cross-validation accuracy: {cv_scores.mean():.1%} (more reliable than test accuracy)")
+    print(f"2. Cross-validation accuracy: {metrics['cv_scores'].mean():.1%} (more reliable than test accuracy)")
     
-    # Print live project statistics
+    # Live project predictions
     likely_success = sum(1 for p in live_projects_analysis if p.get('prediction_outcome') == 'Likely to succeed')
     likely_fail = sum(1 for p in live_projects_analysis if p.get('prediction_outcome') == 'Likely to fail')
     print(f"3. Live projects: {likely_success} likely to succeed, {likely_fail} likely to fail")
     
+    # Output locations
     print("\nCheck the results directory for detailed analysis and visualizations in:")
     print(f"- {results_dir}/analysis_summary.txt (Text report)")
     print(f"- {results_dir}/feature_importance.png (Feature importance visualization)")

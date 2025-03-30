@@ -1,19 +1,17 @@
 # Kickstarter Project Success Prediction Analysis
 
-This analysis uses machine learning (Random Forest) to predict Kickstarter project success based on project updates, engagement metrics, and funding progression. It analyzes both completed and live projects, providing insights into what factors contribute to campaign success.
+This analysis uses machine learning (Random Forest) to predict Kickstarter project success based on project updates, engagement metrics, and funding progression. It analyzes live projects, providing insights into what factors contribute to campaign success.
 
 ## Overview
 
 The analysis processes Kickstarter project data from JSON files:
 - Project data: `../webscraper/scrapers/scraped_data/`
 
-The system intelligently handles two distinct types of projects:
-- **Completed Projects**: Success is determined by whether the pledged amount meets or exceeds the funding goal
+The system focuses on live projects:
 - **Live Projects**: Success is predicted based on funding trajectory (percentage funded vs. percentage of time elapsed)
 
 ## Key Features
 
-- **Dual Analysis System**: Separate analysis paths for live and completed projects
 - **Time-Based Projections**: Predicts final funding percentage for live projects
 - **Cross-Validation**: Uses 5-fold stratified cross-validation for reliable model evaluation
 - **Class Imbalance Handling**: Applies balanced class weights to ensure fair representation
@@ -51,20 +49,12 @@ The loading process includes:
 - JSON parsing with error handling
 - Data cleaning for monetary values (removing currency symbols, commas)
 - Project identification from URLs
-- Classification of projects as live or completed
+- Processing of live projects with remaining days
 
 ### 2. Success Determination Logic
 
-A critical aspect of the analysis is how success is determined:
+For live projects, success is determined based on funding trajectory:
 
-#### For Completed Projects
-```python
-# Simple success metric: did they reach their goal?
-is_successful = funding_goal > 0 and pledged_amount >= funding_goal
-data['success'] = 1 if is_successful else 0
-```
-
-#### For Live Projects
 ```python
 # Calculate percentage of funding achieved
 percent_funded = (pledged_amount / funding_goal * 100) if funding_goal > 0 else 0
@@ -96,7 +86,7 @@ else:
     data['success'] = 1 if percent_funded >= 50 else 0
 ```
 
-This dual-approach allows for accurate classification of both completed projects and live ongoing campaigns.
+This approach allows for accurate classification of live ongoing campaigns based on their current trajectory.
 
 ### 3. Feature Extraction Process
 
@@ -136,17 +126,16 @@ def extract_features(project, for_training=True):
     # Campaign duration and timing features
     # ... timing calculations
     
-    # Different feature sets for training vs. prediction
-    if for_training:
-        if is_live:
-            # Live project training features
-            features['percent_funded'] = project.get('percent_funded', 0)
-            features['percent_time'] = project.get('percent_time', 0)
-        else:
-            # Completed project training features
-            # Ratio features that aren't direct indicators of success
-            features['backers_per_day'] = features['backers_count'] / max(funding_duration, 1)
-            features['avg_pledge_amount'] = clean_pledged_amount / max(features['backers_count'], 1)
+    # Live project training features
+    features['percent_funded'] = project.get('percent_funded', 0)
+    features['percent_time'] = project.get('percent_time', 0)
+    features['days_left'] = int(campaign.get('days_left', 0))
+    
+    # Calculate average pledge amount (if backers exist)
+    if features['backers_count'] > 0:
+        features['avg_pledge_amount'] = clean_pledged_amount / features['backers_count']
+    else:
+        features['avg_pledge_amount'] = 0
     
     # Combine all update content for text analysis
     features['all_updates_text'] = ' '.join(update_contents)
@@ -160,7 +149,7 @@ The dataset creation process handles both numerical and text features:
 
 ```python
 # Create dataset from features
-features_list, labels, live_projects, completed_projects = create_dataset(projects, for_training=True)
+features_list, labels, live_projects = create_dataset(projects, for_training=True)
 
 # Convert features to DataFrame
 df = pd.DataFrame(features_list)
@@ -183,7 +172,6 @@ class_weight_dict = {i: class_weights[i] for i in range(len(class_weights))}
 ```
 
 The preprocessing includes:
-- Separation of live vs. completed projects
 - Handling of missing values
 - Text vectorization with TF-IDF
 - Feature combination
@@ -252,7 +240,7 @@ importance_df['importance_percentage'] = importance_df['importance'] * 100
 importance_df['description'] = importance_df['feature'].map(feature_descriptions.get)
 ```
 
-This analysis reveals which factors (like backer count, engagement metrics, update frequency) most strongly predict project success.
+This analysis reveals which factors (like engagement metrics, update frequency) most strongly predict project success.
 
 ### 7. Live Project Analysis
 
@@ -374,13 +362,12 @@ These patterns, combined with numerical metrics (likes, comments, update frequen
 
 #### Intelligent Data Loading
 - Reads JSON files from the project directory
-- Automatically detects and classifies live vs. completed projects
 - Handles currency symbols and formats for consistent monetary values
 - Calculates time progression for live projects
 
-#### Feature Engineering for All Projects
+#### Feature Engineering for Live Projects
 ```
-Common Base Features:
+Features:
 - num_updates: Total number of updates
 - total_likes: Sum of likes across all updates
 - total_comments: Total comments across all updates
@@ -390,24 +377,13 @@ Common Base Features:
 - backers_count: Number of project backers
 - average_likes_per_update: Engagement per update
 - average_comments_per_update: Discussion level per update
-```
-
-#### Live Project Specific Features
-```
 - percent_funded: Current % of funding goal reached
 - percent_time: % of campaign duration elapsed
 - funding_ratio: percent_funded / percent_time
 - projected_final_percent: Projected final funding %
 - backers_per_day: Acquisition rate adjusted for elapsed time
-```
-
-#### Completed Project Features
-```
-- backers_per_day: Backer acquisition rate
 - avg_pledge_amount: Average contribution per backer
-- has_updates: Binary indicator of update presence
-- update_frequency: Temporal distribution of updates
-- likes_per_backer: Engagement level relative to backers
+- days_left: Days remaining in campaign
 ```
 
 #### Text Feature Extraction
@@ -424,10 +400,9 @@ Our approach carefully prevents data leakage, which can lead to artificially hig
 Data leakage occurs when features directly reveal the target variable. In our case, using `final_funding_percent` would leak information about project success.
 
 #### Our Prevention Strategy
-1. **Separate Feature Sets**: Different feature extraction for training vs. prediction
-2. **Indirect Indicators**: Use engagement metrics rather than direct funding indicators for completed projects
-3. **Cross-Validation**: Properly stratified validation splits
-4. **Feature Filtering**: Explicit removal of leaky features like final funding percentage
+1. **Indirect Indicators**: Use engagement metrics rather than direct funding indicators
+2. **Cross-Validation**: Properly stratified validation splits
+3. **Feature Filtering**: Explicit removal of leaky features like final funding percentage
 
 ### 3. Random Forest Implementation with Cross-Validation
 
@@ -508,31 +483,41 @@ Cross-validation accuracy: ~80-81% (varies by dataset)
 
 ### 6. Usage
 
-1. Install requirements:
+1. Install dependencies:
 ```bash
-pip3 install -r requirements.txt
+# Navigate to the analysis directory
+cd crowdfunding-analysis/analysis
+
+# Install required packages
+pip install -r requirements.txt
+
+# Optional: Create a virtual environment first
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
 2. Run the analysis:
 ```bash
-python3 update_analysis.py
+# From the analysis directory
+python update_analysis.py
+
+# Or from the project root
+python -m crowdfunding-analysis.analysis.update_analysis
 ```
 
 3. Check results in the generated `results_[timestamp]` directory:
 - `analysis_summary.txt`: Detailed analysis report
-- `feature_importance_readable.csv`: Feature rankings
 - `feature_importance.png`: Visual representation of important features
-- `confusion_matrix.png`: Model performance visualization
-- `live_projects_status.png`: Visual plot of live project trajectories
-- `projected_funding_distribution.png`: Distribution of projected outcomes
-- `live_projects_predictions.csv`: Detailed predictions for all live projects
+- `decision_tree.png`: Decision flow diagram (if pydotplus is installed)
+- `live_projects_status.png`: Visual plot of live project trajectories and predictions
 
 ### 7. Advantages of this Implementation
 
-1. **Holistic Project Analysis**
-   - Handles both live and completed projects
+1. **Focused Project Analysis**
    - Provides actionable insights for ongoing campaigns
    - Realistic performance metrics through cross-validation
+   - Early prediction of campaign outcomes
 
 2. **Robust Data Handling**
    - Prevents misleading accuracy through anti-leakage measures

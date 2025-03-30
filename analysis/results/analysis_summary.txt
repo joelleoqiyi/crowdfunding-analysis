@@ -1,5 +1,5 @@
 === Crowdfunding Project Analysis ===
-Generated: 2025-03-28 23:11:31
+Generated: 2025-03-30 19:28:51
 
 Project Statistics:
 - Total projects: 200
@@ -8,11 +8,10 @@ Project Statistics:
 - Failed projects: 117
 
 Model Performance:
-- Cross-validation accuracy: 0.8125 (±0.0884)
+- Cross-validation accuracy: 0.8063 (±0.0776)
 - Test set accuracy: 0.7250
 - F1 Score: 0.7266
-- ROC AUC: 0.8171
-- Class weights: {0: 0.8547008547008547, 1: 1.2048192771084338}
+- ROC AUC: 0.8389
 
 Classification Report:
               precision    recall  f1-score   support
@@ -26,53 +25,68 @@ weighted avg       0.74      0.72      0.73        40
 
 
 Top 20 Most Important Features:
-1. Average Pledge Amount (25.55%)
-2. Percent Time (12.96%)
-3. Days Left in Campaign (10.02%)
-4. Campaign Duration (7.35%)
-5. Word 'our' in Updates (3.77%)
-6. Total Likes (2.94%)
-7. Average Update Length (2.85%)
-8. Word 'to' in Updates (2.60%)
-9. Word 'your' in Updates (2.15%)
-10. Average Likes per Update (2.08%)
-11. Updates per Day (1.81%)
-12. Word 'and' in Updates (1.64%)
-13. Word 'thank' in Updates (1.48%)
-14. Word 'this' in Updates (1.45%)
-15. Word 'for' in Updates (1.44%)
-16. Word 'you' in Updates (1.39%)
-17. Word 'the' in Updates (1.33%)
-18. Word 'we' in Updates (1.19%)
-19. Word 'us' in Updates (1.11%)
-20. Word 'backers' in Updates (1.10%)
+1. Average Pledge Amount (25.87%)
+2. Percentage of Time Elapsed (12.57%)
+3. Days Left in Campaign (9.51%)
+4. Campaign Duration (7.99%)
+5. Word 'our' in Updates (3.44%)
+6. Total Likes (3.03%)
+7. Word 'to' in Updates (2.99%)
+8. Average Update Length (2.96%)
+9. Word 'and' in Updates (2.48%)
+10. Average Likes per Update (2.34%)
+11. Word 'your' in Updates (2.13%)
+12. Word 'you' in Updates (1.64%)
+13. Word 'this' in Updates (1.59%)
+14. Word 'for' in Updates (1.57%)
+15. Number of Updates (1.27%)
+16. Word 'us' in Updates (1.27%)
+17. Word 'thank' in Updates (1.18%)
+18. Word 'the' in Updates (1.18%)
+19. Word 'backers' in Updates (1.10%)
+20. Word 'we' in Updates (0.96%)
 
 Generated Visualizations:
-1. Feature Importance Chart: crowdfunding-analysis/analysis/results_20250328_231129/feature_importance.png
+1. Feature Importance Chart: crowdfunding-analysis/analysis/results/feature_importance.png
    - Shows the relative importance of features for predicting project success
-2. Decision Tree Diagram: crowdfunding-analysis/analysis/results_20250328_231129/decision_tree.png
+2. Decision Tree Diagram: crowdfunding-analysis/analysis/results/decision_tree.png
    - Visualizes the decision-making process used to classify projects
-3. Live Projects Status: crowdfunding-analysis/analysis/results_20250328_231129/live_projects_status.png
+
+How to Read the Decision Tree Diagram:
+- Start at the top node and follow the tree downward
+- At each decision node, if the condition is true, follow the left branch; if false, follow the right branch
+- Colored leaf nodes show the classification outcome (green = success, red = failure)
+- Darker colors indicate higher confidence in the prediction
+- Each node shows what percentage of training samples follow that path
+- The most important factors in the model appear near the top of the tree
+
+3. Live Projects Status: crowdfunding-analysis/analysis/results/live_projects_status.png
    - Plots live projects based on their funding status and time remaining
 
 Live Projects Analysis:
-- 31 projects likely to succeed
-- 134 projects likely to fail
-- 35 projects with uncertain prediction
+- 36 projects likely to succeed
+- 131 projects likely to fail
+- 33 projects with uncertain prediction
 
 Projects Likely to Succeed:
+- aceele-4k-portable-quad-monitor (unknown days left)
+  Funded: 9312.2%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
 - paper-7-the-everyday-color-paper-tablet (unknown days left)
   Funded: 7888.7%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
 - eryone-thinker-x400-and-3d-printing-farm (unknown days left)
   Funded: 7639.1%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge, good engagement
 - twotrees-ttc-h40-cnc-and-laser-engraving-for-all-your-projec (unknown days left)
   Funded: 4083.0%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
+- chargeultra-gen-2-360-rotating-3-in-1-wireless-charger (unknown days left)
+  Funded: 3636.2%, Remarkable features: many backers, fast backer growth, well funded, high average pledge
 - mig-205mp-all-in-one-mig-welder-and-cutter-with-app-control (unknown days left)
   Funded: 2465.4%, Remarkable features: many backers, well funded, long campaign, high average pledge
 - the-hypercube-se (unknown days left)
   Funded: 1572.5%, Remarkable features: many backers, fast backer growth, well funded, high average pledge
 - omni-health-ring-ai-habit-coach-for-actionable-plans (unknown days left)
   Funded: 1379.7%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
+- ns7-thermal-dual-vision-dashcam-a-24-7-all-seeing-co-pilot (unknown days left)
+  Funded: 1237.6%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
 - turn-your-pc-and-handheld-into-a-gaming-and-graphics-powerhouse (unknown days left)
   Funded: 1184.8%, Remarkable features: many backers, well funded, long campaign, high average pledge
 - cheerful-powerful-portable-air-duster-and-vacuum-fan (unknown days left)
@@ -83,6 +97,8 @@ Projects Likely to Succeed:
   Funded: 600.9%, Remarkable features: fast backer growth, well funded, high average pledge
 - cinnotown-the-worlds-most-compact-smartphone-macro-lens (unknown days left)
   Funded: 562.0%, Remarkable features: fast backer growth, well funded, long campaign, high average pledge
+- hiive-link (unknown days left)
+  Funded: 503.4%, Remarkable features: many backers, well funded, high average pledge
 - fonecyc-megahub-4-ssds-docking-station-for-macbook-pro-16 (unknown days left)
   Funded: 500.1%, Remarkable features: well funded, long campaign, high average pledge
 - mado-precision-fitting-solar-window-shades (unknown days left)
@@ -99,10 +115,14 @@ Projects Likely to Succeed:
   Funded: 223.3%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
 - coldslayer-heated-socks-powered-by-you (unknown days left)
   Funded: 215.6%, Remarkable features: many backers, well funded, high average pledge
+- four-pillars-of-destiny-unlock-the-secrets-of-your-destiny (unknown days left)
+  Funded: 199.3%, Remarkable features: well funded, high average pledge
 - realwise-smartest-safety-light-with-built-in-step-tracking (unknown days left)
   Funded: 196.5%, Remarkable features: well funded, high average pledge
 - artium-instruments-the-doppler (unknown days left)
   Funded: 181.8%, Remarkable features: well funded, high average pledge
+- imic3d-next-generation-of-3d-imaging-and-visualisation (unknown days left)
+  Funded: 165.7%, Remarkable features: well funded, high average pledge
 - turbine-birds-project (unknown days left)
   Funded: 155.0%, Remarkable features: well funded, long campaign, high average pledge
 - lshow-plasma-deodorizer-stop-body-odor-and-stay-fresh-all-day (unknown days left)
@@ -115,8 +135,6 @@ Projects Likely to Succeed:
   Funded: 112.7%, Remarkable features: well funded, long campaign, high average pledge
 - from-jewelry-to-metal-cabinets-double-new-does-it-all (unknown days left)
   Funded: 107.9%, Remarkable features: well funded, high average pledge
-- gambade-the-cargo-bike-that-transforms-to-fit-your-life (unknown days left)
-  Funded: 100.3%, Remarkable features: well funded, long campaign, high average pledge
 - booster-tf64-a1-turbo-fan (unknown days left)
   Funded: 49.6%, Remarkable features: high average pledge
 - veri-the-social-media-news-verification-app (unknown days left)
@@ -129,8 +147,8 @@ Projects Likely to Fail:
   Funded: 6750.0%, Remarkable features: well funded, long campaign, high average pledge
 - planck-the-worlds-smallest-phone-first-ssd-with-up-to-2tb (unknown days left)
   Funded: 5068.4%, Remarkable features: many backers, fast backer growth, well funded, long campaign, engaging updates, interactive community, high average pledge, good engagement
-- scytheblade-the-ultimate-titanium-keychain-mini-knife (unknown days left)
-  Funded: 2003.0%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
+- 4d-techbag-eco-backpack-bag-home-travel-storage-tech-gadget (unknown days left)
+  Funded: 1909.9%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
 - jirest-anti-snoring-deep-sleep-pillow-with-pvdf-sensor-tech (unknown days left)
   Funded: 1722.4%, Remarkable features: well funded, long campaign, high average pledge
 - daran-r100-compact-power-station-for-limitless-adventure (unknown days left)
@@ -145,16 +163,12 @@ Projects Likely to Fail:
   Funded: 651.0%, Remarkable features: well funded, long campaign
 - airthereal-revive-r800-5l-wifi-smart-kitchen-composter (unknown days left)
   Funded: 475.7%, Remarkable features: fast backer growth, well funded, long campaign, high average pledge
-- the-immortal-choir-holds-every-voice (unknown days left)
-  Funded: 472.1%, Remarkable features: high update count, many backers, fast backer growth, well funded, highly liked, engaging updates, high average pledge, good engagement
 - digiduino-arduino-based-diy-digital-watch-development-kit (unknown days left)
   Funded: 465.4%, Remarkable features: many backers, well funded, long campaign, high average pledge
 - customizable-board-game-accessories-3d-print (unknown days left)
   Funded: 308.8%, Remarkable features: many backers, well funded, long campaign
 - smartersmallerfaster-all-in-one-240w-gan-charger (unknown days left)
   Funded: 299.7%, Remarkable features: well funded, long campaign, high average pledge
-- diple2-see-the-microscopic-world-in-a-new-light (unknown days left)
-  Funded: 230.6%, Remarkable features: many backers, well funded, long campaign, high average pledge
 - fipsy-fpga-v2-the-breakout-board-for-beginners-and-creatives (unknown days left)
   Funded: 227.6%, Remarkable features: many backers, well funded, long campaign, high average pledge
 - 3d-flight-lab-printable-drone-gyro-v12 (unknown days left)
@@ -227,8 +241,6 @@ Projects Likely to Fail:
   Funded: 2.9%, Remarkable features: high average pledge
 - makerscape-a-community-maker-space (unknown days left)
   Funded: 2.5%, Remarkable features: high average pledge
-- fit2win (unknown days left)
-  Funded: 2.4%, Remarkable features: long campaign, high average pledge
 - raw-dating-0 (unknown days left)
   Funded: 2.1%, Remarkable features: long campaign, high average pledge
 - timesheetio-work-log-get-your-money (unknown days left)
@@ -395,30 +407,24 @@ Projects Likely to Fail:
   Funded: 0.0%, Remarkable features: long campaign
 
 Projects with Uncertain Prediction:
-- aceele-4k-portable-quad-monitor (unknown days left)
-  Funded: 9312.2%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
 - twilight-owlchemy-randd (unknown days left)
   Funded: 8800.0%, Remarkable features: well funded, long campaign
 - oukitel-wp100-titan-33000mah-rugged-phone-with-projector (unknown days left)
   Funded: 7795.8%, Remarkable features: many backers, fast backer growth, well funded, long campaign, highly liked, engaging updates, high average pledge, exceptional engagement
 - bapaco-the-worlds-first-keyboard-with-a-built-in-computer (unknown days left)
   Funded: 7625.7%, Remarkable features: fast backer growth, well funded, high average pledge
-- chargeultra-gen-2-360-rotating-3-in-1-wireless-charger (unknown days left)
-  Funded: 3636.2%, Remarkable features: many backers, fast backer growth, well funded, high average pledge
 - tadcalo-full-switch-two-type-c-kvm-docking-station (unknown days left)
   Funded: 2867.2%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
 - tsupy-docking-station-revolutionize-your-workspace (unknown days left)
   Funded: 2857.2%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
-- 4d-techbag-eco-backpack-bag-home-travel-storage-tech-gadget (unknown days left)
-  Funded: 1909.9%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
+- scytheblade-the-ultimate-titanium-keychain-mini-knife (unknown days left)
+  Funded: 2003.0%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
 - feiyu-scorp-m2-mobile-ultimate-3-axis-videography-gimbal (unknown days left)
   Funded: 1671.3%, Remarkable features: many backers, fast backer growth, well funded, long campaign, interactive community, high average pledge
 - lingo-genie-l2-your-ai-powered-global-translator (unknown days left)
   Funded: 1361.2%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
 - super-tiny-rp2040-esp32-display-development-board (unknown days left)
   Funded: 1330.5%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
-- ns7-thermal-dual-vision-dashcam-a-24-7-all-seeing-co-pilot (unknown days left)
-  Funded: 1237.6%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
 - himovo-fan-powerful-11m-s-wind-and-mosquito-protection-in-one (unknown days left)
   Funded: 1039.2%, Remarkable features: many backers, fast backer growth, well funded, high average pledge
 - analog-circuit-ii-signals-systems-and-filters (unknown days left)
@@ -437,10 +443,10 @@ Projects with Uncertain Prediction:
   Funded: 523.3%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
 - magmirror-create-professional-content-with-your-smartphone (unknown days left)
   Funded: 515.5%, Remarkable features: many backers, fast backer growth, well funded, long campaign, high average pledge
-- hiive-link (unknown days left)
-  Funded: 503.4%, Remarkable features: many backers, well funded, high average pledge
 - introducing-the-portable-toilet-revolution-from-japan (unknown days left)
   Funded: 480.8%, Remarkable features: well funded, long campaign, high average pledge
+- the-immortal-choir-holds-every-voice (unknown days left)
+  Funded: 472.1%, Remarkable features: high update count, many backers, fast backer growth, well funded, highly liked, engaging updates, high average pledge, good engagement
 - neo-65w-122w-and-220w-portable-power-stations (unknown days left)
   Funded: 387.7%, Remarkable features: well funded, long campaign, high average pledge
 - concrete-guitars-design-and-sound-made-in-germany-make-100 (unknown days left)
@@ -449,21 +455,23 @@ Projects with Uncertain Prediction:
   Funded: 236.6%, Remarkable features: well funded, high average pledge
 - edge-k4-electric-fin-with-bluetooth-remote-steer-freely (unknown days left)
   Funded: 235.3%, Remarkable features: high update count, well funded, long campaign, high average pledge
-- four-pillars-of-destiny-unlock-the-secrets-of-your-destiny (unknown days left)
-  Funded: 199.3%, Remarkable features: well funded, high average pledge
-- imic3d-next-generation-of-3d-imaging-and-visualisation (unknown days left)
-  Funded: 165.7%, Remarkable features: well funded, high average pledge
+- diple2-see-the-microscopic-world-in-a-new-light (unknown days left)
+  Funded: 230.6%, Remarkable features: many backers, well funded, long campaign, high average pledge
 - badger-wear-your-gifs (unknown days left)
   Funded: 155.7%, Remarkable features: well funded, high average pledge
 - dog-paw (unknown days left)
   Funded: 134.1%, Remarkable features: fast backer growth, well funded, long campaign, high average pledge
 - drbartha-toys-software-enabled-coding-bricks (unknown days left)
   Funded: 101.5%, Remarkable features: well funded, long campaign, high average pledge
+- gambade-the-cargo-bike-that-transforms-to-fit-your-life (unknown days left)
+  Funded: 100.3%, Remarkable features: well funded, long campaign, high average pledge
 - bacbudy-exosuit-apparel-like-pliant-exoskeletons (unknown days left)
   Funded: 67.0%, Remarkable features: long campaign, high average pledge
 - dryaf-reusable-100-metal-spools-for-3d-printing (unknown days left)
   Funded: 56.9%, Remarkable features: high update count, fast backer growth, high average pledge
 - land-dominator-ai-auto-aiming-gel-blaster-car-android (unknown days left)
   Funded: 4.0%, Remarkable features: long campaign, high average pledge
+- fit2win (unknown days left)
+  Funded: 2.4%, Remarkable features: long campaign, high average pledge
 
 === End of Analysis ===
