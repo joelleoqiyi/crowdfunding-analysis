@@ -1,6 +1,6 @@
 # Kickstarter Project Success Prediction Analysis
 
-This analysis uses machine learning (Random Forest) to predict Kickstarter project success based on project updates, engagement metrics, and funding progression. It analyzes live projects, providing insights into what factors contribute to campaign success.
+This analysis uses machine learning (Random Forest and XGBoost) to predict Kickstarter project success based on project updates, engagement metrics, and funding progression. It analyzes live projects, providing insights into what factors contribute to campaign success. Our comparison shows that XGBoost significantly outperforms Random Forest, especially when backer features are included.
 
 ## Overview
 
@@ -481,7 +481,55 @@ Cross-validation accuracy: ~80-81% (varies by dataset)
 5. Update engagement metrics
 6. Key words in updates
 
-### 6. Usage
+### 6. Enhanced Model Results (XGBoost)
+
+We've extended our analysis to compare Random Forest with XGBoost, both with and without backer features.
+
+#### Performance Comparison
+
+| Metric | Random Forest | XGBoost with Backers | XGBoost without Backers |
+|--------|---------------|----------------------|-------------------------|
+| Cross-validation accuracy | 80.6% (±7.8%) | 92.5% (±4.2%) | 83.8% (±6.7%) |
+| Test accuracy | 72.5% | 87.5% | 80.0% |
+| F1 Score | 72.7% | 87.5% | 80.0% |
+| ROC AUC | 83.9% | 95.9% | 82.6% |
+
+#### Key Differences Between Models
+
+1. **Feature Importance Variations**:
+   - **Random Forest** emphasizes quantitative metrics:
+     1. Average Pledge Amount (25.9%)
+     2. Percentage of Time Elapsed (12.6%)
+     3. Days Left in Campaign (9.5%)
+   
+   - **XGBoost with backers** prioritizes communication and engagement:
+     1. Word 'we' in Updates (11.0%)
+     2. Word 'it' in Updates (9.5%)
+     3. Number of Backers (8.8%)
+   
+   - **XGBoost without backers** adapts by focusing on communication:
+     1. Word 'our' in Updates (23.8%)
+     2. Total Likes (10.8%)
+     3. Word 'campaign' in Updates (6.1%)
+
+2. **Live Project Predictions**:
+   - **Random Forest**: 36 likely to succeed, 131 likely to fail (conservative)
+   - **XGBoost with backers**: 81 likely to succeed, 118 likely to fail (optimistic)
+   - **XGBoost without backers**: 71 likely to succeed, 124 likely to fail (middle ground)
+
+3. **Model Recommendations**:
+   - For maximum accuracy: XGBoost with all features (92.5% CV accuracy)
+   - When backer data is unavailable: XGBoost without backers (83.8% CV accuracy)
+   - For conservative predictions: Random Forest (80.6% CV accuracy)
+
+4. **Impact of Backer Features**:
+   - Including backer features improves XGBoost performance by ~8.7%
+   - Without backer data, models compensate by emphasizing communication style and engagement metrics
+   - Backer information appears to be a strong indicator of project health
+
+These findings demonstrate the power of ensemble learning methods for predicting crowdfunding success, while highlighting the importance of feature selection. The significant performance improvement of XGBoost over Random Forest suggests that its boosting approach better captures the complex relationships between features and project outcomes.
+
+### 7. Usage
 
 1. Install dependencies:
 ```bash
@@ -499,20 +547,29 @@ pip install -r requirements.txt
 
 2. Run the analysis:
 ```bash
-# From the analysis directory
+# For Random Forest model:
 python update_analysis.py
-
-# Or from the project root
+# OR from the project root
 python -m crowdfunding-analysis.analysis.update_analysis
+
+# For XGBoost model:
+python update_analysis_2.py
+# OR from the project root
+python -m crowdfunding-analysis.analysis.update_analysis_2
 ```
 
-3. Check results in the generated `results_[timestamp]` directory:
+3. Check results in the generated results directories:
+- Random Forest: `crowdfunding-analysis/analysis/results/`
+- XGBoost with backers: `crowdfunding-analysis/analysis/results_xgboost_with_backers/`
+- XGBoost without backers: `crowdfunding-analysis/analysis/results_xgboost_without_backers/`
+
+Each directory contains:
 - `analysis_summary.txt`: Detailed analysis report
 - `feature_importance.png`: Visual representation of important features
 - `decision_tree.png`: Decision flow diagram (if pydotplus is installed)
 - `live_projects_status.png`: Visual plot of live project trajectories and predictions
 
-### 7. Advantages of this Implementation
+### 8. Advantages of this Implementation
 
 1. **Focused Project Analysis**
    - Provides actionable insights for ongoing campaigns
@@ -536,10 +593,12 @@ python -m crowdfunding-analysis.analysis.update_analysis
    - Early warning for at-risk projects
    - Detailed error analysis
 
-### 8. Limitations and Future Improvements
+### 9. Limitations and Future Improvements
 
 1. **Model Enhancements**
-   - Implement gradient boosting models (XGBoost, LightGBM)
+   - ✅ XGBoost implementation complete (see Enhanced Model Results section)
+   - Further optimize XGBoost hyperparameters
+   - Experiment with other gradient boosting algorithms (LightGBM)
    - Experiment with deep learning for text features
    - Develop specialized models for different project categories
 
