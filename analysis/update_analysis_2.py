@@ -1174,6 +1174,40 @@ def analyze_live_projects(live_projects, model, feature_names):
     
     return results
 
+def save_model_for_web(model, tfidf_vectorizer, feature_names, output_dir='crowdfunding-analysis/analysis/web_model'):
+    """Save the trained model and vectorizer for web prediction.
+    
+    Args:
+        model: Trained XGBoost model
+        tfidf_vectorizer: Fitted TF-IDF vectorizer
+        feature_names: List of feature names used by the model
+        output_dir: Directory to save the model files
+    """
+    import pickle
+    import os
+    
+    # Create directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Save the XGBoost model
+    model_path = os.path.join(output_dir, 'xgboost_model.pkl')
+    with open(model_path, 'wb') as f:
+        pickle.dump(model, f)
+    print(f"Saved XGBoost model to {model_path}")
+    
+    # Save the TF-IDF vectorizer
+    vectorizer_path = os.path.join(output_dir, 'tfidf_vectorizer.pkl')
+    with open(vectorizer_path, 'wb') as f:
+        pickle.dump(tfidf_vectorizer, f)
+    print(f"Saved TF-IDF vectorizer to {vectorizer_path}")
+    
+    # Save feature names for later reference
+    feature_names_path = os.path.join(output_dir, 'feature_names.txt')
+    with open(feature_names_path, 'w') as f:
+        for feature in feature_names:
+            f.write(f"{feature}\n")
+    print(f"Saved feature names to {feature_names_path}")
+
 def main():
     """Run the crowdfunding analysis pipeline using XGBoost exclusively without backers features."""
     print("Running XGBoost Analysis WITHOUT Backers Features")
@@ -1214,6 +1248,9 @@ def main():
     
     # Step 6: Train Model
     model, metrics = train_and_evaluate_model(X, y, feature_names)
+    
+    # Save model and vectorizer for web use - NEW CODE
+    save_model_for_web(model, tfidf, feature_names)
     
     # Step 7: Analyze Feature Importance
     importance_df = analyze_feature_importance(model, feature_names, results_dir, tfidf)
@@ -1305,6 +1342,8 @@ def main():
     print("- Original analysis (Random Forest): crowdfunding-analysis/analysis/results/")
     
     print("\nThis comparison helps isolate the impact of the backers features on model performance.")
+    
+    print("\nModel and vectorizer have been saved for web prediction in: crowdfunding-analysis/analysis/web_model/")
 
 if __name__ == "__main__":
     main() 
