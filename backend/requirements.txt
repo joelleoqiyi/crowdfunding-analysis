@@ -1,0 +1,7 @@
+flask
+requests
+python-dateutil
+numpy
+scikit-learn
+xgboost
+pandas
