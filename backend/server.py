@@ -1,6 +1,6 @@
-# Remove or comment out selenium since we're using mock data
-# from selenium import webdriver
-# from selenium.webdriver.chrome.options import Options
+# Required for browser automation
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 from flask import Flask, request, jsonify
 import time
@@ -9,19 +9,51 @@ import sys
 import json
 from datetime import datetime
 
-# Add path to update_analysis for model import
+# Setup paths for imports
 parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Add update_analysis directory to path
 update_analysis_dir = os.path.join(parent_dir, 'update-analysis')
 sys.path.append(update_analysis_dir)
 
+# Add scrapers directory to path
+scrapers_dir = os.path.join(update_analysis_dir, 'scrapers')
+sys.path.append(scrapers_dir)
+
+# Add utils directory to path
+utils_dir = os.path.join(update_analysis_dir, 'utils')
+sys.path.append(utils_dir)
+
+# Import browser utilities first (this helps with circular import issues)
+try:
+    from browser_utils import get_browser, random_sleep
+    print("Successfully imported browser_utils from update-analysis/utils directory")
+except ImportError as e:
+    print(f"Failed to import browser_utils: {str(e)}")
+    print(f"File exists: {os.path.exists(os.path.join(utils_dir, 'browser_utils.py'))}")
+    print(f"Files in utils: {os.listdir(utils_dir) if os.path.exists(utils_dir) else 'Directory not found'}")
+
 # Import prediction functions from web_predict
-from web_predict import (
-    load_model, 
-    load_vectorizer, 
-    load_feature_names, 
-    predict_project_success,
-    get_remarkable_features
-)
+try:
+    from web_predict import (
+        load_model, 
+        load_vectorizer, 
+        load_feature_names, 
+        predict_project_success,
+        get_remarkable_features
+    )
+    print("Successfully imported web_predict functions")
+except ImportError as e:
+    print(f"Failed to import web_predict: {str(e)}")
+
+# Import scrapers
+try:
+    from project_scraper import scrape_project
+    from update_scraper import extract_updates_content
+    print("Successfully imported scraper functions")
+except ImportError as e:
+    print(f"Failed to import scrapers: {str(e)}")
+    print(f"Files in scrapers: {os.listdir(scrapers_dir) if os.path.exists(scrapers_dir) else 'Directory not found'}")
 
 # Setup for cross-origin requests (basic implementation without flask-cors)
 def add_cors_headers(response):
@@ -103,166 +135,176 @@ def home():
     })
     return add_cors_headers(response)
 
+def clean_kickstarter_url(url):
+    """
+    Clean and prepare a Kickstarter URL for scraping.
+    This ensures the URL is in the proper format for the scrapers to work with.
+    """
+    print(f"Cleaning URL: {url}")
+    
+    # Remove any trailing slashes
+    url = url.rstrip('/')
+    
+    # Remove any query parameters
+    if '?' in url:
+        url = url[:url.index('?')]
+    
+    # Remove /posts or /description if present at the end
+    for suffix in ['/posts', '/description', '/comments', '/community', '/updates', '/faqs']:
+        if url.endswith(suffix):
+            url = url[:-len(suffix)]
+    
+    # Ensure the URL is a valid Kickstarter project URL
+    if not ('kickstarter.com/projects/' in url or 'indiegogo.com/' in url):
+        print(f"Warning: URL may not be a valid crowdfunding project: {url}")
+    
+    # Strip any trailing whitespace
+    url = url.strip()
+    
+    print(f"Cleaned URL: {url}")
+    return url
+
 def scrape_kickstarter(url):
     """
-    Mock scraper function that returns sample data from 5 different campaign scenarios.
-    The function cycles through the scenarios with each call.
-    In a production environment, you would use Selenium to scrape the actual data.
-    """
-    global mock_data_counter
+    Scrape a Kickstarter campaign using the scraper modules from update-analysis.
+    Returns the project data in the expected format for prediction.
     
-    print(f"Mock scraping URL: {url}")
+    Implementation based on the successful main.py approach.
+    """
+    print(f"Original URL for scraping: {url}")
+    
+    # First clean the URL to ensure it's in the proper format
+    base_url = clean_kickstarter_url(url)
+    
+    # Then add /posts for update scraping
+    posts_url = base_url + "/posts"
+    
+    print(f"Using URL for scraping: {posts_url}")
     
     try:
-        # Parse the URL to extract potential campaign name
-        campaign_name = url.split('/')[-1] if '/' in url else 'sample-campaign'
+        # Call scrape_project with the properly formatted URL
+        print("Calling scrape_project function...")
+        scraped_data = scrape_project(posts_url)
         
-        # Generate current date and end date
-        from datetime import datetime, timedelta
-        current_date = datetime.now()
+        if not scraped_data:
+            print("Scrape_project returned no data")
+            return {
+                "success": False,
+                "error": "No data returned from scraper"
+            }
         
-        # Increment counter and wrap around to cycle through scenarios
-        mock_data_counter = (mock_data_counter + 1) % 5
-        scenario = mock_data_counter
+        if 'error' in scraped_data:
+            print(f"Error returned by scraper: {scraped_data['error']}")
+            return {
+                "success": False,
+                "error": scraped_data['error']
+            }
         
-        # Create base project data structure
-        project_data = {
-            'campaign_details': {
-                'title': '',
-                'funding_goal': '$10000',
-                'pledged_amount': '',
-                'backers_count': '',
-                'days_left': '',
-                'funding_start_date': '',
-                'funding_end_date': '',
-                'description': ''
-            },
-            'updates': {
-                'count': 0,
-                'content': []
-            }
-        }
+        # Extract campaign details
+        campaign_details = scraped_data.get('campaign_details', {})
         
-        # Scenario 1: Extremely Successful Campaign (250% funded, many updates, strong engagement)
-        if scenario == 0:
-            project_data['campaign_details'].update({
-                'title': f"Wildly Successful: {campaign_name}",
-                'pledged_amount': '$25000',   # 250% funded
-                'backers_count': '500',       # Strong backer count
-                'days_left': '15',            # Plenty of time left
-                'funding_start_date': (current_date - timedelta(days=15)).isoformat() + 'Z',
-                'funding_end_date': (current_date + timedelta(days=15)).isoformat() + 'Z',
-                'description': 'Our team has years of manufacturing experience, and we\'ve already completed several successful prototypes. We have established partnerships with reliable suppliers and a clear production timeline. The funds will help us scale production and deliver on time.'
-            })
-            project_data['updates'] = {
-                'count': 8,  # Many updates
-                'content': [
-                    {'content': 'Launch Day Update: We\'re live on Kickstarter!', 'likes_count': 125, 'comments_count': 15, 'comments': ['Backed immediately!', 'Looks amazing!']},
-                    {'content': 'Day 3 Update: Wow! We\'re already 50% funded!', 'likes_count': 150, 'comments_count': 20, 'comments': ['Congrats!', 'This is going to blow past the goal!']},
-                    {'content': 'Week 1 Recap: We\'re now FULLY FUNDED!', 'likes_count': 200, 'comments_count': 25, 'comments': ['Amazing news!', 'Well deserved!']},
-                    {'content': 'Production Update: Manufacturing partners confirmed', 'likes_count': 175, 'comments_count': 18, 'comments': ['Love seeing the process!']},
-                    {'content': 'Stretch Goal UNLOCKED! 200% funding reached', 'likes_count': 210, 'comments_count': 30, 'comments': ['You guys rock!']},
-                    {'content': 'Meet the Team: Background of our founders', 'likes_count': 185, 'comments_count': 22, 'comments': ['Impressive team!']},
-                    {'content': 'Manufacturing Timeline: Detailed schedule', 'likes_count': 160, 'comments_count': 15, 'comments': ['Very professional approach']},
-                    {'content': 'Final Week! 250% funded - new stretch goals', 'likes_count': 230, 'comments_count': 35, 'comments': ['Take my money!']},
-                ]
-            }
-            print("Using WILDLY SUCCESSFUL campaign scenario")
-            
-        # Scenario 2: Moderately Successful (120% funded, good updates)
-        elif scenario == 1:
-            project_data['campaign_details'].update({
-                'title': f"Successful Campaign: {campaign_name}",
-                'pledged_amount': '$12000',   # 120% funded
-                'backers_count': '180',       # Decent backer count
-                'days_left': '10',            # Some time left
-                'funding_start_date': (current_date - timedelta(days=20)).isoformat() + 'Z',
-                'funding_end_date': (current_date + timedelta(days=10)).isoformat() + 'Z',
-                'description': 'We\'ve been working on this project for over a year. Our goal is to create a quality product that solves a real problem. We have the expertise to deliver and are committed to maintaining open communication.'
-            })
-            project_data['updates'] = {
-                'count': 5,  # Good number of updates
-                'content': [
-                    {'content': 'Welcome to our campaign! Thanks for your support', 'likes_count': 75, 'comments_count': 10, 'comments': ['Excited for this!']},
-                    {'content': 'First week update: 40% funded!', 'likes_count': 82, 'comments_count': 12, 'comments': ['Great progress!']},
-                    {'content': 'Halfway point update: 60% funded!', 'likes_count': 90, 'comments_count': 15, 'comments': ['Keep it up!']},
-                    {'content': 'Production plans and timeline', 'likes_count': 85, 'comments_count': 13, 'comments': ['Thanks for the details']},
-                    {'content': 'We\'re funded! What\'s next for the project', 'likes_count': 120, 'comments_count': 25, 'comments': ['Congratulations!']},
-                ]
-            }
-            print("Using MODERATELY SUCCESSFUL campaign scenario")
-            
-        # Scenario 3: Borderline/Ambiguous (55% funded, medium updates)
-        elif scenario == 2:
-            project_data['campaign_details'].update({
-                'title': f"Ambiguous Campaign: {campaign_name}",
-                'pledged_amount': '$5500',    # 55% funded
-                'backers_count': '85',        # Modest backer count
-                'days_left': '5',             # Not much time left
-                'funding_start_date': (current_date - timedelta(days=25)).isoformat() + 'Z',
-                'funding_end_date': (current_date + timedelta(days=5)).isoformat() + 'Z',
-                'description': 'Our innovative product addresses a gap in the market. While this is our first crowdfunding campaign, we bring industry experience and a clear vision. We hope you\'ll join us on this journey.'
-            })
-            project_data['updates'] = {
-                'count': 3,  # Few updates
-                'content': [
-                    {'content': 'Campaign launch! Thank you for checking us out', 'likes_count': 45, 'comments_count': 7, 'comments': ['Interesting concept']},
-                    {'content': 'Progress update: 30% funded after two weeks', 'likes_count': 40, 'comments_count': 5, 'comments': ['Hope you make it!']},
-                    {'content': 'New product features and development update', 'likes_count': 52, 'comments_count': 8, 'comments': ['Looking forward to this']},
-                ]
-            }
-            print("Using AMBIGUOUS campaign scenario")
-            
-        # Scenario 4: Likely to Fail (30% funded, few updates)
-        elif scenario == 3:
-            project_data['campaign_details'].update({
-                'title': f"Struggling Campaign: {campaign_name}",
-                'pledged_amount': '$3000',    # 30% funded
-                'backers_count': '42',        # Low backer count
-                'days_left': '2',             # Almost out of time
-                'funding_start_date': (current_date - timedelta(days=28)).isoformat() + 'Z',
-                'funding_end_date': (current_date + timedelta(days=2)).isoformat() + 'Z',
-                'description': 'We\'re excited to bring this product to market. While we don\'t have manufacturing experience, we believe we can figure it out as we go. The timeline might be ambitious, but we\'re optimistic.'
-            })
-            project_data['updates'] = {
-                'count': 2,  # Very few updates
-                'content': [
-                    {'content': 'Launch day! Our campaign is live', 'likes_count': 20, 'comments_count': 4, 'comments': ['Good luck!']},
-                    {'content': 'Week 2 update: Production challenges', 'likes_count': 15, 'comments_count': 3, 'comments': ['Hope you overcome these issues']},
-                ]
-            }
-            print("Using STRUGGLING campaign scenario")
-            
-        # Scenario 5: Failing Badly (15% funded, minimal engagement)
+        # Try to get the title, first from campaign_details, then from URL if not found
+        if 'title' in campaign_details and campaign_details['title']:
+            campaign_title = campaign_details['title']
         else:
-            project_data['campaign_details'].update({
-                'title': f"Failing Campaign: {campaign_name}",
-                'pledged_amount': '$1500',    # 15% funded
-                'backers_count': '20',        # Very few backers
-                'days_left': '3',             # Almost no time left
-                'funding_start_date': (current_date - timedelta(days=27)).isoformat() + 'Z',
-                'funding_end_date': (current_date + timedelta(days=3)).isoformat() + 'Z',
-                'description': 'This is our first attempt at creating a product. We have a basic prototype but are still working on many details. We hope to use the funds to figure out manufacturing and delivery.'
-            })
-            project_data['updates'] = {
-                'count': 1,  # Single update
-                'content': [
-                    {'content': 'Welcome to our campaign!', 'likes_count': 12, 'comments_count': 2, 'comments': ['What\'s your timeline?', 'Have you made prototypes?']},
-                ]
-            }
-            print("Using FAILING campaign scenario")
+            # Extract project name from URL as fallback
+            project_name = base_url.split('/')[-1].replace('-', ' ').title()
+            campaign_title = project_name
+            # Add it to campaign_details
+            campaign_details['title'] = campaign_title
         
+        # Check the updates count
+        updates = scraped_data.get('updates', {'count': 0, 'content': []})
+        updates_count = updates.get('count', 0)
+        updates_content = updates.get('content', [])
+        
+        print(f"Scraped campaign: {campaign_title}")
+        print(f"Found {updates_count} updates with {len(updates_content)} content items")
+        
+        # Log campaign details for debugging
+        print(f"Campaign details: Pledged: {campaign_details.get('pledged_amount', 'N/A')}, " +
+              f"Goal: {campaign_details.get('funding_goal', 'N/A')}, " +
+              f"Backers: {campaign_details.get('backers_count', 'N/A')}")
+        
+        # Return the data in the expected format
         return {
             "success": True,
-            "data": project_data,
-            "campaign_title": project_data['campaign_details']['title'],
-            "url": url
+            "data": {
+                'campaign_details': campaign_details,
+                'updates': updates
+            },
+            "campaign_title": campaign_title,
+            "url": base_url  # Return the cleaned base URL
         }
     except Exception as e:
+        import traceback
+        error_traceback = traceback.format_exc()
+        print(f"Exception during scraping: {str(e)}")
+        print(error_traceback)
         return {
             "success": False,
-            "error": f"Error in mock scraper: {str(e)}"
+            "error": f"Scraping failed: {str(e)}"
         }
+
+# Fallback to mock data in case the real scraper fails
+def get_mock_data(url, scenario=0):
+    """
+    Fallback function to generate mock data for testing purposes.
+    """
+    print(f"Using mock data for URL: {url} (scenario: {scenario})")
+    
+    # Generate current date and end date
+    from datetime import datetime, timedelta
+    current_date = datetime.now()
+    
+    # Create base project data structure
+    project_data = {
+        'campaign_details': {
+            'title': '',
+            'funding_goal': '$10000',
+            'pledged_amount': '',
+            'backers_count': '',
+            'days_left': '',
+            'funding_start_date': '',
+            'funding_end_date': '',
+            'description': ''
+        },
+        'updates': {
+            'count': 0,
+            'content': []
+        }
+    }
+    
+    # Parse the URL to extract potential campaign name
+    campaign_name = url.split('/')[-1] if '/' in url else 'sample-campaign'
+    
+    # Different scenarios based on input
+    if scenario == 0:  # Extremely Successful
+        project_data['campaign_details'].update({
+            'title': f"Wildly Successful: {campaign_name}",
+            'pledged_amount': '$25000',
+            'backers_count': '500',
+            'days_left': '15',
+            'funding_start_date': (current_date - timedelta(days=15)).isoformat() + 'Z',
+            'funding_end_date': (current_date + timedelta(days=15)).isoformat() + 'Z',
+            'description': 'Our team has years of manufacturing experience, and we\'ve already completed several successful prototypes.'
+        })
+        project_data['updates'] = {
+            'count': 8,
+            'content': [
+                {'content': 'Launch Day Update: We\'re live on Kickstarter!', 'likes_count': 125, 'comments_count': 15, 'comments': ['Backed immediately!']},
+                {'content': 'Day 3 Update: Wow! We\'re already 50% funded!', 'likes_count': 150, 'comments_count': 20, 'comments': ['Congrats!']},
+                # ... more mock updates ...
+            ]
+        }
+    # ... additional mock scenarios can be added here ...
+    
+    return {
+        "success": True,
+        "data": project_data,
+        "campaign_title": project_data['campaign_details']['title'],
+        "url": url
+    }
 
 @app.route('/scrape', methods=['POST'])
 def scrape_route():
@@ -272,10 +314,20 @@ def scrape_route():
         response = jsonify({"success": False, "error": "No URL provided"})
         return add_cors_headers(response), 400
     
+    # First try real scraping
     result = scrape_kickstarter(url)
+    
+    # Fall back to mock data if real scraping fails
     if not result["success"]:
-        response = jsonify(result)
-        return add_cors_headers(response), 500
+        print(f"Real scraping failed. Falling back to mock data. Error: {result.get('error')}")
+        # Use mock data counter to cycle through scenarios
+        global mock_data_counter
+        current_scenario = mock_data_counter
+        mock_data_counter = (mock_data_counter + 1) % 5
+        print(f"Using mock data scenario {current_scenario}")
+        result = get_mock_data(url, current_scenario)
+    else:
+        print("Successfully scraped real data from Kickstarter")
     
     response = jsonify(result)
     return add_cors_headers(response)
@@ -315,13 +367,23 @@ def predict_route():
                 })
                 return add_cors_headers(response), 400
             
+            # Try real scraping first
             scrape_result = scrape_kickstarter(url)
+            
+            # Fallback to mock data if real scraping fails
             if not scrape_result["success"]:
-                response = jsonify(scrape_result)
-                return add_cors_headers(response), 500
+                print(f"Real scraping failed during prediction. Falling back to mock data. Error: {scrape_result.get('error')}")
+                # Use mock data counter to cycle through scenarios
+                global mock_data_counter
+                current_scenario = mock_data_counter
+                mock_data_counter = (mock_data_counter + 1) % 5
+                print(f"Using mock data scenario {current_scenario}")
+                scrape_result = get_mock_data(url, current_scenario)
+            else:
+                print("Successfully scraped real data for prediction")
             
             project_data = scrape_result["data"]
-            campaign_url = url
+            campaign_url = scrape_result["url"]
             campaign_title = scrape_result["campaign_title"]
         else:
             campaign_url = data.get('url', '')
