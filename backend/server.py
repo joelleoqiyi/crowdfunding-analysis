@@ -410,7 +410,7 @@ def predict_route():
             "campaignTitle": campaign_title,
             "campaignUrl": campaign_url,
             "timestamp": datetime.now().isoformat(),
-            "overallPrediction": "success",
+            "overallPrediction": "success" if prediction_result.get("success_probability", 0) > 0.5 else "failure",
             "description": {
                 # Pure mock data for description section
                 "score": 50,  # Fixed mock score
@@ -450,11 +450,10 @@ def predict_route():
                 ]
             },
             "updates": {
-                # Keep using real model data for updates section
-                "score": calculate_update_score(prediction_result),
-                "prediction": "success" if prediction_result.get("key_features", {}).get("updates_count", 0) > 3 else "uncertain",
-                "confidence": min(0.9, prediction_result.get("key_features", {}).get("updates_per_day", 0) * 5),
-                "justification": generate_update_justification(prediction_result),
+                # Use raw model outputs directly for updates section
+                "score": round(prediction_result.get("success_probability", 0.5) * 100),
+                "prediction": "success" if prediction_result.get("success_probability", 0.5) > 0.5 else "failure",
+                "confidence": prediction_result.get("confidence", 0.5),
                 "findings": [
                     f"Total updates: {prediction_result.get('key_features', {}).get('updates_count', 0)}",
                     f"Updates per day: {prediction_result.get('key_features', {}).get('updates_per_day', 0):.2f}",
@@ -465,8 +464,9 @@ def predict_route():
                     f"Average comments per update: {prediction_result.get('key_features', {}).get('average_comments_per_update', 0):.1f}",
                     f"Average update length: {prediction_result.get('key_features', {}).get('avg_update_length', 0):.0f} characters",
                     f"Campaign duration: {prediction_result.get('metrics', {}).get('funding_duration', 30)} days",
-                    f"Model confidence for updates: {prediction_result.get('confidence', 0.5):.0%}",
-                ] + extract_update_remarkable_features(prediction_result)
+                    f"Model confidence: {prediction_result.get('confidence', 0.5):.0%}",
+                    f"Model success probability: {prediction_result.get('success_probability', 0.5):.0%}",
+                ]
             }
         }
         
@@ -486,93 +486,6 @@ def predict_route():
             "traceback": traceback_str
         })
         return add_cors_headers(error_response), 500
-
-def calculate_update_score(prediction_result):
-    """Calculate a more accurate update score based on multiple factors"""
-    updates_count = prediction_result.get("key_features", {}).get("updates_count", 0)
-    updates_per_day = prediction_result.get("key_features", {}).get("updates_per_day", 0)
-    total_likes = prediction_result.get("key_features", {}).get("total_likes", 0)
-    
-    # Base score on updates count (0-40 points)
-    if updates_count >= 8:
-        count_score = 40
-    elif updates_count >= 5:
-        count_score = 30
-    elif updates_count >= 3:
-        count_score = 20
-    elif updates_count >= 1:
-        count_score = 10
-    else:
-        count_score = 0
-    
-    # Add points for update frequency (0-30 points)
-    if updates_per_day >= 0.3:
-        frequency_score = 30
-    elif updates_per_day >= 0.2:
-        frequency_score = 25
-    elif updates_per_day >= 0.1:
-        frequency_score = 20
-    elif updates_per_day > 0:
-        frequency_score = 10
-    else:
-        frequency_score = 0
-    
-    # Add points for engagement (0-30 points)
-    engagement_score = min(30, total_likes // 50)
-    
-    # Calculate final score (max 100)
-    final_score = min(100, count_score + frequency_score + engagement_score)
-    
-    # If campaign is funded > 100%, give minimum score of 60
-    if prediction_result.get("metrics", {}).get("percent_funded", 0) >= 100:
-        final_score = max(final_score, 60)
-    
-    return final_score
-
-def generate_update_justification(prediction_result):
-    """Generate a justification for the update score"""
-    updates_count = prediction_result.get("key_features", {}).get("updates_count", 0)
-    updates_per_day = prediction_result.get("key_features", {}).get("updates_per_day", 0)
-    percent_funded = prediction_result.get("metrics", {}).get("percent_funded", 0)
-    
-    if updates_count >= 5 and percent_funded >= 100:
-        return f"Campaign has {updates_count} updates with excellent engagement and is fully funded."
-    elif updates_count >= 3:
-        return f"Campaign has {updates_count} updates (about {updates_per_day:.2f} per day), showing good creator involvement."
-    else:
-        return f"Campaign has {updates_count} updates (about {updates_per_day:.2f} per day)."
-
-def extract_update_remarkable_features(prediction_result):
-    """Extract update-specific remarkable features from the prediction result"""
-    remarkable_features = []
-    
-    # Add remarkable features based on update count
-    updates_count = prediction_result.get("key_features", {}).get("updates_count", 0)
-    if updates_count >= 8:
-        remarkable_features.append("Exceptional number of updates (8+) shows strong creator involvement")
-    elif updates_count <= 1 and prediction_result.get("metrics", {}).get("percent_time", 0) > 50:
-        remarkable_features.append("Few updates despite campaign being halfway complete suggests limited creator engagement")
-    
-    # Add remarkable features based on update frequency
-    updates_per_day = prediction_result.get("key_features", {}).get("updates_per_day", 0)
-    if updates_per_day >= 0.3:
-        remarkable_features.append("High update frequency (0.3+ per day) correlates strongly with successful campaigns")
-    elif updates_per_day <= 0.05 and updates_count > 0:
-        remarkable_features.append("Very low update frequency may reduce backer confidence")
-    
-    # Add remarkable features based on engagement
-    avg_likes = prediction_result.get("key_features", {}).get("average_likes_per_update", 0)
-    if avg_likes >= 50:
-        remarkable_features.append("High engagement on updates indicates strong community interest")
-    
-    # Add remarkable features based on funding status and updates
-    percent_funded = prediction_result.get("metrics", {}).get("percent_funded", 0)
-    if percent_funded >= 100 and updates_count >= 5:
-        remarkable_features.append("Fully funded campaigns with regular updates have extremely high success rates")
-    elif percent_funded < 50 and updates_count <= 2 and prediction_result.get("metrics", {}).get("percent_time", 0) > 70:
-        remarkable_features.append("Under-funded campaigns with few updates rarely reach their goals")
-    
-    return remarkable_features
 
 # Load model components on startup
 if __name__ == '__main__':

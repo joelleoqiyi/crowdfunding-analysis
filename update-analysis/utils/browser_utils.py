@@ -44,7 +44,7 @@ def get_browser():
     options = uc.ChromeOptions()
     ua = UserAgent()
     
-    # options.add_argument('--headless')  # Add headless mode
+    options.add_argument('--headless')  # Add headless mode
     options.add_argument('--disable-blink-features=AutomationControlled')
     options.add_argument('--disable-infobars')
     options.add_argument('--disable-dev-shm-usage')
