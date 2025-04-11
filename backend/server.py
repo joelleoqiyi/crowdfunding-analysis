@@ -464,8 +464,8 @@ def predict_route():
                     f"Average comments per update: {prediction_result.get('key_features', {}).get('average_comments_per_update', 0):.1f}",
                     f"Average update length: {prediction_result.get('key_features', {}).get('avg_update_length', 0):.0f} characters",
                     f"Campaign duration: {prediction_result.get('metrics', {}).get('funding_duration', 30)} days",
-                    f"Model confidence: {prediction_result.get('confidence', 0.5):.0%}",
-                    f"Model success probability: {prediction_result.get('success_probability', 0.5):.0%}",
+                    f"Model confidence: {prediction_result.get('confidence', 0.5):.0%} (how certain the model is in its prediction)",
+                    f"Success probability: {prediction_result.get('success_probability', 0.5):.0%} (estimated chance of campaign success)",
                 ]
             }
         }
