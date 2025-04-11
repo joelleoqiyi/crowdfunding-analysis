@@ -651,7 +651,7 @@ def extract_updates_content(browser):
         
         # Get updates URL
         base_url = browser.current_url.rstrip('/')
-        updates_url = base_url + "/posts"
+        updates_url = base_url # + "/posts"
         logger.info(f"Updates URL: {updates_url}")
         
         try:
