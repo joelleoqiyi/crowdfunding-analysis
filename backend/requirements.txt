@@ -1,0 +1,10 @@
+flask
+requests
+python-dateutil
+numpy
+scikit-learn
+xgboost
+pandas
+selenium
+undetected-chromedriver
+fake-useragent

@@ -1,0 +1,781 @@
+{
+  "url": "https://www.kickstarter.com/projects/makerworld/cyberbrick-beyond-bricks/posts",
+  "campaign_details": {
+    "funding_period_text": "Funding period\nMar 16 2025 - Apr 14 2025 (29 days)",
+    "funding_start_date": "2025-03-16T00:00:00.000000Z",
+    "funding_end_date": "2025-04-14T19:52:29.187371Z",
+    "funding_duration_days": 29,
+    "pledged_amount": "S$ 847,057",
+    "funding_goal": "S$ 13,292",
+    "backers_count": "9,990",
+    "days_left": 3,
+    "project_launch_text": "Project launches MARCH 16, 2025"
+  },
+  "updates": {
+    "count": 4,
+    "content": [
+      {
+        "update_number": "UPDATE #4",
+        "title": "📦 Shipping Date Update, T-Shirt Gift, and U.S. Tariff Notice",
+        "creator": "MakerWorld\nApril 11, 2025",
+        "date": "April 11, 2025",
+        "content": "Dear Backers,\nThank you for your continued support and patience as we bring CyberBrick to life. Your enthusiasm and feedback mean the world to us. As we approach the end of the campaign, we’d like to share a few important updates:\n  ⏳ Shipping Delayed to May 15th\nOver the past few weeks, we’ve gathered valuable feedback from early testing with creators. To deliver the best experience possible, we’re working hard to implement additional features and improve the reliability of both the Desktop and Mobile Apps. This also includes corresponding updates to the low-level firmware on the microcontrollers, which have resulted in delays in the production line.\n  As a result, we will need to postpone the shipping and software release to May 15th. We sincerely apologize for the delay, but we believe this extra time will allow us to provide a more polished and reliable product. Thank you for your patience and understanding.\n  We’ll begin collecting your shipping addresses and other fulfillment information through a survey on April 15th.\n  👕 T-Shirt Memorial Gift for First 1,000 Backers\nPreviously, we have announced that backers who got one of the early birds will be gifted a free T-Shirt. However, we’ve heard from many of you who missed the early bird tier due to timing or checkout issues, and we don’t want those people to feel left out. To show our appreciation, we’ve decided to offer the commemorative CyberBrick T-shirt to the first 1,000 backers, not just early bird supporters. You can check your serial pledge number on your \"manage pledge\" page.\nWe’ll be revealing the T-shirt design and sharing shipping details soon—stay tuned!\n  🇺🇸 U.S. Tariff Notice - We are standing with you!\nThe recent increase in U.S. import tariffs—currently up to 125%—has significantly affected our cost estimates. As a Kickstarter campaign, we are more vulnerable to unexpected policy changes than traditional retail operations. This shift has taken both us, as creators, and many of you, our backers, by surprise.\n  That said, we want to stand with our backers during this uncertainty. We’ve chosen to honor the original pledge prices and will ship to U.S. backers at the same rate as other regions. We're grateful that you’ve joined us in exploring this new era of 3D-printable content through CyberBrick. \n  However, if tariffs continue to rise beyond the current levels, we may need to collect a portion of the additional cost in the future. If that happens, we will communicate transparently and in advance. Additionally, the future Maker's Supply retail price of these items will reflect the tariff.\n  To help offset the impact, we’ve adjusted the add-on limit from +20 to +2 units per backer. This change will help us better manage shipping costs while still fulfilling our commitments. Existing pledges (The first 10,000 backers) are not being affected. New backers whose pledges exceed this limit will be contacted to make the changes.\n  Thank you for believing in CyberBrick and helping us shape its future. This is only the beginning—we're excited to build what's next with you.\n  Warmly, \nThe CyberBrick Team",
+        "url": "https://www.kickstarter.com/projects/makerworld/cyberbrick-beyond-bricks/posts/4355828",
+        "likes_count": 59,
+        "comments_count": 31,
+        "comments": [
+          {
+            "text": "",
+            "commenter": "MakerWorld",
+            "timestamp": "April 11, 2025 2:30 PM AWST",
+            "datetime": "1744353024",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "Here is the support article if you are having trouble finding your backer number: https://help.kickstarter.com/hc/en-us/articles/360047255814-How-are-the-backer-numbers-assigned",
+            "commenter": "Peter Siegmund",
+            "timestamp": "April 11, 2025 2:45 PM AWST",
+            "datetime": "1744353956",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "„Why does the number of backers not match the number on my backer report?“ This question said, that not the number is important, because if someone cancels, there is a free unused number. Will then #1001 get a shirt?",
+            "commenter": "Tomas",
+            "timestamp": "April 11, 2025 7:49 PM AWST",
+            "datetime": "1744372166",
+            "relative_time": "3 minutes ago"
+          },
+          {
+            "text": "My initial pledge was somewhere around #400 but then I stupidly cancelled thinking I could still get the Early Bird somehow (I got the Kickstarter Special) but obviously that didn't work out. Now I'm number 1430. Ah well, it is what it is 😅",
+            "commenter": "Anthony",
+            "timestamp": "April 11, 2025 5:13 PM AWST",
+            "datetime": "1744362797",
+            "relative_time": "about 3 hours ago"
+          },
+          {
+            "text": "Number #334 here. Never had to worry :D",
+            "commenter": "Tomasz",
+            "timestamp": "April 11, 2025 4:16 PM AWST",
+            "datetime": "1744359368",
+            "relative_time": "about 4 hours ago"
+          },
+          {
+            "text": "#959, close call 🙂 I totally understand that you had to draw the line somewhere—and I’m more than happy it landed at 1,000 and not, say, 750! The ordering process was so random—packages were gone in a blink. Even though the site said “some left,” there actually weren’t. I found out about the early bird sets only after placing my order, as they were kind of “hidden” at the bottom of the page 😄 Thank you for reflecting on that and expanding the T-shirt offer. It means a lot! Also—huge thumbs up for the T-shirt idea! Even more so because my entire order is going straight to a primary school, where I run a 3D printing and robotics club. So every gadget (other than essential gear for our lab) will be used as rewards for our students. They’re going to love it. Wishing the CyberBrick team all the best! You’re doing something awesome 🚀",
+            "commenter": "MakerWorld",
+            "timestamp": "April 11, 2025 5:45 PM AWST",
+            "datetime": "1744364731",
+            "relative_time": "about 2 hours ago"
+          },
+          {
+            "text": "Hi Tomasz! Thanks for your kind words! We admit the first several minutes were quite chaotic. We pressed the refresh button, and the numbers would skip in thousands. Glad to know you secured a T-shirt gift, and we hope the children will enjoy playing/learning with CyberBrick!",
+            "commenter": "Benjamin Pötschke",
+            "timestamp": "April 11, 2025 3:07 PM AWST",
+            "datetime": "1744355277",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "2087 :/",
+            "commenter": "Théo Piñero",
+            "timestamp": "April 11, 2025 2:50 PM AWST",
+            "datetime": "1744354200",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "I'm #1087, I couldn't validate my contribution faster, the application crashed several times 😭 what a shame about the t-shirt...",
+            "commenter": "Peter Siegmund",
+            "timestamp": "April 11, 2025 2:43 PM AWST",
+            "datetime": "1744353814",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "Yeah. I‘m in with #954. That‘s awesome. Greetings from Germany.",
+            "commenter": "Anthonny Gunawan",
+            "timestamp": "April 11, 2025 2:17 PM AWST",
+            "datetime": "1744352261",
+            "relative_time": "about 6 hours ago"
+          },
+          {
+            "text": "If i currently have selected 6 add-on will it be refunded later and fixed to only 2?",
+            "commenter": "MakerWorld",
+            "timestamp": "April 11, 2025 2:23 PM AWST",
+            "datetime": "1744352608",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "Hi Anthonny, I see that you were one of the first 10,000 backers, so you are good with your current amount. Thanks for reaching out regarding this. The limitation only applies to new backers coming after #10000+. Kickstarter's system doesn't allow changing the limitation retrospectively, so we will manually communicate with new backers if their add-on exceeded the amount.",
+            "commenter": "Omli",
+            "timestamp": "April 11, 2025 1:53 PM AWST",
+            "datetime": "1744350813",
+            "relative_time": "about 6 hours ago"
+          },
+          {
+            "text": "\"T-Shirt Memorial Gift for First 1,000 Backers\" ?? So if I caught the early bird but missed being among the first 1000 (I was 1007), then I'm screwed... thx :D..",
+            "commenter": "MakerWorld",
+            "timestamp": "April 11, 2025 2:26 PM AWST",
+            "datetime": "1744352777",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "Hi Omli, We intended to expand the range who receive the gift, not reduce it. Don't worry, you will still receive your T-shirt gift as one of the Early Bird backers. Essentially, anyone who either backed one of the Early Birds or backed as one of the first 1,000 will get it.",
+            "commenter": "Omli",
+            "timestamp": "April 11, 2025 2:35 PM AWST",
+            "datetime": "1744353332",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "Sorry, then I misunderstood :D thanks for the info ;)",
+            "commenter": "Peter Siegmund",
+            "timestamp": "April 11, 2025 2:48 PM AWST",
+            "datetime": "1744354084",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "Also read the first question: https://help.kickstarter.com/hc/en-us/articles/360047255814-How-are-the-backer-numbers-assigned. Your assigned number is not the real position if someone cancels with a lower number.",
+            "commenter": "Michał Kużdżał",
+            "timestamp": "April 11, 2025 1:53 PM AWST",
+            "datetime": "1744350798",
+            "relative_time": "about 6 hours ago"
+          },
+          {
+            "text": "Where can i find the pledge number ? I have only mathond of payment in \"Manage your pledge\" :(",
+            "commenter": "MakerWorld",
+            "timestamp": "April 11, 2025 2:28 PM AWST",
+            "datetime": "1744352928",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "Hi Michał , you are backer No. 4204. Please refer to Kickstarter support for finding more information about your pledge number here: https://help.kickstarter.com/hc/en-us/articles/360047255814-How-are-the-backer-numbers-assigned",
+            "commenter": "Danilo Tetesi",
+            "timestamp": "April 11, 2025 1:26 PM AWST",
+            "datetime": "1744349161",
+            "relative_time": "about 6 hours ago"
+          },
+          {
+            "text": "I am in Italy so can I receive the package before than the 15th of May?",
+            "commenter": "Constantin",
+            "timestamp": "April 11, 2025 1:19 PM AWST",
+            "datetime": "1744348788",
+            "relative_time": "about 7 hours ago"
+          },
+          {
+            "text": "Where can i find the pledge number exacly? I can‘t find it",
+            "commenter": "MakerWorld",
+            "timestamp": "April 11, 2025 2:29 PM AWST",
+            "datetime": "1744352955",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "Hi Constantin, You are backer No. 1984. Please refer to Kickstarter support for finding more information about your pledge number here: https://help.kickstarter.com/hc/en-us/articles/360047255814-How-are-the-backer-numbers-assigned",
+            "commenter": "Eric Kohlmann",
+            "timestamp": "April 11, 2025 12:23 PM AWST",
+            "datetime": "1744345413",
+            "relative_time": "about 7 hours ago"
+          },
+          {
+            "text": "Backer # 1000! I feel like I need to buy a lottery ticket.",
+            "commenter": "David Maliglowka",
+            "timestamp": "April 11, 2025 2:17 PM AWST",
+            "datetime": "1744352233",
+            "relative_time": "about 6 hours ago"
+          },
+          {
+            "text": "where do you see it? Clicking manage your pledge - does not have my number listed",
+            "commenter": "MakerWorld",
+            "timestamp": "April 11, 2025 3:19 PM AWST",
+            "datetime": "1744355951",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "Hi Eric! Congrats and thanks for backing us! Don't forget to buy an H2D if you win a small fortune with that lottery ticket XD",
+            "commenter": "Stephanie Hsu",
+            "timestamp": "April 11, 2025 12:15 PM AWST",
+            "datetime": "1744344926",
+            "relative_time": "about 8 hours ago"
+          },
+          {
+            "text": "Got excited but… would have really loved for anyone who bought in the first day to get the shirt. Tried doing it when it released but couldn’t and then got pulled away and not only missed the early bird but couldn’t check out until hours later only at the Kickstarter price! 😫 Looking forward to it, thank you for honouring the price and not letting the tariffs affect the consumers. Much love",
+            "commenter": "Captain",
+            "timestamp": "April 11, 2025 11:25 AM AWST",
+            "datetime": "1744341909",
+            "relative_time": "about 8 hours ago"
+          },
+          {
+            "text": "Going with first 1000 was a great move compared to early bird pledges only due to the checkout issues. Thank you for the update",
+            "commenter": "Adam",
+            "timestamp": "April 11, 2025 11:02 AM AWST",
+            "datetime": "1744340531",
+            "relative_time": "about 9 hours ago"
+          },
+          {
+            "text": "Sweet I'm going to love that shirt, now i just need to grab that H2D. Thank you for expanding the eligibility!",
+            "commenter": "Patrick L",
+            "timestamp": "April 11, 2025 10:46 AM AWST",
+            "datetime": "1744339601",
+            "relative_time": "about 9 hours ago"
+          },
+          {
+            "text": "I was nowhere near the first 1,000. lol Oh well glad to back it regardless",
+            "commenter": "Kyle Guthrie",
+            "timestamp": "April 11, 2025 10:37 AM AWST",
+            "datetime": "1744339049",
+            "relative_time": "about 9 hours ago"
+          },
+          {
+            "text": "Bummer.... Just missed it 1015... I am fully blaming this on Kickstarter. I had the early bird in my cart, it said 20 left and it didn't let me check out. So I was forced to take another level, pay more, and now I guess miss out on the t shirt perk...",
+            "commenter": "MakerWorld",
+            "timestamp": "April 11, 2025 10:42 AM AWST",
+            "datetime": "1744339361",
+            "relative_time": "about 9 hours ago"
+          },
+          {
+            "text": "Hi Kyle! Thanks for backing us, and I'm sorry to hear that. During the initial several minutes the campaign started, the numbers were rapidly changing as people rushed in to make their pledge. On the good side, it shows people are excited about CyberBrick. I do hope you enjoy it, and rest assured that all of the KS prices are significantly lower than their future retail prices (let alone the tariff)",
+            "commenter": "Cody Martin",
+            "timestamp": "April 11, 2025 10:30 AM AWST",
+            "datetime": "1744338608",
+            "relative_time": "about 9 hours ago"
+          },
+          {
+            "text": "Good to know I didn’t make the cut haha. #2,057 Only keeping the reward due to being original price otherwise I don’t foresee this going good either way it’s overpriced",
+            "commenter": "John Drinkwater",
+            "timestamp": "April 11, 2025 10:22 AM AWST",
+            "datetime": "1744338161",
+            "relative_time": "about 10 hours ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #3",
+        "title": "🚀 $500K Unlocked! Get Your Bonus Rewards & Let's Dream the Future Together!",
+        "creator": "MakerWorld\nMarch 25, 2025",
+        "date": "March 25, 2025",
+        "content": "$500,000 Funded & 8,000 Backers—You’re Changing the Game!\nFrom static prints to programmable, interactive creations, this community is proving that 3D printing’s future is alive with possibility. Thank you for making CyberBrick a movement!\n👕Early Bird Exclusive T-Shirts: A Token of Our Gratitude\nTo the visionary backers who joined us first: All the backers who got one of the Early Bird rewards are getting an exclusive CyberBrick T-shirt! This isn’t just merch—it’s a badge of honor for those who dared to reimagine what 3D printing could be. This is our way of rewarding your trust (and, admittedly, fast internet & a bit of luck). We're still working on the design and will reveal it later!\nHow It Works:\nAfter the campaign, you’ll receive a redeemable code to claim your shirt.\nChoose your size and shipping address later. Due to the size of the packages, the T-shirt may not be shipped together with your kit, so we will deliver the kits to your hands first.\n🥰 Stickers for Everyone: \nEvery single backer—yes, no matter when you joined —will get a set of MakerWorld x Bambu Lab stickers shipped with your kit. No extra steps are needed! Slap them on laptops, toolboxes, or your 3D Printed projects —let the world know you’re part of the revolution.\n🚀 What’s NEXT? Even Bigger Rewards Await! \nWe’re blown away by your support—but the journey doesn’t stop here! We’ll unleash something special to thank you all. Here’s what we’re exploring:\nPotential exclusive digital content: Think 3D-printable add-ons or behind-the-scene content\nSurprise bonus: backers could get an extra treat (we’re still brainstorming…) Mousepads? Badges? Tote Bags? Tell us what you like : )\nThis is YOUR campaign: The more we grow, the bigger we can dream together. Share now to help us decide!",
+        "url": "https://www.kickstarter.com/projects/makerworld/cyberbrick-beyond-bricks/posts/4344997",
+        "likes_count": 269,
+        "comments_count": 36,
+        "comments": [
+          {
+            "text": "",
+            "commenter": "MakerWorld",
+            "timestamp": "April 1, 2025 2:32 PM AWST",
+            "datetime": "1743489154",
+            "relative_time": "10 days ago"
+          },
+          {
+            "text": "Hi Backers! We’ve heard your feedback and want to make some improvements to our celebration rewards. ✅ We understand some of you may have missed the early bird due to timing or checkout issues, or accidentally chose the wrong tier, and we don’t want those backers to feel left out. Therefore, we’ve decided to offer a T-shirt to the first 1,000 backers, not just early birds. 👕 The T-shirt design and final reward details will be shared soon. 💬 We also kindly ask everyone to respect each other's preferences when it comes to rewards. Whether you’re into practical gear, commemorative apparel, or digital content, all are valid ways to celebrate. Let’s keep the comments positive and welcoming! We’re planning even more rewards based on your feedback for the next big milestone — Stay Tuned!",
+            "commenter": "Andrew Moore",
+            "timestamp": "April 7, 2025 1:13 AM AWST",
+            "datetime": "1743959631",
+            "relative_time": "5 days ago"
+          },
+          {
+            "text": "",
+            "commenter": "Brennan Campbell",
+            "timestamp": "April 8, 2025 5:57 AM AWST",
+            "datetime": "1744063073",
+            "relative_time": "4 days ago"
+          },
+          {
+            "text": "😭banker I’d 1505, no t-shirt for me…",
+            "commenter": "Dexter Chew",
+            "timestamp": "April 11, 2025 10:14 AM AWST",
+            "datetime": "1744337645",
+            "relative_time": "about 10 hours ago"
+          },
+          {
+            "text": "It could be cool to offer backers outside of the first 1k an option to add a shirt to their pledge for a price, even if its just to make up the cost of material and shipping. But offer it in a different color than the first 1k version to preserve the prestige of the first 1k shirts. I think you all expanding to more than just the early bird backers is super cool, and even though I was already and early bird, I think its awesome. I vote a mousepad (Desk sized) of a schematic of the chipset and or an initial vehicle design. That or a maybe a themed screwdriver or toolkit. Totebag could be nice, but only if quality was enough for me to use it, but that can get pricey.",
+            "commenter": "marroh",
+            "timestamp": "April 11, 2025 2:24 PM AWST",
+            "datetime": "1744352649",
+            "relative_time": "about 5 hours ago"
+          },
+          {
+            "text": "How do I check if I'm part of this group? Ahha",
+            "commenter": "Serge L",
+            "timestamp": "April 3, 2025 1:25 PM AWST",
+            "datetime": "1743657941",
+            "relative_time": "8 days ago"
+          },
+          {
+            "text": "It's great what you have achieved. I'm really looking forward to the future!",
+            "commenter": "Brody A",
+            "timestamp": "April 3, 2025 8:10 AM AWST",
+            "datetime": "1743639046",
+            "relative_time": "8 days ago"
+          },
+          {
+            "text": "Bonus item ideas: Decals (like Gundam kits), 3D printed multi-colour coaster with your logo (maybe glow in the dark), Discount codes, Filament samples, Custom 3D printed multi-colour lithophane/lithograph. Thanks!",
+            "commenter": "Riley Preston",
+            "timestamp": "April 2, 2025 9:51 PM AWST",
+            "datetime": "1743601863",
+            "relative_time": "9 days ago"
+          },
+          {
+            "text": "Imagine a cyber brick mousepad!!",
+            "commenter": "Philip Grainger",
+            "timestamp": "April 1, 2025 8:10 PM AWST",
+            "datetime": "1743509406",
+            "relative_time": "10 days ago"
+          },
+          {
+            "text": "What if the next reward is a word cloud sticker or maybe even a 3d printable version. Maybe with the names of the people who helped develop this product or maybe the backers?",
+            "commenter": "Manvendra Gupta",
+            "timestamp": "March 31, 2025 6:17 AM AWST",
+            "datetime": "1743373047",
+            "relative_time": "12 days ago"
+          },
+          {
+            "text": "I would prefer more components useful things instead of mousepads etc, You could, for example, give free Maker World points or Bambu store vouchers. This will facilitate backers to buy additional models/components/filament to realise their own project requirements.",
+            "commenter": "Jonathan Gow",
+            "timestamp": "March 31, 2025 3:22 AM AWST",
+            "datetime": "1743362537",
+            "relative_time": "12 days ago"
+          },
+          {
+            "text": "The next reward should be 2 hats. One of Makerworld, and the other of Cyberbrick.",
+            "commenter": "Kelby Jackson",
+            "timestamp": "March 31, 2025 9:46 PM AWST",
+            "datetime": "1743428800",
+            "relative_time": "11 days ago"
+          },
+          {
+            "text": "Please consider making a Bambu lab/Cyberbrick T-Shirt of some kind for non early bird backers. I missed the early bird but as a backer I would love to have some like of a Cyberbrick T-Shirt all the same!?",
+            "commenter": "Fr3chdaxx",
+            "timestamp": "March 29, 2025 10:57 PM AWST",
+            "datetime": "1743260270",
+            "relative_time": "13 days ago"
+          },
+          {
+            "text": "that would be super cool, even if it was just a discounted t-shirt for all of the backers.",
+            "commenter": "Ben Dabrowski",
+            "timestamp": "March 29, 2025 8:42 PM AWST",
+            "datetime": "1743252122",
+            "relative_time": "13 days ago"
+          },
+          {
+            "text": "I hope the T-shirts are also available in 6xl ..... I need a mega large",
+            "commenter": "Tomasz",
+            "timestamp": "March 28, 2025 5:14 AM AWST",
+            "datetime": "1743110045",
+            "relative_time": "15 days ago"
+          },
+          {
+            "text": "Free gifts? Ya inwould take em. But not the reason i backed this project. If i could back more then 1 project i deffintly would do it.",
+            "commenter": "Axel E. Gaud Torres",
+            "timestamp": "March 27, 2025 1:00 PM AWST",
+            "datetime": "1743051644",
+            "relative_time": "15 days ago"
+          },
+          {
+            "text": "Hi. Can you define early bird? Where is the line? : )",
+            "commenter": "Zac",
+            "timestamp": "March 27, 2025 6:58 AM AWST",
+            "datetime": "1743029891",
+            "relative_time": "16 days ago"
+          },
+          {
+            "text": "I can't wait!",
+            "commenter": "Sayeed",
+            "timestamp": "March 26, 2025 10:18 PM AWST",
+            "datetime": "1742998719",
+            "relative_time": "16 days ago"
+          },
+          {
+            "text": "Super excited to see how far this goes!",
+            "commenter": "nme61",
+            "timestamp": "March 26, 2025 5:35 PM AWST",
+            "datetime": "1742981720",
+            "relative_time": "16 days ago"
+          },
+          {
+            "text": "I love Bambu lab",
+            "commenter": "James Bross",
+            "timestamp": "March 26, 2025 9:05 AM AWST",
+            "datetime": "1742951151",
+            "relative_time": "16 days ago"
+          },
+          {
+            "text": "I agree with some of the other comments as backer we pledge for specifc reasons as mush as a kind thought it is to suggest bags and stuff you should keep it more in line with what we have backed ,reusable spools; discounts of filliment (90% off the H2D;) ) joking aside give us stuff we need and can use rather wastfull stuff",
+            "commenter": "Anthony",
+            "timestamp": "March 26, 2025 11:58 PM AWST",
+            "datetime": "1743004680",
+            "relative_time": "16 days ago"
+          },
+          {
+            "text": "Well that kind of sucks. I got in early enough but since it was a little confusing picked the first option instead of the early bird option down below costing an extra 10 bucks and now a tshirt. Not sure why the early bird options were so far down when most of these kickstarters have them more on top and descending down as they get more expensive. I know it’s my fault but it still stings a little",
+            "commenter": "David Walton",
+            "timestamp": "March 27, 2025 6:49 AM AWST",
+            "datetime": "1743029343",
+            "relative_time": "16 days ago"
+          },
+          {
+            "text": "I just realized that too I got the top one because it was more expensive and I was in a rush.",
+            "commenter": "Kerry Steed",
+            "timestamp": "March 26, 2025 7:57 AM AWST",
+            "datetime": "1742947029",
+            "relative_time": "16 days ago"
+          },
+          {
+            "text": "I think they should give a shirt to the first x number of backers. You are correct it was a bit confusing not to have the early bird first even though I am a sub 25 backer.",
+            "commenter": "Bogdan Angheluta",
+            "timestamp": "March 26, 2025 6:39 AM AWST",
+            "datetime": "1742942350",
+            "relative_time": "17 days ago"
+          },
+          {
+            "text": "I got online 10 minutes after launch and there were a few early birds left but it would not let me check out. So I ordered the basic package. Completed 15 minutes after launch. I sure would love the t-shirt too. Maybe make 2 one for the early bird and one for the rest of us.",
+            "commenter": "Kelby Jackson",
+            "timestamp": "March 31, 2025 9:47 PM AWST",
+            "datetime": "1743428878",
+            "relative_time": "11 days ago"
+          },
+          {
+            "text": "Surprise bonus could be a 3D pen! Or if that's too expansive, a cool trucker hat or a fanny pack.",
+            "commenter": "Dma",
+            "timestamp": "March 26, 2025 3:59 AM AWST",
+            "datetime": "1742932741",
+            "relative_time": "17 days ago"
+          },
+          {
+            "text": "or free 3d printer to 1-3 random backers",
+            "commenter": "Jack Dwyer",
+            "timestamp": "March 26, 2025 3:52 AM AWST",
+            "datetime": "1742932345",
+            "relative_time": "17 days ago"
+          },
+          {
+            "text": "Thank's All !",
+            "commenter": "Jochen Weemaels",
+            "timestamp": "March 26, 2025 2:10 AM AWST",
+            "datetime": "1742926245",
+            "relative_time": "17 days ago"
+          },
+          {
+            "text": "What about a Cyberbricks re-usable spool? Same as the Bambu one but special edition for cyberbricks backers / buyers?",
+            "commenter": "Amber",
+            "timestamp": "March 26, 2025 1:07 AM AWST",
+            "datetime": "1742922427",
+            "relative_time": "17 days ago"
+          },
+          {
+            "text": "Oh yeah I would love a t ote bag. What a great project this is btw!!",
+            "commenter": "Dusty Jewett",
+            "timestamp": "March 25, 2025 11:53 PM AWST",
+            "datetime": "1742918010",
+            "relative_time": "17 days ago"
+          },
+          {
+            "text": "What about a promo codes in our boxes good for deals such as Free Shipping, 10%, 20%, 30% off your next order, Free Spool of Filament, etc. I would rather has deals than more stuff.",
+            "commenter": "Matthew Piljek",
+            "timestamp": "March 26, 2025 12:07 AM AWST",
+            "datetime": "1742918850",
+            "relative_time": "17 days ago"
+          },
+          {
+            "text": "\"Surprise bonus: backers could get an extra treat (we’re still brainstorming…) Mousepads? Badges? Tote Bags? Tell us what you like\" You know what we like... We just backed the project. Put more project in the project! Throw a spare motor in, upgrade the servo strength... keep it in line with the project, don't send us shit we didn't order. You didn't put mousepads or totes on the original page because that's stupid... nobody would care. Also: Re: T-Shirts, another horrible choice. If you're going to send something out, send it to everyone who bought on the first day. And it should be in line with the project. If you wouldn't offer it as an add-on, it's just wasteful crap that nobody wants.",
+            "commenter": "India",
+            "timestamp": "March 26, 2025 12:55 AM AWST",
+            "datetime": "1742921751",
+            "relative_time": "17 days ago"
+          },
+          {
+            "text": "I agree. Keep the little bits for yourself. Make the project we are backing better. We don't need extra junk filling our drawers.",
+            "commenter": "Robert L. Kelley",
+            "timestamp": "March 25, 2025 11:46 PM AWST",
+            "datetime": "1742917565",
+            "relative_time": "17 days ago"
+          },
+          {
+            "text": "Amen!",
+            "commenter": "Robert L. Kelley",
+            "timestamp": "March 25, 2025 11:46 PM AWST",
+            "datetime": "1742917578",
+            "relative_time": "17 days ago"
+          },
+          {
+            "text": "How is the T-shirt thing going to be decided? The early bird options were gone by the time Kickstarter or Bambulabs notified me it had",
+            "commenter": "Sarah Cornish",
+            "timestamp": "March 25, 2025 10:17 PM AWST",
+            "datetime": "1742912265",
+            "relative_time": "17 days ago"
+          },
+          {
+            "text": "Started",
+            "commenter": "Steve",
+            "timestamp": "March 25, 2025 11:30 PM AWST",
+            "datetime": "1742916620",
+            "relative_time": "17 days ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #2",
+        "title": "CyberBrick Hardware CADs and Specifications Available Now!",
+        "creator": "MakerWorld\nMarch 19, 2025",
+        "date": "March 19, 2025",
+        "content": "Dear Creators and Backers,\nThank you for your incredible support! Many of you have expressed the desire to get started with designing as soon as possible, so we’ve quickly put together a set of foundational resources to help you dive in. This file package includes CAD models and basic specifications for all hardware modules, allowing you to at least begin your structural design work. We also encourage you to share these materials and invite more creators to join the CyberBrick community. Let’s build the future together！\nSome part names or descriptions in these preview materials are subject to change. However, the dimensions and CAD models provided are accurate. We appreciate your understanding, as these resources have been released ahead of our original schedule.\nOn the other hand, our apps are still undergoing user testing and certification, so they won’t be available for a little while. However, rest assured that all hardware wiring and channel mappings are adjustable, so you won’t need to worry about making major design changes later. Thank you for your understanding!\nIf you have any questions about these materials or need additional information, please reply at the Bambu Lab forum post, and we’ll respond as soon as possible. We also encourage you to exchange project ideas in the forum. You may find new inspirations from each other's projects, and avoid duplicate projects.\nFor questions about Kickstarter orders, pricing, and other related topics, please continue to interact in the Kickstarter comments section so that more people can benefit from the discussion.\nThank you for your support! Looking forward to your amazing projects!\nDownload the files here on Google Drive",
+        "url": "https://www.kickstarter.com/projects/makerworld/cyberbrick-beyond-bricks/posts/4340610",
+        "likes_count": 79,
+        "comments_count": 14,
+        "comments": [
+          {
+            "text": "When and where can we get the stl files to start printing.",
+            "commenter": "Tony Thompson",
+            "timestamp": "March 25, 2025 4:37 AM AWST",
+            "datetime": "1742848645",
+            "relative_time": "18 days ago"
+          },
+          {
+            "text": "Nice just downloaded them all",
+            "commenter": "Bradley Walker",
+            "timestamp": "March 21, 2025 7:19 PM AWST",
+            "datetime": "1742555985",
+            "relative_time": "21 days ago"
+          },
+          {
+            "text": "Why can't the pdf in Google's hard drive be downloaded? Is it not given permission?",
+            "commenter": "Da Lin",
+            "timestamp": "March 20, 2025 2:25 AM AWST",
+            "datetime": "1742408756",
+            "relative_time": "23 days ago"
+          },
+          {
+            "text": "i cant open too",
+            "commenter": "3D Tagtraum",
+            "timestamp": "March 20, 2025 4:54 AM AWST",
+            "datetime": "1742417666",
+            "relative_time": "23 days ago"
+          },
+          {
+            "text": "Hi, We just verified again by accessing the webpage without logging in any Google Account and the files could be downloaded. Could you try again and check if you have VPNs or other applications potentially interfering with your internet access?",
+            "commenter": "MakerWorld",
+            "timestamp": "March 20, 2025 10:38 AM AWST",
+            "datetime": "1742438306",
+            "relative_time": "22 days ago"
+          },
+          {
+            "text": "Can download over PC but with mobile phone didnt work",
+            "commenter": "3D Tagtraum",
+            "timestamp": "March 22, 2025 12:43 AM AWST",
+            "datetime": "1742575384",
+            "relative_time": "21 days ago"
+          },
+          {
+            "text": "I was excited to see the files being released, but I assumed they'd be for the actual vehicle models so those can be printed and ready when the hardware arrives. But the files seem to be only for internal components where the hardware mounts. Other than the wheels. ???",
+            "commenter": "Eric Edwards",
+            "timestamp": "March 19, 2025 9:28 PM AWST",
+            "datetime": "1742390893",
+            "relative_time": "23 days ago"
+          },
+          {
+            "text": "Those will be released when the Kickstarter ends, so you'll still have time before the actual parts arrive.",
+            "commenter": "Tomas",
+            "timestamp": "March 19, 2025 11:34 PM AWST",
+            "datetime": "1742398444",
+            "relative_time": "23 days ago"
+          },
+          {
+            "text": "Hi Eric, This update is meant to provide creators with the necessary files they may need to start a new design early. This way, backers like you will be able to find more designs by the time the parts arrive. The deliverables for backers, including 3D Printable 3MF files of the official vehicles, will be released by the end the Kickstarter campaign. Given the shipping time, you will be able to print them before actual parts arrive, so don't worry. Thanks for backing us!",
+            "commenter": "MakerWorld",
+            "timestamp": "March 20, 2025 10:41 AM AWST",
+            "datetime": "1742438505",
+            "relative_time": "22 days ago"
+          },
+          {
+            "text": "Thanks for the files. Which one is for which vehicle?",
+            "commenter": "Daniel",
+            "timestamp": "March 19, 2025 8:32 PM AWST",
+            "datetime": "1742387573",
+            "relative_time": "23 days ago"
+          },
+          {
+            "text": "thank you",
+            "commenter": "Daniel",
+            "timestamp": "March 19, 2025 8:28 PM AWST",
+            "datetime": "1742387311",
+            "relative_time": "23 days ago"
+          },
+          {
+            "text": "Can. We be sending the files, so we can print the models, before the hardware arrives. I.e the files for the printed parts for the forklift ect",
+            "commenter": "Ben",
+            "timestamp": "March 19, 2025 8:20 PM AWST",
+            "datetime": "1742386836",
+            "relative_time": "23 days ago"
+          },
+          {
+            "text": "Hi Ben, This update is meant to provide creators with the necessary files they may need to start a new design early. This way, backers like you will be able to find more designs by the time the parts arrive. The deliverables for backers, including 3D Printable 3MF files of the official vehicles, will be released by the end the Kickstarter campaign. Given the shipping time, you will be able to print them before actual parts arrive, so don't worry. Thanks for backing us!",
+            "commenter": "MakerWorld",
+            "timestamp": "March 20, 2025 10:42 AM AWST",
+            "datetime": "1742438549",
+            "relative_time": "22 days ago"
+          },
+          {
+            "text": "谷歌文件为什么下载不了？",
+            "commenter": "Da Lin",
+            "timestamp": "March 19, 2025 3:46 PM AWST",
+            "datetime": "1742370368",
+            "relative_time": "23 days ago"
+          }
+        ]
+      },
+      {
+        "update_number": "UPDATE #1",
+        "title": "Additional information on the Time-lapse Kit",
+        "creator": "MakerWorld\nMarch 17, 2025",
+        "date": "March 17, 2025",
+        "content": "Dear Backers & Creators,\nThank you all for your incredible interest in CyberBrick!\nPreviously, we didn’t dive too deeply into the Time-lapse Kit to keep the focus on the RC-Toy as the central application example for CyberBrick. However, we’ve noticed some confusion about its compatibility and functionality, so here’s a detailed explanation:\nWhich printers are compatible with the Time-lapse Kit? Do I need to purchase a cable to connect it to my printer?\nThe Time-lapse Kit supports both the A series and the X/P series printers. It can be connected to your printer using either the 4-Pin AMS cable or the 6-Pin AMS cable. If you’re using an AMS, you can connect the Time-lapse Module to the AMS instead of directly to the printer.\nIf you already have the cable that came with your AMS and don’t need the AMS while taking your desired time-lapse, simply unplug the cable from the AMS and connect it to the Time-lapse Module. If you need to use the AMS at the same time, you can purchase additional cables from the Bambu Lab Store.\nWhat cameras are compatible with the Time-lapse kit?\nThe Time-lapse module provides 3 ways to work with a camera or phone:\nBluetooth\nFor smartphones and cameras with Bluetooth function, the module can connect to them like any other Bluetooth peripheral device. The onboard button can initiate Bluetooth pairing and the LED indicates connection status and notify trigger release.\n  Cable\nIf your camera requires an external Shutter Release Cable, you can find one with an AUX 2.5mm connector to connect it to the Time-lapse module, like the ones shown below:\nServo (Mechanical)\nIf your camera supports neither of the above, you can also connect a servo to the Time-lapse module and mechanically press the shutter release button on your camera.\nWhat role do the mobile app and Bambu Studio play?\nThe Time-lapse can pair with Bluetooth devices by pressing its built-in button, and it has LED to indicate the connection status and notify shutter trigger. Only if you need to fine-tune certain parameters, such as servo rotation angle, then you can use the mobile app.\n\nThe Bambu Studio lets you set the time-lapse mode on your printer so it will park the tool head at the corner after each layer and send a triggering signal to the Time-lapse module.\n\nFor more details on how to use them please kindly wait for the user instruction later.\nIn what ways is it better than the built-in Time-lapse function on my printer?\nThe image quality of your choice of camera should be better than the built-in camera, and you have more freedom in terms of where to place the camera, what angle to point at your print, etc. \nWhat additional parts do I need for it to work?\nApart from the AMS cable mentioned above, if your camera does not support Bluetooth and requires a cable to trigger the shutter, you will need to source the AUX 2.5mm cable yourself based on the model and brand of your camera.\nIf I already chose a pledge without the Time-lapse kit, how can I add it?\nYou can click on \"modify\" on your pledge's page. If you choose one of the RC vehicles as the \"base\" pledge, you can add the Time-lapse kit as an add-on. \nDoes the pledge reward include the 3D-Printed case?\nNo, the physical 3D printed case for the Time-lapse kit is not included in the reward. Basically we're assuming that if you are trying to take a 3D Printing time lapse, you have a 3D printer at hand : )",
+        "url": "https://www.kickstarter.com/projects/makerworld/cyberbrick-beyond-bricks/posts/4338212",
+        "likes_count": 51,
+        "comments_count": 21,
+        "comments": [
+          {
+            "text": "",
+            "commenter": "MakerWorld",
+            "timestamp": "March 18, 2025 10:50 AM AWST",
+            "datetime": "1742266259",
+            "relative_time": "24 days ago"
+          },
+          {
+            "text": "Dear Backers, You asked, and we listened: now you can have either the 4Pin or the 6Pin cable as an add-on if you do not have a spare cable at hand. This way you will not need to purchase one at Bambu Lab store and pay for shipping : ) If you need one please click on \"Modify\" at your pledge page to add them.",
+            "commenter": "Mike Killey",
+            "timestamp": "March 18, 2025 6:40 PM AWST",
+            "datetime": "1742294422",
+            "relative_time": "24 days ago"
+          },
+          {
+            "text": "I can't see any option to add the additional cable when I go to manage my pledge.",
+            "commenter": "Oscar Marentes",
+            "timestamp": "March 20, 2025 12:40 AM AWST",
+            "datetime": "1742402422",
+            "relative_time": "23 days ago"
+          },
+          {
+            "text": "Manage your pledge > Change your pledge > Continue to payment > Edit > 4-pin or 6-pin > Enjoy This should help out.",
+            "commenter": "C.D. Pond",
+            "timestamp": "March 26, 2025 4:44 AM AWST",
+            "datetime": "1742935487",
+            "relative_time": "17 days ago"
+          },
+          {
+            "text": "Pure, rampant speculation on my part, but I'm thinking you could use a port splitter to connect two cables to the one port... so long as you only use one of the connected devices at any one point in time.",
+            "commenter": "John Fearnside",
+            "timestamp": "March 19, 2025 1:00 PM AWST",
+            "datetime": "1742360431",
+            "relative_time": "23 days ago"
+          },
+          {
+            "text": "@Makerworld, are there plans to release a Micropyhon extension for VS Code similar to what is available for the Lego Mindstorms EV3 kits?",
+            "commenter": "Jonathan Phillips",
+            "timestamp": "March 18, 2025 4:33 PM AWST",
+            "datetime": "1742286837",
+            "relative_time": "24 days ago"
+          },
+          {
+            "text": "I can't see the option to modify my pledge?",
+            "commenter": "John Fearnside",
+            "timestamp": "March 19, 2025 1:02 PM AWST",
+            "datetime": "1742360563",
+            "relative_time": "23 days ago"
+          },
+          {
+            "text": "Click \"Manage your pledge\" in the top right corner of the webpage, and then on the next page, click Change your pledge, and it will give you the option to add the cable/change kits, etc. Not sure about it on the app, but it's there on the web page as I added a cable to my pledge like that.",
+            "commenter": "Matt Buttacavoli",
+            "timestamp": "March 18, 2025 2:33 AM AWST",
+            "datetime": "1742236401",
+            "relative_time": "25 days ago"
+          },
+          {
+            "text": "If we backed C do, we need to add on the time kit, or it's already included? I'll be honestly your chart doesn't make alot of sense.",
+            "commenter": "MakerWorld",
+            "timestamp": "March 18, 2025 10:08 AM AWST",
+            "datetime": "1742263702",
+            "relative_time": "24 days ago"
+          },
+          {
+            "text": "Hi Matt, Thanks for backing us and I apologize for the confusion. You can find this info in Row 04 of the chart: Reward C does not include a Time-lapse shield. Therefore, please add on the Time-lapse kit by modifying your pledge if you would like one.",
+            "commenter": "Mike Killey",
+            "timestamp": "March 17, 2025 5:16 PM AWST",
+            "datetime": "1742202972",
+            "relative_time": "25 days ago"
+          },
+          {
+            "text": "I think you should assume that the majority of backers most likely will have an AMS unit and will therefore need the additional cable. I will want to use the timelapse kit permanently, but also have my AMS Lite attached permanently. This is just going to result in an increase of orders to the regional Bambu Lab stores for cables to the point that they will sell out. You should include a cable with those ordering a timelapse kit - you'll just need backers to confirm which cable they need.",
+            "commenter": "MakerWorld",
+            "timestamp": "March 18, 2025 10:52 AM AWST",
+            "datetime": "1742266330",
+            "relative_time": "24 days ago"
+          },
+          {
+            "text": "Hi Mike, Thanks for the feedback! Now you can have either the 4Pin or the 6Pin cable as an add-on if you do not have a spare cable at hand. This way you will not need to purchase one at Bambu Lab store and pay for shipping : ) If you need one please click on \"Modify\" at your pledge page to add them.",
+            "commenter": "Philip Grainger",
+            "timestamp": "March 17, 2025 4:56 PM AWST",
+            "datetime": "1742201762",
+            "relative_time": "25 days ago"
+          },
+          {
+            "text": "I'm guessing if you don't have an AMS (A1 mini) that you'll still need to buy a cable to make this work? Why not just add it as an option to the pledge manager if it can't be included with the kit?",
+            "commenter": "MakerWorld",
+            "timestamp": "March 18, 2025 10:53 AM AWST",
+            "datetime": "1742266406",
+            "relative_time": "24 days ago"
+          },
+          {
+            "text": "Hi Philip, Thanks for your feedback! Now you can have either the 4Pin or the 6Pin cable as an add-on if you do not have a spare cable at hand. This way you will not need to purchase one at Bambu Lab store and pay for shipping : ) If you need one please click on \"Modify\" at your pledge page to add them.",
+            "commenter": "David Marcos",
+            "timestamp": "March 17, 2025 4:27 PM AWST",
+            "datetime": "1742200033",
+            "relative_time": "25 days ago"
+          },
+          {
+            "text": "Why not just include an extra cable with the time-lapse kit instead of having to buy an extra one?",
+            "commenter": "MakerWorld",
+            "timestamp": "March 20, 2025 10:36 AM AWST",
+            "datetime": "1742438201",
+            "relative_time": "22 days ago"
+          },
+          {
+            "text": "Hi David, Thanks for backing us. Not including it was mostly because we need to know the model of printer the backer owns. Now you can add the cable as an add-on, and choose either 4Pin or 6Pin as you need.",
+            "commenter": "Bertram Mischke",
+            "timestamp": "March 17, 2025 4:14 PM AWST",
+            "datetime": "1742199241",
+            "relative_time": "25 days ago"
+          },
+          {
+            "text": "Is there a way to connect some kind of splitter? I have my AMS Lite connected to one port and a lamp to the other. So, I always need both ports when printing.",
+            "commenter": "MakerWorld",
+            "timestamp": "March 17, 2025 4:35 PM AWST",
+            "datetime": "1742200555",
+            "relative_time": "25 days ago"
+          },
+          {
+            "text": "Hi Bertram, Thanks for backing us! I'm not sure about the exact lamp you are using, but the Time-lapse module can be daisy-chained (it has one 4-pin port and one 6-pin port). Therefore, I recommend trying to attach the lamp to the end of this chain.",
+            "commenter": "Bertram Mischke",
+            "timestamp": "March 17, 2025 4:40 PM AWST",
+            "datetime": "1742200838",
+            "relative_time": "25 days ago"
+          },
+          {
+            "text": "Sounds good :) thanks for the reply",
+            "commenter": "JacobD17",
+            "timestamp": "March 17, 2025 4:09 PM AWST",
+            "datetime": "1742198981",
+            "relative_time": "25 days ago"
+          },
+          {
+            "text": "Such a good update glad I was able to update my reward with a Timelapse kit being able to use a better camera then the Printers built is one is awesome !!!",
+            "commenter": "Andy Taylor",
+            "timestamp": "March 17, 2025 7:39 PM AWST",
+            "datetime": "1742211577",
+            "relative_time": "25 days ago"
+          },
+          {
+            "text": "How do you add it?",
+            "commenter": "Oscar Marentes",
+            "timestamp": "March 20, 2025 12:40 AM AWST",
+            "datetime": "1742402448",
+            "relative_time": "23 days ago"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,9 +1,8 @@
-
 import React, { useState } from "react";
 import AnalysisInput from "@/components/AnalysisInput";
 import AnalysisResults from "@/components/AnalysisResults";
 import { AnalysisResults as AnalysisResultsType } from "@/utils/types";
-import { generateDummyResults } from "@/utils/dummyData";
+import { getAnalysisWithFallback } from "@/utils/apiClient";
 import { toast } from "sonner";
 
 const Index: React.FC = () => {
@@ -14,20 +13,8 @@ const Index: React.FC = () => {
     setIsAnalyzing(true);
     
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2500));
-      
-      // In a real app, you would call your backend API here
-      // const response = await fetch('your-api-endpoint', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ url })
-      // });
-      // const data = await response.json();
-      
-      // Using dummy data for now
-      const dummyResults = generateDummyResults(url);
-      setResults(dummyResults);
+      const analysisResults = await getAnalysisWithFallback(url);
+      setResults(analysisResults);
       toast.success("Analysis completed successfully!");
     } catch (error) {
       console.error("Analysis failed:", error);
