@@ -12,6 +12,12 @@ class CommentsUpdatesScraper:
         self.__driver = scraper.get_driver()
 
     def get_comments_texts(self, url: str):
+        url = url.rstrip('/')
+
+        if not url.endswith("/comments"):
+            url += "/comments"
+
+        
         self.__driver.get(url)
 
         WebDriverWait(self.__driver, 10).until(

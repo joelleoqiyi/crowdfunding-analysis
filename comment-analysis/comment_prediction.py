@@ -67,7 +67,7 @@ class KickstarterCommentPredictor:
         if not timestamps:
             return 0.0
 
-        dates = [datetime.utcfromtimestamp(ts).date() for ts in timestamps]
+        dates = [datetime.datetime.fromtimestamp(ts, tz=datetime.timezone.utc).date() for ts in timestamps]
         start_date = min(dates)
         end_date = max(dates)
         total_days = (end_date - start_date).days + 1
@@ -79,8 +79,9 @@ class KickstarterCommentPredictor:
 
     def get_prediction(self, url):
         comments = self.comment_scraper.get_comments_texts(url)
+        comment_texts = [c["comment"] for c in comments if "comment" in c]
         sent_scorer = KickstarterSentiment()
-        avg_sentiment_score = np.mean(sent_scorer.get_sentiment_scores(comments))
+        avg_sentiment_score = np.mean(sent_scorer.get_sentiment_scores(comment_texts))
         chain_stats = self.conversation_chain_stats(comments)
         max_chain_length = chain_stats["max_chain_length"]
         total_chains = chain_stats["total_chains"]
