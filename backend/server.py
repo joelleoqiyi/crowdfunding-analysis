@@ -398,7 +398,7 @@ def predict_route():
         # Scraping and prediction logic with comments
         from comment_prediction import KickstarterCommentPredictor
         comment_predictor = KickstarterCommentPredictor()
-        predicted_percent_comments = comment_predictor.get_prediction(url)[0]
+        predicted_percent_comments = comment_predictor.get_prediction(clean_kickstarter_url(url))[0]
         predicted_percent_comments_rounded = round(predicted_percent_comments, 1)
         
         # Make a real prediction using the XGBoost model
