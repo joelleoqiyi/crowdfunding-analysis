@@ -80,6 +80,7 @@ class KickstarterCommentPredictor:
     def get_prediction(self, url):
         comments = self.comment_scraper.get_comments_texts(url)
         comment_texts = [c["comment"] for c in comments if "comment" in c]
+        print(comment_texts)
         sent_scorer = KickstarterSentiment()
         avg_sentiment_score = np.mean(sent_scorer.get_sentiment_scores(comment_texts))
         chain_stats = self.conversation_chain_stats(comments)
