@@ -2,6 +2,23 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 import torch
 import numpy as np
 
+# import os
+# os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
+
+import os
+import time
+import numpy as np
+import torch
+from tqdm.auto import tqdm
+from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
+
+
+# import logging
+# from tqdm.auto import tqdm
+# # 1) Turn on HF logging at INFO or DEBUG
+# from transformers import logging as hf_logging
+# hf_logging.set_verbosity_info()
+
 class KickstarterSentiment:
     _instance = None  # Class-level singleton instance
 
@@ -12,9 +29,9 @@ class KickstarterSentiment:
         return cls._instance
 
     def _initialize(self):
-        self.device = "cpu"  # or "cuda" if available and desired
+        self.device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")  # or "cuda" if available and desired
         model_name = "distilbert-base-uncased-finetuned-sst-2-english"
-
+        print(self.device)
         print("Loading model and tokenizer...")
         self.tokenizer = DistilBertTokenizer.from_pretrained(model_name)
         self.model = DistilBertForSequenceClassification.from_pretrained(model_name)
@@ -22,30 +39,55 @@ class KickstarterSentiment:
         self.model.eval()
         print("Model loaded successfully.")
 
-    def get_sentiment_scores(self, comments, verbose=False):
+    def get_sentiment_scores(self, comments, batch_size=8, verbose=False):
+        """
+        comments: List[str]
+        batch_size: how many comments to process per forward pass
+        """
         if not comments:
             return np.array([])
 
-        inputs = self.tokenizer(comments, return_tensors="pt", padding=True, truncation=True).to(self.device)
+        all_scores = []
+        n          = len(comments)
+        n_batches  = (n + batch_size - 1) // batch_size
 
-        with torch.no_grad():
-            outputs = self.model(**inputs)
+        for batch_idx in tqdm(range(n_batches), desc="Sentiment batches", unit="batch"):
+            # slice this batch
+            batch = comments[batch_idx*batch_size : (batch_idx+1)*batch_size]
 
-        logits = outputs.logits
-        row_sum = logits.abs().sum(dim=1, keepdim=True)
-        normalized_logits = logits / row_sum
+            # tokenise
+            inputs = self.tokenizer(
+                batch,
+                padding=True,
+                truncation=True,
+                return_tensors="pt"
+            )
+            # move to device
+            inputs = {k: v.to(self.device) for k, v in inputs.items()}
 
-        # Positivity index scaled to [0, 1]
-        positivity_index = (normalized_logits[:, 1] + 1) / 2
+            with torch.no_grad():
+                outputs = self.model(**inputs)
+
+            # extract logits → positivity index
+            logits    = outputs.logits                           # (bs, 2)      
+            row_sum = logits.abs().sum(dim=1, keepdim=True)      # (bs, 1)
+            normalized_logits = logits / row_sum                 # normalise
+
+            # Positivity index scaled to [0, 1]
+            positivity_index = (normalized_logits[:, 1] + 1) / 2
+
+            all_scores.append(positivity_index.cpu().numpy())
+
+        # flatten back to (n,)
+        all_scores = np.concatenate(all_scores, axis=0)
 
         if verbose:
-            for i, comment in enumerate(comments):
-                pos_score = positivity_index[i].item()
-                sentiment = "positive" if pos_score > 0.5 else "negative"
-                print(f"Comment: {comment}")
-                print(f"  → Sentiment: {sentiment}, Positivity Index: {pos_score:.3f}")
+            print()
+            for comment, score in zip(comments, all_scores):
+                lbl = "POS" if score > 0.5 else "NEG"
+                print(f"{lbl} ({score:.3f}): {comment}")
 
-        return positivity_index.cpu().numpy()
+        return all_scores
 
     def get_avg_sentiment_for_slug(self, comments_by_slug, slug):
         comments_objs = comments_by_slug.get(slug, [])
@@ -62,4 +104,3 @@ class KickstarterSentiment:
 
         scores = self.get_sentiment_scores(comment_texts)
         return float(np.mean(scores)) if len(scores) > 0 else None
-

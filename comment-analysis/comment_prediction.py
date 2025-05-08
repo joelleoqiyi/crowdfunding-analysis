@@ -19,6 +19,7 @@ class KickstarterCommentPredictor:
         model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "combined_model.pkl")
         self.rf_model = joblib.load(model_path)
         self.comment_scraper = CommentsUpdatesScraper(scraper=Scraper())
+        self.sent_scorer = KickstarterSentiment()
 
     def conversation_chain_stats(self, comments):
         if not comments:
@@ -81,13 +82,16 @@ class KickstarterCommentPredictor:
         comments = self.comment_scraper.get_comments_texts(url)
         comment_texts = [c["comment"] for c in comments if "comment" in c]
         print(comment_texts)
-        sent_scorer = KickstarterSentiment()
-        avg_sentiment_score = np.mean(sent_scorer.get_sentiment_scores(comment_texts))
+        print(self.sent_scorer)
+        avg_sentiment_score = np.mean(self.sent_scorer.get_sentiment_scores(comment_texts, verbose=True))
+        print(avg_sentiment_score)
         chain_stats = self.conversation_chain_stats(comments)
+        print(chain_stats)
         max_chain_length = chain_stats["max_chain_length"]
         total_chains = chain_stats["total_chains"]
         comment_frequency = self.get_comment_frequencies(comments)
         X_pred = np.array([[avg_sentiment_score, total_chains, max_chain_length, comment_frequency]])
         y_pred_log = self.rf_model.predict(X_pred)
         y_pred = np.expm1(y_pred_log)
+        print(X_pred, y_pred)
         return y_pred
