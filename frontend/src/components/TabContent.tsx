@@ -95,9 +95,9 @@ const TabContent: React.FC<TabContentProps> = ({ type, data }) => {
                     : "Uncertain"
                   }
                 </span>
-                <span className="text-sm text-muted-foreground">
+                {type !== "comments" && <span className="text-sm text-muted-foreground">
                   Confidence: {Math.round(data.confidence * 100)}%
-                </span>
+                </span>}
               </div>
             </div>
 

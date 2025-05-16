@@ -439,9 +439,9 @@ def predict_route():
             },
             # Pure mock data for comments section
             "comments": {
-               "score": min(int(predicted_percent_comments_rounded), 99),  # Assuming score out of 100
+               "score": min(int(predicted_percent_comments_rounded), 100),  # Assuming score out of 100
                 "prediction": "success" if predicted_percent_comments_rounded >= 100 else "failure",
-                "confidence": min(int(predicted_percent_comments_rounded), 99),
+                "confidence": min(int(predicted_percent_comments_rounded)/100, 1),
                 "justification": (
                     f"The comment analysis model predicts this project will reach approximately "
                     f"{predicted_percent_comments_rounded}% of its funding goal. "
