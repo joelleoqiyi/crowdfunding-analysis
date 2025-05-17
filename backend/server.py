@@ -16,6 +16,9 @@ parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 update_analysis_dir = os.path.join(parent_dir, 'update-analysis')
 sys.path.append(update_analysis_dir)
 
+comments_analysis_dir = os.path.join(parent_dir, 'comment-analysis')
+sys.path.append(comments_analysis_dir)
+
 # Add scrapers directory to path
 scrapers_dir = os.path.join(update_analysis_dir, 'scrapers')
 sys.path.append(scrapers_dir)
@@ -130,7 +133,8 @@ def home():
         "version": "1.0.0",
         "endpoints": [
             {"path": "/predict", "methods": ["POST", "OPTIONS"], "description": "Make a prediction for a project"},
-            {"path": "/scrape", "methods": ["POST"], "description": "Scrape a Kickstarter campaign"}
+            {"path": "/scrape", "methods": ["POST"], "description": "Scrape a Kickstarter campaign"},
+            {"path": "/predict_comments", "methods": ["POST"], "description": "Make a prediction for a project based on the comments"},
         ]
     })
     return add_cors_headers(response)
@@ -231,7 +235,7 @@ def scrape_kickstarter(url):
             "success": True,
             "data": {
                 'campaign_details': campaign_details,
-                'updates': updates
+                'updates': updates,
             },
             "campaign_title": campaign_title,
             "url": base_url  # Return the cleaned base URL
@@ -369,6 +373,7 @@ def predict_route():
             
             # Try real scraping first
             scrape_result = scrape_kickstarter(url)
+
             
             # Fallback to mock data if real scraping fails
             if not scrape_result["success"]:
@@ -388,6 +393,13 @@ def predict_route():
         else:
             campaign_url = data.get('url', '')
             campaign_title = project_data.get('campaign_details', {}).get('title', 'Unknown Project')
+        
+
+        # Scraping and prediction logic with comments
+        from comment_prediction import KickstarterCommentPredictor
+        comment_predictor = KickstarterCommentPredictor()
+        predicted_percent_comments = comment_predictor.get_prediction(clean_kickstarter_url(url))[0]
+        predicted_percent_comments_rounded = round(predicted_percent_comments, 1)
         
         # Make a real prediction using the XGBoost model
         print(f"Making prediction for project: {campaign_title}")
@@ -427,14 +439,19 @@ def predict_route():
             },
             # Pure mock data for comments section
             "comments": {
-                "score": 50,  # Fixed mock score
-                "prediction": "uncertain",  # Always uncertain
-                "confidence": 0.5,  # Fixed confidence
-                "justification": "Comment analysis will be implemented separately by another team.",
+               "score": min(int(predicted_percent_comments_rounded), 100),  # Assuming score out of 100
+                "prediction": "success" if predicted_percent_comments_rounded >= 100 else "failure",
+                "confidence": min(int(predicted_percent_comments_rounded)/100, 1),
+                "justification": (
+                    f"The comment analysis model predicts this project will reach approximately "
+                    f"{predicted_percent_comments_rounded}% of its funding goal. "
+                    "This estimate is based on comment sentiment, creator engagement, and conversation frequency."
+                ),
                 "findings": [
-                    "This is a placeholder for the comment analysis.",
-                    "The actual comment analysis will use a separate model.",
-                    "Currently no comment analysis is available."
+                    f"Predicted funding based on comment activity: {predicted_percent_comments_rounded}%",
+                    "Sentiment scores, interaction frequency, and dialogue depth are factored into the model.",
+                    "Consistent creator responses and positive tone are strong success indicators.",
+                    "This model focuses solely on patterns within the comments section."
                 ]
             },
             # Pure mock data for youtube section
