@@ -1,6 +1,9 @@
 # Custom
 webscraper/youtube_api_scraper_data/data
 
+# ML Models
+youtube-analysis/best_campaign_model
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

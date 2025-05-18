@@ -8,16 +8,20 @@ import os
 import sys
 import json
 from datetime import datetime
+from googleapiclient.errors import HttpError
 
 # Setup paths for imports
 parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Add update_analysis directory to path
+# Add analysis directories to path
 update_analysis_dir = os.path.join(parent_dir, 'update-analysis')
 sys.path.append(update_analysis_dir)
 
 comments_analysis_dir = os.path.join(parent_dir, 'comment-analysis')
 sys.path.append(comments_analysis_dir)
+
+youtube_analysis_dir = os.path.join(parent_dir, 'youtube-analysis')
+sys.path.append(youtube_analysis_dir)
 
 # Add scrapers directory to path
 scrapers_dir = os.path.join(update_analysis_dir, 'scrapers')
@@ -400,6 +404,20 @@ def predict_route():
         comment_predictor = KickstarterCommentPredictor()
         predicted_percent_comments = comment_predictor.get_prediction(clean_kickstarter_url(url))[0]
         predicted_percent_comments_rounded = round(predicted_percent_comments, 1)
+
+        # running the youtube analysis pipeline
+        from youtube_pipeline import run_pipeline
+        try:
+            youtube_result = run_pipeline(campaign_title)
+        except HttpError as e:
+            msg = str(e)
+            print("ERROR OCCURED WHILE ANALYSING YOUTUBE", msg)
+            if "quotaExceeded" in msg or "rateLimitExceeded" in msg:
+                raise
+            raise 
+        
+        print(youtube_result)
+
         
         # Make a real prediction using the XGBoost model
         print(f"Making prediction for project: {campaign_title}")
@@ -415,6 +433,12 @@ def predict_route():
         
         # Get remarkable features
         remarkable_features = get_remarkable_features(prediction_result)
+
+        updatePrediction = "success" if prediction_result.get("success_probability", 0) > 0.5 else "failure"
+        commentsPrediction = "success" if predicted_percent_comments_rounded >= 100 else "failure"
+        youtubePrediction = youtube_result["prediction"]
+        combinedPrediction = [updatePrediction, commentsPrediction, youtubePrediction]
+        overallPrediction = max(set(combinedPrediction), key=combinedPrediction.count, default=None)
         
         # Format response for frontend
         formatted_response = {
@@ -422,7 +446,7 @@ def predict_route():
             "campaignTitle": campaign_title,
             "campaignUrl": campaign_url,
             "timestamp": datetime.now().isoformat(),
-            "overallPrediction": "success" if prediction_result.get("success_probability", 0) > 0.5 else "failure",
+            "overallPrediction": overallPrediction,
             "description": {
                 # Pure mock data for description section
                 "score": 50,  # Fixed mock score
@@ -437,7 +461,7 @@ def predict_route():
                     "Days left: 14 (mock data)"
                 ]
             },
-            # Pure mock data for comments section
+            # Pure data for comments section
             "comments": {
                "score": min(int(predicted_percent_comments_rounded), 100),  # Assuming score out of 100
                 "prediction": "success" if predicted_percent_comments_rounded >= 100 else "failure",
@@ -454,16 +478,15 @@ def predict_route():
                     "This model focuses solely on patterns within the comments section."
                 ]
             },
-            # Pure mock data for youtube section
+            # data for youtube section
             "youtube": {
-                "score": 50,  # Fixed mock score
-                "prediction": "uncertain",  # Always uncertain
-                "confidence": 0.5,  # Fixed confidence
-                "justification": "YouTube analysis will be implemented separately by another team.",
+                "score": round(youtube_result["probability"] * 100, 2),  
+                "prediction": youtube_result["prediction"],  
+                "confidence": youtube_result["confidence"],  
+                "justification": f"The youtube analysis model predicts this project will {'successfully reach' if youtube_result['prediction'] == 'success' else 'fail to reach'} its funding goals. This estimate is based on the youtube comments from videos surrounding this campaign",
                 "findings": [
-                    "This is a placeholder for the YouTube analysis.",
-                    "The actual YouTube analysis will use a separate model.",
-                    "Currently no YouTube analysis is available."
+                    f"Predicted funding based on youtube comments activity: {len(youtube_result['comments'])}",
+                    f"Extracted top {50 if len(youtube_result['comments']) > 50 else len(youtube_result['comments'])} most relevant comments and used it to predict via the model"
                 ]
             },
             "updates": {

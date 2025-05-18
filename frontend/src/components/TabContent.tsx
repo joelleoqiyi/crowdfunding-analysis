@@ -5,6 +5,7 @@ import { Progress } from "@/components/ui/progress";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { FileText, Youtube, BarChart3, RefreshCw } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface TabContentProps {
   type: AnalysisType;
@@ -61,66 +62,79 @@ const TabContent: React.FC<TabContentProps> = ({ type, data }) => {
             {getTitle()}
           </CardTitle>
         </CardHeader>
-        <CardContent>
-          <div className="space-y-6">
-            <div className="space-y-2">
-              <div className="flex justify-between items-center">
-                <span className="text-sm font-medium">Success Score</span>
-                <span className={`text-2xl font-bold ${getScoreColor()}`}>
-                  {data.score}/100
-                </span>
+        { 
+          type !== "description" ?
+            <CardContent>
+              <div className="space-y-6">
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm font-medium">Success Score</span>
+                    <span className={`text-2xl font-bold ${getScoreColor()}`}>
+                      {data.score}/100
+                    </span>
+                  </div>
+                  <Progress value={data.score} className={getProgressColor()} />
+                  <div className="flex justify-between text-xs text-muted-foreground">
+                    <span>Likely to Fail</span>
+                    <span>Uncertain</span>
+                    <span>Likely to Succeed</span>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold mb-2">Prediction</h4>
+                  <div className="flex gap-2 items-center mb-4">
+                    <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                      data.prediction === "success" 
+                        ? "bg-analysis-success/20 text-analysis-success" 
+                        : data.prediction === "failure" 
+                        ? "bg-analysis-danger/20 text-analysis-danger" 
+                        : "bg-analysis-warning/20 text-analysis-warning"
+                    }`}>
+                      {data.prediction === "success" 
+                        ? "Likely to Succeed" 
+                        : data.prediction === "failure" 
+                        ? "Likely to Fail" 
+                        : "Uncertain"
+                      }
+                    </span>
+                    {type !== "comments" && <span className="text-sm text-muted-foreground">
+                      Confidence: {Math.round(data.confidence * 100)}%
+                    </span>}
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold mb-2">Justification</h4>
+                  <p className="text-sm text-slate-600">{data.justification}</p>
+                </div>
+
+                <Separator />
+
+                <div>
+                  <h4 className="font-semibold mb-2">Key Findings</h4>
+                  <ul className="space-y-1">
+                    {data.findings.map((finding, index) => (
+                      <li key={index} className="text-sm flex items-start gap-2">
+                        <div className="h-1.5 w-1.5 rounded-full bg-primary mt-1.5" />
+                        <span>{finding}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <Progress value={data.score} className={getProgressColor()} />
-              <div className="flex justify-between text-xs text-muted-foreground">
-                <span>Likely to Fail</span>
-                <span>Uncertain</span>
-                <span>Likely to Succeed</span>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-2">Prediction</h4>
-              <div className="flex gap-2 items-center mb-4">
-                <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                  data.prediction === "success" 
-                    ? "bg-analysis-success/20 text-analysis-success" 
-                    : data.prediction === "failure" 
-                    ? "bg-analysis-danger/20 text-analysis-danger" 
-                    : "bg-analysis-warning/20 text-analysis-warning"
-                }`}>
-                  {data.prediction === "success" 
-                    ? "Likely to Succeed" 
-                    : data.prediction === "failure" 
-                    ? "Likely to Fail" 
-                    : "Uncertain"
-                  }
-                </span>
-                {type !== "comments" && <span className="text-sm text-muted-foreground">
-                  Confidence: {Math.round(data.confidence * 100)}%
-                </span>}
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-2">Justification</h4>
-              <p className="text-sm text-slate-600">{data.justification}</p>
-            </div>
-
-            <Separator />
-
-            <div>
-              <h4 className="font-semibold mb-2">Key Findings</h4>
-              <ul className="space-y-1">
-                {data.findings.map((finding, index) => (
-                  <li key={index} className="text-sm flex items-start gap-2">
-                    <div className="h-1.5 w-1.5 rounded-full bg-primary mt-1.5" />
-                    <span>{finding}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </CardContent>
+            </CardContent>
+          : // this is for descriptions only. link to the streamlit server
+            <CardContent>
+              <h4 className="font-semibold mb-2 mt-2 ml-1">StreamLit Dashboard</h4>
+              <p className="text-sm text-slate-600 mb-2 ml-1">Kindly click on the button below to analyse the Campaign Description</p>
+              <Button asChild className="ml-1">
+                <a href="https://example.com" target="_blank">
+                  Go to Dashboard
+                </a>
+              </Button>
+            </CardContent>
+        }
       </Card>
     </div>
   );
