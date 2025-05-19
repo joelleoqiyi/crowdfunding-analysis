@@ -129,7 +129,7 @@ const TabContent: React.FC<TabContentProps> = ({ type, data }) => {
               <h4 className="font-semibold mb-2 mt-2 ml-1">StreamLit Dashboard</h4>
               <p className="text-sm text-slate-600 mb-2 ml-1">Kindly click on the button below to analyse the Campaign Description</p>
               <Button asChild className="ml-1">
-                <a href="https://example.com" target="_blank">
+                <a href="http://localhost:8501" target="_blank">
                   Go to Dashboard
                 </a>
               </Button>
