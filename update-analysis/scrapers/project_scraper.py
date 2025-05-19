@@ -49,6 +49,7 @@ def scrape_project(url):
     browser = None
     try:
         browser = get_browser()
+        print("THIS IS A BROWSER: ", browser)
         logger.info(f"Processing project: {url}")
         
         # URL should already be properly formatted with /posts from server.py
@@ -133,6 +134,8 @@ def scrape_technology_projects(start_page=1, max_pages=5):
                                f'technology_projects_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json')
     
     browser = get_browser()
+    print("THIS IS A BROWSER: ", browser)
+
     try:
         for page in range(start_page, start_page + max_pages):
             url = f"{base_url}?page={page}"
