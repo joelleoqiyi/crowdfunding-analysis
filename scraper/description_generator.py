@@ -26,8 +26,8 @@ def generate_batch_descriptions(batch):
     try:
         # Create a single prompt for the batch
         prompt = "Generate compelling campaign descriptions for the following Kickstarter projects:\n"
-        for i, (name, subtitle) in enumerate(batch, start=1):
-            prompt += f"\n{i}. Name: {name}\n   Subtitle: {subtitle}\n   Description:"
+        for i, (name, campaign_summary) in enumerate(batch, start=1):
+            prompt += f"\n{i}. Name: {name}\n   campaign_summary: {campaign_summary}\n   Description:"
 
         # Call the OpenAI API
         response = client.chat.completions.create(
@@ -66,12 +66,12 @@ else:
     logger.error("The 'category' column does not exist in the CSV file.")
     exit(1)
 
-# Extract names and subtitles
-if "name" not in df.columns or "subtitle" not in df.columns:
-    logger.error("The CSV file must contain 'name' and 'subtitle' columns.")
+# Extract names and campaign_summarys
+if "name" not in df.columns or "campaign_summary" not in df.columns:
+    logger.error("The CSV file must contain 'name' and 'campaign_summary' columns.")
     exit(1)
 
-campaigns = list(zip(df["name"], df["subtitle"]))
+campaigns = list(zip(df["name"], df["campaign_summary"]))
 
 # Generate descriptions in batches
 batch_size = 10  # Process 5 campaigns at a time
@@ -81,18 +81,18 @@ for i in tqdm(range(0, len(campaigns), batch_size), desc="Processing batches"):
     batch = campaigns[i:i + batch_size]
     try:
         descriptions = generate_batch_descriptions(batch)
-        for (name, subtitle), description in zip(batch, descriptions):
+        for (name, campaign_summary), description in zip(batch, descriptions):
             results.append({
                 "name": name,
-                "subtitle": subtitle,
+                "campaign_summary": campaign_summary,
                 "description": description
             })
     except Exception as e:
         logger.error(f"Failed to process batch starting at index {i}: {e}")
-        for (name, subtitle) in batch:
+        for (name, campaign_summary) in batch:
             results.append({
                 "name": name,
-                "subtitle": subtitle,
+                "campaign_summary": campaign_summary,
                 "description": "Description could not be generated"
             })
 

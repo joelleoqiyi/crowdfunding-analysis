@@ -38,7 +38,6 @@ def process_scraped_data(raw_data):
     df["created_at"] = df["created_at"].apply(format_unix_timestamp)
     df["launched_at"] = df["launched_at"].apply(format_unix_timestamp)
     df["state_changed_at"] = df["state_changed_at"].apply(format_unix_timestamp)
-    df["deadline"] = df["deadline"].apply(format_unix_timestamp)
-    df["days_left"] = df["deadline"].apply(calculate_days_left)
-    
+    df["days_left"] = df["deadline"].apply(calculate_days_left)   
+    df["deadline"] = df["deadline"].apply(format_unix_timestamp) 
     return df
