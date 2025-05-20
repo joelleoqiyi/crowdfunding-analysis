@@ -183,7 +183,7 @@ with st.expander("Suggestions to Improve"):
         st.warning("- " + tip)
 
 # === Visualise Decision Tree ===
-df = pd.read_csv("./Kickstarter_TechFiltered_TechOnly.csv")
+df = pd.read_csv("./miscillaneous/Kickstarter_TechFiltered_TechOnly.csv")
 df = df.dropna(subset=['campaign_summary', 'state'])
 df['success'] = df['state'].apply(lambda x: 1 if str(x).lower() == 'successful' else 0)
 if 'campaign_name' not in df.columns:
